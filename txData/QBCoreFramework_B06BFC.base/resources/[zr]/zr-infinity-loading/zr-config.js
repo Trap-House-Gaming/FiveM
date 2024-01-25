@@ -524,17 +524,17 @@ const team = [
     {
         image: '/zr-assets/team/zr-developer.webp',
         name: 'SERIOUS',
-        role: 'Trap House Developer'
+        role: 'Owner & Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
         name: 'KIVG.LUIS',
-        role: 'Trap House Developer'
+        role: 'Owner & Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
         name: 'MilkdYoCat',
-        role: 'Trap House Admin'
+        role: 'Admin'
     },
 ]
 var player;

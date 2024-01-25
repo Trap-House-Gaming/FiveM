@@ -9,9 +9,9 @@ zr_config.ESX = 'es_extended'
 
 zr_config.zr_blur = 'MenuMGIn'
 zr_config.disconnect = '[zr-pausemenu] You have been disconnected from the server'
-zr_config.discord = 'https://discord.gg/UE7nGjrKany'
-zr_config.link = 'https://traphousegaming.org/'
-zr_config.youtube = 'https://www.youtube.com/'
+zr_config.discord = 'zr-icon-discord.svg'
+zr_config.link = 'zr-icon-link.svg'
+zr_config.youtube = 'zr-icon-youtube.svg'
 
 -- Buttons
 zr_config.MulticharacterLogout = false
@@ -49,7 +49,7 @@ zr_trans.bank = 'Bank'
 zr_trans.currency = '$'
 
 -- First row
-zr_trans.discord = 'join our discord.'
+zr_trans.discord = 'Join Discord.'
 zr_trans.maps = 'MAPS'
 zr_trans.mapstxt = ''
 zr_trans.overview = 'OVERVIEW'

@@ -47,7 +47,7 @@ zr_config.discord_roles = {
     ["1000377003704336476"] = 2, -- Add extra 2 slots if player has this role.
     ["1004486369919373392"] = 1, -- Add extra 1 slot if player has this role.
 }
-zr_config.discord = 'https://discord.gg/UE7nGjrKan'
+zr_config.discord = 'https://discord.com/invite/UE7nGjrKan'
 
 zr_config.EnableDelete = true
 zr_config.EnableDeleteByDiscord = false
@@ -88,7 +88,7 @@ zr_trans.slotlockedwarning="Unlock additional character slots by obtaining a Dis
 zr_trans.noslots = "You don't have any empty slots!"
 zr_trans.deleted = "Character Deleted"
 zr_trans.deldiscord = "You must have a discord role to delete your character"
-zr_trans.join = "Join our discord."
+zr_trans.join = "Join our Discord."
 
 zr_config.DefaultSkins = {
     ["m"] = {
