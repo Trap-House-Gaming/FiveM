@@ -9,9 +9,9 @@ zr_config.ESX = 'es_extended'
 
 zr_config.zr_blur = 'MenuMGIn'
 zr_config.disconnect = '[zr-pausemenu] You have been disconnected from the server'
-zr_config.discord = 'zr-icon-discord.svg'
-zr_config.link = 'zr-icon-link.svg'
-zr_config.youtube = 'zr-icon-youtube.svg'
+zr_config.discord = 'zr-assets/links/zr-icon-discord.svg'
+zr_config.link = 'zr-assets/links/zr-icon-link.svg'
+zr_config.youtube = 'zr-assets/links/zr-icon-youtube.svg'
 
 -- Buttons
 zr_config.MulticharacterLogout = false
@@ -49,7 +49,7 @@ zr_trans.bank = 'Bank'
 zr_trans.currency = '$'
 
 -- First row
-zr_trans.discord = 'Join Discord.'
+zr_trans.discord = 'Join our Discord.'
 zr_trans.maps = 'MAPS'
 zr_trans.mapstxt = ''
 zr_trans.overview = 'OVERVIEW'
