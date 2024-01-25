@@ -9,9 +9,9 @@ zr_config.ESX = 'es_extended'
 
 zr_config.zr_blur = 'MenuMGIn'
 zr_config.disconnect = '[zr-pausemenu] You have been disconnected from the server'
-zr_config.discord = 'https://discord.com/invite/YPA3UcTUAy'
-zr_config.link = 'https://0bugscripts.tebex.io/'
-zr_config.youtube = 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+zr_config.discord = 'https://discord.gg/UE7nGjrKany'
+zr_config.link = 'https://traphousegaming.org/'
+zr_config.youtube = 'https://www.youtube.com/'
 
 -- Buttons
 zr_config.MulticharacterLogout = false

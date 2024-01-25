@@ -47,7 +47,7 @@ zr_config.discord_roles = {
     ["1000377003704336476"] = 2, -- Add extra 2 slots if player has this role.
     ["1004486369919373392"] = 1, -- Add extra 1 slot if player has this role.
 }
-zr_config.discord = 'https://discord.gg/FwedjEV6kY'
+zr_config.discord = 'https://discord.gg/UE7nGjrKan'
 
 zr_config.EnableDelete = true
 zr_config.EnableDeleteByDiscord = false

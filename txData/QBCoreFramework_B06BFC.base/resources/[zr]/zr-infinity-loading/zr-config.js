@@ -5,7 +5,7 @@ const backgrounds = [
 const backgroundInterval = 5  // in seconds
 
 const logo = {
-    title: 'Trap House Gaming',
+    title: 'Trap House Gaming | Role Play',
     subtitle: 'Welcome To'
 }
 
@@ -381,23 +381,23 @@ const commands = {
 const links = {
     discord: {
         icon: '/zr-assets/links/zr-icon-discord.svg',
-        link: 'https://discord.com/invite/YPA3UcTUAy'
+        link: 'https://discord.gg/UE7nGjrKan'
     },
     link: {
         icon: '/zr-assets/links/zr-icon-link.svg',
-        link: 'https://0bugscripts.tebex.io/'
+        link: 'https://traphousegaming.org/'
     },
     youtube: {
         icon: '/zr-assets/links/zr-icon-youtube.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: 'http://www.youtube.com'
     },
     instagram: {
         icon: '/zr-assets/links/zr-icon-instagram.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: 'http://www.instagram.com'
     },
     x: {
         icon: '/zr-assets/links/zr-icon-x.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: 'http://www.twitter.com'
     }
 }
 
@@ -523,28 +523,18 @@ const patchNotes = {
 const team = [
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBugScripts',
-        role: 'Developer'
+        name: 'SERIOUS',
+        role: 'Trap House Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'Inki Lino',
-        role: 'Developer'
+        name: 'KIVG.LUIS',
+        role: 'Trap House Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'Maadlou',
-        role: 'Designer'
-    },
-    {
-        image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBug Staff',
-        role: 'Admin'
-    },
-    {
-        image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBug Staff',
-        role: 'Admin'
+        name: 'MilkdYoCat',
+        role: 'Trap House Admin'
     },
 ]
 var player;
