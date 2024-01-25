@@ -209,10 +209,10 @@
 
 #zr-logo {
     position: fixed;
-    width: 18.75vw;
-    height: 14.074vh;
-    right: 11.666vw;
-    top: 10.926vh;
+    width: 28.75vw;
+    height: 24.074vh;
+    right: 21.666vw;
+    top: 20.926vh;
     background-image: url(./zr-assets/zr-logo.png);
     background-size: contain;
     background-repeat: no-repeat;

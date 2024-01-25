@@ -9,9 +9,9 @@ zr_config.ESX = 'es_extended'
 
 zr_config.zr_blur = 'MenuMGIn'
 zr_config.disconnect = '[zr-pausemenu] You have been disconnected from the server'
-zr_config.discord = 'zr-assets/links/zr-icon-discord.svg'
-zr_config.link = 'zr-assets/links/zr-icon-link.svg'
-zr_config.youtube = 'zr-assets/links/zr-icon-youtube.svg'
+zr_config.discord = 'zr-assets/zr-icon-discord.svg'
+zr_config.link = 'zr-assets/zr-icon-link.svg'
+zr_config.youtube = 'zr-assets/zr-icon-youtube.svg'
 
 -- Buttons
 zr_config.MulticharacterLogout = false
