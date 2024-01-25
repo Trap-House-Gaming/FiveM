@@ -5,7 +5,7 @@ const backgrounds = [
 const backgroundInterval = 5  // in seconds
 
 const logo = {
-    title: 'OBug Roleplay',
+    title: 'Trap House Gaming',
     subtitle: 'Welcome To'
 }
 
