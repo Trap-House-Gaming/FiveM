@@ -1,5 +1,5 @@
 Config = {
-	Debug = true, -- set  to false to disable debug
+	Debug = false, -- set  to false to disable debug
 	SyncToDatabase = 1,  -- time in minutes to data from server file to database
 	
 	Items = {
