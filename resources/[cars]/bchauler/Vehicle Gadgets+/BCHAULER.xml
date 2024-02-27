@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VehicleConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtraConditions>
+    <Condition>
+      <Name>EngineOn</Name>
+      <Code><![CDATA[return vehicle.IsEngineOn;]]></Code>
+    </Condition>
+    <Condition>
+      <Name>EngineOff</Name>
+      <Code><![CDATA[return !vehicle.IsEngineOn;]]></Code>
+    </Condition>
+    <Condition>
+      <Name>SirenOn</Name>
+      <Code><![CDATA[return vehicle.IsSirenOn;]]></Code>
+    </Condition>
+    <Condition>
+      <Name>SirenOff</Name>
+      <Code><![CDATA[return !vehicle.IsSirenOn;]]></Code>
+    </Condition>
+	<Condition>
+	<Name>KeyDown1</Name>
+	<Code><![CDATA[return Game.IsKeyDown(Keys.Y);]]></Code>
+	</Condition>
+	<Condition>
+	<Name>KeyDown2</Name>
+	<Code><![CDATA[return Game.IsKeyDown(Keys.U);]]></Code>
+	</Condition>
+  </ExtraConditions>
+  <Gadgets>
+    <Entry xsi:type="Ladder">
+      <SoundsSet>
+        <Volume>45</Volume>
+        <Begin>jake.wav</Begin>
+        <Loop>jake.wav</Loop>
+        <End>jake.wav</End>
+      </SoundsSet>
+<Extensions>
+        <Direction X="0" Y="1" Z="0" />
+        <Parts>
+          <Entry>
+            <BoneName>jake</BoneName>
+            <MoveSpeed>1</MoveSpeed>
+            <ExtensionDistance>0.5</ExtensionDistance>
+    			</Entry>
+       </Parts>
+   	</Extensions>
+    </Entry>
+  </Gadgets>
+</VehicleConfig>
