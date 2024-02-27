@@ -92,7 +92,7 @@ Config.RobberySettings = {
     WaitTimeForThermite = 10000,
     ThermiteItemName = 'thermite',
     IgnitionItemName = 'lighter',
-    MinBags = 2, -- ONLY NPC STOCKADES
-    MaxBags = 5, -- ONLY NPC STOCKADES
+    MinBags = 0, -- ONLY NPC STOCKADES
+    MaxBags = 0, -- ONLY NPC STOCKADES
 }
 
