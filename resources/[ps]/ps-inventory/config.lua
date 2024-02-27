@@ -354,7 +354,7 @@ Config.AttachmentCrafting = {
         -- points = 1,
     -- },
     -- [2] = {
-        -- name = "weapon_pistol_mk2",
+        -- name = "weapon_combatpistol",
         -- amount = -1,
         -- info = {},
         -- costs = {
@@ -368,7 +368,7 @@ Config.AttachmentCrafting = {
         -- points = 2,
     -- },
     -- [3] = {
-        -- name = "weapon_combatpistol",
+        -- name = "weapon_snspistol_mk2",
         -- amount = -1,
         -- info = {},
         -- costs = {
@@ -382,7 +382,7 @@ Config.AttachmentCrafting = {
         -- points = 3,
     -- },
     -- [4] = {
-        -- name = "microsmg_extendedclip",
+        -- name = "weapon_vintagepistol",
         -- amount = 50,
         -- info = {},
         -- costs = {
@@ -396,8 +396,8 @@ Config.AttachmentCrafting = {
         -- points = 4,
     -- },
     -- [5] = {
-        -- name = "smg_drum",
-        -- amount = 50,
+        -- name = "weapon_pistol_mk2",
+        -- amount = -1,
         -- info = {},
         -- costs = {
             -- ["metalscrap"] = 230,
@@ -410,7 +410,7 @@ Config.AttachmentCrafting = {
         -- points = 5,
     -- },
     -- [6] = {
-        -- name = "smg_scope",
+        -- name = "weapon_heavypistol",
         -- amount = 50,
         -- info = {},
         -- costs = {
