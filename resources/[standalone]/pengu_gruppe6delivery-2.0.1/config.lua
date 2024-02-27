@@ -48,8 +48,8 @@ Config.DropSpot = vector3(-9.58, -654.66, 32.91)
 
 
 Config.MoneyType = 'bank'
-Config.MoneyPerBagMin = 25
-Config.MoneyPerBagMax = 150
+Config.MoneyPerBagMin = 100
+Config.MoneyPerBagMax = 300
 
 
 Config.MinWaitTime = 5000
@@ -75,8 +75,8 @@ Config.OrganizerPed = {
 
 Config.OrganizerMarker = true
 
-Config.MoneyPerOrganizedMin = 300
-Config.MoneyPerOrganizedMax = 400
+Config.MoneyPerOrganizedMin = 25
+Config.MoneyPerOrganizedMax = 150
 
 Config.MinOrganizeWaitTime = 2000
 Config.MaxOrganizeWaitTime = 6500
