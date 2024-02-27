@@ -1,0 +1,19 @@
+
+INSTALLATION:
+
+Just add this line to your dlclist.xml after adding "mafia_mansion" folder to your dlcpacks:
+
+<Item>dlcpacks:/mafia_mansion/</Item>
+
+
+
+to activate the water of the pool you will need to download this mod
+
+https://fr.gta5-mods.com/misc/swimmable-water-everywhere
+
+
+
+fps loss for small setups in rooms with multiple lights
+
+for those who are missing items make sure you have your games up to date and a good gameconfig adapt if all is done 
+correctly you do not have to have any problem or sometimes just restart the game
