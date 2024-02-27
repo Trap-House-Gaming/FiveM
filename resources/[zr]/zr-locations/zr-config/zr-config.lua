@@ -33,11 +33,11 @@ zr_config.zr_locations = {
         image = "./zr-assets/unicorn.webp"
     },
     { 
-        name = "pinkcage", 
-        label = "Pink Cage Motel", 
-        description = "Colorful motel, rent a room, meet travelers, experience unique charm.",
-        spawn = vector4(313.76745, -230.6358, 53.990818, 153.79005),
-        image = "./zr-assets/motel.webp"
+        name = "Alta", 
+        label = "Alta Apartments", 
+        description = "Your new home in the city, this is the spot!",
+        spawn = vector4(-268.13, -956.71, 31.22, 223.69),
+        image = "./zr-assets/alta.webp"
     },
     { 
         name = "park", 
