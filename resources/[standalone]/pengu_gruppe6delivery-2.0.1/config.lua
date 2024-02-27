@@ -85,7 +85,7 @@ Config.MaxOrganizeWaitTime = 6500
 
 Config.RobberySettings = {
     StockadeModels = {
-        'stockade'
+        
     },
     ThermiteParticle = 'proj_flare_trail',
     ExplosionPaticle = 'exp_grd_grenade_lod',
