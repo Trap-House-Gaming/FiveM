@@ -6,7 +6,7 @@ Config.LockNPCParkedCars = false -- Lock state for NPC parked cars [true = locke
 Config.UseKeyfob = false -- you can set this true if you dont need ui
 -- Lockpick Settings
 Config.RemoveLockpickNormal = 0.25 -- Chance to remove lockpick on fail
-Config.RemoveLockpickAdvanced = 0.10 Chance to remove advanced lockpick on fail
+Config.RemoveLockpickAdvanced = 0.10 --Chance to remove advanced lockpick on fail
 Config.LockPickDoorEvent = function() -- This function is called when a player attempts to lock pick a vehicle
     TriggerEvent('qb-lockpick:client:openLockpick', LockpickFinishCallback)
 end
