@@ -48,8 +48,8 @@ Config.DropSpot = vector3(-9.58, -654.66, 32.91)
 
 
 Config.MoneyType = 'bank'
-Config.MoneyPerBagMin = 100
-Config.MoneyPerBagMax = 300
+Config.MoneyPerBagMin = 25
+Config.MoneyPerBagMax = 150
 
 
 Config.MinWaitTime = 5000
