@@ -733,7 +733,8 @@ local Vehicles = {
 	{ model = 'A1Hellcat',    name = 'Hellcat',                           brand = 'Dodge',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'GODz95GSX',    name = 'Eclipse',                           brand = 'Mitsubishi',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'ddcemperor',    name = 'Maybach',                           brand = 'Mercedes',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' },
-	{ model = 'mader34',    name = 'R34 GTR',                           brand = 'Nissan',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' }
+	{ model = 'cls19mafia',    name = 'CLS',                           brand = 'Mercedes',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = 'mader34',    name = 'R34 GTR',                           brand = 'Nissan',        price = -0,  category = 'Import',      type = 'automobile', shop = 'none' },
 }
 
 for i = 1, #Vehicles do

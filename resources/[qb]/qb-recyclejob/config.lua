@@ -13,9 +13,9 @@ Config = {
 	PickupActionDuration 	= math.random(4000, 6000),
 	DeliveryActionDuration 	= 5000,
 
-	MaxItemsReceived 	= 5,
-	MinItemReceivedQty 	= 2,
-	MaxItemReceivedQty 	= 6,
+	MaxItemsReceived 	= 7,
+	MinItemReceivedQty 	= 15,
+	MaxItemReceivedQty 	= 50,
 	ChanceItem 			= "cryptostick",
 	LuckyItem 			= "rubber",
 	
