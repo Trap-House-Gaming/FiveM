@@ -1,0 +1,5278 @@
+.bitgangs-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.bitgangs-bitgangs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background: radial-gradient(164.10% 100.15% at 92.47% 9.30%, rgba(0, 255, 178, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(704.20% 285.13% at 4.19% 7.08%, rgba(0, 0, 0, 0.87) 0%, rgba(140, 191, 219, 0.87) 100%); 
+}
+.bitgangs-mapzones {
+  top: 0rem;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.bitgangs-map {
+  top: 0rem;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.bitgangs-zones {
+  top: -32rem;
+  left: 13.4rem;
+  width: 80.3%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+
+.bitgangs-vespucci {
+  top: 238.5px;
+  left: 237.5px;
+  width: 164px;
+  height: 121px;
+  position: absolute;
+  pointer-events: fill;
+}
+.bitgangs-delperrobeach {
+  top: 167.5px;
+  left: 331px;
+  width: 120px;
+  height: 103px;
+  position: absolute;
+}
+.bitgangs-delperro {
+  top: 214px;
+  left: 381.5px;
+  width: 87px;
+  height: 102px;
+  position: absolute;
+}
+.bitgangs-lsairport {
+  top: 189.5px;
+  left: 0px;
+  width: 251px;
+  height: 209px;
+  position: absolute;
+}
+.bitgangs-lapuerta {
+  top: 297px;
+  left: 188.5px;
+  width: 163px;
+  height: 134px;
+  position: absolute;
+}
+.bitgangs-mazebankarena {
+  top: 384.5px;
+  left: 191.5px;
+  width: 85px;
+  height: 97px;
+  position: absolute;
+}
+.bitgangs-elysianisland {
+  top: 389px;
+  left: 28.5px;
+  width: 162px;
+  height: 179px;
+  position: absolute;
+}
+.bitgangs-terminal {
+  top: 567px;
+  left: 35px;
+  width: 104px;
+  height: 88px;
+  position: absolute;
+}
+.bitgangs-cypressflats {
+  top: 522.5px;
+  left: 128.5px;
+  width: 136px;
+  height: 111px;
+  position: absolute;
+}
+.bitgangs-banning {
+  top: 425px;
+  left: 186.5px;
+  width: 34px;
+  height: 95px;
+  position: absolute;
+}
+.bitgangs-rancho {
+  top: 489.5px;
+  left: 196px;
+  width: 111px;
+  height: 77px;
+  position: absolute;
+}
+.bitgangs-davis {
+  top: 445.5px;
+  left: 220.5px;
+  width: 93px;
+  height: 89px;
+  position: absolute;
+}
+.bitgangs-chamberlainhills {
+  top: 420px;
+  left: 259.5px;
+  width: 52px;
+  height: 47px;
+  position: absolute;
+}
+.bitgangs-strawberry {
+  top: 414px;
+  left: 261px;
+  width: 81px;
+  height: 136px;
+  position: absolute;
+}
+.bitgangs-elburro {
+  top: 616.5px;
+  left: 116.5px;
+  width: 265px;
+  height: 140px;
+  position: absolute;
+}
+.bitgangs-palominohighlands {
+  top: 647.5px;
+  left: 123px;
+  width: 403px;
+  height: 242px;
+  position: absolute;
+}
+.bitgangs-lamesa {
+  top: 546px;
+  left: 242.5px;
+  width: 186px;
+  height: 70px;
+  position: absolute;
+}
+.bitgangs-littleseoul {
+  top: 302.5px;
+  left: 309px;
+  width: 136px;
+  height: 114px;
+  position: absolute;
+}
+.bitgangs-pillboxhill {
+  top: 415.5px;
+  left: 340.5px;
+  width: 94px;
+  height: 105px;
+  position: absolute;
+}
+.bitgangs-missionrow {
+  top: 501px;
+  left: 339.5px;
+  width: 51px;
+  height: 45px;
+  position: absolute;
+}
+.bitgangs-textilecity {
+  top: 505.5px;
+  left: 390.5px;
+  width: 44px;
+  height: 43px;
+  position: absolute;
+}
+.bitgangs-murrietaheights {
+  top: 604px;
+  left: 307px;
+  width: 85px;
+  height: 89px;
+  position: absolute;
+}
+.bitgangs-mirrorpark {
+  top: 566.5px;
+  left: 374px;
+  width: 87px;
+  height: 105px;
+  position: absolute;
+}
+.bitgangs-eastvinewood {
+  top: 548.5px;
+  left: 420.5px;
+  width: 84px;
+  height: 94px;
+  position: absolute;
+}
+.bitgangs-vinewoodracetrack {
+  top: 581.5px;
+  left: 476px;
+  width: 96px;
+  height: 99px;
+  position: absolute;
+}
+.bitgangs-tataviammountains {
+  top: 633.5px;
+  left: 371.5px;
+  width: 370px;
+  height: 269px;
+  position: absolute;
+}
+.bitgangs-alta {
+  top: 439.5px;
+  left: 429.5px;
+  width: 66px;
+  height: 118px;
+  position: absolute;
+}
+.bitgangs-hawick {
+  top: 460px;
+  left: 458.5px;
+  width: 58px;
+  height: 114px;
+  position: absolute;
+}
+.bitgangs-downtownvinewood {
+  top: 464px;
+  left: 491px;
+  width: 107px;
+  height: 116px;
+  position: absolute;
+}
+.bitgangs-burton {
+  top: 358.5px;
+  left: 445px;
+  width: 66px;
+  height: 101px;
+  position: absolute;
+}
+.bitgangs-rockfordhills {
+  top: 261.5px;
+  left: 418px;
+  width: 131px;
+  height: 181px;
+  position: absolute;
+}
+.bitgangs-westvinewood {
+  top: 339px;
+  left: 496px;
+  width: 87px;
+  height: 141px;
+  position: absolute;
+}
+.bitgangs-morningwood {
+  top: 240px;
+  left: 448.5px;
+  width: 47px;
+  height: 45px;
+  position: absolute;
+}
+.bitgangs-richman {
+  top: 189.5px;
+  left: 483.5px;
+  width: 105px;
+  height: 154px;
+  position: absolute;
+}
+.bitgangs-pacificbluffs {
+  top: 26.5px;
+  left: 421.5px;
+  width: 163px;
+  height: 221px;
+  position: absolute;
+}
+.bitgangs-banhamcanyon {
+  top: 15.5px;
+  left: 537.5px;
+  width: 186px;
+  height: 203px;
+  position: absolute;
+}
+.bitgangs-chumash {
+  top: 0px;
+  left: 618.5px;
+  width: 104px;
+  height: 48px;
+  position: absolute;
+}
+.bitgangs-vinewoodhills {
+  top: 186.5px;
+  left: 492.5px;
+  width: 332px;
+  height: 520px;
+  position: absolute;
+}
+.bitgangs-tongvahills {
+  top: 18px;
+  left: 610px;
+  width: 248px;
+  height: 247px;
+  position: absolute;
+}
+.bitgangs-lagozancudo {
+  top: 69.5px;
+  left: 817px;
+  width: 130px;
+  height: 218px;
+  position: absolute;
+}
+.bitgangs-fortzancudo {
+  top: 16.5px;
+  left: 893px;
+  width: 141px;
+  height: 250px;
+  position: absolute;
+}
+.bitgangs-northchumash {
+  top: 99px;
+  left: 1026.5px;
+  width: 141px;
+  height: 121px;
+  position: absolute;
+}
+.bitgangs-mountjosiah {
+  top: 120.5px;
+  left: 893.5px;
+  width: 257px;
+  height: 375px;
+  position: absolute;
+}
+.bitgangs-zancudoriver {
+  top: 263px;
+  left: 867px;
+  width: 161px;
+  height: 265px;
+  position: absolute;
+}
+.bitgangs-greatchaparral {
+  top: 274px;
+  left: 748px;
+  width: 183px;
+  height: 172px;
+  position: absolute;
+}
+.bitgangs-grandsenoradesert {
+  top: 424.5px;
+  left: 680.5px;
+  width: 357px;
+  height: 391px;
+  position: absolute;
+}
+.bitgangs-palmertaylorpowerstation {
+  top: 842.5px;
+  left: 674.5px;
+  width: 87px;
+  height: 50px;
+  position: absolute;
+}
+.bitgangs-ronalternateswindfarm {
+  top: 721px;
+  left: 674.5px;
+  width: 247px;
+  height: 224px;
+  position: absolute;
+}
+.bitgangs-davisquartz {
+  top: 826px;
+  left: 872.5px;
+  width: 90px;
+  height: 128px;
+  position: absolute;
+}
+.bitgangs-sanchianskimountainrange {
+  top: 846.5px;
+  left: 899px;
+  width: 349px;
+  height: 190px;
+  position: absolute;
+}
+.bitgangs-sandyshores {
+  top: 653px;
+  left: 907.5px;
+  width: 173px;
+  height: 232px;
+  position: absolute;
+}
+.bitgangs-grapeseed {
+  top: 706px;
+  left: 1039px;
+  width: 215px;
+  height: 183px;
+  position: absolute;
+}
+.bitgangs-mountgordo {
+  top: 695px;
+  left: 1220px;
+  width: 252px;
+  height: 269px;
+  position: absolute;
+}
+.bitgangs-chilliadmountainstatewilderness {
+  top: 203.5px;
+  left: 1124px;
+  width: 162px;
+  height: 195px;
+  position: absolute;
+}
+.bitgangs-paletoforest {
+  top: 309.5px;
+  left: 1250.5px;
+  width: 152px;
+  height: 116px;
+  position: absolute;
+}
+.bitgangs-paletobay {
+  top: 375.5px;
+  left: 1358px;
+  width: 185px;
+  height: 203px;
+  position: absolute;
+}
+.bitgangs-procopiobeach {
+  top: 577.5px;
+  left: 1427px;
+  width: 34px;
+  height: 121px;
+  position: absolute;
+}
+.bitgangs-mountchilliad {
+  top: 392.5px;
+  left: 1101px;
+  width: 326px;
+  height: 454px;
+  position: absolute;
+}
+.bitgangs-admin {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-mapbck {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-admintitle {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-adminstores {
+  top: 598px;
+  left: 579px;
+  width: 762px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text002 {
+  top: 60px;
+  left: 120px;
+  color: rgba(255, 255, 255, 1);
+  width: 620px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text004 {
+  top: 19px;
+  left: 119px;
+  color: rgba(255, 255, 255, 1);
+  width: 524px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventsicon {
+  top: 23px;
+  left: 21px;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.33000001311302185) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-bxsstore {
+  top: 13px;
+  left: 13px;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+}
+.bitgangs-admincreate {
+  top: 278px;
+  left: 579px;
+  width: 762px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text006 {
+  top: 60px;
+  left: 120px;
+  color: rgba(255, 255, 255, 1);
+  width: 620px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text008 {
+  top: 19px;
+  left: 119px;
+  color: rgba(255, 255, 255, 1);
+  width: 524px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventsicon1 {
+  top: 23px;
+  left: 21px;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.33000001311302185) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-wpfcreatenew {
+  top: 12px;
+  left: 12px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.bitgangs-adminmanage {
+  top: 438px;
+  left: 579px;
+  width: 762px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text010 {
+  top: 60px;
+  left: 120px;
+  color: rgba(255, 255, 255, 1);
+  width: 620px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text012 {
+  top: 19px;
+  left: 119px;
+  color: rgba(255, 255, 255, 1);
+  width: 524px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventsicon2 {
+  top: 23px;
+  left: 21px;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.33000001311302185) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-fausers {
+  top: 17px;
+  left: 15px;
+  width: 55px;
+  height: 51px;
+  position: absolute;
+}
+.bitgangs-adminevents {
+  top: 758px;
+  left: 579px;
+  width: 762px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text014 {
+  top: 60px;
+  left: 120px;
+  color: rgba(255, 255, 255, 1);
+  width: 620px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text016 {
+  top: 19px;
+  left: 119px;
+  color: rgba(255, 255, 255, 1);
+  width: 524px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventsicon3 {
+  top: 23px;
+  left: 21px;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.33000001311302185) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-materialsymbolseventnote {
+  top: 13px;
+  left: 12px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.bitgangs-creategang {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-mapbck1 {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer1 {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header1 {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-admintitle1 {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text018 {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createname {
+  top: 361px;
+  left: 232px;
+  width: 754px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-creategangname {
+  top: 0px;
+  left: 0px;
+  width: 233px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text020 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-creategangnameinput {
+  top: 0px;
+  left: 233px;
+  color: rgba(255, 255, 255, 1);
+  width: 521px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-createinvitelist {
+  top: 338px;
+  left: 1172px;
+  width: 521px;
+  height: 508px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createinvite {
+  top: 452px;
+  left: 0px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createinvite-id {
+  top: 0px;
+  left: 0px;
+  width: 215px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text022 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 215px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createinviteinput {
+  top: 0px;
+  left: 215px;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text024 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 231px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+.bitgangs-createinvitesend {
+  top: 0px;
+  left: 248px;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-materialsymbolssend {
+  top: 6px;
+  left: 7px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+.bitgangs-creatememberslist {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 436px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.bitgangs-memberitem {
+  top: 9px;
+  left: 0px;
+  width: 507px;
+  height: 38px;
+  display: list-item;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.bitgangs-text026 {
+  top: 1px;
+  color: rgba(255, 255, 255, 1);
+  width: 466px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-deleterank {
+  top: 0px;
+  left: 466px;
+  width: 41px;
+  height: 38px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.20999999344348907);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25999999046325684) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-bitrashfill {
+  top: 6px;
+  left: 7px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+}
+.bitgangs-ranklist {
+  top: 338px;
+  left: 1172px;
+  width: 521px;
+  height: 650px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createrankslist {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 436px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createrankslist1 {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 436px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.bitgangs-rankitem {
+  top: 9px;
+  left: 0px;
+  width: 507px;
+  height: 38px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+}
+.bitgangs-text028 {
+  top: 1px;
+  color: rgba(255, 255, 255, 1);
+  width: 467px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-deleterank1 {
+  top: 0px;
+  left: 466px;
+  width: 41px;
+  height: 38px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.20999999344348907);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25999999046325684) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-bitrashfill1 {
+  top: 6px;
+  left: 7px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+}
+.bitgangs-createrankname {
+  top: 452px;
+  left: 0px;
+  width: 521px;
+  height: 198px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createrankid {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createinvite-id1 {
+  top: 0px;
+  left: 0px;
+  width: 215px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text030 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 215px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createrankidinput {
+  top: 0px;
+  left: 215px;
+  color: rgba(255, 255, 255, 1);
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-createrankname1 {
+  top: 73px;
+  left: 0px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createrankname2 {
+  top: 0px;
+  left: 0px;
+  width: 215px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text032 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 215px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createranknameinput {
+  top: 0px;
+  left: 215px;
+  color: rgba(255, 255, 255, 1);
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-createranksendbutton {
+  top: 142px;
+  left: 215px;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-materialsymbolssend1 {
+  top: 6px;
+  left: 195px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+.bitgangs-text034 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 182px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-creategangsend {
+  top: 892px;
+  left: 470px;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-materialsymbolssend2 {
+  top: 6px;
+  left: 210px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+.bitgangs-text036 {
+  top: 6px;
+  left: 15px;
+  color: rgba(255, 255, 255, 1);
+  width: 182px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-creategangdelete {
+  top: 892px;
+  left: 39rem;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-bitrashfill2 {
+  top: 12px;
+  left: 210px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+}
+.bitgangs-text038 {
+  top: 6px;
+  left: 15px;
+  color: rgba(255, 255, 255, 1);
+  width: 182px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createstash {
+  top: 438px;
+  left: 232px;
+  width: 754px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-creategangstash {
+  top: 0px;
+  left: 0px;
+  width: 233px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text040 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-creategangstashinput {
+  top: 0px;
+  left: 233px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text042 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background: transparent;
+}
+.bitgangs-creategangstashbutton {
+  top: 0px;
+  left: 458px;
+  width: 63px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-mdilocation {
+  top: 8px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.bitgangs-createlocker {
+  top: 515px;
+  left: 232px;
+  width: 754px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createganglocker {
+  top: 0px;
+  left: 0px;
+  width: 233px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text044 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createganglockerinput {
+  top: 0px;
+  left: 233px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text046 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background: transparent;
+}
+.bitgangs-createganglockerbutton {
+  top: 0px;
+  left: 458px;
+  width: 63px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-mdilocation1 {
+  top: 8px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.bitgangs-creategarage {
+  top: 592px;
+  left: 232px;
+  width: 754px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createganggarage {
+  top: 0px;
+  left: 0px;
+  width: 233px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text048 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createganggarageinput {
+  top: 0px;
+  left: 233px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text050 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 28rem;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background: transparent;
+}
+.bitgangs-createganggaragebutton {
+  top: 0px;
+  left: 458px;
+  width: 63px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-mdilocation2 {
+  top: 8px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.bitgangs-createcolor {
+  top: 669px;
+  left: 232px;
+  width: 754px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-creategangcolor {
+  top: 0px;
+  left: 0px;
+  width: 233px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text052 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-creategangcolorrgb {
+  top: 0px;
+  left: 233px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.33000001311302185);
+}
+.bitgangs-createmembers {
+  top: 746px;
+  left: 232px;
+  width: 375px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-creategangmembers {
+  top: 0px;
+  left: 0px;
+  width: 375px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text054 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 375px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createranks {
+  top: 746px;
+  left: 636px;
+  width: 350px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-creategangranks {
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text056 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 350px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-usermanagemembers {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-managegang {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-mapbck2 {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer2 {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header2 {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-admintitle2 {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text058 {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createinvitelist1 {
+  top: 286px;
+  left: 699px;
+  width: 521px;
+  height: 508px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-managegangslist {
+  top: 16rem;
+  left: 44rem;
+  width: 521px;
+  height: 51rem;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createinvite1 {
+  top: 452px;
+  left: 0px;
+  width: 521px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createinvite-id2 {
+  top: 0px;
+  left: 0px;
+  width: 215px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text060 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 215px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createinviteinput1 {
+  top: 0px;
+  left: 215px;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text062 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 231px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+.bitgangs-createinvitesend1 {
+  top: 0px;
+  left: 248px;
+  width: 58px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-materialsymbolssend3 {
+  top: 6px;
+  left: 7px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+.bitgangs-creatememberslist1 {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 436px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-managegangslist1 {
+  top: 0px;
+  left: 0px;
+  width: 521px;
+  height: 48rem;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-materialsymbolssend66{
+  top: 0px;
+  left: 2px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+}
+.bitgangs-materialsymbolssend69{
+  top: 4px;
+  left: 8px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+.bitgangs-memberitem1 {
+  top: 9px;
+  left: 0px;
+  width: 507px;
+  height: 38px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-bottom: 0.5rem;
+}
+.bitgangs-creategangupdate{
+  top: 892px;
+  left: 19rem;
+  width: 306px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text064 {
+  top: 1px;
+  color: rgba(255, 255, 255, 1);
+  width: 466px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-deleterank2 {
+  top: 0px;
+  left: 466px;
+  width: 41px;
+  height: 38px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.20999999344348907);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25999999046325684) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-bitrashfill3 {
+  top: 6px;
+  left: 7px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+}
+.bitgangs-managestores {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-mapbck3 {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer3 {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header3 {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-admintitle3 {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text066 {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createstorelist {
+  top: 397px;
+  left: 277px;
+  width: 1366px;
+  height: 580px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.bitgangs-storeitem {
+  top: 9px;
+  left: 0px;
+  width: 1326px;
+  height: 39px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-bottom: 1rem;
+}
+.bitgangs-text068 {
+  top: 1px;
+  color: rgba(255, 255, 255, 1);
+  width: 540px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text070 {
+  top: 1px;
+  left: 540px;
+  color: rgba(255, 255, 255, 1);
+  width: 745px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-deleterank3 {
+  top: 0px;
+  left: 1285px;
+  width: 41px;
+  height: 39px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.20999999344348907);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25999999046325684) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-deletestore3 {
+  top: 0px;
+  left: 1285px;
+  width: 41px;
+  height: 39px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.20999999344348907);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.25999999046325684) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-bitrashfill4 {
+  top: 6px;
+  left: 7px;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+}
+.bitgangs-createstoreloc {
+  top: 286px;
+  left: 980px;
+  width: 663px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createstoreloc1 {
+  top: 0px;
+  left: 0px;
+  width: 204.87930297851562px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text072 {
+  top: 10px;
+  color: rgba(255, 255, 255, 1);
+  width: 205px;
+  height: auto;
+  position: absolute;
+  font-size: 33px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createstorestashinput {
+  top: 0px;
+  left: 204.87930297851562px;
+  width: 23rem;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text074 {
+  top: 10px;
+  left: 0.120697021484375px;
+  color: rgba(255, 255, 255, 1);
+  width: 19rem;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+.bitgangs-createstorestashbutton {
+  top: 0px;
+  left: 19rem;
+  width: 63px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-createstoressendbutton {
+  top: 0px;
+  left: 36rem;
+  width: 63px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-mdilocation3 {
+  top: 8px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.bitgangs-createstorename {
+  top: 286px;
+  left: 277px;
+  width: 679px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createstorename1 {
+  top: 0px;
+  left: 0px;
+  width: 209.8236083984375px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text076 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createstoreinput {
+  top: 0px;
+  left: 209.8236083984375px;
+  color: rgba(255, 255, 255, 1);
+  width: 469.1763916015625px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-events {
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-mapbck4 {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer4 {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header4 {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-admintitle4 {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text078 {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventdescription {
+  top: 363px;
+  left: 277px;
+  width: 679px;
+  height: 542px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-createeventdescription {
+  top: 0px;
+  left: 0px;
+  width: 210px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text080 {
+  top: 11px;
+  color: rgba(255, 255, 255, 1);
+  width: 210px;
+  height: auto;
+  position: absolute;
+  font-size: 27px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createeventtextarea {
+  top: 0px;
+  left: 210px;
+  width: 469px;
+  height: 542px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text082 {
+  top: 10px;
+  left: 7px;
+  color: rgba(255, 255, 255, 1);
+  height: 33rem;
+  width: 28.5rem;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  resize: none;
+  background-color: transparent;
+}
+.bitgangs-createeventactivedtitle {
+  top: 446px;
+  left: 1182px;
+  width: 469px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text089 {
+  top: 11px;
+  color: rgba(255, 255, 255, 1);
+  width: 469px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createeventactived {
+  top: 502px;
+  left: 1182px;
+  width: 469px;
+  height: 45px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-text091 {
+  top: 10px;
+  left: 7px;
+  color: rgba(255, 255, 255, 1);
+  width: 462px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-createeventbutton {
+  top: 912px;
+  left: 746px;
+  width: 210px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-materialsymbolssend4 {
+  top: 9px;
+  left: 137px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+}
+.bitgangs-text093 {
+  top: 11px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 127px;
+  height: auto;
+  position: absolute;
+  font-size: 27px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventname {
+  top: 14.3rem;
+  left: 277px;
+  width: 679px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-eventnametitle {
+  top: 0px;
+  left: 0px;
+  width: 209.8236083984375px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text095 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventnameinput {
+  top: 0px;
+  left: 209.8236083984375px;
+  color: rgba(255, 255, 255, 1);
+  width: 469.1763916015625px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-eventimage {
+  top: 18.5rem;
+  left: 277px;
+  width: 679px;
+  height: 56px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-eventimagetitle {
+  top: 0px;
+  left: 0px;
+  width: 209.8236083984375px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text195 {
+  top: 6px;
+  color: rgba(255, 255, 255, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventimageinput {
+  top: 0px;
+  left: 209.8236083984375px;
+  color: rgba(255, 255, 255, 1);
+  width: 469.1763916015625px;
+  height: 56px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.33000001311302185);
+}
+.bitgangs-main {
+  gap: 10px;
+  top: -110px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.bitgangs-mapbck5 {
+  top: 7rem;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+}
+.bitgangs-maincontainer5 {
+  top: 110px;
+  left: 0px;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-header5 {
+  top: 128px;
+  left: 204px;
+  width: 1533px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-familyname {
+  top: 0px;
+  left: 28px;
+  width: 783px;
+  height: 103px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text097 {
+  top: 19px;
+  left: 5px;
+  color: rgba(255, 255, 255, 1);
+  width: 778px;
+  height: auto;
+  position: absolute;
+  font-size: 64px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-username {
+  top: 0px;
+  left: 1138px;
+  width: 356px;
+  height: 81px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-text099 {
+  top: 3rem;
+  left: 6rem;
+  color: rgba(255, 255, 255, 1);
+  width: 241px;
+  height: auto;
+  position: absolute;
+  font-size: 31px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text101 {
+  top: 52px;
+  left: 47px;
+  color: rgba(255, 255, 255, 1);
+  width: 218px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text103 {
+  top: 52px;
+  left: 268px;
+  color: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-xpround {
+  top: 27px;
+  left: 301px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.09000000357627869) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-xpround1 {
+  top: 27px;
+  left: 301px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(24, 247, 111, 0.4);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.09000000357627869) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text105 {
+  top: 11px;
+  left: 12px;
+  color: rgba(255, 255, 255, 1);
+  width: 21px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familyinfo {
+  top: 342px;
+  left: 233px;
+  width: 762px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text107 {
+  top: 66px;
+  left: 24px;
+  color: rgba(255, 255, 255, 1);
+  width: 620px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text109 {
+  top: 16px;
+  left: 24px;
+  color: rgba(255, 255, 255, 1);
+  width: 524px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familyprogress {
+  top: 511px;
+  left: 238px;
+  width: 453px;
+  height: 196px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-levelinfo {
+  top: 40px;
+  left: 30px;
+  width: 78px;
+  height: 78px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.18000000715255737) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-text111 {
+  top: 15px;
+  left: 14px;
+  color: rgba(0, 255, 163, 1);
+  width: 50px;
+  height: auto;
+  position: absolute;
+  font-size: 29px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text113 {
+  top: 43px;
+  left: 14px;
+  color: rgba(255, 255, 255, 1);
+  width: 50px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text115 {
+  top: 40px;
+  left: 124px;
+  color: rgba(255, 255, 255, 1);
+  width: 226px;
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text117 {
+  top: 72px;
+  left: 124px;
+  color: rgba(255, 255, 255, 1);
+  width: 296px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text119 {
+  top: 159px;
+  left: 124px;
+  color: rgba(255, 255, 255, 1);
+  width: 296px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: Medium;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text120 {
+  color: rgba(255, 255, 255, 1);
+}
+.bitgangs-text122 {
+  top: 159px;
+  left: 30px;
+  color: rgba(255, 255, 255, 1);
+  width: 119px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-progressbar {
+  top: 135px;
+  left: 30px;
+  width: 390px;
+  height: 15px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-frame3 {
+  top: 0px;
+  left: 0px;
+  width: 390px;
+  height: 15px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(24, 64, 50, 1);
+}
+.bitgangs-frame4 {
+  top: 0px;
+  left: 0px;
+  width: 125px;
+  height: 15px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 5px 0px rgba(0, 255, 163, 0.7900000214576721) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(0, 255, 163, 1);
+}
+.bitgangs-familyleader {
+  top: 511px;
+  left: 723px;
+  width: 272px;
+  height: 118px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-leadericon {
+  top: 27px;
+  left: 25px;
+  width: 63px;
+  height: 63px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.14000000059604645) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-claritycrownsolid {
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.bitgangs-clarity-crown-solid0 {
+  top: 4.011150360107422px;
+  left: 1.3333325386047363px;
+  width: 37.80000305175781px;
+  height: 31.355632781982422px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.bitgangs-vector {
+  top: 9.244404792785645px;
+  left: -2.9802322387695312e-8px;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+}
+.bitgangs-vector1 {
+  top: 9.255515098571777px;
+  left: 34.71110916137695px;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+}
+.bitgangs-vector2 {
+  top: -5.9604644775390625e-8px;
+  left: 2.745776653289795px;
+  width: 32px;
+  height: 31px;
+  position: absolute;
+}
+.bitgangs-text124 {
+  top: 32px;
+  left: 100px;
+  color: rgba(255, 255, 255, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text126 {
+  top: 59px;
+  left: 100px;
+  color: rgba(0, 255, 163, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 19px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familytotalmembers {
+  top: 744px;
+  left: 238px;
+  width: 453px;
+  height: 136px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-totalmembersicon {
+  top: 32px;
+  left: 31px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1899999976158142) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-fausers1 {
+  top: 17px;
+  left: 16px;
+  width: 40px;
+  height: 37px;
+  position: absolute;
+}
+.bitgangs-text128 {
+  top: 37px;
+  left: 117px;
+  color: rgba(255, 255, 255, 1);
+  width: 250px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text130 {
+  top: 61px;
+  left: 117px;
+  color: rgba(0, 255, 163, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 26px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familybalance {
+  top: 666px;
+  left: 723px;
+  width: 618px;
+  height: 214px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-familybalanceicon {
+  top: 19px;
+  left: 21px;
+  width: 69px;
+  height: 69px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.17000000178813934) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-claritybanksolid {
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.bitgangs-text132 {
+  top: 22px;
+  left: 105px;
+  color: rgba(255, 255, 255, 1);
+  width: 161px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text134 {
+  top: 127px;
+  left: 29px;
+  color: rgba(255, 255, 255, 1);
+  width: 161px;
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text136 {
+  top: 148px;
+  left: 29px;
+  color: rgba(0, 255, 163, 1);
+  width: 161px;
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text138 {
+  top: 49px;
+  left: 105px;
+  color: rgba(255, 255, 255, 1);
+  width: 473px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-depositbutton {
+  top: 131px;
+  left: 236px;
+  width: 167px;
+  height: 43px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.10000000149011612);
+  cursor: pointer;
+}
+.bitgangs-depositbutton:hover{
+  background-color: rgba(96, 240, 139, 0.53);
+}
+.bitgangs-text140 {
+  top: 11px;
+  color: rgba(255, 255, 255, 1);
+  width: 167px;
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.bitgangs-withdrawbutton {
+  top: 131px;
+  left: 411px;
+  width: 167px;
+  height: 43px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.10000000149011612);
+  cursor: pointer;
+}
+.bitgangs-withdrawbutton:hover{
+  background-color: rgba(96, 240, 139, 0.53);
+}
+.bitgangs-text142 {
+  top: 11px;
+  color: rgba(255, 255, 255, 1);
+  width: 167px;
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familyrating {
+  top: 342px;
+  left: 1027px;
+  width: 314px;
+  height: 132px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-ratingicon {
+  top: 33px;
+  left: 26px;
+  width: 67px;
+  height: 67px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.20999999344348907) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-carbonskillleveladvanced {
+  top: 13px;
+  left: 13px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+}
+.bitgangs-text144 {
+  top: 36px;
+  left: 111px;
+  color: rgba(255, 255, 255, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text146 {
+  top: 58px;
+  left: 111px;
+  color: rgba(0, 255, 163, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familymap {
+  top: 511px;
+  left: 1027px;
+  width: 314px;
+  height: 118px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+  cursor: pointer;
+}
+.bitgangs-text148 {
+  top: 30px;
+  left: 95px;
+  color: rgba(255, 255, 255, 1);
+  width: 146px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familymapicon {
+  top: 26px;
+  left: 24px;
+  width: 59px;
+  height: 59px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2199999988079071) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-gispoimap {
+  top: 10px;
+  left: 10px;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+}
+.bitgangs-text150 {
+  top: 61px;
+  left: 95px;
+  color: rgba(255, 255, 255, 1);
+  width: 199px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-familyactiveevent {
+  top: 342px;
+  left: 1373px;
+  width: 314px;
+  height: 538px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(255, 255, 255, 0.4000000059604645);
+border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.11999999731779099) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bitgangs-maze-bank-arena1 {
+  top: 0px;
+  left: -191px;
+  width: 802px;
+  height: 538px;
+  position: absolute;
+  object-fit: cover;
+}
+.bitgangs-blackbgevent {
+  top: -36px;
+  left: -21px;
+  width: 343px;
+  height: 589px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.bitgangs-activeeventtitle {
+  top: 47px;
+  left: 190px;
+  width: 134px;
+  height: 26px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6299999952316284);
+}
+.bitgangs-text152 {
+  top: 5px;
+  left: 3px;
+  color: rgba(0, 255, 163, 1);
+  width: 128px;
+  height: auto;
+  position: absolute;
+  font-size: 13px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-eventtitle {
+  top: 378px;
+  left: 0px;
+  width: 314px;
+  height: 34px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.8399999737739563);
+}
+.bitgangs-text154 {
+  top: 6px;
+  color: rgba(0, 255, 163, 1);
+  width: 314px;
+  height: auto;
+  position: absolute;
+  font-size: 19px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-text156 {
+  top: 427px;
+  left: 14px;
+  color: rgba(255, 255, 255, 1);
+  width: 285px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-balanceop {
+  top: 405px;
+  left: 747px;
+  width: 426px;
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9200000166893005);
+}
+.bitgangs-text158 {
+  top: 22px;
+  left: 30px;
+  color: rgba(255, 255, 255, 1);
+  width: 228px;
+  height: auto;
+  position: absolute;
+  font-size: 38px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-amountinput {
+  top: 115px;
+  left: 50px;
+  color: rgba(255, 255, 255, 1);
+  width: 326px;
+  height: 34px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 23px;
+  text-align: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.17000000178813934);
+}
+.bitgangs-balanceopsend {
+  top: 188px;
+  left: 253px;
+  width: 130px;
+  height: 34px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15000000596046448);
+  cursor: pointer;
+}
+.bitgangs-text160 {
+  top: 3px;
+  color: rgba(255, 255, 255, 1);
+  width: 79px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.bitgangs-materialsymbolssend5 {
+  top: 2px;
+  left: 86px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #131313b3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff95;
+  border-radius: 20px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.memberleader-memberleader {
+  width: 32px;
+  height: 32px;
+  display: none;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+  margin-left: 1rem;
+}
+.memberleader-claritycrownsolid {
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.memberleader-clarity-crown-solid0 {
+  top: 3.2089202404022217px;
+  left: 1.0666660070419312px;
+  width: 30.240001678466797px;
+  height: 25.08450698852539px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.memberleader-vector {
+  top: 7.395524024963379px;
+  left: 0px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.memberleader-vector1 {
+  top: 7.404412269592285px;
+  left: 27.76888656616211px;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+}
+.memberleader-vector2 {
+  top: 4.440892098500626e-16px;
+  left: 2.1966214179992676px;
+  width: 26px;
+  height: 25px;
+  position: absolute;
+}
+
+@media (width: 1280px) {
+  .bitgangs-header5{
+    top: 9%;
+    left: 5%;
+  }
+  .bitgangs-familyinfo{
+    top: 22%;
+    left: 2%;
+    width: 53%;
+  }
+  .bitgangs-familyprogress{
+    top: 36%;
+    left: 2%;
+  }
+  .bitgangs-familyleader{
+    top: 36%;
+    left: 39%;
+  }
+  .bitgangs-familytotalmembers{
+    top: 56%;
+    left: 2%;
+  }
+  .bitgangs-familybalance{
+    top: 49%;
+    left: 39%;
+    width: 40%;
+  }
+  .bitgangs-familyrating{
+    top: 22%;
+    left: 57%;
+    width: 29%;
+  }
+  .bitgangs-familymap{
+    top: 36%;
+    left: 62%;
+    width: 24%;
+  }
+  .bitgangs-familyactiveevent{
+    top: 22%;
+    left: 87%;
+    width: 11%;
+    height: 47%;
+  }
+  .bitgangs-balanceop{
+    top: 31%;
+    left: 36%;
+  }
+  .bitgangs-eventtitle{
+    width: 100%;
+  }
+  .bitgangs-text154{
+    width: 100%;
+    font-size: 13px;
+  }
+  .bitgangs-text156{
+    left: 6px;
+    width: 96%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .bitgangs-maincontainer5 {
+    top: 0;
+  }
+  .bitgangs-zones {
+    top: -95.3%;
+    left: 11.1%;
+  }
+  .bitgangs-admin {
+    top: -15%;
+  }
+  .bitgangs-maincontainer {
+    top: -13%;
+  }
+  .bitgangs-header {
+    top: 17%;
+    left: 0%;
+  }
+  .bitgangs-admincreate {
+    top: 26%;
+    left: 20%;
+  }
+  .bitgangs-adminmanage {
+    top: 40%;
+    left: 20%;
+  }
+  .bitgangs-adminstores {
+    top: 54%;
+    left: 20%;
+  }
+  .bitgangs-adminevents {
+    top: 68%;
+    left: 20%;
+  }
+  .bitgangs-maincontainer1 {
+    top: 0%;
+  }
+  .bitgangs-header1 {
+    top: 9%;
+    left: 0%;
+  }
+  .bitgangs-createname {
+    top: 24%;
+    left: 2%;
+  }
+  .bitgangs-createstash {
+    top: 30%;
+    left: 2%;
+  }
+  .bitgangs-createlocker {
+    top: 36%;
+    left: 2%;
+  }
+  .bitgangs-creategarage {
+    top: 42%;
+    left: 2%;
+  }
+  .bitgangs-createcolor {
+    top: 48%;
+    left: 2%;
+  }
+  .bitgangs-createmembers {
+    top: 57%;
+    left: 2%;
+  }
+  .bitgangs-createranks {
+    top: 57%;
+    left: 33%;
+  }
+  .bitgangs-createinvitelist {
+    top: 22%;
+    left: 62%;
+  }
+  .bitgangs-createinvitesend {
+    left: 75.7%;
+  }
+  .bitgangs-text024 {
+    top: 10px;
+    color: rgba(255, 255, 255, 1);
+    width: 59%;
+  }
+  .bitgangs-createinviteinput {
+    top: 0px;
+    left: 215px;
+    width: 47%;
+  }
+  .bitgangs-ranklist {
+    top: 15%;
+    left: 62%;
+  }
+  .bitgangs-createrankslist1 {
+    top: 0px;
+    left: 0px;
+    width: 87%;
+  }
+  .bitgangs-createrankidinput {
+    top: 0px;
+    left: 215px;
+    color: rgba(255, 255, 255, 1);
+    width: 46%;
+  }
+  .bitgangs-createranknameinput {
+    top: 0px;
+    left: 215px;
+    color: rgba(255, 255, 255, 1);
+    width: 46%;
+  }
+  .bitgangs-createranksendbutton {
+    top: 142px;
+    left: 28%;
+  }
+  .bitgangs-creategangsend {
+    top: 70%;
+    left: 34%;
+  }
+  .bitgangs-creategangdelete {
+    top: 70%;
+    left: 34%;
+  }
+  .bitgangs-creategangupdate {
+    top: 70%;
+    left: 8%;
+  }
+  .bitgangs-creatememberslist {
+    top: 0px;
+    left: 0px;
+    width: 87%;
+  }
+  .bitgangs-maincontainer2 {
+    top: 0%;
+  }
+  .bitgangs-header2 {
+    top: 9%;
+    left: 0%;
+  }
+  .bitgangs-createinvitelist1 {
+    top: 21%;
+    left: 30%;
+  }
+  .bitgangs-managegangslist {
+    top: 18%;
+    left: 31%;
+  }
+  .bitgangs-managegangslist1 {
+    height: 76%;
+  }
+  .bitgangs-maincontainer3 {
+    top: 0%;
+    left: 0px;
+  }
+  .bitgangs-header3 {
+    top: 9%;
+    left: 0%;
+  }
+  .bitgangs-createstoreloc {
+    top: 19%;
+    left: 49%;
+  }
+  .bitgangs-createstoreinput {
+    width: 56%;
+  }
+  .bitgangs-createstorelist {
+    top: 26%;
+    left: 2%;
+    width: 97%;
+    height: 48%;
+  }
+  .bitgangs-deleterank3 {
+    top: 0px;
+    left: 89%;
+  }
+  .bitgangs-maincontainer4 {
+    top: 0%;
+  }
+  .bitgangs-header4 {
+    top: 9%;
+    left: 0%;
+  }
+  .bitgangs-eventname {
+    top: 19%;
+    left: 3%;
+  }
+  .bitgangs-eventimage {
+    top: 26%;
+    left: 3%;
+  }
+  .bitgangs-eventdescription {
+    top: 33%;
+    left: 3%;
+  }
+  .bitgangs-createeventtextarea {
+    width: 69%;
+    height: 69%;
+  }
+  .bitgangs-text082 {
+    height: 100%;
+  }
+  .bitgangs-createeventactivedtitle {
+    top: 35%;
+    left: 60%;
+  }
+  .bitgangs-createeventactived {
+    top: 40.2%;
+    left: 60%;
+  }
+  .bitgangs-createeventbutton {
+    top: 69%;
+    left: 39.5%;
+  }
+}
+
+@media (width: 2560px) {
+  .bitgangs-zones {
+    top: -21rem;
+    left: 18rem;
+    width: 80.2%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .bitgangs-vespucci {
+    top: 318.8507080078125px;
+    left: 318.53106689453125px;
+    width: 221px;
+    height: 162px;
+    position: absolute;
+  }
+  .bitgangs-delperrobeach {
+    top: 223.9308319091797px;
+    left: 443.9316711425781px;
+    width: 161px;
+    height: 138px;
+    position: absolute;
+  }
+  .bitgangs-delperro {
+    top: 286.0966796875px;
+    left: 511.66143798828125px;
+    width: 117px;
+    height: 137px;
+    position: absolute;
+  }
+  .bitgangs-lsairport {
+    top: 253.34262084960938px;
+    left: 0px;
+    width: 337px;
+    height: 279px;
+    position: absolute;
+  }
+  .bitgangs-lapuerta {
+    top: 397.0593566894531px;
+    left: 252.8130645751953px;
+    width: 219px;
+    height: 180px;
+    position: absolute;
+  }
+  .bitgangs-mazebankarena {
+    top: 514.0380859375px;
+    left: 256.83660888671875px;
+    width: 115px;
+    height: 130px;
+    position: absolute;
+  }
+  .bitgangs-elysianisland {
+    top: 520.05419921875px;
+    left: 38.22372055053711px;
+    width: 217px;
+    height: 239px;
+    position: absolute;
+  }
+  .bitgangs-terminal {
+    top: 758.0223999023438px;
+    left: 46.941471099853516px;
+    width: 139px;
+    height: 118px;
+    position: absolute;
+  }
+  .bitgangs-cypressflats {
+    top: 698.5304565429688px;
+    left: 172.3419952392578px;
+    width: 182px;
+    height: 148px;
+    position: absolute;
+  }
+  .bitgangs-banning {
+    top: 568.1826782226562px;
+    left: 250.1306915283203px;
+    width: 46px;
+    height: 128px;
+    position: absolute;
+  }
+  .bitgangs-rancho {
+    top: 654.41259765625px;
+    left: 262.87188720703125px;
+    width: 150px;
+    height: 103px;
+    position: absolute;
+  }
+  .bitgangs-davis {
+    top: 595.589111328125px;
+    left: 295.7309265136719px;
+    width: 125px;
+    height: 120px;
+    position: absolute;
+  }
+  .bitgangs-chamberlainhills {
+    top: 561.4982299804688px;
+    left: 348.03704833984375px;
+    width: 70px;
+    height: 63px;
+    position: absolute;
+  }
+  .bitgangs-strawberry {
+    top: 553.4767456054688px;
+    left: 350.0487976074219px;
+    width: 109px;
+    height: 182px;
+    position: absolute;
+  }
+  .bitgangs-elburro {
+    top: 824.1990356445312px;
+    left: 156.2478485107422px;
+    width: 356px;
+    height: 188px;
+    position: absolute;
+  }
+  .bitgangs-palominohighlands {
+    top: 865.6429443359375px;
+    left: 164.9654998779297px;
+    width: 541px;
+    height: 324px;
+    position: absolute;
+  }
+  .bitgangs-lamesa {
+    top: 729.947509765625px;
+    left: 325.2369384765625px;
+    width: 250px;
+    height: 94px;
+    position: absolute;
+  }
+  .bitgangs-littleseoul {
+    top: 404.412353515625px;
+    left: 414.4256286621094px;
+    width: 182px;
+    height: 153px;
+    position: absolute;
+  }
+  .bitgangs-pillboxhill {
+    top: 555.4819946289062px;
+    left: 456.6728820800781px;
+    width: 127px;
+    height: 141px;
+    position: absolute;
+  }
+  .bitgangs-missionrow {
+    top: 669.787109375px;
+    left: 455.3316650390625px;
+    width: 68px;
+    height: 60px;
+    position: absolute;
+  }
+  .bitgangs-textilecity {
+    top: 675.8031005859375px;
+    left: 523.7321166992188px;
+    width: 60px;
+    height: 57px;
+    position: absolute;
+  }
+  .bitgangs-murrietaheights {
+    top: 807.4876708984375px;
+    left: 411.74322509765625px;
+    width: 114px;
+    height: 119px;
+    position: absolute;
+  }
+  .bitgangs-mirrorpark {
+    top: 757.35400390625px;
+    left: 501.60247802734375px;
+    width: 117px;
+    height: 140px;
+    position: absolute;
+  }
+  .bitgangs-eastvinewood {
+    top: 733.2898559570312px;
+    left: 563.9675903320312px;
+    width: 113px;
+    height: 126px;
+    position: absolute;
+  }
+  .bitgangs-vinewoodracetrack {
+    top: 777.407470703125px;
+    left: 638.4031372070312px;
+    width: 129px;
+    height: 132px;
+    position: absolute;
+  }
+  .bitgangs-tataviammountains {
+    top: 846.9263916015625px;
+    left: 498.24951171875px;
+    width: 497px;
+    height: 360px;
+    position: absolute;
+  }
+  .bitgangs-alta {
+    top: 587.5676879882812px;
+    left: 576.0381469726562px;
+    width: 89px;
+    height: 158px;
+    position: absolute;
+  }
+  .bitgangs-hawick {
+    top: 614.97412109375px;
+    left: 614.9324951171875px;
+    width: 78px;
+    height: 152px;
+    position: absolute;
+  }
+  .bitgangs-downtownvinewood {
+    top: 620.32177734375px;
+    left: 658.52099609375px;
+    width: 144px;
+    height: 155px;
+    position: absolute;
+  }
+  .bitgangs-burton {
+    top: 479.27880859375px;
+    left: 596.8265380859375px;
+    width: 89px;
+    height: 136px;
+    position: absolute;
+  }
+  .bitgangs-rockfordhills {
+    top: 349.5993957519531px;
+    left: 560.6146850585938px;
+    width: 176px;
+    height: 243px;
+    position: absolute;
+  }
+  .bitgangs-westvinewood {
+    top: 453.209228515625px;
+    left: 665.226806640625px;
+    width: 117px;
+    height: 189px;
+    position: absolute;
+  }
+  .bitgangs-morningwood {
+    top: 320.8560791015625px;
+    left: 601.5206909179688px;
+    width: 64px;
+    height: 60px;
+    position: absolute;
+  }
+  .bitgangs-richman {
+    top: 253.34262084960938px;
+    left: 648.4620361328125px;
+    width: 141px;
+    height: 207px;
+    position: absolute;
+  }
+  .bitgangs-pacificbluffs {
+    top: 35.42792510986328px;
+    left: 565.3087158203125px;
+    width: 219px;
+    height: 295px;
+    position: absolute;
+  }
+  .bitgangs-banhamcanyon {
+    top: 20.721927642822266px;
+    left: 720.885986328125px;
+    width: 250px;
+    height: 272px;
+    position: absolute;
+  }
+  .bitgangs-chumash {
+    top: 0px;
+    left: 829.5217895507812px;
+    width: 140px;
+    height: 65px;
+    position: absolute;
+  }
+  .bitgangs-vinewoodhills {
+    top: 249.33193969726562px;
+    left: 660.53271484375px;
+    width: 446px;
+    height: 696px;
+    position: absolute;
+  }
+  .bitgangs-tongvahills {
+    top: 24.064208984375px;
+    left: 818.1217041015625px;
+    width: 333px;
+    height: 331px;
+    position: absolute;
+  }
+  .bitgangs-lagozancudo {
+    top: 92.91458892822266px;
+    left: 1095.746826171875px;
+    width: 175px;
+    height: 292px;
+    position: absolute;
+  }
+  .bitgangs-fortzancudo {
+    top: 22.058889389038086px;
+    left: 1197.6766357421875px;
+    width: 189px;
+    height: 335px;
+    position: absolute;
+  }
+  .bitgangs-northchumash {
+    top: 132.35311889648438px;
+    left: 1376.7244873046875px;
+    width: 190px;
+    height: 162px;
+    position: absolute;
+  }
+  .bitgangs-mountjosiah {
+    top: 161.09649658203125px;
+    left: 1198.347412109375px;
+    width: 345px;
+    height: 501px;
+    position: absolute;
+  }
+  .bitgangs-zancudoriver {
+    top: 351.6047668457031px;
+    left: 1162.805908203125px;
+    width: 217px;
+    height: 354px;
+    position: absolute;
+  }
+  .bitgangs-greatchaparral {
+    top: 366.31072998046875px;
+    left: 1003.2049560546875px;
+    width: 246px;
+    height: 231px;
+    position: absolute;
+  }
+  .bitgangs-grandsenoradesert {
+    top: 567.5140991210938px;
+    left: 912.67529296875px;
+    width: 479px;
+    height: 523px;
+    position: absolute;
+  }
+  .bitgangs-palmertaylorpowerstation {
+    top: 1126.338623046875px;
+    left: 904.628173828125px;
+    width: 117px;
+    height: 67px;
+    position: absolute;
+  }
+  .bitgangs-ronalternateswindfarm {
+    top: 963.9050903320312px;
+    left: 904.628173828125px;
+    width: 332px;
+    height: 300px;
+    position: absolute;
+  }
+  .bitgangs-davisquartz {
+    top: 1104.2796630859375px;
+    left: 1170.1826171875px;
+    width: 121px;
+    height: 172px;
+    position: absolute;
+  }
+  .bitgangs-sanchianskimountainrange {
+    top: 1131.6861572265625px;
+    left: 1205.723876953125px;
+    width: 469px;
+    height: 254px;
+    position: absolute;
+  }
+  .bitgangs-sandyshores {
+    top: 872.995849609375px;
+    left: 1217.1236572265625px;
+    width: 233px;
+    height: 310px;
+    position: absolute;
+  }
+  .bitgangs-grapeseed {
+    top: 943.8516235351562px;
+    left: 1393.4896240234375px;
+    width: 289px;
+    height: 245px;
+    position: absolute;
+  }
+  .bitgangs-mountgordo {
+    top: 929.145751953125px;
+    left: 1636.243408203125px;
+    width: 339px;
+    height: 360px;
+    position: absolute;
+  }
+  .bitgangs-chilliadmountainstatewilderness {
+    top: 272.0592346191406px;
+    left: 1507.489990234375px;
+    width: 218px;
+    height: 261px;
+    position: absolute;
+  }
+  .bitgangs-paletoforest {
+    top: 413.77069091796875px;
+    left: 1677.149658203125px;
+    width: 205px;
+    height: 155px;
+    position: absolute;
+  }
+  .bitgangs-paletobay {
+    top: 502.0060119628906px;
+    left: 1821.32666015625px;
+    width: 248px;
+    height: 272px;
+    position: absolute;
+  }
+  .bitgangs-procopiobeach {
+    top: 772.0599975585938px;
+    left: 1913.868408203125px;
+    width: 46px;
+    height: 162px;
+    position: absolute;
+  }
+  .bitgangs-mountchilliad {
+    top: 524.7333984375px;
+    left: 1476.642822265625px;
+    width: 437px;
+    height: 607px;
+    position: absolute;
+  }
+}
+
+@media (width: 3840px) {
+  .bitgangs-zones {
+    top: 0.7rem;
+    left: 26.4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .bitgangs-vespucci {
+    top: 476.62115478515625px;
+    left: 476.143310546875px;
+    width: 330px;
+    height: 243px;
+    position: absolute;
+  }
+  .bitgangs-delperrobeach {
+    top: 334.7340087890625px;
+    left: 663.5933837890625px;
+    width: 241px;
+    height: 206px;
+    position: absolute;
+  }
+  .bitgangs-delperro {
+    top: 427.66009521484375px;
+    left: 764.8364868164062px;
+    width: 174px;
+    height: 205px;
+    position: absolute;
+  }
+  .bitgangs-lsairport {
+    top: 378.6990051269531px;
+    left: 2.1119433313288027e-7px;
+    width: 504px;
+    height: 418px;
+    position: absolute;
+  }
+  .bitgangs-lapuerta {
+    top: 593.5281982421875px;
+    left: 377.90740966796875px;
+    width: 327px;
+    height: 269px;
+    position: absolute;
+  }
+  .bitgangs-mazebankarena {
+    top: 768.3890991210938px;
+    left: 383.9218444824219px;
+    width: 171px;
+    height: 194px;
+    position: absolute;
+  }
+  .bitgangs-elysianisland {
+    top: 777.382080078125px;
+    left: 57.1371955871582px;
+    width: 325px;
+    height: 358px;
+    position: absolute;
+  }
+  .bitgangs-terminal {
+    top: 1133.0992431640625px;
+    left: 70.16856384277344px;
+    width: 209px;
+    height: 177px;
+    position: absolute;
+  }
+  .bitgangs-cypressflats {
+    top: 1044.170166015625px;
+    left: 257.61846923828125px;
+    width: 273px;
+    height: 222px;
+    position: absolute;
+  }
+  .bitgangs-banning {
+    top: 849.3250122070312px;
+    left: 373.89776611328125px;
+    width: 68px;
+    height: 191px;
+    position: absolute;
+  }
+  .bitgangs-rancho {
+    top: 978.2222900390625px;
+    left: 392.9434509277344px;
+    width: 224px;
+    height: 154px;
+    position: absolute;
+  }
+  .bitgangs-davis {
+    top: 890.2923583984375px;
+    left: 442.06146240234375px;
+    width: 186px;
+    height: 179px;
+    position: absolute;
+  }
+  .bitgangs-chamberlainhills {
+    top: 839.3330078125px;
+    left: 520.2491455078125px;
+    width: 104px;
+    height: 94px;
+    position: absolute;
+  }
+  .bitgangs-strawberry {
+    top: 827.3424072265625px;
+    left: 523.25634765625px;
+    width: 162px;
+    height: 273px;
+    position: absolute;
+  }
+  .bitgangs-elburro {
+    top: 1232.020751953125px;
+    left: 233.56082153320312px;
+    width: 532px;
+    height: 281px;
+    position: absolute;
+  }
+  .bitgangs-palominohighlands {
+    top: 1293.971435546875px;
+    left: 246.59205627441406px;
+    width: 809px;
+    height: 485px;
+    position: absolute;
+  }
+  .bitgangs-lamesa {
+    top: 1091.132568359375px;
+    left: 486.1673278808594px;
+    width: 374px;
+    height: 141px;
+    position: absolute;
+  }
+  .bitgangs-littleseoul {
+    top: 604.51953125px;
+    left: 619.4874267578125px;
+    width: 273px;
+    height: 229px;
+    position: absolute;
+  }
+  .bitgangs-pillboxhill {
+    top: 830.3399047851562px;
+    left: 682.6390380859375px;
+    width: 189px;
+    height: 211px;
+    position: absolute;
+  }
+  .bitgangs-missionrow {
+    top: 1001.2042846679688px;
+    left: 680.6341552734375px;
+    width: 102px;
+    height: 90px;
+    position: absolute;
+  }
+  .bitgangs-textilecity {
+    top: 1010.197021484375px;
+    left: 782.8798217773438px;
+    width: 89px;
+    height: 86px;
+    position: absolute;
+  }
+  .bitgangs-murrietaheights {
+    top: 1207.0404052734375px;
+    left: 615.477783203125px;
+    width: 170px;
+    height: 178px;
+    position: absolute;
+  }
+  .bitgangs-mirrorpark {
+    top: 1132.10009765625px;
+    left: 749.8002319335938px;
+    width: 174px;
+    height: 210px;
+    position: absolute;
+  }
+  .bitgangs-eastvinewood {
+    top: 1096.1287841796875px;
+    left: 843.0242309570312px;
+    width: 168px;
+    height: 189px;
+    position: absolute;
+  }
+  .bitgangs-vinewoodracetrack {
+    top: 1162.0762939453125px;
+    left: 954.2911987304688px;
+    width: 193px;
+    height: 198px;
+    position: absolute;
+  }
+  .bitgangs-tataviammountains {
+    top: 1265.9937744140625px;
+    left: 744.7882080078125px;
+    width: 743px;
+    height: 538px;
+    position: absolute;
+  }
+  .bitgangs-alta {
+    top: 878.3018798828125px;
+    left: 861.0673828125px;
+    width: 133px;
+    height: 236px;
+    position: absolute;
+  }
+  .bitgangs-hawick {
+    top: 919.269287109375px;
+    left: 919.20703125px;
+    width: 116px;
+    height: 228px;
+    position: absolute;
+  }
+  .bitgangs-downtownvinewood {
+    top: 927.2630004882812px;
+    left: 984.3635864257812px;
+    width: 216px;
+    height: 232px;
+    position: absolute;
+  }
+  .bitgangs-burton {
+    top: 716.4306030273438px;
+    left: 892.14208984375px;
+    width: 133px;
+    height: 203px;
+    position: absolute;
+  }
+  .bitgangs-rockfordhills {
+    top: 522.5845947265625px;
+    left: 838.0122680664062px;
+    width: 263px;
+    height: 363px;
+    position: absolute;
+  }
+  .bitgangs-westvinewood {
+    top: 677.4615478515625px;
+    left: 994.387451171875px;
+    width: 174px;
+    height: 283px;
+    position: absolute;
+  }
+  .bitgangs-morningwood {
+    top: 479.6188049316406px;
+    left: 899.158935546875px;
+    width: 95px;
+    height: 90px;
+    position: absolute;
+  }
+  .bitgangs-richman {
+    top: 378.6990051269531px;
+    left: 969.3273315429688px;
+    width: 211px;
+    height: 309px;
+    position: absolute;
+  }
+  .bitgangs-pacificbluffs {
+    top: 52.9580078125px;
+    left: 845.0289306640625px;
+    width: 328px;
+    height: 442px;
+    position: absolute;
+  }
+  .bitgangs-banhamcanyon {
+    top: 30.9753475189209px;
+    left: 1077.58740234375px;
+    width: 374px;
+    height: 407px;
+    position: absolute;
+  }
+  .bitgangs-chumash {
+    top: 0.000014150018614600413px;
+    left: 1239.9771728515625px;
+    width: 210px;
+    height: 97px;
+    position: absolute;
+  }
+  .bitgangs-vinewoodhills {
+    top: 372.7038269042969px;
+    left: 987.3707275390625px;
+    width: 667px;
+    height: 1040px;
+    position: absolute;
+  }
+  .bitgangs-tongvahills {
+    top: 35.97142791748047px;
+    left: 1222.936279296875px;
+    width: 498px;
+    height: 495px;
+    position: absolute;
+  }
+  .bitgangs-lagozancudo {
+    top: 138.88963317871094px;
+    left: 1637.9329833984375px;
+    width: 262px;
+    height: 437px;
+    position: absolute;
+  }
+  .bitgangs-fortzancudo {
+    top: 32.97386932373047px;
+    left: 1790.298583984375px;
+    width: 283px;
+    height: 501px;
+    position: absolute;
+  }
+  .bitgangs-northchumash {
+    top: 197.84274291992188px;
+    left: 2057.941162109375px;
+    width: 284px;
+    height: 242px;
+    position: absolute;
+  }
+  .bitgangs-mountjosiah {
+    top: 240.80862426757812px;
+    left: 1791.30126953125px;
+    width: 516px;
+    height: 749px;
+    position: absolute;
+  }
+  .bitgangs-zancudoriver {
+    top: 525.5822143554688px;
+    left: 1738.173583984375px;
+    width: 324px;
+    height: 530px;
+    position: absolute;
+  }
+  .bitgangs-greatchaparral {
+    top: 547.5648193359375px;
+    left: 1499.6004638671875px;
+    width: 368px;
+    height: 345px;
+    position: absolute;
+  }
+  .bitgangs-grandsenoradesert {
+    top: 848.3255615234375px;
+    left: 1364.27587890625px;
+    width: 716px;
+    height: 781px;
+    position: absolute;
+  }
+  .bitgangs-palmertaylorpowerstation {
+    top: 1683.661865234375px;
+    left: 1352.2469482421875px;
+    width: 175px;
+    height: 100px;
+    position: absolute;
+  }
+  .bitgangs-ronalternateswindfarm {
+    top: 1440.854736328125px;
+    left: 1352.2469482421875px;
+    width: 496px;
+    height: 449px;
+    position: absolute;
+  }
+  .bitgangs-davisquartz {
+    top: 1650.68798828125px;
+    left: 1749.2003173828125px;
+    width: 180px;
+    height: 257px;
+    position: absolute;
+  }
+  .bitgangs-sanchianskimountainrange {
+    top: 1691.6553955078125px;
+    left: 1802.3277587890625px;
+    width: 701px;
+    height: 380px;
+    position: absolute;
+  }
+  .bitgangs-sandyshores {
+    top: 1304.962646484375px;
+    left: 1819.3682861328125px;
+    width: 348px;
+    height: 464px;
+    position: absolute;
+  }
+  .bitgangs-grapeseed {
+    top: 1410.8785400390625px;
+    left: 2083.001708984375px;
+    width: 432px;
+    height: 366px;
+    position: absolute;
+  }
+  .bitgangs-mountgordo {
+    top: 1388.8961181640625px;
+    left: 2445.87255859375px;
+    width: 506px;
+    height: 538px;
+    position: absolute;
+  }
+  .bitgangs-chilliadmountainstatewilderness {
+    top: 406.6767883300781px;
+    left: 2253.41064453125px;
+    width: 326px;
+    height: 391px;
+    position: absolute;
+  }
+  .bitgangs-paletoforest {
+    top: 618.5084228515625px;
+    left: 2507.01953125px;
+    width: 306px;
+    height: 232px;
+    position: absolute;
+  }
+  .bitgangs-paletobay {
+    top: 750.4034423828125px;
+    left: 2722.53662109375px;
+    width: 371px;
+    height: 407px;
+    position: absolute;
+  }
+  .bitgangs-procopiobeach {
+    top: 1154.082763671875px;
+    left: 2860.869140625px;
+    width: 69px;
+    height: 243px;
+    position: absolute;
+  }
+  .bitgangs-mountchilliad {
+    top: 784.3765869140625px;
+    left: 2207.300048828125px;
+    width: 654px;
+    height: 907px;
+    position: absolute;
+  }
+}
+
+#tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.753);
+  border: 1px solid #12d88c;
+  color: #12d88c;
+  padding: 10px;
+  font-size: 14px;
+  z-index:14;
+  
+  h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.bitgangs-options{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.bitgangs-options-main{
+  width: 10vw;
+  height: auto;
+  position: relative;
+  margin-left: 0rem;
+}
+
+.options-handcuff {
+  cursor:pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  height: 3vh;
+  width: 9vw;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  font-size: 1vw;
+  font-family: 'Inter';
+  justify-content: center;
+  margin-bottom:0.5rem;
+}
+
+.options-handcuff span{
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.options-handcuff:hover {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.10);
+}
+
+.options-vehicle {
+  cursor:pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  height: 3vh;
+  width: 9vw;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  font-size: 1vw;
+  font-family: 'Inter';
+  justify-content: center;
+  margin-bottom:0.5rem;
+}
+
+.options-vehicle span{
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.options-vehicle:hover {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.10);
+}
+
+.options-bag {
+  cursor:pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  height: 3vh;
+  width: 9vw;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  font-size: 1vw;
+  font-family: 'Inter';
+  justify-content: center;
+  margin-bottom:0.5rem;
+}
+
+.options-bag span{
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.options-bag:hover {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.10);
+}
+
+.options-escort {
+  cursor:pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  height: 3vh;
+  width: 9vw;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  font-size: 1vw;
+  font-family: 'Inter';
+  justify-content: center;
+  margin-bottom:0.5rem;
+}
+
+.options-escort span{
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.options-escort:hover {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.10);
+}
+
+.options-search {
+  cursor:pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  height: 3vh;
+  width: 9vw;
+  color: white;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  font-size: 1vw;
+  font-family: 'Inter';
+  justify-content: center;
+  margin-bottom:0.5rem;
+}
+
+.options-search span{
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.options-search:hover {
+  background: linear-gradient(180deg, rgba(0, 255, 163, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.10);
+}
+
+.bitgangs-bag {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

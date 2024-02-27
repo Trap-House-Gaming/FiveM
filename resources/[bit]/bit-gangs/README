@@ -1,0 +1,42 @@
+$$$$$$$\  $$$$$$\ $$$$$$$$\        $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\   $$$$$$\  
+$$  __$$\ \_$$  _|\__$$  __|      $$  __$$\ $$  __$$\ $$$\  $$ |$$  __$$\ $$  __$$\ 
+$$ |  $$ |  $$ |     $$ |         $$ /  \__|$$ /  $$ |$$$$\ $$ |$$ /  \__|$$ /  \__|
+$$$$$$$\ |  $$ |     $$ |         $$ |$$$$\ $$$$$$$$ |$$ $$\$$ |$$ |$$$$\ \$$$$$$\  
+$$  __$$\   $$ |     $$ |         $$ |\_$$ |$$  __$$ |$$ \$$$$ |$$ |\_$$ | \____$$\ 
+$$ |  $$ |  $$ |     $$ |         $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |  $$ |$$\   $$ |
+$$$$$$$  |$$$$$$\    $$ |         \$$$$$$  |$$ |  $$ |$$ | \$$ |\$$$$$$  |\$$$$$$  |
+\_______/ \______|   \__|          \______/ \__|  \__|\__|  \__| \______/  \______/
+
+Store:
+https://bit.tebex.io/
+
+Documentation:
+https://docs.bit-code.io/
+
+Discord:
+https://discord.com/invite/qApkS3ypxs
+
+
+--Triggers--
+
+Giving gang points
+TriggerClientEvent("bit-gangs:givePoints", playerID, action, points)
+
+Start murder contract
+TriggerClientEvent("bit-gangs:startMurderContract", playerID)
+
+Start smuggling
+TriggerClientEvent("bit-gangs:startSmuggling", playerID)
+
+Start transporting illegal persons
+TriggerClientEvent("bit-gangs:startIllegalPersons", playerID)
+
+
+--Export--
+Recover a user's gang
+exports['bit-gangs']:hasGang(playerID) -- return hasgang, gangname
+
+
+--Items--
+['spray'] 		 	     = {['name'] = 'spray', 					['label'] = 'spray', 			['weight'] = 10, 		['type'] = 'item', 		['image'] = 'spray.png', 		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Spray'},
+['spray_remover'] 	     = {['name'] = 'spray_remover',				['label'] = 'spray_remover',    ['weight'] = 10, 		['type'] = 'item', 		['image'] = 'spray_remover.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Spray Remover'},

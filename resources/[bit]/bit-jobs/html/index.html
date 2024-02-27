@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>BIT-JOBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        overflow:hidden;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;
+        -khtml-user-select: none; 
+          -moz-user-select: none; 
+            -ms-user-select: none; 
+                user-select: none; 
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="body">
+    <audio id="audio" src="assets/click.mp3"></audio>
+    <audio id="pickaxe" src="./assets/sounds/pickaxe.mp3"></audio>
+    <audio id="shavel" src="./assets/sounds/shavel.mp3"></audio>
+    <audio id="axe" src="./assets/sounds/axe.mp3"></audio>
+    <audio id="woodlogs" src="./assets/sounds/woodlogs.mp3"></audio>
+    <div>
+      <link href="./jobs.css" rel="stylesheet" />
+
+      <div class="jobs-container">
+        <div class="jobs-jobs">
+          <div class="jobs-bck"><div class="jobs-bck1"></div></div>
+          <div class="jobs-alert">
+            <span class="jobs-text">
+            </span>
+          </div>
+          <div class="jobs-backbutton">
+            <div class="jobs-frame1"></div>
+            <span class="jobs-text02"></span>
+          </div>
+          <div class="jobs-scoreboard">
+            <span class="jobs-text16"></span>
+            <img
+              src="assets/miner.png"
+              alt="scoreimg1814"
+              class="jobs-scoreimg"
+            />
+              <div class="jobs-scoreboardlist">
+                <span class="jobs-text10">NAME</span>
+                <span class="jobs-text12"></span>
+                <span class="jobs-text14"></span>
+            </div>
+          </div>
+          <div class="jobs-howitworks">
+            <img
+              src="assets/road1391-oq6d-1100h.png"
+              alt="road1391"
+              class="jobs-road"
+            />
+            <img
+              src="assets/miner.png"
+              alt="imagevector1393"
+              class="jobs-imagevector"
+            />
+            <span class="jobs-text18"></span>
+            <div class="jobs-line1">
+              <span class="jobs-text20">
+              </span>
+              <span class="jobs-text22">1.</span>
+              <img
+                src="assets/line11396-9usw.svg"
+                alt="Line11396"
+                class="jobs-line11"
+              />
+            </div>
+            <div class="jobs-line2">
+              <span class="jobs-text24">2.</span>
+              <img
+                src="assets/line21398-nbh.svg"
+                alt="Line21398"
+                class="jobs-line21"
+              />
+              <span class="jobs-text26">
+              </span>
+            </div>
+            <div class="jobs-line3">
+              <span class="jobs-text28">3.</span>
+              <img
+                src="assets/line31310-uxcb.svg"
+                alt="Line31310"
+                class="jobs-line31"
+              />
+              <span class="jobs-text30">
+              </span>
+            </div>
+            <div class="jobs-line4">
+              <span class="jobs-text32">4.</span>
+              <img
+                src="assets/line41310-ntuw.svg"
+                alt="Line41310"
+                class="jobs-line41"
+              />
+              <span class="jobs-text34"></span>
+            </div>
+            <div class="jobs-line5">
+              <span class="jobs-text36">5.</span>
+              <img
+                src="assets/line51310-eqps.svg"
+                alt="Line51310"
+                class="jobs-line51"
+              />
+              <span class="jobs-text38">
+              </span>
+            </div>
+          </div>
+          <div class="jobs-jobselection">
+              <div class="progressbar-progressbar">
+                <div class="progressbar-progress">
+                  <div class="progressbar-progressamount"></div>
+                </div>
+                <span class="progressbar-text"><span>LEVEL</span></span>
+                <span class="progressbar-text2"><span>12</span></span>
+              </div>
+            <div class="jobs-menu">
+              <div class="jobs-item">
+                <span class="jobs-itemtitle"></span>
+              </div>
+            </div>
+            <div class="jobs-jobdescription">
+              <span class="jobs-text58"></span>
+              <span class="jobs-text60">
+              </span>
+              <button class="jobs-workbutton">
+                <span class="jobs-text62"></span>
+              </button>
+              <img
+                src="assets/miner.png"
+                alt="imagedescription478"
+                class="jobs-imagedescription"
+              />
+            </div>
+            <button class="jobs-hiwbutton">
+              <span class="jobs-text64"></span>
+            </button>
+            <button class="jobs-leaderbutton">
+              <span class="jobs-text66"></span>
+            </button>
+            <div class="jobs-requires">
+              <span class="jobs-text68"></span>
+              <img
+                src="assets/separator480-uqy-200h.png"
+                alt="separator480"
+                class="jobs-separator"
+              />
+              <span class="jobs-text70"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>

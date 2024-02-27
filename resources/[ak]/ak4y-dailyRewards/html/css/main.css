@@ -1,0 +1,686 @@
+@font-face {
+    font-family: "Acrom";
+    src: url("../font/Acrom-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TT Norms";
+    src: url("../font/TTNorms-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url("../font/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url("../font/Rubik-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Inter Thin";
+    src: url("../font/Inter-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal";
+    src: url("../font/ZabalDEMO-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal Bold";
+    src: url("../font/ZabalDEMO-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../font/Oswald-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url("../font/Oswald-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url("../font/Oswald-Bold.ttf") format("opentype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dailyRewardsGeneral {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("/html/images/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+}
+
+.leftSideGeneral {
+    /* background-color: red; */
+    width: 31%;
+    height: 100%;
+}
+
+.leftSideFirstTitle {
+    color: #fdff8e;
+    margin-top: 20%;
+    padding-left: 15%;
+    font-family: Oswald;
+    font-size: 85px;
+}
+
+.leftSideSecondTitle {
+    margin-top: -4%;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 80px;
+    padding-left: 15%;
+}
+
+.leftRectangle {
+    margin-top: 1%;
+    background: rgba(255, 255, 255, 0.22);
+    height: 2px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.leftDescription {
+    padding-left: 15%;
+    margin-top: 4%;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.46);
+}
+
+.leftImageArea {
+    margin-top: 9.5%;
+    width: 120%;
+    height: 70%;
+}
+
+.leftImageArea img {
+    width: 100%;
+    height: 100%;
+}
+
+.rightSideMain {
+    margin-top: 3.5%;
+    margin-left: 7%;
+    width: 58%;
+    height: 60rem;
+}
+
+.rightSideTopArea {
+    display: flex;
+    height: 4%;
+    width: 100%;
+}
+
+#clockIcon {
+    text-align: center;
+    color: #f5d358;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.upperTextRight {
+    font-family: Oswald;
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 13px;
+    margin-top: 3%;
+}
+.upperTime {
+    font-family: Oswald;
+    color: #ffffff;
+}
+
+.rightTextSection {
+    height: 100%;
+    width: 92%;
+    margin-left: 8%;
+}
+
+.rightInfoTextArea {
+    height: 120%;
+    width: 16%;
+    min-width: 16%;
+    display: flex;
+}
+
+.topRightRectangle {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 80%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 12px;
+}
+
+.rightSideGeneral {
+    padding: 2%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    height: 97%;
+}
+
+.inItemTop {
+    position: relative;
+    margin-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    font-family: Oswald;
+}
+
+.dayCount {
+    font-size: 25px;
+    padding-right: 2%;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.dayText {
+    font-size: 19px;
+    margin-top: 3%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.inItemImageArea {
+    position: relative;
+    margin-top: -5%;
+    height: 55%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.inItemImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.inItemBottom {
+    position: relative;
+    font-family: "Oswald";
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.itemCount {
+    color: #ffca43;
+    font-size: 20px;
+}
+
+.itemName {
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.rewardItem {
+    position: relative;
+    overflow: hidden;
+    width: 151.17px;
+    height: 151.16px;
+    background: linear-gradient(180deg, rgba(255, 245, 0, 0.38) 0%, rgba(255, 255, 255, 0.46) 108.75%);
+    border: 2px solid rgba(152, 152, 152, 0.42);
+    box-shadow: 0px 0px 12.2152px rgba(0, 0, 0, 0.24);
+    border-radius: 14.0945px;
+}
+
+.rewardItem.canTake {
+    cursor: pointer;
+    overflow: hidden;
+    width: 151.17px;
+    height: 151.16px;
+    background: linear-gradient(180deg, rgba(255, 245, 0, 0.38) 0%, rgba(255, 255, 255, 0.46) 108.75%);
+    border: 2px solid #fff500;
+    box-shadow: 0px 0px 19.7323px rgba(255, 245, 0, 0.35);
+    border-radius: 14.0945px;
+}
+
+.rewardItem.canTakeButNoTime {
+    overflow: hidden;
+    width: 151.17px;
+    height: 151.16px;
+    background: linear-gradient(180deg, rgba(255, 245, 0, 0.38) 0%, rgba(255, 255, 255, 0.46) 108.75%);
+    border: 2px solid #fff500;
+    box-shadow: 0px 0px 19.7323px rgba(255, 245, 0, 0.35);
+    border-radius: 14.0945px;
+}
+
+.rewardItem.collected {
+    overflow: hidden;
+    width: 151.17px;
+    height: 151.16px;
+    background: linear-gradient(180deg, rgba(255, 245, 0, 0.38) 0%, rgba(255, 255, 255, 0.46) 108.75%);
+    border: 2px solid #faf4537e;
+    box-shadow: 0px 0px 19.7323px rgba(255, 245, 0, 0.35);
+    border-radius: 14.0945px;
+}
+
+*::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    height: 4px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 6px;
+    border-radius: 4px;
+    background: #f8ca48;
+}
+
+.cannotTakeImageArea {
+    z-index: 987;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    height: 30%;
+    width: 40%;
+}
+
+.cannotTakeImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cannotTakeBG {
+    z-index: 9;
+    position: absolute;
+    backdrop-filter: blur(1px);
+
+    width: 100%;
+    height: 100%;
+}
+
+#lockIcon {
+    margin-left: 19%;
+    margin-top: 10%;
+    color: white;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+.canTakeButTimeArea {
+    text-align: center;
+    color: white;
+    font-family: Oswald;
+    font-size: 21px;
+    text-shadow: 2px 2px 5px #000000;
+    position: absolute;
+    width: 100%;
+    z-index: 987;
+    margin-top: 32%;
+    height: 30%;
+}
+
+.tomorrowReward {
+    text-align: left;
+    margin-left: -5%;
+    color: white;
+    font-family: Oswald;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px #000000;
+    margin-top: 8%;
+}
+
+.collectedText {
+    text-align: center;
+    color: white;
+    font-family: Oswald;
+    font-size: 21px;
+    text-shadow: 0px 0px 5px #ffffff3b;
+    position: absolute;
+    width: 100%;
+    z-index: 987;
+    margin-top: 42%;
+    height: 30%;
+}
+
+.collectedPrizeSection {
+    z-index: 9879;
+    background: linear-gradient(180deg, #eae234 0%, #6c690f 108.75%);
+    border: 2px solid #eae234;
+    box-shadow: 0px 0px 91px rgba(255, 245, 0, 0.35);
+    border-radius: 19.3966px;
+    position: absolute;
+    height: 25%;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5%;
+    margin-top: -10%;
+}
+
+.prizeImageSection {
+    height: 65%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+.prizeImageSection img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.prizeCollectedText {
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 37px;
+    text-shadow: 0px 0px 25px #ffffff;
+}
+
+.prizeGeneral {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9876;
+}
+@media screen and (max-width: 1600px) and (max-height: 1200px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 65px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 65px;
+    }
+
+    .leftImageArea {
+        margin-top: 71.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 1024px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 65px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 65px;
+    }
+
+    .leftImageArea {
+        margin-top: 35.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 65px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 65px;
+    }
+
+    .leftImageArea {
+        margin-top: 10.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 55px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 55px;
+    }
+
+    .leftImageArea {
+        margin-top: 31.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 9px;
+    }
+    .upperTime {
+        font-size: 12px;
+    }
+}
+
+@media screen and (width: 1400px) and (height: 1050px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 55px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 55px;
+    }
+
+    .leftImageArea {
+        margin-top: 65.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 9px;
+    }
+    .upperTime {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .leftDescription {
+        font-size: 13px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 55px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 55px;
+    }
+
+    .leftImageArea {
+        margin-top: 5.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 9px;
+    }
+    .upperTime {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+    .leftDescription {
+        font-size: 12px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 50px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 50px;
+    }
+
+    .leftImageArea {
+        margin-top: 82.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 8px;
+    }
+
+    .upperTime {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 2460px) and (min-height: 1440px) {
+    .leftDescription {
+        font-size: 18px;
+    }
+    .leftSideFirstTitle {
+        font-size: 90px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 90px;
+    }
+    .leftImageArea {
+        margin-top: 23.5%;
+        width: 120%;
+        height: 70%;
+    }
+    .upperTextRight {
+        font-size: 17px;
+    }
+
+    .upperTime {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 3440px) and (min-height: 1440px) {
+    .leftDescription {
+        font-size: 20px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 110px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 110px;
+    }
+    .leftImageArea {
+        margin-top: 0%;
+    }
+    .upperTextRight {
+        font-size: 25px;
+    }
+
+    .upperTime {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 3840px) and (min-height: 2160px) {
+    .leftDescription {
+        font-size: 30px;
+    }
+
+    .leftSideFirstTitle {
+        font-size: 160px;
+    }
+
+    .leftSideSecondTitle {
+        font-size: 160px;
+    }
+
+    .leftImageArea {
+        margin-top: 10.5%;
+        width: 120%;
+        height: 70%;
+    }
+
+    .upperTextRight {
+        font-size: 30px;
+    }
+
+    .upperTime {
+        font-size: 35px;
+    }
+}
+
+.svg-blur {
+    opacity: 0.5;
+}
