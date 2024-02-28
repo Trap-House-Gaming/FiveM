@@ -295,6 +295,36 @@ Config.MenuItems = {
             }
         }
     },
+	    [3] = { -- index of the menu option, this must be in order numerically
+        id = 'Perks', -- id of the menu option, this must be unique!
+        title = 'Donation', -- title shown on the menu option
+        icon = 'bars', -- icon shown on the menu option
+        items = { -- anything in the items table is considered a sub menu!
+            {
+                id = 'Daily',
+                title = 'Daily Rewards',
+                icon = 'bars',
+                type = 'dailyRewards', -- event type to call, client/server
+                event = 'dailyRewards', -- event name to call
+                shouldClose = true -- enable/disable menu closing on click
+            },
+            { -- example of adding another sub menu item
+                id = 'submenu2',
+                title = 'Another Sub Menu',
+                icon = 'bar',
+                items = { -- example of adding a sub menu inside a sub menu
+                    {
+                        id = 'nestedsubmenu',
+                        title = 'Nested Sub Menu Option',
+                        icon = 'bars',
+                        type = '', -- event type to call, client/server/command/qbcommand
+                        event = '', -- event name, command name
+                        shouldClose = true -- enable/disable menu closing on click
+                    }
+                }
+            },
+        }
+    },
 }
 
 Config.VehicleDoors = {

@@ -55,9 +55,9 @@ AK4Y.Rewards = {
 }
 
 AK4Y.Language = {
-    title1 = "AK4Y",
+    title1 = "Trap House Gaming",
     title2 = "DAILY REWARDS",
-    leftDesc = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ea neque ipsam, voluptas commodi aperiam repellat laborum omnis architecto, ducimus consequatur nesciunt facilis.",
+    leftDesc = "Claim your daily rewards!",
     nextReward = "FOR THE NEXT REWARD",
     collected = "COLLECTED",
 }
