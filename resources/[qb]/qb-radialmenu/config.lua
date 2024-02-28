@@ -309,8 +309,8 @@ Config.MenuItems = {
                 shouldClose = true -- enable/disable menu closing on click
             },
             { -- example of adding another sub menu item
-                id = 'submenu2',
-                title = 'Another Sub Menu',
+                id = 'VIP',
+                title = 'VIP ',
                 icon = 'bar',
                 items = { -- example of adding a sub menu inside a sub menu
                     {
