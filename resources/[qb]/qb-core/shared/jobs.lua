@@ -139,4 +139,15 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
+	burgershot = {
+		label = 'Burgershot',
+		defaultDuty = false,
+		grades = {
+			['0'] = {name = 'Trainee', payment = 50 },
+			['1'] = {name = 'Employee', payment = 75 },
+			['2'] = {name = 'Burger Flipper',payment = 100},
+			['3'] = {name = 'Manager', payment = 125 },
+			['4'] = {name = 'Owner', isboss = true, payment = 150 },
+		},
+	},	
 }
