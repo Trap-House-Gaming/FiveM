@@ -1,0 +1,49 @@
+This LSPD Mini EUP Pack was created by DevTheInfamous using EUP 9.3+ (My Discord: TheInfamousDev#8225)
+
+This is my first FiveM EUP Pack I've created with a bit of help, but overall I think it came out alright.
+
+This pack consist of:
+Male and Female EUP equipped with;
+Badges
+Class A,
+Class B,
+Class B w/ Turtle Neck,
+Class C,
+Fleece Jacket,
+Bicycle Helmet,
+Ballcap,
+Peaked Cap (Silver & Gold),
+Corporal & Sergeant Insignia,
+Dress Pants,
+Tactical Pants,
+Biycle Shorts,
+Polos,
+Traffic Vest,
+T-Shirt, &
+Winter Jacket.
+
+Known Bugs;
+Female vest are buggy along with their insignias at times.
+
+Each shirt comes in Blue, Black, and White. 
+		
+The Badge was created by JulyGee
+	https://discord.gg/7UB8pSBrav
+
+EUP 9.0+ Can be located here;
+	https://www.patreon.com/alex_ashfold
+	https://discord.gg/RtsyfsHqcj
+
+This is a FiveM Ready Pack.
+
+Terms of Service
+
+- Do not modifiy or reupload my work;
+- Do not take credit for any of my work or any developers who helped put this together;
+- I am not responsbile for any damage to your Game / PC.
+
+Installation Information:
+
+This is already prepared for FiveM, drag and drop into your EUP Stream Folder.
+
+Designs were inspired by JulyGee.
