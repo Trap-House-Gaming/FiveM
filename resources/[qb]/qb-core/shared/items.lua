@@ -627,4 +627,13 @@ QBShared.Items = {
 ['empty_weed_bag'] 				 = {['name'] = 'empty_weed_bag', 			    ['label'] = 'Empty Weed Bag', 			['weight'] = 0, 		['type'] = 'item', 		['image'] = 'weed_baggy_empty.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A small empty bag'},
 ['weed_nutrition'] 				 = {['name'] = 'weed_nutrition', 			    ['label'] = 'Plant Fertilizer', 		['weight'] = 2000, 		['type'] = 'item', 		['image'] = 'weed_nutrition.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Plant nutrition'},
 
+
+--crafting
+['workbench_1'] 			 	 = {['name'] = 'workbench_1', 					['label'] = 'Level 1 Workbench', 		['weight'] = 500, 		['type'] = 'item', 		['image'] = 'workbench_1.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
+['workbench_2'] 			 	 = {['name'] = 'workbench_2', 					['label'] = 'Level 2 Workbench', 		['weight'] = 500, 		['type'] = 'item', 		['image'] = 'workbench_2.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
+['workbench_3'] 			 	 = {['name'] = 'workbench_3', 					['label'] = 'Level 3 Workbench', 		['weight'] = 500, 		['type'] = 'item', 		['image'] = 'workbench_3.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
+['researching_table'] 			 = {['name'] = 'researching_table', 			['label'] = 'Researching Table', 		['weight'] = 500, 		['type'] = 'item', 		['image'] = 'researching_table.png', 	['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
+['tool_kit'] 			 		 = {['name'] = 'tool_kit', 						['label'] = 'Tool Kit', 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'tool_kit.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = ''},
+
+
 }
