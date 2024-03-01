@@ -1011,7 +1011,7 @@ end
 ------ Some exports to make the script more standalone! (by Clem76) ---------------------------------
 -----------------------------------------------------------------------------------------------------
 
-exports("EmoteCommandStart", function(emoteName, textureVariation)
+exports(EmoteCommandStart(emoteName, textureVariation)
         EmoteCommandStart(nil, {emoteName, textureVariation}, nil)
 end)
 exports("EmoteCancel", EmoteCancel)
