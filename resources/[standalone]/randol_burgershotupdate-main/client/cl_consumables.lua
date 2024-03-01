@@ -38,7 +38,7 @@ RegisterNetEvent('randol_burgershot:client:Drink', function(itemName)
         else
             TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + ThirstFill[itemName])
         end
-        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))EmoteCommandStart
+        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
     end)
 end)
 
@@ -48,7 +48,7 @@ end)
 RegisterNetEvent('randol_burgershot:client:makeBleeder', function()
 	local ingredients = QBCore.Functions.HasItem({'burger-bun', 'burger-raw', 'burger-lettuce', 'burger-tomato'})
     if ingredients then
-        exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
+        exports["rpemotes"]:EmoteCommandStart("fbbq")
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("bs_stuff", "Making a Bleeder..", 8000, false, true, {
             disableMovement = true,
@@ -63,7 +63,6 @@ RegisterNetEvent('randol_burgershot:client:makeBleeder', function()
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-tomato"], "remove")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-bleeder"], "add")
             exports["rpemotes"]:EmoteCommandStart("c")
-            exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
             TriggerEvent('randol_burgershot:client:cookBurgers')
         end, function() -- Cancel
             QBCore.Functions.Notify("You changed your mind.", "error")
