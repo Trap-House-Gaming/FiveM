@@ -86,7 +86,6 @@ RegisterNUICallback('clickedButton', function(option, cb)
                     data.params.event(data.params.args)
                 else
                     TriggerEvent(data.params.event, data.params.args)
-                    exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
                 end
             end
         end
