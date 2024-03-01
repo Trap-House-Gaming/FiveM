@@ -1,5 +1,5 @@
 Config = {}
-
+Framework = 'qb-core'
 Config.NewCore = true
 
 Config.GaragePed = "csb_burgerdrug"
