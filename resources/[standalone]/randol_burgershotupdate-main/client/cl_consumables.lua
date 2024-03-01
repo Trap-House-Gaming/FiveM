@@ -38,7 +38,7 @@ RegisterNetEvent('randol_burgershot:client:Drink', function(itemName)
         else
             TriggerServerEvent("QBCore:Server:SetMetaData", "thirst", QBCore.Functions.GetPlayerData().metadata["thirst"] + ThirstFill[itemName])
         end
-        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))
+        TriggerServerEvent('hud:server:RelieveStress', math.random(5, 8))EmoteCommandStart
     end)
 end)
 
@@ -63,6 +63,7 @@ RegisterNetEvent('randol_burgershot:client:makeBleeder', function()
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-tomato"], "remove")
             TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-bleeder"], "add")
             exports["rpemotes"]:EmoteCommandStart("c")
+            exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
             TriggerEvent('randol_burgershot:client:cookBurgers')
         end, function() -- Cancel
             QBCore.Functions.Notify("You changed your mind.", "error")
