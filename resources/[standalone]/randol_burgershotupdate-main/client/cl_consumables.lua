@@ -48,7 +48,7 @@ end)
 RegisterNetEvent('randol_burgershot:client:makeBleeder', function()
 	local ingredients = QBCore.Functions.HasItem({'burger-bun', 'burger-raw', 'burger-lettuce', 'burger-tomato'})
     if ingredients then
-        exports["rpemotes"]:EmoteCommandStart("fbbq")
+        exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
         TriggerServerEvent("InteractSound_SV:PlayWithinDistance", 20.0, "grilling", 0.6)
         QBCore.Functions.Progressbar("bs_stuff", "Making a Bleeder..", 8000, false, true, {
             disableMovement = true,
