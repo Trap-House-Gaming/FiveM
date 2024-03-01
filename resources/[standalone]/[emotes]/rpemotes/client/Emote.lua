@@ -1012,6 +1012,7 @@ end
 -----------------------------------------------------------------------------------------------------
 
 exports("EmoteCommandStart", function(emoteName, textureVariation)
+exports["rpemotes"]:EmoteCommandStart(emoteName, textureVariation)
         EmoteCommandStart(nil, {emoteName, textureVariation}, nil)
 end)
 exports("EmoteCancel", EmoteCancel)
