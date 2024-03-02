@@ -65,7 +65,25 @@ config = config or {
     },
     items = {
         {
-            name = 'weapon_heavypistol', -- item name.
+            name = 'weapon_pistol', -- item name.
+            amount = 1, -- amount of item.
+            tier = 1, -- workbench level for item.
+            researchRequired = false, -- research required.
+            researchCost = { -- researching cost.
+                {
+                    name = 'metalscrap',
+                    amount = 3
+                }               
+            },
+            craftingCost = { -- crafting cost.
+                {
+                    name = 'steel',
+                    amount = 5
+                }
+            }
+        },
+        {
+            name = 'weapon_pistol_mk2', -- item name.
             amount = 1, -- amount of item.
             tier = 3, -- workbench level for item.
             researchRequired = true, -- research required.
@@ -81,7 +99,44 @@ config = config or {
                     amount = 5
                 }
             }
-        }      
+        },
+        {
+            name = 'weapon_combatpistol', -- item name.
+            amount = 1, -- amount of item.
+            tier = 3, -- workbench level for item.
+            researchRequired = true, -- research required.
+            researchCost = { -- researching cost.
+                {
+                    name = 'metalscrap',
+                    amount = 3
+                }               
+            },
+            craftingCost = { -- crafting cost.
+                {
+                    name = 'steel',
+                    amount = 5
+                }
+            }
+        },
+        {
+            name = 'weapon_snspistol_mk2', -- item name.
+            amount = 1, -- amount of item.
+            tier = 3, -- workbench level for item.
+            researchRequired = true, -- research required.
+            researchCost = { -- researching cost.
+                {
+                    name = 'metalscrap',
+                    amount = 3
+                }               
+            },
+            craftingCost = { -- crafting cost.
+                {
+                    name = 'steel',
+                    amount = 5
+                }
+            }
+        }
+
     },
     lang = 'en', -- language to use.
     locales = {
