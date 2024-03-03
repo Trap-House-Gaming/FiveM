@@ -182,9 +182,9 @@ Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'none' -- You can chang
 
 
 Config.MenuType = 'ox_lib'
-Config.Inventory = 'ps-inventory'
+Config.Inventory = 'qb-inventory'
 Config.Wardrobe = 'qb-clothing'
-Config.Garage = nil -- or some option above
+Config.Garage = 'qb-garages' -- or some option above
 Config.Logout = 'drop'
 Config.Weather = 'qb-weathersync'
 Config.HelpNotification = 'DrawText3D'
