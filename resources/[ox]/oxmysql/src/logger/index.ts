@@ -1,5 +1,5 @@
 import { PoolConnection, RowDataPacket } from 'mysql2/promise';
-import { mysql_debug, mysql_slow_query_warning, mysql_ui } from '../config';
+import { mysql_debug, mysql_log_size, mysql_slow_query_warning, mysql_ui } from '../config';
 import type { CFXCallback, CFXParameters } from '../types';
 import { dbVersion } from '../database';
 
@@ -7,13 +7,29 @@ export function logError(
   invokingResource: string,
   cb: CFXCallback | undefined,
   isPromise: boolean | undefined,
-  ...args: string[]
+  err: Error | string = '',
+  query?: string,
+  parameters?: CFXParameters,
+  includeParameters?: boolean
 ) {
-  const err = `${invokingResource} was unable to execute a query!\n${args.join('\n')}`;
+  const message =
+    typeof err === 'object' ? err.message : err.replace(/SCRIPT ERROR: citizen:[\w\/\.]+:\d+[:\s]+/, '');
 
-  if (cb && isPromise) return cb(null, err);
+  const output = `${invokingResource} was unable to execute a query!${query ? `\n${`Query: ${query}`}` : ''}${
+    includeParameters ? `\n${JSON.stringify(parameters)}` : ''
+  }\n${message}`;
 
-  console.error(err);
+  TriggerEvent('oxmysql:error', {
+    query: query,
+    parameters: parameters,
+    message: message,
+    err: err,
+    resource: invokingResource,
+  });
+
+  if (cb && isPromise) return cb(null, output);
+
+  console.error(output);
 }
 
 export const profilerStatements = [
@@ -23,9 +39,13 @@ export const profilerStatements = [
   'SET profiling = 1',
 ];
 
+/**
+ * Executes MySQL queries to fetch accurate query profiling results when `mysql_debug` is enabled.
+ */
 export async function runProfiler(connection: PoolConnection, invokingResource: string) {
-  if (!mysql_debug && !mysql_ui) return;
-  if (!mysql_ui && mysql_debug && Array.isArray(mysql_debug) && !mysql_debug.includes(invokingResource)) return;
+  if (!mysql_debug) return;
+
+  if (Array.isArray(mysql_debug) && !mysql_debug.includes(invokingResource)) return;
 
   for (const statement of profilerStatements) await connection.query(statement);
 
@@ -51,12 +71,13 @@ export async function profileBatchStatements(
 
   if (typeof query === 'string' && parameters)
     for (let i = 0; i < profiler.length; i++) {
-      logQuery(invokingResource, query, profiler[i].duration, parameters[offset + i]);
+      logQuery(invokingResource, query, parseFloat(profiler[i].duration), parameters[offset + i]);
     }
   else if (typeof query === 'object')
     for (let i = 0; i < profiler.length; i++) {
       const transaction = query[offset + i];
-      if (transaction) logQuery(invokingResource, transaction.query, profiler[i].duration, transaction.params);
+      if (transaction)
+        logQuery(invokingResource, transaction.query, parseFloat(profiler[i].duration), transaction.params);
       else break;
     }
 }
@@ -75,17 +96,15 @@ const logStorage: QueryLog = {};
 export const logQuery = (
   invokingResource: string,
   query: string,
-  executionTime: string | number,
+  executionTime: number,
   parameters?: CFXParameters
 ) => {
-  executionTime = parseFloat(executionTime as string);
-
   if (
     executionTime >= mysql_slow_query_warning ||
     (mysql_debug && (!Array.isArray(mysql_debug) || mysql_debug.includes(invokingResource)))
   ) {
     console.log(
-      `${dbVersion} ^3${invokingResource} took ${executionTime}ms to execute a query!\n${query}${
+      `${dbVersion} ^3${invokingResource} took ${executionTime.toFixed(4)}ms to execute a query!\n${query}${
         parameters ? ` ${JSON.stringify(parameters)}` : ''
       }^0`
     );
@@ -93,7 +112,9 @@ export const logQuery = (
 
   if (!mysql_ui) return;
 
-  if (logStorage[invokingResource] === undefined) logStorage[invokingResource] = [];
+  if (!logStorage[invokingResource]) logStorage[invokingResource] = [];
+  else if (logStorage[invokingResource].length > mysql_log_size) logStorage[invokingResource].splice(0, 1);
+
   logStorage[invokingResource].push({
     query,
     executionTime,
