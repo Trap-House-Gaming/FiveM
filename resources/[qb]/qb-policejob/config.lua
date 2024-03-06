@@ -27,16 +27,13 @@ Config.Objects = {
 
 Config.Locations = {
     ['duty'] = {
-        [1] = vector3(440.085, -974.924, 30.689),
-        [2] = vector3(-449.811, 6012.909, 31.815),
+        [1] = vector3(455.21, -986.23, 30.69),
     },
     ['vehicle'] = {
-        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
-        [2] = vector4(471.13, -1024.05, 28.17, 274.5),
-        [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
+        [1] = vector4(460.11, -981.39, 25.7, 90.654),
     },
     ['stash'] = {
-        [1] = vector3(453.075, -980.124, 30.889),
+        [1] = vector3(463.41, -984.78, 30.69),
     },
     ['impound'] = {
         [1] = vector3(436.68, -1007.42, 27.32),
@@ -53,7 +50,7 @@ Config.Locations = {
         [1] = vector3(439.0907, -976.746, 30.776),
     },
     ['fingerprint'] = {
-        [1] = vector3(460.9667, -989.180, 24.92),
+        [1] = vector3(473.62, -1013.34, 26.27),
     },
     ['evidence'] = {
         [1] = vector3(478.84, -996.64, 26.27),
@@ -131,14 +128,30 @@ Config.CarItems = {
 Config.AuthorizedVehicles = {
     -- Grade 0 and higher
     [0] = {
-        ['police'] = 'Police Car 1',
-        ['police2'] = 'Police Car 2',
-        ['police3'] = 'Police Car 3',
-        ['police4'] = 'Police Car 4',
-        ['policeb'] = 'Police Car 5',
-        ['policet'] = 'Police Car 6',
-        ['sheriff'] = 'Sheriff Car 1',
-        ['sheriff2'] = 'Sheriff Car 2',
+        ['nkballer7um'] = 'Police Car 1',
+        ['nkcaracara2um'] = 'Police Car 2',
+        ['nkcoquetteum'] = 'Police Car 3',
+        ['nkcruiserum'] = 'Police Car 4',
+        ['nkcypherum'] = 'Police Car 5',
+        ['nkdominator3um'] = 'Police Car 6',
+        ['nkgauntlet4um'] = 'Sheriff Car 1',
+        ['nkgranger2um'] = 'Sheriff Car 2',
+        ['nkjugularum'] = 'Sheriff Car 2',
+        ['nkstxum'] = 'Sheriff Car 1',
+        ['nkvigero2um'] = 'Sheriff Car 2',
+        ['nkvstrum'] = 'Sheriff Car 2',
+        ['nkballer7'] = 'Police Car 1',
+        ['nkcaracara2'] = 'Police Car 2',
+        ['nkcoquette'] = 'Police Car 3',
+        ['nkcruiser'] = 'Police Car 4',
+        ['nkcypher'] = 'Police Car 5',
+        ['nkdominator3'] = 'Police Car 6',
+        ['nkgauntlet4'] = 'Sheriff Car 1',
+        ['nkgranger2'] = 'Sheriff Car 2',
+        ['nkjugular'] = 'Sheriff Car 2',
+        ['nkstx'] = 'Sheriff Car 1',
+        ['nkvigero2'] = 'Sheriff Car 2',
+        ['nkvstr'] = 'Sheriff Car 2',
     },
 }
 
