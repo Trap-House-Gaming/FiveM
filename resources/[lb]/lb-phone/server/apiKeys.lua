@@ -16,10 +16,11 @@ LOGS = {
     DarkChat = "https://canary.discord.com/api/webhooks/",
     Services = "https://canary.discord.com/api/webhooks/",
     Crypto = "https://canary.discord.com/api/webhooks/",
-    Trendy = "https://canary.discord.com/api/webhooks/"
+    Trendy = "https://canary.discord.com/api/webhooks/",
+    Uploads = "https://canary.discord.com/api/webhooks/" -- all camera uploads will go here
 }
 
--- Set your API keys for uploading media here. 
+-- Set your API keys for uploading media here.
 -- Please note that the API key needs to match the correct upload method defined in Config.UploadMethod.
 -- The default upload method is Fivemanage
 -- We STRONGLY discourage using Discord as an upload method, as uploaded files may become inaccessible after a while.

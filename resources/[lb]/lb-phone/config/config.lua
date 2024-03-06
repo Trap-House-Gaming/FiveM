@@ -1,6 +1,10 @@
 Config = {}
 Config.Debug = false -- Set to true to enable debug mode
 
+Config.DatabaseChecker = {}
+Config.DatabaseChecker.Enabled = true -- if true, the phone will check the database for any issues and fix them if possible
+Config.DatabaseChecker.AutoFix = true
+
 --[[ FRAMEWORK OPTIONS ]] --
 Config.Framework = "auto"
 --[[
@@ -16,7 +20,7 @@ Config.QBMailEvent = true -- if you want this script to listen for qb email even
 
 Config.Item = {}
 Config.Item.Require = true -- require a phone item to use the phone
-Config.Item.Name = "iphone" -- name of the phone item
+Config.Item.Name = "phone" -- name of the phone item
 
 Config.Item.Unique = false -- should each phone be unique? https://docs.lbphone.com/phone/configuration#unique-phones
 Config.Item.Inventory = "auto" --[[
@@ -32,7 +36,7 @@ Config.Item.Inventory = "auto" --[[
         * codem-inventory - https://codem.tebex.io/package/5900973
 ]]
 
-Config.ServerSideSpawn = true -- should entities be spawned on the server? (phone prop, vehicles)
+Config.ServerSideSpawn = false -- should entities be spawned on the server? (phone prop, vehicles)
 
 Config.PhoneModel = `lb_phone_prop` -- the prop of the phone, if you want to use a custom phone model, you can change this here
 Config.PhoneRotation = vector3(0.0, 0.0, 180.0) -- the rotation of the phone when attached to a player
@@ -144,7 +148,7 @@ Config.CustomApps = {} -- https://docs.lbphone.com/phone/custom-apps
 
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
-Config.Valet.Price = 1000 -- price to get your vehicle
+Config.Valet.Price = 100 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
@@ -343,27 +347,31 @@ Config.WordBlacklist.Apps = { -- apps that should use the word blacklist (if Con
 }
 Config.WordBlacklist.Words = {
     -- array of blacklisted words, e.g. "badword", "anotherbadword"
+    "nigger",
+    "faggot",
 }
 
 Config.AutoFollow = {}
 Config.AutoFollow.Enabled = false
 
 Config.AutoFollow.Birdy = {}
+
 Config.AutoFollow.Birdy.Enabled = true
 Config.AutoFollow.Birdy.Accounts = {
-	"KING"
+    "KING"
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.InstaPic = {}
 Config.AutoFollow.InstaPic.Enabled = true
 Config.AutoFollow.InstaPic.Accounts = {
-	"KING"
-
+    "KING"
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.TikTok = {}
 Config.AutoFollow.TikTok.Enabled = true
-Config.AutoFollow.TikTok.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.TikTok.Accounts = {
+    "KING"
+} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoBackup = true -- should the phone automatically create a backup when you get a new phone?
 
@@ -461,7 +469,7 @@ Config.KeyBinds = {
     -- Find keybinds here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     Open = { -- toggle the phone
         Command = "phone",
-        Bind = "M",
+        Bind = "F1",
         Description = "Open your phone"
     },
     Focus = { -- keybind to toggle the mouse cursor.
@@ -527,9 +535,9 @@ Config.UploadMethod = {}
 -- A video tutorial for how to set up Fivemanage can be found here: https://www.youtube.com/watch?v=y3bCaHS6Moc
 -- If you want to host uploads yourself, you can use LBUpload: https://github.com/lbphone/lb-upload
 -- We STRONGLY discourage using Discord as an upload method, as uploaded files may become inaccessible after a while.
-Config.UploadMethod.Video = "SBCCzBMxiyUjfCPSrhmj9tgnqNqAj2bv" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom"
-Config.UploadMethod.Image = "SBCCzBMxiyUjfCPSrhmj9tgnqNqAj2bv" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom
-Config.UploadMethod.Audio = "SBCCzBMxiyUjfCPSrhmj9tgnqNqAj2bv" -- "Fivemanage" or "Discord" or "LBUpload" or "Custom"
+Config.UploadMethod.Video = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom"
+Config.UploadMethod.Image = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom
+Config.UploadMethod.Audio = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Custom"
 
 Config.Video = {}
 Config.Video.Bitrate = 400 -- video bitrate (kbps), increase to improve quality, at the cost of file size
