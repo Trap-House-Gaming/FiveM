@@ -230,7 +230,7 @@ RegisterNetEvent('hospital:client:RevivePlayer', function()
         local player, distance = GetClosestPlayer()
         if player ~= -1 and distance < 5.0 then
             local playerId = GetPlayerServerId(player)
-            QBCore.Functions.ProgressBar('hospital_revive', Lang:t('progress.revive'), 5000, false, true, {
+            QBCore.Functions.progressbar('hospital_revive', Lang:t('progress.revive'), 5000, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
