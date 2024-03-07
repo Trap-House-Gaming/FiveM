@@ -261,7 +261,7 @@ RegisterNetEvent('hospital:client:TreatWounds', function()
         local player, distance = GetClosestPlayer()
         if player ~= -1 and distance < 5.0 then
             local playerId = GetPlayerServerId(player)
-            QBCore.Functions.ProgressBar('hospital_healwounds', Lang:t('progress.healing'), 5000, false, true, {
+            QBCore.Functions.progressbar('hospital_healwounds', Lang:t('progress.healing'), 5000, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
