@@ -20,7 +20,7 @@ Config.QBMailEvent = true -- if you want this script to listen for qb email even
 
 Config.Item = {}
 Config.Item.Require = true -- require a phone item to use the phone
-Config.Item.Name = "iphone" -- name of the phone item
+Config.Item.Name = "phone" -- name of the phone item
 
 Config.Item.Unique = false -- should each phone be unique? https://docs.lbphone.com/phone/configuration#unique-phones
 Config.Item.Inventory = "auto" --[[
