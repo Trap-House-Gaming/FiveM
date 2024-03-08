@@ -148,7 +148,7 @@ function setTasks(data, userDetails) {
             $(".taskList").append(deneme);
             progressBarCreate(i + 1);
             var myCount = userDet[i].hasCount > element.requiredcount ? element.requiredcount : userDet[i].hasCount;
-            changeProgressBar(i + 1, myCount / element.requiredcount, userDet[i].hasCount + "/" + element.requiredcount);
+            changeprogressbar(i + 1, myCount / element.requiredcount, userDet[i].hasCount + "/" + element.requiredcount);
         }
     }
 }
@@ -388,7 +388,7 @@ $(document).on("click", "#exitButtonIcon", function () {
 
 function progressBarCreate(deger) {
     if (deger == 1) {
-        taskProgressId1 = new ProgressBar.Circle("#taskBarProgressID-1", {
+        taskProgressId1 = new progressbar.Circle("#taskBarProgressID-1", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -414,7 +414,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 2) {
-        taskProgressId2 = new ProgressBar.Circle("#taskBarProgressID-2", {
+        taskProgressId2 = new progressbar.Circle("#taskBarProgressID-2", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -440,7 +440,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 3) {
-        taskProgressId3 = new ProgressBar.Circle("#taskBarProgressID-3", {
+        taskProgressId3 = new progressbar.Circle("#taskBarProgressID-3", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -466,7 +466,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 4) {
-        taskProgressId4 = new ProgressBar.Circle("#taskBarProgressID-4", {
+        taskProgressId4 = new progressbar.Circle("#taskBarProgressID-4", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -492,7 +492,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 5) {
-        taskProgressId5 = new ProgressBar.Circle("#taskBarProgressID-5", {
+        taskProgressId5 = new progressbar.Circle("#taskBarProgressID-5", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -518,7 +518,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 6) {
-        taskProgressId6 = new ProgressBar.Circle("#taskBarProgressID-6", {
+        taskProgressId6 = new progressbar.Circle("#taskBarProgressID-6", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -544,7 +544,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 7) {
-        taskProgressId7 = new ProgressBar.Circle("#taskBarProgressID-7", {
+        taskProgressId7 = new progressbar.Circle("#taskBarProgressID-7", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -570,7 +570,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 8) {
-        taskProgressId8 = new ProgressBar.Circle("#taskBarProgressID-8", {
+        taskProgressId8 = new progressbar.Circle("#taskBarProgressID-8", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -596,7 +596,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 9) {
-        taskProgressId9 = new ProgressBar.Circle("#taskBarProgressID-9", {
+        taskProgressId9 = new progressbar.Circle("#taskBarProgressID-9", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -622,7 +622,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 10) {
-        taskProgressId10 = new ProgressBar.Circle("#taskBarProgressID-10", {
+        taskProgressId10 = new progressbar.Circle("#taskBarProgressID-10", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -648,7 +648,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 11) {
-        taskProgressId11 = new ProgressBar.Circle("#taskBarProgressID-11", {
+        taskProgressId11 = new progressbar.Circle("#taskBarProgressID-11", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -674,7 +674,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 12) {
-        taskProgressId12 = new ProgressBar.Circle("#taskBarProgressID-12", {
+        taskProgressId12 = new progressbar.Circle("#taskBarProgressID-12", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -700,7 +700,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 13) {
-        taskProgressId13 = new ProgressBar.Circle("#taskBarProgressID-13", {
+        taskProgressId13 = new progressbar.Circle("#taskBarProgressID-13", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -726,7 +726,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 14) {
-        taskProgressId14 = new ProgressBar.Circle("#taskBarProgressID-14", {
+        taskProgressId14 = new progressbar.Circle("#taskBarProgressID-14", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -752,7 +752,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 15) {
-        taskProgressId15 = new ProgressBar.Circle("#taskBarProgressID-15", {
+        taskProgressId15 = new progressbar.Circle("#taskBarProgressID-15", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -778,7 +778,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 16) {
-        taskProgressId16 = new ProgressBar.Circle("#taskBarProgressID-16", {
+        taskProgressId16 = new progressbar.Circle("#taskBarProgressID-16", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -804,7 +804,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 17) {
-        taskProgressId17 = new ProgressBar.Circle("#taskBarProgressID-17", {
+        taskProgressId17 = new progressbar.Circle("#taskBarProgressID-17", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -830,7 +830,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 18) {
-        taskProgressId18 = new ProgressBar.Circle("#taskBarProgressID-18", {
+        taskProgressId18 = new progressbar.Circle("#taskBarProgressID-18", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -856,7 +856,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 19) {
-        taskProgressId19 = new ProgressBar.Circle("#taskBarProgressID-19", {
+        taskProgressId19 = new progressbar.Circle("#taskBarProgressID-19", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -882,7 +882,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 20) {
-        taskProgressId20 = new ProgressBar.Circle("#taskBarProgressID-20", {
+        taskProgressId20 = new progressbar.Circle("#taskBarProgressID-20", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -908,7 +908,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 21) {
-        taskProgressId21 = new ProgressBar.Circle("#taskBarProgressID-21", {
+        taskProgressId21 = new progressbar.Circle("#taskBarProgressID-21", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -934,7 +934,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 22) {
-        taskProgressId22 = new ProgressBar.Circle("#taskBarProgressID-22", {
+        taskProgressId22 = new progressbar.Circle("#taskBarProgressID-22", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -960,7 +960,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 23) {
-        taskProgressId23 = new ProgressBar.Circle("#taskBarProgressID-23", {
+        taskProgressId23 = new progressbar.Circle("#taskBarProgressID-23", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -986,7 +986,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 24) {
-        taskProgressId24 = new ProgressBar.Circle("#taskBarProgressID-24", {
+        taskProgressId24 = new progressbar.Circle("#taskBarProgressID-24", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1012,7 +1012,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 25) {
-        taskProgressId25 = new ProgressBar.Circle("#taskBarProgressID-25", {
+        taskProgressId25 = new progressbar.Circle("#taskBarProgressID-25", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1038,7 +1038,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 26) {
-        taskProgressId26 = new ProgressBar.Circle("#taskBarProgressID-26", {
+        taskProgressId26 = new progressbar.Circle("#taskBarProgressID-26", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1064,7 +1064,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 27) {
-        taskProgressId27 = new ProgressBar.Circle("#taskBarProgressID-27", {
+        taskProgressId27 = new progressbar.Circle("#taskBarProgressID-27", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1090,7 +1090,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 28) {
-        taskProgressId28 = new ProgressBar.Circle("#taskBarProgressID-28", {
+        taskProgressId28 = new progressbar.Circle("#taskBarProgressID-28", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1116,7 +1116,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 29) {
-        taskProgressId29 = new ProgressBar.Circle("#taskBarProgressID-29", {
+        taskProgressId29 = new progressbar.Circle("#taskBarProgressID-29", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1142,7 +1142,7 @@ function progressBarCreate(deger) {
             fill: "rgba(0, 0, 0, 0.1)",
         });
     } else if (deger == 30) {
-        taskProgressId30 = new ProgressBar.Circle("#taskBarProgressID-30", {
+        taskProgressId30 = new progressbar.Circle("#taskBarProgressID-30", {
             strokeWidth: 7,
             easing: "easeInOut",
             duration: 500,
@@ -1170,7 +1170,7 @@ function progressBarCreate(deger) {
     }
 }
 
-function changeProgressBar(deger, progress, text) {
+function changeprogressbar(deger, progress, text) {
     if (deger == 1) {
         taskProgressId1.animate(progress);
         taskProgressId1.setText(text);

@@ -36,7 +36,7 @@ end
 
 RegisterNetEvent('hospital:client:UseIfaks', function()
     local ped = PlayerPedId()
-    QBCore.Functions.ProgressBar('use_bandage', Lang:t('progress.ifaks'), 3000, false, true, {
+    QBCore.Functions.progressbar('use_bandage', Lang:t('progress.ifaks'), 3000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -66,7 +66,7 @@ end)
 
 RegisterNetEvent('hospital:client:UseBandage', function()
     local ped = PlayerPedId()
-    QBCore.Functions.ProgressBar('use_bandage', Lang:t('progress.bandage'), 4000, false, true, {
+    QBCore.Functions.progressbar('use_bandage', Lang:t('progress.bandage'), 4000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
@@ -94,7 +94,7 @@ end)
 
 RegisterNetEvent('hospital:client:UsePainkillers', function()
     local ped = PlayerPedId()
-    QBCore.Functions.ProgressBar('use_bandage', Lang:t('progress.painkillers'), 3000, false, true, {
+    QBCore.Functions.progressbar('use_bandage', Lang:t('progress.painkillers'), 3000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,

@@ -9,7 +9,7 @@ Config = {
 				-- set to "ox" if using ox_nventory
 	Menu = "qb",
 	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	progressbar = "qb", -- set to "ox" if using ox_lib progressbar
 
 	Renewed = true, -- If "false" use qb-management, if "true" use Renewed-Banking
 

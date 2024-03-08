@@ -2,7 +2,7 @@ fx_version "cerulean"
 games { "gta5" }
 
 author "Team BroCode"
-description "Multi Stage ProgressBar"
+description "Multi Stage progressbar"
 version "1.0.0"
 lua54 "yes"
 

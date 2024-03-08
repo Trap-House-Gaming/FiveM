@@ -1,6 +1,6 @@
 let progressBarTimeout;
 
-function startTimedProgressBar(time, text, color="#47ff33") {
+function startTimedprogressbar(time, text, color="#47ff33") {
     var cssLink = document.createElement("link");
     cssLink.href = "../utils/dialogs/progressbar/progressbar.css";
     cssLink.rel = "stylesheet";
@@ -39,7 +39,7 @@ function startTimedProgressBar(time, text, color="#47ff33") {
     $("body").append(div);
 }
 
-function stopProgressBar() {
+function stopprogressbar() {
     clearTimeout(progressBarTimeout);
     $('.progressbar-section').remove();
 }
@@ -50,8 +50,8 @@ window.addEventListener('message', (event) => {
 	let action = data.action;
 
     if(action == "progressBar") {
-		startTimedProgressBar(data.time, data.text, data.hexColor)
-	} else if(action == "stopProgressBar") {
-		stopProgressBar();
+		startTimedprogressbar(data.time, data.text, data.hexColor)
+	} else if(action == "stopprogressbar") {
+		stopprogressbar();
 	}
 })

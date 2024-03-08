@@ -145,7 +145,7 @@ end)
 
 RegisterNetEvent('hospital:client:HelpPerson', function(targetId)
     local ped = PlayerPedId()
-    QBCore.Functions.ProgressBar('hospital_revive', Lang:t('progress.revive'), math.random(30000, 60000), false, true, {
+    QBCore.Functions.('hospital_revive', Lang:t('progress.revive'), math.random(30000, 60000), false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,

@@ -14,7 +14,7 @@
         } else {
             g = this;
         }
-        g.ProgressBar = f();
+        g.progressbar = f();
     }
 })(function () {
     var define, module, exports;
