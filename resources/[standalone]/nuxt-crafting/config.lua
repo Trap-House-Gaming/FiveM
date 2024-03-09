@@ -1,5 +1,5 @@
 config = config or {
-    savePropsInDatabase = true, -- keeps the props in the database and prevents it from being removed after a restart.
+    savePropsInDatabase = false, -- keeps the props in the database and prevents it from being removed after a restart.
     placeDistance = 3.0, -- more than this distance prevents the player from setting or removing the table.
     plantAnimation = { -- setup animation
         task = 'WORLD_HUMAN_HAMMERING',
@@ -9,7 +9,7 @@ config = config or {
         { 18, 124, 252, 100}, -- the outline color of the propeller when it can be put. (r, g, b, a)
         { 235, 52, 58, 100} -- the outline color of the propeller when it can't be put. (r, g, b, a)
     },
-    imagePath = 'nui://qb-inventory/html/images',
+    imagePath = 'nui://ps-inventory/html/images',
     stations = {
         ['workbench_1'] = {
             label = 'Workbench 1', -- table name
