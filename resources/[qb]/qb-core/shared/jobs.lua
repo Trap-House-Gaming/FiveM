@@ -149,5 +149,35 @@ QBShared.Jobs = {
 			['3'] = {name = 'Manager', payment = 125 },
 			['4'] = {name = 'Owner', isboss = true, payment = 150 },
 		},
+	},
+	['nailsalon'] = {
+		label = 'Nail Salon',
+		defaultDuty = true,
+		grades = {
+			['0'] = {
+				name = 'Employee',
+				payment = 50
+			},
+			['1'] = {
+				name = 'Owner',
+				payment = 125,
+				isboss = true,
+			},
+		},
+	},
+	['tattoo'] = {
+		label = 'Tattoo',
+		defaultDuty = true,
+		grades = {
+			['0'] = {
+				name = 'Employee',
+				payment = 50
+			},
+			['1'] = {
+				name = 'Owner',
+				payment = 125,
+				isboss = true,
+			},
+		},
 	},	
 }

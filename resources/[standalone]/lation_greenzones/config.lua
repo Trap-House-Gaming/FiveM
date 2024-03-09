@@ -6,7 +6,7 @@ Config.GreenzonesClearCommand = 'clearzone' -- The command to run in-game to cle
 
 Config.GreenZones = { -- These are persistent greenzones that exist constantly, at all times - you can create as many as you want here
     ['hospital'] = {
-        coords = vec3(299.2270, -584.6892, 43.2608), -- The center-most location of the greenzone 
+        coords = vec3(324.22, -602.04, 43.28), -- The center-most location of the greenzone 
         radius = 25.0, -- The radius (how large or small) the greenzone is (note: this must include the .0 on the end of the number to work)
         disablePlayerVehicleCollision = false, -- Do you want to disable players & their vehicles collisions between each other? (true if yes, false if no)
         enableSpeedLimits = true, -- Do you want to enforce a speed limit in this zone? (true if yes, false if no)
@@ -29,7 +29,7 @@ Config.GreenZones = { -- These are persistent greenzones that exist constantly, 
         blipAlpha = 100, -- The transparency of the radius blip if blipType = 'radius', otherwise not used/can be ignored
         blipName = 'Hospital Greenzone' -- Blip name on the map (if enableSprite = true, otherwise can be ignored)
     },
-    ['policestation'] = {
+--[[     ['policestation'] = {
         coords = vec3(432.7403, -982.1954, 30.7105),
         radius = 25.0,
         disablePlayerVehicleCollision = false,
@@ -52,8 +52,8 @@ Config.GreenZones = { -- These are persistent greenzones that exist constantly, 
         blipScale = 0.7,
         blipAlpha = 100,
         blipName = 'LSPD Greenzone'
-    },
-    ['examplelocation3'] = {
+    }, ]]
+    ['AltaApts'] = {
         coords = vec3(-268.01, -957.161, 31.22),
         radius = 25.0,
         disablePlayerVehicleCollision = false,
@@ -75,7 +75,7 @@ Config.GreenZones = { -- These are persistent greenzones that exist constantly, 
         blipColor = 2,
         blipScale = 0.8,
         blipAlpha = 100,
-        blipName = 'Another Greenzone'
+        blipName = 'Alta Apartments'
     }
     -- Create more zones here by following the same format as above
 }

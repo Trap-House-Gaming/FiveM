@@ -512,18 +512,18 @@ Config.Garages = {
         type = 'public',
         category = Config.VehicleClass['rig']
     },
-	    -- Alta = {
-        -- label = 'Alta Apartments Parking',
-        -- takeVehicle = vector4(-297.49, -990.09, 31.08, 157.76),
-        -- spawnPoint = {
-            -- vector4(-297.49, -990.09, 31.08, 157.76)
-        -- },
-        -- showBlip = true,
-        -- blipName = 'Alta Apartments Parking',
-        -- blipNumber = 357,
-        -- blipColor = 2,
-        -- type = 'public',
-        -- category = Config.VehicleClass['car']
-    -- },
+	     Alta = {
+         label = 'Alta Apartments Parking',
+         takeVehicle = vector3(-297.49, -990.09, 31.08),
+         spawnPoint = {
+             vector4(-297.49, -990.09, 31.08, 157.76)
+         },
+         showBlip = true,
+         blipName = 'Alta Apartments Parking',
+         blipNumber = 357,
+         blipColor = 2,
+         type = 'public',
+         category = Config.VehicleClass['car']
+     },
 }
 
