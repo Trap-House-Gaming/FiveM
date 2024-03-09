@@ -358,19 +358,19 @@ Config.AutoFollow.Birdy = {}
 
 Config.AutoFollow.Birdy.Enabled = true
 Config.AutoFollow.Birdy.Accounts = {
-    "KING"
+    "king"
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.InstaPic = {}
 Config.AutoFollow.InstaPic.Enabled = true
 Config.AutoFollow.InstaPic.Accounts = {
-    "KING"
+    "king"
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.TikTok = {}
 Config.AutoFollow.TikTok.Enabled = true
 Config.AutoFollow.TikTok.Accounts = {
-    "KING"
+    "king"
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoBackup = true -- should the phone automatically create a backup when you get a new phone?
