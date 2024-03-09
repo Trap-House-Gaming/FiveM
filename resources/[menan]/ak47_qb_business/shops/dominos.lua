@@ -7,7 +7,7 @@ Config.Shop['dominos'] = { -- job name
 		stock = 2,
 	},
 	autoStock = {         		 -- auto refill shop items
-	    enable = true,
+	    enable = false,
 	    slots = 500,             -- container size
 	    regeneration = 10,       -- regenerate item every 10 minutes
 	    add = 10,                -- add 1 item to the stock
