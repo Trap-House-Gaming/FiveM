@@ -18,7 +18,7 @@ zr_trans.spawn = "Spawn here."
 zr_trans.spawnlast = "Spawn at last location"
 
 zr_config.zr_locations = {
-        { 
+	{ 
         name = "Alta", 
         label = "Alta Apartments", 
         description = "Your new home in the city, this is the spot!",
@@ -38,6 +38,13 @@ zr_config.zr_locations = {
         description = "Premier strip club with music, exotic performances, and a lively atmosphere.",
         spawn = vector4(155.4, -1303.31, 29.2, 105.84),
         image = "./zr-assets/unicorn.webp"
+    },
+    { 
+        name = "pinkcage", 
+        label = "Pink Cage Motel", 
+        description = "Colorful motel, rent a room, meet travelers, experience unique charm.",
+        spawn = vector4(313.76745, -230.6358, 53.990818, 153.79005),
+        image = "./zr-assets/motel.webp"
     },
     { 
         name = "park", 
