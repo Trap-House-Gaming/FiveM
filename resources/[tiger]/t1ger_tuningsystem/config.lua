@@ -89,6 +89,20 @@ Config = {
 			modshop = {pos = vector3(-212.07, -1327.96, 31.3)},
 			laptop = {pos = vector3(-227.41, -1319.44, 31.28)}
 		},
+		[4] = {
+			pos = vector3(75.41, 6516.76, 31.26), -- Paleto
+			name = 'Paleto Auto Repair',
+			blip = {enable = true, name = 'Paleto Auto Repair', sprite = 446, display = 4, scale = 0.65, color = 5},
+			job = {name = 'paletoauto', label = 'Paleto Auto Repair'},
+			categories = {'performance', 'respray', 'bodyworks', 'chassis', 'enginebay', 'exterior', 'interior', 'lights', 'wheels'}, -- enable/disable different types of categories for each shop
+			duty = {pos = vector3(93.4, 6517.63, 31.26)},
+			boss = {pos = vector3(85.87, 6529.04, 35.55)},
+			storage = {pos = vector3(88.1, 6521.73, 31.26), id = 'tunerStorage3', label = 'Tuner Storage 3', slots = 50, weight = 100000},
+			garage = {pos = vector4(90.83, 6530.20, 31.26, 133.71), id = 'tunerGarage3'},
+			workbench = {pos = vector3(87.51, 6539.95, 31.26)},
+			modshop = {pos = vector3(82.32, 6542.12, 31.26)},
+			laptop = {pos = vector3(69.15, 6503.37, 31.26)}
+		},
 	},
 
 	JobGrades = { -- default job grades that are added to each tuner shop jobs
@@ -176,7 +190,7 @@ Config = {
 	Currency = '$', -- string for currency
 	Installed = 'Installed', -- string for installed mod
 	ToInstall = 'Install', -- string to install
-	DefaultVehiclePrice = 50000, -- if current vehicle price is not registered anywhere, it uses this amount to calculate 
+	DefaultVehiclePrice = 500000, -- if current vehicle price is not registered anywhere, it uses this amount to calculate 
 	RepairPrice = 1000, -- 1000$ to repair vehicle, before installing mods.
 	IncreaseModPrice = true, -- increase each mod variant price, so bumper1 cheaper than bumper 2, and bumper2 is cheaper than bumper 3 and so on. Set to false to have equal mod variant prices.
 	IncreaseDecimalValue = 2.0, -- 0.0-100.0 decimal percentage to increase each mod variant.

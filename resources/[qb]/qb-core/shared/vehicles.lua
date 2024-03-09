@@ -735,16 +735,16 @@ local Vehicles = {
 	{ model = 'ddcemperor',     name = 'Maybach',                      brand = 'Mercedes',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'cls19mafia',     name = 'CLS',                          brand = 'Mercedes',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'mader34',        name = 'R34 GTR',                      brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    -- { model = '',       name = '',                      brand = '',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',          name = '',                   	   brand = '',       	 price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',    name = '',                        brand = '',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '', name = '',                    brand = '',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = '300sdemon',      name = 'Chrysler 300',                 brand = 'Chrysler',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = 'CPtrackhawk',    name = 'Track Hawk',                   brand = 'Dodge',       	 price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = 'dillrzr',        name = 'Rzr SxS',                      brand = 'Polaris',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = 'civichycade',    name = 'Civic Hy',                     brand = 'Honda',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	-- { model = '',   name = '',                       brand = '',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	-- { model = '',      name = '',                      brand = '',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	-- { model = '',      name = '',                      brand = '',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',     name = '',                      brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',     name = '',                          brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
---	{ model = '',        name = '' GTR',                      brand = '',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	-- { model = '',        name = '',                      brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	-- { model = '',        name = '',                          brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    -- { model = '',        name = '' GTR',                      brand = '',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 }
 
 for i = 1, #Vehicles do
