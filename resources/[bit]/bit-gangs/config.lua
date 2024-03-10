@@ -34,7 +34,7 @@ Config.useGarages = true
 -- Enable / Disable the use of stash
 Config.useStash = true
 -- Enable / Disable the use of lockers
-Config.useLockers = false
+Config.useLockers = true
 -- Maximum number of members allowed in a gang
 Config.maxMembers = 15
 -- Active if you want to use cron to trigger the actions of contract killing, smuggling and transporting illegal persons
@@ -95,8 +95,8 @@ Blips.stext = "Gang Stash"
 
 function openStash(gangname, location)
     print("ok")
-    -- TriggerServerEvent("inventory:server:OpenInventory", "stash", gangname)
-    -- TriggerEvent("inventory:client:SetCurrentStash", gangname)
+     TriggerServerEvent("inventory:server:OpenInventory", "stash", gangname)
+     TriggerEvent("inventory:client:SetCurrentStash", gangname)
 end
 
 -- $$\       $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
@@ -273,7 +273,7 @@ Config.blacklist = {'nigger', 'nazi', 'moron', 'retard', 'faggot'}
 
 function notifications(notitype, message, time)
     -- Change this trigger for your notification system keeping the variables
-    TriggerEvent('codem-notification', message, time, notitype)
+    TriggerEvent('zr-notify', message, time, notitype)
 end
 
 -- Notifications types:
