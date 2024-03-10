@@ -406,7 +406,7 @@ Config.Gyms = {
 			},					
 		},
 	},	
---[[ 	{
+ 	{
 		gymcoords = vector3(259.01, -269.51, 52.96), -- coords for blip and also coords for gym menu (if gympayed is disables menu will not show)
 		gymname = "LA Fitness", -- https://www.youtube.com/watch?v=LXm9ix0fF4Y (Map)
 		gymblip = {blip = true, blipiconid = 311, blipdisplay = 4, blipcolor = 3, blipshortrange = true, blipscale = 1.0},
@@ -551,8 +551,8 @@ Config.Gyms = {
 				status = {taken = false, takenplayerid = nil}, -- dont edit this
 			},					
 		},
-	},		 ]]
-	{
+	},		 
+	--[[{
 		gymcoords = vector3(-1253.9, -354.39, 35.95), -- coords for blip and also coords for gym menu (if gympayed is disables menu will not show)
 		gymname = "Pump & Run", -- https://www.gta5-mods.com/maps/mlo-pump-run-gym-add-on-sp-fivem-ragemp (Map)
 		gymblip = {blip = true, blipiconid = 311, blipdisplay = 4, blipcolor = 3, blipshortrange = true, blipscale = 1.0},
@@ -655,7 +655,7 @@ Config.Gyms = {
 				status = {taken = false, takenplayerid = nil}, -- dont edit this
 			},				
 		},
-	},
+	},]]
 	{
 		gymcoords = vector3(-53.35, -1289.33, 29.9), -- coords for blip and also coords for gym menu (if gympayed is disables menu will not show)
 		gymname = "Los Santos GYM", -- https://forum.cfx.re/t/release-mlo-los-santos-gym/1051705 (Map)
@@ -819,7 +819,7 @@ Config.Showers = {
 
 
 function Notify(text)
-	QBCore.Functions.Notify("Gym", text, 5000, "info") -- if you get error in this line its because you dont use our notify system buy it here https://rtx.tebex.io/package/5402098 or you can use some other notify system just replace this notify line with your notify system
+	exports["zrnotify"]:Notify("Gym", text, 5000, "info") -- if you get error in this line its because you dont use our notify system buy it here https://rtx.tebex.io/package/5402098 or you can use some other notify system just replace this notify line with your notify system
 	--exports["mythic_notify"]:SendAlert("inform", text, 5000)
 end
 
