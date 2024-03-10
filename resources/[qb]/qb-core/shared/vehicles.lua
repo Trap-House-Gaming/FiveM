@@ -741,8 +741,8 @@ local Vehicles = {
 	{ model = 'civichycade',    name = 'Civic Hy',                     brand = 'Honda',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'GODz300ZX',      name = '300zx',                        brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = '2014chargersrt8v2',     name = 'Charger SRT',           brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',      name = '',                      brand = '',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	-- { model = '',        name = '',                      brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = 'DBr33vspecSC',   name = 'r33',                          brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = '240NismoTT',     name = '240sx',                        brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	-- { model = '',        name = '',                          brand = '',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     -- { model = '',        name = '' GTR',                      brand = '',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 }
