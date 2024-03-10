@@ -5,18 +5,18 @@
      <Item type="CHandlingData">
       <handlingName>ripjuice</handlingName>
       <fMass value="2000.0" />
-			<fInitialDragCoeff value="4.0" />
-			<fDownforceModifier value="5.0" />
+			<fInitialDragCoeff value="3.0" />
+			<fDownforceModifier value="0.15" />
 			<fPercentSubmerged value="85.0" />
 			<vecCentreOfMassOffset x="0.0" y="0.0" z="0.0" />
 			<vecInertiaMultiplier x="1.0" y="1.6" z="1.6" />
 			<fDriveBiasFront value="0.5" />
 			<nInitialDriveGears value="6" />
-			<fInitialDriveForce value="0.5" />
+			<fInitialDriveForce value="0.4" />
 			<fDriveInertia value="1.2" />
 			<fClutchChangeRateScaleUpShift value="6.2" />
 			<fClutchChangeRateScaleDownShift value="6.2" />
-			<fInitialDriveMaxFlatVel value="480.0" />
+			<fInitialDriveMaxFlatVel value="170.0" />
 			<fBrakeForce value="1.5" />
 			<fBrakeBiasFront value="0.5" />
 			<fHandBrakeForce value="1.5" />

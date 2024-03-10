@@ -5,7 +5,7 @@
     <Item type="CHandlingData">
       <handlingName>cls19mafia</handlingName>
     <fMass value="1905.000000"/>
-    <fInitialDragCoeff value="1.220000"/>
+    <fInitialDragCoeff value="3.220000"/>
     <fPercentSubmerged value="85.000000"/>
     <vecCentreOfMassOffset x="0.000000" y="-0.322000" z="-0.115000"/>
     <vecInertiaMultiplier x="1.300000" y="1.500000" z="1.500000"/>
