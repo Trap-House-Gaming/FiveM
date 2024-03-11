@@ -10,7 +10,7 @@ Config.Locale = "en"
 -- 1 oxmysql (if you have older version where mysql-async bridge does not exists turn this on)
 -- 2 Mysql async
 -- 3 ghmattimysql
-Config.MysqlType = -1
+Config.MysqlType = 1
 
 -- 0 standalone
 -- 1 ESX

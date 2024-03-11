@@ -402,49 +402,49 @@ Config = {
 
 Config.EngineUpgrades = {
 	{label = 'Stock', index = -1, price = 5},
-	{label = 'Level 1', index = 0, price = 20},
-	{label = 'Level 2', index = 1, price = 30},
-	{label = 'Level 3', index = 2, price = 40},
-	{label = 'Level 4', index = 3, price = 50},
-	{label = 'Level 5', index = 4, price = 60}
+	{label = 'Level 1', index = 0, price = 8},
+	{label = 'Level 2', index = 1, price = 9},
+	{label = 'Level 3', index = 2, price = 10},
+	{label = 'Level 4', index = 3, price = 11},
+	{label = 'Level 5', index = 4, price = 12}
 }
 
 Config.BrakeUpgrades = {
 	{label = 'Stock', index = -1, price = 5},
-	{label = 'Street', index = 0, price = 20},
-	{label = 'Sports', index = 1, price = 30},
-	{label = 'Race', index = 2, price = 40},
-	{label = 'Custom', index = 3, price = 50}
+	{label = 'Street', index = 0, price = 6},
+	{label = 'Sports', index = 1, price = 7},
+	{label = 'Race', index = 2, price = 8},
+	{label = 'Custom', index = 3, price = 9}
 }
 
 Config.TransmissionUpgrades = {
 	{label = 'Stock', index = -1, price = 5},
-	{label = 'Street', index = 0, price = 20},
-	{label = 'Sports', index = 1, price = 30},
-	{label = 'Race', index = 2, price = 40},
-	{label = 'Custom', index = 3, price = 50}
+	{label = 'Street', index = 0, price = 6},
+	{label = 'Sports', index = 1, price = 7},
+	{label = 'Race', index = 2, price = 8},
+	{label = 'Custom', index = 3, price = 9}
 }
 
 Config.SuspensionUpgrades = {
-	{label = 'Stock', index = -1, price = 5},
-	{label = 'Lowered', index = 0, price = 20},
-	{label = 'Street', index = 1, price = 30},
-	{label = 'Sports', index = 2, price = 40},
-	{label = 'Competition', index = 3, price = 50}
+	{label = 'Stock', index = -1, price = 3},
+	{label = 'Lowered', index = 0, price = 4},
+	{label = 'Street', index = 1, price = 5},
+	{label = 'Sports', index = 2, price = 6},
+	{label = 'Competition', index = 3, price = 7}
 }
 
 Config.ArmorUpgrades = {
 	{label = 'Stock', index = -1, price = 5},
-	{label = '20%', index = 0, price = 30},
-	{label = '40%', index = 1, price = 40},
-	{label = '60%', index = 2, price = 50},
-	{label = '80%', index = 3, price = 60},
-	{label = '100%', index = 4, price = 70}
+	{label = '20%', index = 0, price = 6},
+	{label = '40%', index = 1, price = 7},
+	{label = '60%', index = 2, price = 8},
+	{label = '80%', index = 3, price = 9},
+	{label = '100%', index = 4, price = 10}
 }
 
 Config.TurboUpgrades = {
 	{label = 'Stock', index = 0, price = 1.35}, -- 1.35% percent of vehicle price
-	{label = 'Custom', index = 1, price = 25.0} -- 25% percent of vehicle price
+	{label = 'Custom', index = 1, price = 10.0} -- 25% percent of vehicle price
 }
 
 Config.TyreSmokeKit = {
@@ -475,7 +475,7 @@ Config.XenonKit = {
 	Description = 'Click to install or uninstall xenon kit',
 	Options = {
 		{label = 'Stock',		index = 0,		price = 1.25}, -- price is percentage (0-100%) of vehicle price
-		{label = 'Xenon',		index = 1,		price = 6.50}, -- price is percentage (0-100%) of vehicle price
+		{label = 'Xenon',		index = 1,		price = 2.50}, -- price is percentage (0-100%) of vehicle price
 	}
 }
 

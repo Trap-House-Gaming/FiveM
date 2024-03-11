@@ -819,7 +819,7 @@ Config.Showers = {
 
 
 function Notify(text)
-	exports["zrnotify"]:Notify("Gym", text, 5000, "info") -- if you get error in this line its because you dont use our notify system buy it here https://rtx.tebex.io/package/5402098 or you can use some other notify system just replace this notify line with your notify system
+	exports["ox_lib"]:Notify("Gym", text, 5000, "info") -- if you get error in this line its because you dont use our notify system buy it here https://rtx.tebex.io/package/5402098 or you can use some other notify system just replace this notify line with your notify system
 	--exports["mythic_notify"]:SendAlert("inform", text, 5000)
 end
 
