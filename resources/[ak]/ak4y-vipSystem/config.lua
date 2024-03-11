@@ -11,7 +11,7 @@ AK4Y.Framework = "qb" -- qb / oldqb | qb = export system | oldqb = triggerevent 
 AK4Y.Mysql = "oxmysql" -- Check fxmanifest.lua when you change it! |  oxmysql / mysql-async
 AK4Y.OpenMenuCommand = "donate" -- code to open the donate menu
 AK4Y.WeaponType = "item" -- weapon or item
-AK4Y.CustomPlatePriceOnBuyVehicle = 20 -- Customization price at the time of vehicle purchase
+AK4Y.CustomPlatePriceOnBuyVehicle = 50 -- Customization price at the time of vehicle purchase
 AK4Y.Phone = "lb-phone" -- gcphone or qb-phone
 AK4Y.MinCharForPhoneNumber = 1 -- Minimum number of characters required for a special number
 AK4Y.MinCharForPlate = 1 -- Minimum number of characters required for a custom plate
@@ -141,9 +141,9 @@ AK4Y.BuyCredits = {
 -- you should not change categoryId
 AK4Y.Categories = {
     { label = "VEHICLE", categoryId = "vehicle" },
-    { label = "ITEMS", categoryId = "items" },
+--    { label = "ITEMS", categoryId = "items" },
     { label = "MONEY", categoryId = "money" },
-    { label = "CUSTOMIZE", categoryId = "other" },
+--    { label = "CUSTOMIZE", categoryId = "other" },
 }
 
 AK4Y.Vehicles = {
@@ -168,7 +168,7 @@ AK4Y.Vehicles = {
         model = "BRZ",
         year = "2024 MODEL",
         costCredit = 400, -- The price to be paid for the product
-        topSpeed = 200, -- Top speed of the product
+        topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
@@ -182,7 +182,7 @@ AK4Y.Vehicles = {
         model = "300 Demon",
         year = "2022 MODEL",
         costCredit = 500, -- The price to be paid for the product
-        topSpeed = 200, -- Top speed of the product
+        topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
@@ -196,7 +196,7 @@ AK4Y.Vehicles = {
         model = "Trackhawk",
         year = "2024 MODEL",
         costCredit = 500, -- The price to be paid for the product
-        topSpeed = 210, -- Top speed of the product
+        topSpeed = 160, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
@@ -219,12 +219,12 @@ AK4Y.Vehicles = {
     },
     {
         id = 6,
-        spawnName = "zentorno", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "AUDI",
-        model = "RS Q8",
-        year = "2022 MODEL",
-        costCredit = 2300, -- The price to be paid for the product
-        topSpeed = 250, -- Top speed of the product
+        spawnName = "DBr33vspecSC", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "Nissan",
+        model = "r33",
+        year = "1998 MODEL",
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
@@ -233,12 +233,12 @@ AK4Y.Vehicles = {
     },
     {
         id = 7,
-        spawnName = "zentorno", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "AUDI",
-        model = "RS Q8",
-        year = "2022 MODEL",
-        costCredit = 2200, -- The price to be paid for the product
-        topSpeed = 250, -- Top speed of the product
+        spawnName = "240NismoTT", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "Nissan",
+        model = "240sx",
+        year = "1998 MODEL",
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
