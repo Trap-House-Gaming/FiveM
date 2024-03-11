@@ -1272,15 +1272,15 @@ function addTrunkItems(plate, items)
 	Trunks[plate] = {}
 	Trunks[plate].items = items
 end
-
-exports('addTrunkItems',addTrunkItems)
+exports['ps-inventory']:addTrunkItems(plate, items)
+--exports('addTrunkItems',addTrunkItems)
 
 function addGloveboxItems(plate, items)
 	Gloveboxes[plate] = {}
 	Gloveboxes[plate].items = items
 end
-
-exports('addGloveboxItems',addGloveboxItems)
+exports['ps-inventory']:addGloveboxItems(plate, items)
+--exports('addGloveboxItems',addGloveboxItems)
 
 RegisterNetEvent('inventory:server:combineItem', function(item, fromItem, toItem)
 	local src = source
