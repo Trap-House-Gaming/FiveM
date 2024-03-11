@@ -76,7 +76,7 @@ if Config.Item.Unique and Config.Item.Inventory == "auto" then
 
     local inventoryScripts = {
         "ox_inventory",
-        "qb-inventory",
+        "ps-inventory",
         "lj-inventory",
         "core_inventory",
         "mf-inventory",

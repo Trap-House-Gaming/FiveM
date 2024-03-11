@@ -28,7 +28,7 @@ Config.Item.Inventory = "auto" --[[
     Supported:
         * auto: auto-detect inventory (ONLY WORKS WITH THE ONE LISTED BELOW)
         * ox_inventory - https://github.com/overextended/ox_inventory
-        * qb-inventory - https://github.com/qbcore-framework/qb-inventory
+        * ps-inventory - https://github.com/qbcore-framework/ps-inventory
         * lj-inventory - https://github.com/loljoshie/lj-inventory
         * core_inventory - https://www.c8re.store/package/5121548
         * mf-inventory - https://modit.store/products/mf-inventory?variant=39985142268087
