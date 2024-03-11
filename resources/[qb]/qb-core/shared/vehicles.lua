@@ -746,6 +746,9 @@ local Vehicles = {
 	{ model = 'A1Box',          name = 'Caprice DONK',                 brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'A1CT5',          name = 'CT5',                          brand = 'Cadillac',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'emslambo',       name = 'Urus',                         brand = 'Lamborghini',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'rabbit22charger',   name = 'Charger',                   brand = 'Dodge',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'rabbit22charger2',   name = 'Charger',                   brand = 'Dodge',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+
 
 }
 
