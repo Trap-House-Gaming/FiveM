@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerJob = QBCore.Functions.GetPlayerData().job
-local shownBossMenu = true
+local shownBossMenu = false
 local DynamicMenuItems = {}
 
 -- UTIL
