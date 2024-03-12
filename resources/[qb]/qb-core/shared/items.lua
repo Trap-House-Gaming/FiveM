@@ -1065,4 +1065,12 @@ QBShared.Items = {
 ['preworkout'] = {['name'] = 'preworkout', ['label'] = 'Preworkout', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'preworkout.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Preworkout'},
 ['testosterone'] = {['name'] = 'testosterone', ['label'] = 'Testosterone', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'testosterone.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Testosterone'},
 
+--ak47 crime
+['rope'] = {['name'] = 'rope', ['label'] = 'Rope', ['weight'] = 100, ['type'] = 'item', ['image'] = 'rope.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
+['blindfold'] = {['name'] = 'blindfold', ['label'] = 'Blindfold', ['weight'] = 100, ['type'] = 'item', ['image'] = 'blindfold.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
+['cuff'] = {['name'] = 'cuff', ['label'] = 'Cuff', ['weight'] = 100, ['type'] = 'item', ['image'] = 'cuff.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
+['key'] = {['name'] = 'key', ['label'] = 'Armbrace', ['weight'] = 100, ['type'] = 'item', ['image'] = 'key.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
+
+
+
 }
