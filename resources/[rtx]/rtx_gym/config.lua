@@ -44,7 +44,7 @@ Config.GymSellMultipler = 0.75 -- money which player will get when he sell gym
 
 Config.GymPassMultipler = 2.50 -- price for gym pass (its calculated from onetime price to gym)
 
-Config.GymMaxPrice = 1000 -- maximum of gym price for all gyms 
+Config.GymMaxPrice = 150000 -- maximum of gym price for all gyms 
 
 Config.DisableIncreaseStatsNotify = false -- disable notify when some stats increase
 
