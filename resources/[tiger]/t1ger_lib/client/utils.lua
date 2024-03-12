@@ -484,9 +484,9 @@ Lib = {
 
 	AddGlobalVehicle = function(args)
 		if Config.TargetSystem == 'ox-target' then
-			exports['ox-target']:addGlobalVehicle(args.options)
+			exports['ox_target']:addGlobalVehicle(args.options)
 		elseif Config.TargetSystem == 'q-target' then
-			print("f*cking get ox-target instead of this outdated shit, b*tch lol")
+			print("f*cking get ox_target instead of this outdated shit, b*tch lol")
 		elseif Config.TargetSystem == 'qb-target' then
 			local newOptions = {}
 			for k,v in pairs(args.options) do
@@ -528,9 +528,9 @@ Lib = {
 
 	AddGlobalObject = function(args)
 		if Config.TargetSystem == 'ox-target' then
-			exports['ox-target']:addGlobalObject(args.options)
+			exports['ox_target']:addGlobalObject(args.options)
 		elseif Config.TargetSystem == 'q-target' then
-			print("f*cking get ox-target instead of this outdated shit, b*tch lol")
+			print("f*cking get ox_target instead of this outdated shit, b*tch lol")
 		elseif Config.TargetSystem == 'qb-target' then
 			local newOptions = {}
 			for k,v in pairs(args.options) do
@@ -572,7 +572,7 @@ Lib = {
 
 	AddGlobalPed = function(args)
 		if Config.TargetSystem == 'ox-target' then
-			exports['ox-target']:addGlobalPed(args.options)
+			exports['ox_target']:addGlobalPed(args.options)
 		elseif Config.TargetSystem == 'q-target' then
 			local newOptions = {}
 			for k,v in pairs(args.options) do
@@ -613,7 +613,7 @@ Lib = {
 	
 	AddLocalEntity = function(entity, args)
 		if Config.TargetSystem == 'ox-target' then
-			exports['ox-target']:addLocalEntity(entity, args.options)
+			exports['ox_target']:addLocalEntity(entity, args.options)
 		elseif Config.TargetSystem == 'q-target' then
 			if v.onSelect == nil then 
 				local newOptions = {}
@@ -626,7 +626,7 @@ Lib = {
 					canInteract = args.canInteract,
 				})
 			else
-				print("f*cking get ox-target instead of this outdated shit, b*tch lol")
+				print("f*cking get ox_target instead of this outdated shit, b*tch lol")
 			end
 		elseif Config.TargetSystem == 'qb-target' then
 			local newOptions = {}
@@ -670,9 +670,9 @@ Lib = {
 
 	RemoveLocalEntity = function(entity, args, label)
 		if Config.TargetSystem == 'ox-target' then
-			exports.ox-target:removeLocalEntity(entity, args)
+			exports.ox_target:removeLocalEntity(entity, args)
 		elseif Config.TargetSystem == 'q-target' then
-			print("f*cking get ox-target instead of this outdated shit, b*tch lol")
+			print("f*cking get ox_target instead of this outdated shit, b*tch lol")
 		elseif Config.TargetSystem == 'qb-target' then
 			exports['qb-target']:RemoveTargetEntity(entity, label)
 		elseif Config.TargetSystem == 'meta-target' then
