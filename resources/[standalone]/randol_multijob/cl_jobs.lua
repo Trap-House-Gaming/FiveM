@@ -2,7 +2,6 @@ local Config = lib.require('config')
 
 local function showMultijob()
     local PlayerData = QBCore.Functions.GetPlayerData()
-	print(json.encode(PlayerData.job,{indent = true}))
     local dutyStatus = PlayerData.job.onduty and 'On Duty' or 'Off Duty'
     local dutyIcon = PlayerData.job.onduty and 'fa-solid fa-toggle-on' or 'fa-solid fa-toggle-off'
     local colorIcon = PlayerData.job.onduty and '#5ff5b4' or 'red'
