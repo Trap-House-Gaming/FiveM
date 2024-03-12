@@ -1,4 +1,4 @@
-Config = {
+Config = {name
 	Debug = false,	-- set to false to disable prints 
 
 	Triggers = {
