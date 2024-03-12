@@ -1059,4 +1059,10 @@ QBShared.Items = {
 ['vodka_tonic'] = {['name'] = 'vodka_tonic', ['label'] = 'Vodka Tonic', ['weight'] = 100, ['type'] = 'item', ['image'] = 'vodka_tonic.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
 ['water'] = {['name'] = 'water', ['label'] = 'Water', ['weight'] = 100, ['type'] = 'item', ['image'] = 'water.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description here'},
 
+--gym
+['protein'] = {['name'] = 'protein', ['label'] = 'Protein', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'protein.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Protein'},
+['creatine'] = {['name'] = 'creatine', ['label'] = 'Creatine', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'creatine.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Creatine'},
+['preworkout'] = {['name'] = 'preworkout', ['label'] = 'Preworkout', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'preworkout.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Preworkout'},
+['testosterone'] = {['name'] = 'testosterone', ['label'] = 'Testosterone', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'testosterone.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Testosterone'},
+
 }
