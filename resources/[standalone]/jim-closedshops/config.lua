@@ -3,7 +3,7 @@
 Config = {
 	Debug = false, -- Debugging mode
 	Lan = "en", -- Set locale file here
-	img = "ps-inventory/html/images/", -- Set this to get correct "buying menu" images
+	img = "qb-inventory/html/images/", -- Set this to get correct "buying menu" images
 
 	Inv = "qb", -- set to "qb" if using qb_inventory
 				-- set to "ox" if using ox_nventory

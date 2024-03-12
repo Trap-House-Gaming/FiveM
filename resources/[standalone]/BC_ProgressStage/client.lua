@@ -279,8 +279,8 @@ local function Process(action, start, tick, finish)
             if QBCore.Shared.Items[tostring(Action.icon.invimg)] then
                 if GetResourceState('ox_inventory'):match("start") then
                     img = "nui://ox_inventory/web/"
-                elseif GetResourceState('ps-inventory'):match("start") then
-                    img = "nui://ps-inventory/html/"
+                elseif GetResourceState('qb-inventory'):match("start") then
+                    img = "nui://qb-inventory/html/"
                 elseif GetResourceState("ps-inventory"):match("start") then
                     img = "nui://ps-inventory/html/"
                 elseif Config.Inventory and GetResourceState(Config.Inventory):match("start") then

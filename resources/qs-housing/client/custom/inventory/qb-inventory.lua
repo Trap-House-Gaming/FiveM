@@ -4,7 +4,7 @@
     creator to create a file following this example and add it!
 ]]
 
-if Config.Inventory ~= 'ps-inventory' then
+if Config.Inventory ~= 'qb-inventory' then
     return
 end
 
