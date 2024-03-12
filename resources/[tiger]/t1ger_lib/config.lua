@@ -1,5 +1,5 @@
 Config = {name
-	Debug = false,	-- set to false to disable prints 
+	Debug = true,	-- set to false to disable prints 
 
 	Triggers = {
 		['ESX'] = { -- update your triggers/event-names here if changed:
