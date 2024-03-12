@@ -61,7 +61,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         [1] = vector3(331.27, -596.67, 43.28),
     },
     ['stash'] = {
-        [1] = vector3(298.74, -599.33, 43.25),
+        [1] = vector3(298.74, -599.33, 43.28),
     },
     ['beds'] = {
         [1] = {coords = vector4(324.26, -582.77, 44.2, 158.15), taken = false, model = 1631638868},
