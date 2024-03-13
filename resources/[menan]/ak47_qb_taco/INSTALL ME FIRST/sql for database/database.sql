@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS `ak47_qb_taco`;
+CREATE TABLE IF NOT EXISTS `ak47_qb_taco` (
+  `stock` longtext DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

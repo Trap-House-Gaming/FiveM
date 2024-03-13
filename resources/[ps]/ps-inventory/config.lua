@@ -12,8 +12,8 @@ Config.ItemDropObject = `sf_prop_sf_backpack_01a` -- if Config.UseItemDrop is tr
 
 Config.Progressbar = {
     Enable = true,         -- True to Enable the progressbar while opening inventory
-    minT = 350,             -- Min Time for Inventory to open
-    maxT = 500              -- Max Time for Inventory to open
+    minT = 250,             -- Min Time for Inventory to open
+    maxT = 400              -- Max Time for Inventory to open
 }
 
 Config.VendingObjects = {
