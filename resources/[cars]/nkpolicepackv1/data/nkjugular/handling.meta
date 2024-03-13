@@ -4,7 +4,7 @@
     <Item type="CHandlingData">
       <handlingName>NKJUGULAR</handlingName>
       <fMass value="1745.000000"/>
-      <fInitialDragCoeff value="11.500000"/>
+      <fInitialDragCoeff value="9.500000"/>
       <fDownforceModifier value="200.000"/>
       <fPercentSubmerged value="85.000000"/>
       <vecCentreOfMassOffset x="0.000000" y="0.02000" z="0.000000"/>
@@ -15,7 +15,7 @@
       <fDriveInertia value="1.000000"/>
       <fClutchChangeRateScaleUpShift value="8.100000"/>
       <fClutchChangeRateScaleDownShift value="8.100000"/>
-      <fInitialDriveMaxFlatVel value="157.50000"/>
+      <fInitialDriveMaxFlatVel value="170.50000"/>
       <fBrakeForce value="1.10000"/>
       <fBrakeBiasFront value="0.540000"/>
       <fHandBrakeForce value="0.650000"/>
@@ -24,7 +24,7 @@
       <fTractionCurveMin value="2.380000"/>
       <fTractionCurveLateral value="22.500000"/>
       <fTractionSpringDeltaMax value="0.150000"/>
-      <fLowSpeedTractionLossMult value="1.200000"/>
+      <fLowSpeedTractionLossMult value="0.900000"/>
       <fCamberStiffnesss value="0.000000"/>
       <fTractionBiasFront value="0.49000"/>
       <fTractionLossMult value="1.000000"/>

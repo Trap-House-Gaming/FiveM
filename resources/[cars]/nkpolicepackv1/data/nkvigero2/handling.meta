@@ -5,7 +5,7 @@
     <Item type="CHandlingData">
       <handlingName>NKVIGERO2</handlingName>
       <fMass value="1760.000000" />
-      <fInitialDragCoeff value="10.650000" />
+      <fInitialDragCoeff value="8.650000" />
       <fPercentSubmerged value="85.000000" />
       <fDownforceModifier value="200" />
       <vecCentreOfMassOffset x="0.000000" y="0.05000" z="0.0000" />
@@ -16,7 +16,7 @@
       <fDriveInertia value="1.000000" />
       <fClutchChangeRateScaleUpShift value="3.900000" />
       <fClutchChangeRateScaleDownShift value="3.900000" />
-      <fInitialDriveMaxFlatVel value="157.95000" />
+      <fInitialDriveMaxFlatVel value="175.95000" />
       <fBrakeForce value="0.950000" />
       <fBrakeBiasFront value="0.435000" />
       <fHandBrakeForce value="0.625000" />
@@ -25,7 +25,7 @@
       <fTractionCurveMin value="2.410000" />
       <fTractionCurveLateral value="22.500000" />
       <fTractionSpringDeltaMax value="0.150000" />
-      <fLowSpeedTractionLossMult value="1.15000" />
+      <fLowSpeedTractionLossMult value="0.85000" />
       <fCamberStiffnesss value="0.000000" />
       <fTractionBiasFront value="0.492000" />
       <fTractionLossMult value="1.000000" />

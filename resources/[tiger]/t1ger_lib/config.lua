@@ -25,7 +25,7 @@ Config = {
 
 	AcePermissions = {'command'}, -- (command is default gives admin access to all commands) add your ace permissions in here, used to check if player has perms/admin.
 
-	UseFrameworkNotification = false, -- Use default ESX/QB notification or use your own custom from Lib.Notification
+	UseFrameworkNotification = true, -- Use default ESX/QB notification or use your own custom from Lib.Notification
 	
 	VehicleKeys = 'default', -- use 'default' or 't1ger-keys' or 'custom'.  default natives to check locked/unlocked or t1ger_keys exports or custom (your own).
 	
