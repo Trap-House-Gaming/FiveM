@@ -52,7 +52,7 @@ Config.Discord = {
     isEnabled = true,                                     -- If set to true, then discord rich presence will be enabled
     applicationId = '1199454970286723082',                   -- The discord application id
     iconLarge = 'logo',                               -- The name of the large icon
-    iconLargeHoverText = 'Trap House Gaming!', -- The hover text of the large icon
+    iconLargeHoverText = 'Trap House!', -- The hover text of the large icon
     iconSmall = 'small_logo_name',                         -- The name of the small icon
     iconSmallHoverText = 'This is a Small icon with text', -- The hover text of the small icon
     updateRate = 60000,                                    -- How often the player count should be updated
@@ -208,7 +208,8 @@ Config.BlacklistedVehs = {
     [`ruiner2`] = true,
     [`deluxo`] = true,
     [`cargoplane2`] = true,
-    [`voltic2`] = true
+    [`voltic2`] = true,
+    [`policeb`] = true
 }
 
 Config.BlacklistedWeapons = {

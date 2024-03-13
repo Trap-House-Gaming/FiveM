@@ -18,7 +18,7 @@ Categories = {
 	Image = 'fishingrod',
 	Jobs = {}
 },
-['weapons'] = {
+['pistols'] = {
 	Label = 'WEAPONS',
 	Image = 'WEAPON_APPISTOL',
 	Jobs = {}
@@ -55,8 +55,8 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 }, 
 
 ['WEAPON_APPISTOL'] = {
-	Level = 2, -- From what level this item will be craftable
-	Category = 'weapons', -- The category item will be put in
+	Level = 15, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
 	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
@@ -65,25 +65,46 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['copper'] = 5, -- item name and count, adding items that dont exist in database will crash the script
-		['wood'] = 3,
-		['iron'] = 5
+		['metalscrap'] = 550, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+		['diamond_ring'] = 1,
+		
 	}
 }, 
 
-['fishingrod'] = {
-	Level = 0, -- From what level this item will be craftable
-	Category = 'misc', -- The category item will be put in
-	isGun = false, -- Specify if this is a gun so it will be added to the loadout
+['weapon_pistol'] = {
+	Level = 1, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
 	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
-	Amount = 3, -- The amount that will be crafted
-	SuccessRate = 90, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['wood'] = 3 -- item name and count, adding items that dont exist in database will crash the script
-		
+		['iron'] = 150, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 100,
+		['metalscrap'] = 175
+	}
+},
+
+['weapon_pistol_mk2'] = {
+	Level = 2, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 150,
+		['metalscrap'] = 225
 	}
 }
 
@@ -91,7 +112,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 
 Workbenches = { -- Every workbench location, leave {} for jobs if you want everybody to access
 
-		{coords = vector3(101.26113891602,6615.810546875,33.58126831054), jobs = {}, gangs = {}, blip = true, recipes = {}, radius = 3.0 }
+		{coords = vector3(101.26113891602,6615.810546875,33.58126831054), jobs = {}, gangs = {}, blip = false, recipes = {}, radius = 3.0 }
 
 },
  
