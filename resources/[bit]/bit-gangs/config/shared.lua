@@ -30,13 +30,13 @@ Config.CollectMoneyAmountPerHour = 60
 -- Multiplier of the amount to be generated each hour by the stores
 Config.CollectMoneyMultiplier = 2
 -- Enable / Disable the use of garages for gangs
-Config.useGarages = false
+Config.useGarages = true
 -- Enable / Disable the use of stash
-Config.useStash = false
+Config.useStash = true
 -- Enable / Disable the use of lockers
-Config.useLockers = false
+Config.useLockers = true
 -- Maximum number of members allowed in a gang
-Config.maxMembers = 8
+Config.maxMembers = 15
 -- Active if you want to use cron to trigger the actions of contract killing, smuggling and transporting illegal persons
 Config.useCron = true
 -- If the previous option is activated. Hours at which actions will start for the gangs
@@ -64,7 +64,7 @@ Config.useOptionsMenuKey = false
 -- Key to open the options menu (steal, put in vehicle, etc.) Default = 167 (F6)
 Config.optionsMenuKey = 167
 -- Command to open the options menu. Default = "gangoptions"
-Config.optionsMenuCommand = "gangoptions"
+Config.optionsMenuCommand = ""
 -- Animation to handcuff the player
 Config.cuffGangAnimation = {
     ["dict"] = "mp_arrest_paired",
@@ -178,7 +178,7 @@ end
 --    \__|   \________|\__|  \__|\__|  \__|\______|   \__|    \______/ \__|  \__|   \__|           \______/ \__|  \__|\__|        \__|    \______/ \__|  \__|\________|
 
 -- Activate or deactivate the territorial conquest system
-Config.useTerritorialConquest = false
+Config.useTerritorialConquest = true
 -- Points to be added for each second in enemy territory
 Config.pointsBySecond = 1
 
