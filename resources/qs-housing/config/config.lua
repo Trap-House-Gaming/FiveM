@@ -178,7 +178,7 @@ Config.Language = 'en'
 local esxHas = GetResourceState('es_extended') == 'started'
 local qbHas = GetResourceState('qb-core') == 'started'
 
-Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'none' -- You can change to 'qb' or 'esx'
+Config.Framework = qb and 'esx' or qbHas and 'qb' or 'none' -- You can change to 'qb' or 'esx'
 
 
 Config.MenuType = 'ox_lib'
