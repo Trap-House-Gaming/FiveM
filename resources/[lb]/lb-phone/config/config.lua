@@ -148,7 +148,7 @@ Config.CustomApps = {} -- https://docs.lbphone.com/phone/custom-apps
 
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
-Config.Valet.Price = 100 -- price to get your vehicle
+Config.Valet.Price = 500 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
@@ -358,19 +358,19 @@ Config.AutoFollow.Birdy = {}
 
 Config.AutoFollow.Birdy.Enabled = true
 Config.AutoFollow.Birdy.Accounts = {
-    "king"
+    "KING",
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.InstaPic = {}
 Config.AutoFollow.InstaPic.Enabled = true
 Config.AutoFollow.InstaPic.Accounts = {
-    "king"
+    "KING",
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.TikTok = {}
 Config.AutoFollow.TikTok.Enabled = true
 Config.AutoFollow.TikTok.Accounts = {
-    "king"
+    "KING",
 } -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoBackup = true -- should the phone automatically create a backup when you get a new phone?
