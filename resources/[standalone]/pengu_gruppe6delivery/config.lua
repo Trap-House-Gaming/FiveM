@@ -89,24 +89,23 @@ Config.OrganizerPed = {
 
 Config.OrganizerMarker = true
 
-Config.MoneyPerOrganizedMin = 300
-Config.MoneyPerOrganizedMax = 400
+Config.MoneyPerOrganizedMin = 150
+Config.MoneyPerOrganizedMax = 300
 
-Config.MinOrganizeWaitTime = 2000
-Config.MaxOrganizeWaitTime = 6500
+Config.MinOrganizeWaitTime = 1500
+Config.MaxOrganizeWaitTime = 4500
 
 
 
 Config.RobberySettings = {
     StockadeModels = {
-        'stockade'
     },
     ThermiteParticle = 'proj_flare_trail',
     ExplosionPaticle = 'exp_grd_grenade_lod',
     WaitTimeForThermite = 10000,
     ThermiteItemName = 'thermite',
     IgnitionItemName = 'lighter',
-    MinBags = 2, -- ONLY NPC STOCKADES
-    MaxBags = 5, -- ONLY NPC STOCKADES
+    MinBags = 0, -- ONLY NPC STOCKADES
+    MaxBags = 0, -- ONLY NPC STOCKADES
 }
 

@@ -7,7 +7,7 @@ zr_config.framework = 'QB'
 zr_config.QB = 'qb-core'
 zr_config.ESX = 'es_extended'
 
-zr_config.zr_notify = true
+zr_config.zr_notify = false
 
 zr_config.ToggleInterior = true
 zr_config.Interior = vector3(-786.9563, 315.6229, 187.9136)
@@ -24,7 +24,7 @@ zr_config.StartingAppartment = true -- if 'true' make sure to keep 'qb-spawn' in
 
 zr_config.maxlength = 18;
 zr_config.minlength = 2;
-zr_config.zr_minYear = 1900;
+zr_config.zr_minYear = 1960;
 zr_config.zr_maxYear = 2005;
 zr_config.zr_Format = "d/m/Y";
 

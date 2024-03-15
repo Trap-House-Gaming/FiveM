@@ -18,7 +18,7 @@ zr_trans.spawn = "Spawn here."
 zr_trans.spawnlast = "Spawn at last location"
 
 zr_config.zr_locations = {
-	{ 
+    { 
         name = "Alta", 
         label = "Alta Apartments", 
         description = "Your new home in the city, this is the spot!",

@@ -44,21 +44,21 @@ zr_config.discord_enable = false
 -- Token transfered to zr-build-s.lua
 zr_config.discord_guild = 1000020530499432448
 zr_config.discord_roles = {
-    ["1000377003704336479"] = 4, -- $35 Add extra 4 slots if player has this role.
-    ["1000377003704336479"] = 3, -- $25 Add extra 3 slots if player has this role.
-    ["1000377003704336476"] = 2, -- $10 Add extra 2 slots if player has this role.
-    ["1004486369919373392"] = 1, -- $15 Add extra 1 slot if player has this role. 
+    ["1000377003704336476"] = 2, -- Add extra 2 slots if player has this role.
+    ["1004486369919373392"] = 1, -- Add extra 1 slot if player has this role.
 }
-zr_config.discord = 'https://discord.com/invite/UE7nGjrKan'
+zr_config.discord = 'https://discord.gg/FwedjEV6kY'
 
 zr_config.EnableDelete = true
 zr_config.EnableDeleteByDiscord = false
 zr_config.discord_roles_delete_button = {
     ["1000377003704336476"] = true,
-    ["1004486369919373392"] = true, 
 }
 
-zr_config.Debug = true
+zr_config.autoSelectFirstCharacter = false
+
+
+zr_config.Debug = false
 
 zr_config.locale = 'en-US'
 
@@ -90,7 +90,7 @@ zr_trans.slotlockedwarning="Unlock additional character slots by obtaining a Dis
 zr_trans.noslots = "You don't have any empty slots!"
 zr_trans.deleted = "Character Deleted"
 zr_trans.deldiscord = "You must have a discord role to delete your character"
-zr_trans.join = "Join our Discord."
+zr_trans.join = "Join our discord."
 
 zr_config.DefaultSkins = {
     ["m"] = {
@@ -289,3 +289,4 @@ zr_config.DefaultSkins = {
     }
 }
 
+zr_config.stmtExtraWhereClause = '' -- 'and is_hidden = 0'

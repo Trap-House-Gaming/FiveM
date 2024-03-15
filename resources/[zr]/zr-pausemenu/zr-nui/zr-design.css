@@ -375,7 +375,7 @@
 #zr-maps:hover .gradient,
 #zr-jobs:hover .gradient,
 #zr-gallery:hover .gradient {
-    background: linear-gradient(180deg, rgb(159, 51, 173) 41.77%, #00CCB8 83.55%);
+    background: linear-gradient(180deg, rgb(159, 51, 173) 41.77%, #e408e4 83.55%);
 }
 
 #zr-infos .zr-infos-infos,
@@ -423,7 +423,7 @@
 #zr-rules:hover .gradient,
 #zr-guide:hover .gradient,
 #zr-news:hover .gradient {
-    background: linear-gradient(180deg, rgba(8, 22, 28, 0.00) 0%, rgb(159, 51, 173) 110.15%);
+    background: linear-gradient(180deg, rgba(60, 3, 75, 0) 0%, rgb(159, 51, 173) 110.15%);
 }
 
 #zr-settings .zr-ms-icon,
