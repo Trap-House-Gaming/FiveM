@@ -352,9 +352,11 @@ Config.WordBlacklist.Words = {
 }
 
 Config.AutoFollow = {}
-Config.AutoFollow.Enabled = false
+Config.AutoFollow.Enabled = true
 
-Config.AutoFollow.Birdy = {}
+Config.AutoFollow.Birdy = {
+    "KING",
+	}
 
 Config.AutoFollow.Birdy.Enabled = true
 Config.AutoFollow.Birdy.Accounts = {
