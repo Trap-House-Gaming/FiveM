@@ -739,15 +739,17 @@ local Vehicles = {
 	{ model = 'CPtrackhawk',    name = 'Track Hawk',                   brand = 'Dodge',       	 price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'dillrzr',        name = 'Rzr SxS',                      brand = 'Polaris',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'civichycade',    name = 'Civic Hy',                     brand = 'Honda',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-	{ model = '300gtr',      name = '300zx',                        brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+	{ model = '300gtr',         name = '300zx',                        brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = '2014chargersrt8v2',     name = 'Charger SRT',           brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'DBr33vspecSC',   name = 'r33',                          brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = '240NismoTT',     name = '240sx',                        brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 	{ model = 'A1Box',          name = 'Caprice DONK',                 brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'A1CT5',          name = 'CT5',                          brand = 'Cadillac',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'emslambo',       name = 'Urus',                         brand = 'Lamborghini',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'rabbit22charger',   name = 'Charger',                   brand = 'Dodge',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'rabbit22charger2',   name = 'Charger',                   brand = 'Dodge',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'rabbit22charger',   name = 'Charger',                   brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'rabbit22charger2',   name = 'Charger',                  brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = '23BMWX7CF',      name = 'X7',                           brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    
 
 
 }
