@@ -1,13 +1,18 @@
 Config = {}
 
 Config.Notify = 'ox' -- 'qb' or 'ox' or 'none'
-Config.Target = 'ox' -- 'qb' or 'ox'
+Config.Target = 'ox' -- 'qb' or 'ox' or 'interact' [https://github.com/darktrovx/interact]
+Config.InterctView = 7.5 -- Only used if Config.Target == 'interact' | Does not affect 'qb' or 'ox'
+Config.InteractDist = 2.5 -- Only used if Config.Target == 'interact' | Does not affect 'qb' or 'ox'
 Config.Menu = 'ox' -- 'qb' or 'ox'
 Config.Progressbar = 'ox' -- 'qb' or 'ox'
-Config.Inventory = 'qb' -- 'qb' or 'ox'
+Config.Inventory = 'ox' -- 'qb' or 'ox'
 Config.Skillcheck = 'ox' -- 'ps' or 'ox'
 
 Config.FuelResource = 'LegacyFuel'
+
+-- Looking for GiveKeys config?
+-- Check: config_cl.lua
 
 Config.StartDeliveryPed = {
     Coords = vector4(-4.22, -659.18, 32.48, 183.34),
@@ -23,6 +28,9 @@ Config.Vehicle = 'stockade'
 
 Config.Use3DMarker = true
 
+Config.MinRunsToDone = 1
+Config.MaxRunsToDone = 3
+
 Config.VehicleSpawns = {
     vector4(-32.41, -670.52, 31.34, 187.86),
     vector4(-36.74, -671.4, 31.34, 186.63),
@@ -37,10 +45,16 @@ Config.MinBagsPerDestination = 1 -- minimum bags per location
 Config.MaxBagsPerDestination = 4 -- maximum bags per location
 
 Config.BagSpawns = {
-    vector4(234.72, 209.21, 104.39, 161.51),
-    vector4(929.34, 55.75, 80.1, 65.93)
     -- ADD MORE IN THE SAME FORMAT
-    vector4(-12.45, -678.57, 32.34, 206.6)
+    --vector4(-12.45, -678.57, 32.34, 206.6) --for test 
+    ---all banks
+    vector4(240.46197, 225.80572, 105.2869, 165.49162),
+    vector4(-354.3628, -53.91887, 48.03651, 247.68736),
+    vector4(-1212.502, -336.1436, 36.780963, 292.10525),
+    vector4(-2957.656, 480.38278, 14.697005, 333.28643),
+    vector4(146.06887, -1044.604, 28.368, 242.84365),
+    vector4(1177.191, 2711.5874, 37.087966, 78.774597),
+    vector4(-106.9418, 6468.7456, 30.626705, 51.005558),
 }
 
 Config.DropSpot = vector3(-9.58, -654.66, 32.91)
@@ -75,24 +89,24 @@ Config.OrganizerPed = {
 
 Config.OrganizerMarker = true
 
-Config.MoneyPerOrganizedMin = 100
-Config.MoneyPerOrganizedMax = 250
+Config.MoneyPerOrganizedMin = 300
+Config.MoneyPerOrganizedMax = 400
 
-Config.MinOrganizeWaitTime = 1000
-Config.MaxOrganizeWaitTime = 4000
+Config.MinOrganizeWaitTime = 2000
+Config.MaxOrganizeWaitTime = 6500
 
 
 
 Config.RobberySettings = {
     StockadeModels = {
-        
+        'stockade'
     },
     ThermiteParticle = 'proj_flare_trail',
     ExplosionPaticle = 'exp_grd_grenade_lod',
     WaitTimeForThermite = 10000,
     ThermiteItemName = 'thermite',
     IgnitionItemName = 'lighter',
-    MinBags = 0, -- ONLY NPC STOCKADES
-    MaxBags = 0, -- ONLY NPC STOCKADES
+    MinBags = 2, -- ONLY NPC STOCKADES
+    MaxBags = 5, -- ONLY NPC STOCKADES
 }
 

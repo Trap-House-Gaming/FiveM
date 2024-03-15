@@ -100,7 +100,7 @@
                 <p class="nameSong">{{locales.nothing}}</p></br>
                 <p class="timeSong">{{locales.timeSong}}</p>
 
-                <input type="text" class="url" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
+                <input type="text" maxlength="256" class="url" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
                 <div class="second-style-play-control">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" v-on:click="pauseMusic()">
                         <path d="M5.74609 3C4.7796 3 3.99609 3.7835 3.99609 4.75V19.25C3.99609 20.2165 4.7796 21 5.74609 21H9.24609C10.2126 21 10.9961 20.2165 10.9961 19.25V4.75C10.9961 3.7835 10.2126 3 9.24609 3H5.74609Z"/>
@@ -219,7 +219,7 @@
             <div class="second-style-edit-song" v-if="page === 'add_menu_to_que'">
                 <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["url_for_music"]}}</p>
                 <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["yt_play_list"]}}</p>
-                <input type="text" class="UrlForQue" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
+                <input type="text" maxlength="256" class="UrlForQue" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
                 <svg viewBox="0 0 18 18" v-on:click="addToQue()">
                     <g fill-rule="evenodd">
                         <g>
@@ -245,15 +245,15 @@
             <div class="second-style-edit-song" v-if="page === 'edit'">
                 <div v-if="!isPlayList">
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["name_music"]}}</p>
-                    <input type="text" class="AddName" name="name" :placeholder="[[ locales['placeholder_music_name'] ]]"></br>
+                    <input type="text" maxlength="64" class="AddName" name="name" :placeholder="[[ locales['placeholder_music_name'] ]]"></br>
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["url_for_music"]}}</p>
-                    <input type="text" class="AddUrl" name="url"
+                    <input type="text" maxlength="256" class="AddUrl" name="url"
                            :placeholder="[[ locales['placeholder_music'] ]]"></br>
 
                 </div>
                 <div v-else>
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["yt_play_list"]}}</p>
-                    <input type="text" class="AddUrl" name="url" placeholder="https://www.youtube.com/playlist?list=PL-GnE7_koBjc7qbZFHBx6ObFYWL7pGbR"></br>
+                    <input type="text" maxlength="256" class="AddUrl" name="url" placeholder="https://www.youtube.com/playlist?list=PL-GnE7_koBjc7qbZFHBx6ObFYWL7pGbR"></br>
                 </div>
 
                 <svg viewBox="0 0 18 18" v-on:click="editSong();">
@@ -384,7 +384,7 @@
                 <p class="nameSong">{{locales.nothing}}</p></br>
                 <p class="timeSong">{{locales.timeSong}}</p>
 
-                <input type="text" class="url" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
+                <input type="text" class="url" name="url" :placeholder="[[ locales['placeholder_music'] ]]" maxlength="256"></br>
                 <div class="playSong">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" v-on:click="pauseMusic()">
                         <path d="M5.74609 3C4.7796 3 3.99609 3.7835 3.99609 4.75V19.25C3.99609 20.2165 4.7796 21 5.74609 21H9.24609C10.2126 21 10.9961 20.2165 10.9961 19.25V4.75C10.9961 3.7835 10.2126 3 9.24609 3H5.74609Z"/>
@@ -504,7 +504,7 @@
             <div class="editSong" v-if="page === 'add_menu_to_que'">
                 <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["url_for_music"]}}</p>
                 <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["yt_play_list"]}}</p>
-                <input type="text" class="UrlForQue" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
+                <input type="text" class="UrlForQue" name="url" :placeholder="[[ locales['placeholder_music'] ]]" maxlength="256"></br>
                 <svg viewBox="0 0 18 18" v-on:click="addToQue()">
                     <g fill-rule="evenodd">
                         <g>
@@ -530,14 +530,14 @@
             <div class="editSong" v-if="page === 'edit'">
                 <div v-if="!isPlayList">
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["name_music"]}}</p>
-                    <input type="text" class="AddName" name="name" :placeholder="[[ locales['placeholder_music_name'] ]]"></br>
+                    <input type="text" maxlength="64" class="AddName" name="name" :placeholder="[[ locales['placeholder_music_name'] ]]"></br>
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["url_for_music"]}}</p>
-                    <input type="text" class="AddUrl" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
+                    <input type="text" maxlength="256" class="AddUrl" name="url" :placeholder="[[ locales['placeholder_music'] ]]"></br>
 
                 </div>
                 <div v-else>
                     <p style="position: relative;bottom: -8px;font-size: 17px;">{{locales["yt_play_list"]}}</p>
-                    <input type="text" class="AddUrl" name="url" placeholder="https://www.youtube.com/playlist?list=PL-GnE7_koBjc7qbZFHBx6ObFYWL7pGbR"></br>
+                    <input type="text" class="AddUrl" maxlength="256" name="url" placeholder="https://www.youtube.com/playlist?list=PL-GnE7_koBjc7qbZFHBx6ObFYWL7pGbR"></br>
                 </div>
 
                 <svg viewBox="0 0 18 18" v-on:click="editSong();">
