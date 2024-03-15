@@ -127,6 +127,9 @@ RegisterNetEvent('hospital:server:RestoreWeaponDamage', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
 	PlayerWeaponWounds[Player.PlayerData.source] = nil
+		if Player then
+		Player.Functions.SetMetaData('inlaststand', bool)
+	end
 end)
 
 RegisterNetEvent('hospital:server:SetDeathStatus', function(isDead)
