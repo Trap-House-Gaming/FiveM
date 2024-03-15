@@ -2,8 +2,8 @@ Config = {}
 
 Config.Notify = 'ox' -- 'qb' or 'ox' or 'none'
 Config.Target = 'ox' -- 'qb' or 'ox'
-Config.Menu = 'qb' -- 'qb' or 'ox'
-Config.Progressbar = 'qb' -- 'qb' or 'ox'
+Config.Menu = 'ox' -- 'qb' or 'ox'
+Config.Progressbar = 'ox' -- 'qb' or 'ox'
 Config.Inventory = 'qb' -- 'qb' or 'ox'
 Config.Skillcheck = 'ox' -- 'ps' or 'ox'
 
@@ -37,8 +37,8 @@ Config.MinBagsPerDestination = 1 -- minimum bags per location
 Config.MaxBagsPerDestination = 4 -- maximum bags per location
 
 Config.BagSpawns = {
-    --[[vector4(234.72, 209.21, 104.39, 161.51),
-    vector4(929.34, 55.75, 80.1, 65.93),]]
+    vector4(234.72, 209.21, 104.39, 161.51),
+    vector4(929.34, 55.75, 80.1, 65.93)
     -- ADD MORE IN THE SAME FORMAT
     vector4(-12.45, -678.57, 32.34, 206.6)
 }
@@ -75,11 +75,11 @@ Config.OrganizerPed = {
 
 Config.OrganizerMarker = true
 
-Config.MoneyPerOrganizedMin = 25
-Config.MoneyPerOrganizedMax = 150
+Config.MoneyPerOrganizedMin = 100
+Config.MoneyPerOrganizedMax = 250
 
-Config.MinOrganizeWaitTime = 2000
-Config.MaxOrganizeWaitTime = 6500
+Config.MinOrganizeWaitTime = 1000
+Config.MaxOrganizeWaitTime = 4000
 
 
 

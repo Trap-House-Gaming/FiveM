@@ -1,6 +1,7 @@
 Config = {
 	-- **** IMPORTANT ****
 	-- UseTarget should only be set to true when using qb-target
+	Config.Usetarget = false
 	UseTarget = GetConvar('UseTarget', 'false') == 'false',
 
 	OutsideLocation 	= vector4(55.55, 6472.18, 31.43, 44.0),

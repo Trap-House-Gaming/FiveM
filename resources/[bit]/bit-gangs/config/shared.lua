@@ -147,9 +147,31 @@ Blips.lblip = 730
 Blips.lcolor = 11
 Blips.lscale = 0.7
 Blips.ltext = "Gang Stash"
-
+local stashZones = {}
 function openLocker(gangname, location)
+    
+    for _, v in pairs(Config.Locations['stash']) do
+        stashZones[#stashZones + 1] = BoxZone:Create(
+            vector3(vector3(v.x, v.y, v.z)), 1.5, 1.5, {
+                name = 'box_zone',
+                debugPoly = false,
+                minZ = v.z - 1,
+                maxZ = v.z + 1,
+            })
+    end
 
+    local stashCombo = ComboZone:Create(stashZones, { name = 'stashCombo', debugPoly = false })
+    stashCombo:onPlayerInOut(function(isPointInside, _, _)
+        if isPointInside then
+            inStash = true
+            if PlayerJob.type == 'leo' and PlayerJob.onduty then
+                exports['qb-core']:DrawText(Lang:t('info.stash_enter'), 'left')
+                stash()
+            end
+        else
+            inStash = false
+            exports['qb-core']:HideText()
+        end
 end
 
 --  $$$$$$\  $$$$$$$\  $$$$$$$$\ $$\   $$\       $$$$$$$$\  $$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$$\ $$$$$$$$\       $$$$$$\ $$\   $$\ $$\    $$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  $$$$$$$\ $$\     $$\ 
@@ -178,7 +200,7 @@ end
 --    \__|   \________|\__|  \__|\__|  \__|\______|   \__|    \______/ \__|  \__|   \__|           \______/ \__|  \__|\__|        \__|    \______/ \__|  \__|\________|
 
 -- Activate or deactivate the territorial conquest system
-Config.useTerritorialConquest = true
+Config.useTerritorialConquest = false
 -- Points to be added for each second in enemy territory
 Config.pointsBySecond = 1
 
