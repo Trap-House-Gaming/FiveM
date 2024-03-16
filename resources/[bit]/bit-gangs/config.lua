@@ -208,8 +208,6 @@ AO.illegalPeoplePolice = true
 -- \_______/ \______| \______/ \__|      \__|  \__|  \__|    \______/ \__|  \__|
 
 function alertDispatch(location, action, message)
-    Example with cd_dispatch:
-
     local data = exports['ps-dispatch']:GetPlayerInfo()
     TriggerServerEvent('ps-dispatch:AddNotification', {
         job_table = {'police', }, 
@@ -273,7 +271,7 @@ Config.blacklist = {'nigger', 'nazi', 'moron', 'retard', 'faggot'}
 
 function notifications(notitype, message, time)
     -- Change this trigger for your notification system keeping the variables
-    TriggerEvent('zr-notify', message, time, notitype)
+    TriggerEvent('ox-notify', message, time, notitype)
 end
 
 -- Notifications types:

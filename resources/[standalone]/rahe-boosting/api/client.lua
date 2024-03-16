@@ -88,9 +88,10 @@ if clConfig.commandsEnabled then
 end
 
 -- GPS hacking device using through an event
-RegisterNetEvent("rahe-boosting:client:gpsHackingDeviceUsed")
-AddEventHandler("rahe-boosting:client:gpsHackingDeviceUsed", function()
-    useGpsHackingDevice()
+RegisterNetEvent("rahe-boosting:client:hackingDeviceUsed")
+AddEventHandler("rahe-boosting:client:hackingDeviceUsed", function()
+    TriggerEvent('qb-vehiclekeys:client:setLastPickedVehicle', QBCore.Functions.GetClosestVehicle())
+    useHackingDevice()
 end)
 
 
@@ -117,12 +118,24 @@ end)
 
 -- The event which can be used to give vehicle keys to the player after completing the hack of a special boost (A / S class).
 AddEventHandler('rahe-boosting:client:giveKeys', function(vehicleId, licensePlate)
-
+    TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', licensePlate)
 end)
 
 -- The event which will be triggered when a player hacks the engine of an important boost. This marks the start of a high priority boost.
 -- This event can be used to send a notification to police dispatch to alert the police.
 AddEventHandler('rahe-boosting:client:importantBoostStarted', function(location, vehicleId, vehicleClass)
+        exports["ps-dispatch"]:CustomAlert({
+            coords = location,
+            message = "Vehicle boost in progress",
+            dispatchCode = "10-35A",
+            description = 'Vehicle boost',
+            radius = 0,
+            plate = ('%s (%s class)'):format(GetVehicleNumberPlateText(vehicleId), vehicleClass),
+            sprite = 523,
+            color = 5,
+            scale = 1.5,
+            length = 3,
+        })
 
 end)
 
