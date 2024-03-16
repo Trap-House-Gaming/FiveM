@@ -749,9 +749,10 @@ local Vehicles = {
     { model = 'rabbit22charger',   name = 'Charger',                   brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'rabbit22charger2',   name = 'Charger',                  brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = '23BMWX7CF',      name = 'X7',                           brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'CafeHelloKitty',      name = 'BRZ',                     brand = 'Subaru',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     
 
-
+    
 }
 
 for i = 1, #Vehicles do
