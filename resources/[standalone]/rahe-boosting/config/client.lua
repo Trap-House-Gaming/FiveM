@@ -1,6 +1,6 @@
 clConfig = {
     -- If the default commands (/boosting, /usehackingdevice, /usegpshackingdevice) should be enabled. Disable this if you have them as inventory items.
-    commandsEnabled = false,
+    commandsEnabled = true,
 
     -- If the player should be ejected from an important class vehicle (by default A / S class), when the doors of that vehicle have not been hacked yet.
     -- This will force the players to hack the doors (which should 100% be done). You should ONLY disable this IF you are stopping the players from

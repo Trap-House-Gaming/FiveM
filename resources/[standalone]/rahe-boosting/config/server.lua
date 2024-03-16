@@ -16,7 +16,7 @@ svConfig = {
     initialContractAmount = 5,
 
     -- The amount of online police required for people to get important (A / S class) contracts. This will be applied to classes which have the 'isImportant' as true.
-    requiredPoliceAmount = 2,
+    requiredPoliceAmount = 0,
 
     --  Define the principal which will be given the ACE permission to use the in-game admin panel. If you don't wish to use this, set it to false.
     -- In order for this to work, make sure you allow ox_lib to grant permissions (https://overextended.dev/ox_lib) ('You'll also need to grant ace permissions to the resource.')

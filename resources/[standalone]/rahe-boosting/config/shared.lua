@@ -1,7 +1,7 @@
 shConfig = {
     -- Set your framework that you're using. Possible values: 'ESX', 'QB', 'CUSTOM'
     -- When using the 'CUSTOM' value, you will have to fill the functions yourself in /api/server.lua
-    framework = 'CHANGEME',
+    framework = 'QB',
 
     -- Locations to where players have to deliver the stolen cars.
     deliveryCoords = {
