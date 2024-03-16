@@ -13,14 +13,14 @@ HideWhenCantCraft = false, -- Instead of lowering the opacity it hides the item 
 
 Categories = {
 
-['misc'] = {
-	Label = 'MISC',
-	Image = 'fishingrod',
+['smgs'] = {
+	Label = 'SMGs',
+	Image = 'weapon_microsmg',
 	Jobs = {}
 },
 ['pistols'] = {
-	Label = 'WEAPONS',
-	Image = 'WEAPON_APPISTOL',
+	Label = 'Pistols',
+	Image = 'weapon_glockbeams',
 	Jobs = {}
 },
 ['medical'] = {
@@ -106,9 +106,196 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 		['steel'] = 150,
 		['metalscrap'] = 225
 	}
-}
-
 },
+['weapon_combatpistol'] = {
+	Level = 3, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 150,
+		['metalscrap'] = 225
+	}
+},
+['weapon_snspistol_mk2'] = {
+	Level = 4, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 150,
+		['metalscrap'] = 225
+	}
+},
+['weapon_heavypistol'] = {
+	Level = 6, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 150,
+		['metalscrap'] = 225
+	}
+},
+['weapon_pistolxm3'] = {
+	Level = 5, -- From what level this item will be craftable
+	Category = 'pistols', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 150,
+		['metalscrap'] = 225
+	}
+},
+
+
+
+--smgs
+['weapon_microsmg'] = {
+	Level = 10, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+
+	}
+},
+['weapon_machinepistol'] = {
+	Level = 12, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+},
+['weapon_minismg'] = {
+	Level = 13, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+},
+['weapon_smg'] = {
+	Level = 14, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+},
+['weapon_smg_mk2'] = {
+	Level = 15, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+},
+['weapon_assaultsmg'] = {
+	Level = 16, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+},
+['weapon_combatpdw'] = {
+	Level = 17, -- From what level this item will be craftable
+	Category = 'smgs', -- The category item will be put in
+	isGun = true, -- Specify if this is a gun so it will be added to the loadout
+	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
+	JobGrades = {}, -- What job grades can craft this item, leaving {} allows any grade
+	Amount = 1, -- The amount that will be crafted
+	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
+	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
+	Time = 20, -- Time in seconds it takes to craft this item
+	Ingredients = { -- Ingredients needed to craft this item
+		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
+		['steel'] = 350,
+		['iron'] = 450,
+		['copper'] = 450,
+	}
+}
+},--
 
 Workbenches = { -- Every workbench location, leave {} for jobs if you want everybody to access
 
