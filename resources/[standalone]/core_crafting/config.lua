@@ -20,7 +20,7 @@ Categories = {
 },
 ['pistols'] = {
 	Label = 'Pistols',
-	Image = 'weapon_glockbeams',
+	Image = 'WEAPON_SR40',
 	Jobs = {}
 },
 ['medical'] = {
@@ -75,7 +75,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 }, 
 
 ['weapon_pistol'] = {
-	Level = 1, -- From what level this item will be craftable
+	Level = 0, -- From what level this item will be craftable
 	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -92,7 +92,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 },
 
 ['weapon_pistol_mk2'] = {
-	Level = 2, -- From what level this item will be craftable
+	Level = 1, -- From what level this item will be craftable
 	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -108,7 +108,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	}
 },
 ['weapon_combatpistol'] = {
-	Level = 3, -- From what level this item will be craftable
+	Level = 2, -- From what level this item will be craftable
 	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -124,7 +124,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	}
 },
 ['weapon_snspistol_mk2'] = {
-	Level = 4, -- From what level this item will be craftable
+	Level = 3, -- From what level this item will be craftable
 	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -156,7 +156,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	}
 },
 ['weapon_pistolxm3'] = {
-	Level = 5, -- From what level this item will be craftable
+	Level = 4, -- From what level this item will be craftable
 	Category = 'pistols', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
