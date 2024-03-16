@@ -110,14 +110,14 @@ AK4Y.BuyCredits = {
         image = "./images/firstBoxCash.png",
         credit = "300 CR",
         extraCredit = "+60 Bonus CR",
-        link = "https://www.buy-code-link.com",
+        link = "https://traphouse.tebex.io/package/4560889",
     },
     [2] = {
         title = "50$",
         image = "./images/secondBoxCash.png",
         credit = "500 CR",
         extraCredit = "+100 Bonus CR",
-        link = "https://www.buy-code-link.com",
+        link = "https://traphouse.tebex.io/package/4560887",
     },
     [3] = {
         title = "200$",
