@@ -89,10 +89,10 @@ Config.OrganizerPed = {
 
 Config.OrganizerMarker = true
 
-Config.MoneyPerOrganizedMin = 150
-Config.MoneyPerOrganizedMax = 300
+Config.MoneyPerOrganizedMin = 100
+Config.MoneyPerOrganizedMax = 175
 
-Config.MinOrganizeWaitTime = 1500
+Config.MinOrganizeWaitTime = 2500
 Config.MaxOrganizeWaitTime = 4500
 
 

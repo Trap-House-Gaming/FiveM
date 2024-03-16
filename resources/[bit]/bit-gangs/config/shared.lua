@@ -48,7 +48,7 @@ Config.adminSprayTime = false
 -- Command to manage the time during which graffiti may be made
 Config.adminSprayCommand = "spraytime"
 -- Set Debug logs
-Config.debug = true
+Config.debug = false
 
 --  $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\        $$\      $$\ $$$$$$$$\ $$\   $$\ $$\   $$\ 
 -- $$  __$$\ $$  __$$\ $$$\  $$ |$$  __$$\       $$$\    $$$ |$$  _____|$$$\  $$ |$$ |  $$ |

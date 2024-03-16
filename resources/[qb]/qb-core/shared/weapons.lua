@@ -148,4 +148,39 @@ QBShared.Weapons = {
 	-- Animals
 	[`weapon_animal`]                = { name = 'weapon_animal', label = 'Animal', weapontype = 'Animals', ammotype = nil, damagereason = 'Mauled' },
 	[`weapon_cougar`]                = { name = 'weapon_cougar', label = 'Cougar', weapontype = 'Animals', ammotype = nil, damagereason = 'Mauled' },
+
+
+	--Kyros Weapon Pack V5
+	[`weapon_bar15`]                 = { name = 'weapon_bar15',       label = 'AR-15',             weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_blackarp`]              = { name = 'weapon_blackarp',    label = 'BLACK ARP',         weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_bscar`]                 = { name = 'weapon_bscar',       label = 'BLACK SCAR',        weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_thompson`]              = { name = 'weapon_thompson',    label = 'BLACK THOMPSON',    weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_dmk18`]                 = { name = 'weapon_dmk18',       label = 'DESERET MK18',      weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_lbtarp`]                = { name = 'weapon_lbtarp',      label = 'LB TAN ARP',        weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_ram7`]                  = { name = 'weapon_ram7',        label = 'RAM-7',             weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_redarp`]                = { name = 'weapon_redarp',      label = 'RED DRAG ARP',      weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_redm4a1`]               = { name = 'weapon_redm4a1',     label = 'RED DRAG M4A1',     weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_tarp`]                  = { name = 'weapon_tarp',        label = 'TAN ARP',           weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_woarp`]                 = { name = 'weapon_woarp',       label = 'WHITE OUT ARP',     weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_blueglocks`]            = { name = 'weapon_blueglocks',  label = 'BLUE GLOCK SWITCH', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_fn57`]                  = { name = 'weapon_fn57',        label = 'FN Five-seveN',     weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_glock21`]               = { name = 'weapon_glock21',     label = 'GLOCK 21',          weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_glock41`]               = { name = 'weapon_glock41',     label = 'GLOCK 41',          weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_glockbeams`]            = { name = 'weapon_glockbeams',  label = 'GLOCK BEAM SWITCH', weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_p30l`]                  = { name = 'weapon_p30l',        label = 'H&K P30L',          weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_illglock17`]            = { name = 'weapon_illglock17',  label = 'ILLEGAL GLOCK 17',  weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_mgglock`]               = { name = 'weapon_mgglock',     label = 'MG GLOCK',          weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_midasglock`]            = { name = 'weapon_midasglock',  label = 'MIDAS GLOCK',       weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_p210`]                  = { name = 'weapon_p210',        label = 'P210 CARRY',        weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_sr40`]                  = { name = 'weapon_sr40',        label = 'RUGER SR40',        weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_t1911`]                 = { name = 'weapon_t1911',       label = 'TAN 1911',          weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_tglock19`]              = { name = 'weapon_tglock19',    label = 'TAN G19',           weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_axe`]                   = { name = 'weapon_axe',         label = 'AXE',               weapontype = 'Melee', ammotype = nil, damagereason = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered' },
+	[`weapon_chair`]                 = { name = 'weapon_chair',       label = 'BRAWL CHAIR',       weapontype = 'Melee', ammotype = nil, damagereason = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered' },
+	[`weapon_krissvector`]           = { name = 'weapon_krissvector', label = 'KRISS VECTOR',      weapontype = 'Submachine Gun', ammotype = 'AMMO_SMG', damagereason = 'Riddled / Drilled / Finished / Submachine Gunned' },
+	[`weapon_tec9s`]                 = { name = 'weapon_tec9s',       label = 'TEC 9 W STRAP',     weapontype = 'Submachine Gun', ammotype = 'AMMO_SMG', damagereason = 'Riddled / Drilled / Finished / Submachine Gunned' },
+	[`weapon_m500`]                  = { name = 'weapon_m500',        label = 'MOSSBERG 500',      weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
+	[`weapon_r590`]                  = { name = 'weapon_r590',        label = 'REMINGTON 590',     weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
+
+
 }
