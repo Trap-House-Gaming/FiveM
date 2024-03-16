@@ -21,7 +21,7 @@ EXTERNAL_SCRIPTS_NAMES = {
 }
 
 -- Separator for values like $12.553.212 (default it's the dot '.')
-PRICES_SEPARATOR = "."
+PRICES_SEPARATOR = ","
 
 --[[
     The shared object of the framework will refresh each X seconds. If for any reason you don't want it to refresh, set to nil
