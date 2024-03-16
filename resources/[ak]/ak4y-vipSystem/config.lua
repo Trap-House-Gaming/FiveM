@@ -163,17 +163,17 @@ AK4Y.Vehicles = {
     },
     {
         id = 2,
-        spawnName = "brzdemonslayer", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "Subaru",
-        model = "BRZ",
-        year = "2024 MODEL",
+        spawnName = "2014chargersrt8v2", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "Dodge",
+        model = "Charger",
+        year = "2014 MODEL",
         costCredit = 400, -- The price to be paid for the product
         topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/brz.png",
+        carImage = "./images/audi.png",
     },
     {
         id = 3,
