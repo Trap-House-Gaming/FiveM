@@ -19,7 +19,7 @@ Config = {
 	},
 
 	Main = { -- Main variables
-		isVehicleOwned = true, 	-- Keep this true if you only want changes to be made to owned vehicles
+		isVehicleOwned = false, 	-- Keep this true if you only want changes to be made to owned vehicles
 		ItemRequiresJob = true, 	-- Do the specfic items require the mechanic job?
 		JobLocationRequired = true, -- Are the mecahanics locked to specific locations?
 		LocationBlips = true, 		-- Enable to grab the blip locations from locations.lua
