@@ -462,8 +462,8 @@ Config = {
 		skillcheck = "qb-skillbar", -- When adding Nos to a vehicle there are three script options available
 									-- "qb-skillbar" "qb-lock" "ps-ui" "ox_lib"
 
-		explosiveFail = true, 		-- Better not fail that skill check. (1 in 10 chance of explosion)
-		explosiveFailJob = true, 	-- if true, mechanics can trigger an explosion on failure to add nos
+		explosiveFail = false, 		-- Better not fail that skill check. (1 in 10 chance of explosion)
+		explosiveFailJob = false, 	-- if true, mechanics can trigger an explosion on failure to add nos
 									-- if false, mechanics will never trigger an explosion
 
 		HandlingChange = false,		-- Changes handling during nos boost, Disable this if affecting other scripts

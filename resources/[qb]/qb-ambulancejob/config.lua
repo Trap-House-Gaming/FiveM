@@ -90,7 +90,7 @@ Config.AuthorizedVehicles = { -- Grade is key, don't add same vehicle in multipl
         ['ReepEms'] = 'Jeep EMS',
         ['RodgeEms'] = 'Charger EMS'
     },
-    [3] = {
+    [4] = {
         ['RaviertEms'] = 'Range Rover EMS'
     }
 }
