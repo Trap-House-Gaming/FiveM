@@ -6,9 +6,9 @@ Config.DebugPoly = false
 
 Config.CharacterCreationMenu = {
     {menu = "character", label = "Character", selected = true},
-    {menu = "clothing", label = "Clothing", selected = true},
+    {menu = "clothing", label = "Clothing", selected = false},
     {menu = "accessoires", label = "Accessories", selected = false},
-    {menu = "tattoos", label = "Tattoos", selected = true},
+    {menu = "tattoos", label = "Tattoos", selected = false},
 }
 
 --Texture slots are not supported here
