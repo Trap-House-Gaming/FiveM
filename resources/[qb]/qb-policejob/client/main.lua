@@ -51,33 +51,11 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     local player = QBCore.Functions.GetPlayerData()
     PlayerJob = player.job
     isHandcuffed = false
-    TriggerServerEvent('police:server:SetHandcuffStatus', false)
-    TriggerServerEvent('police:server:UpdateBlips')
-    TriggerServerEvent('police:server:UpdateCurrentCops')
+    TriggerServerEvent("police:server:SetHandcuffStatus", false)
+    TriggerServerEvent("police:server:UpdateBlips")
+    TriggerServerEvent("police:server:UpdateCurrentCops")
 
-    if player.metadata.tracker then
-        local trackerClothingData = {
-            outfitData = {
-                ['accessory'] = {
-                    item = 13,
-                    texture = 0
-                }
-            }
-        }
-        TriggerEvent('qb-clothing:client:loadOutfit', trackerClothingData)
-    else
-        local trackerClothingData = {
-            outfitData = {
-                ['accessory'] = {
-                    item = -1,
-                    texture = 0
-                }
-            }
-        }
-        TriggerEvent('qb-clothing:client:loadOutfit', trackerClothingData)
-    end
-
-    if PlayerJob and PlayerJob.type ~= 'leo' then
+    if PlayerJob and PlayerJob.name ~= "police" then
         if DutyBlips then
             for _, v in pairs(DutyBlips) do
                 RemoveBlip(v)

@@ -11,7 +11,7 @@ AK4Y.Mysql = "oxmysql" -- Check fxmanifest.lua when you change it! | ghmattimysq
 AK4Y.OpenCommand = "playtimeShop"
 AK4Y.DefaultGarage = "pillboxgarage" -- purchased vehicles will be sent to this garage
 AK4Y.RewardCoin = 25
-AK4Y.NeededPlayTime = 120 -- Minutes
+AK4Y.NeededPlayTime = 60 -- Minutes
 
 AK4Y.Language = {
     title1 = "AK4Y",
@@ -84,7 +84,7 @@ AK4Y.Items = {
 
 AK4Y.CoinList = {
     { coinCount = 300, realPrice = 30, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 100, realPrice = 50, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
+    { coinCount = 500, realPrice = 50, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
     { coinCount = 700, realPrice = 70, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
     { coinCount = 900, realPrice = 90, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
     { coinCount = 1200, realPrice = 120, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },

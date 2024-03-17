@@ -45,7 +45,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         [2] = vector3(-254.88, 6324.5, 32.58),
     },
     ['vehicle'] = {
-        [1] = vector4(294.578, -574.761, 43.179, 35.79),
+        [1] = vector4(337.18, -579.95, 28.8, 336.69),
     },
     ['helicopter'] = {
         [1] = vector4(351.58, -587.45, 74.16, 160.5),
