@@ -14,7 +14,7 @@ AK4Y.PlayTime = true -- Does the player have to stay in the game for a certain a
 AK4Y.Time = 30 * 60000 -- 30 min
 AK4Y.AFKCheck = false -- if the player is afk for 10 minutes, the time he/she should have stayed in the game is reset
 AK4Y.DefaultGarage = 'pillboxgarage' -- Garage name where the vehicle will be sent after get reward
-AK4Y.StartDay = { day = 19, month = 9, year = 2022 } -- This is the start of the awards, this is Day 1 - Prizes increase day by day from this date
+AK4Y.StartDay = { day = 16, month = 3, year = 2024 } -- This is the start of the awards, this is Day 1 - Prizes increase day by day from this date
 
 AK4Y.Notify = function(text)
     ESX.ShowNotification(text)
