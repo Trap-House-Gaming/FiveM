@@ -272,7 +272,19 @@ Config.Teleports = {
             allowVeh = false,
             label = '[E] Leave'
         }
+    },
+    [3] = { --Pill box elevator
+    [1] = {
+        poly = { coords = vector3(331.75, -596.93, 43.28), heading = 225.16, length = 2, width = 2 },
+        allowVeh = false,
+        label = '[E] Go to 1st floor'
+    },
+    [2] = {
+        poly = { coords = vector3(340.78, -582.32, 28.8), heading = 253.35, length = 2, width = 2 },
+        allowVeh = false,
+        label = '[E] Go to 2nd floor'
     }
+}
 }
 
 Config.CarWash = {
