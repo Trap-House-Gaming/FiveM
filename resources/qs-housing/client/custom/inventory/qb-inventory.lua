@@ -12,7 +12,7 @@ function HousingStash(id, other, mlo)
     if mlo then -- For MLO stashes
         local others = {}
         others.maxweight = 50000
-        others.slots = 50
+        others.slots = 50000
         TriggerServerEvent('inventory:server:OpenInventory', 'stash', 'Housing_' .. id, others)
         TriggerEvent('inventory:client:SetCurrentStash', 'Housing_' .. id)
     else -- For IPL and Shell stashes
