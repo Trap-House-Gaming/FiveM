@@ -61,7 +61,6 @@ AK4Y.Items = {
     { id = 13, itemName = "weapon_crowbar", label = "CROWBAR", price = 60, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_crowbar.png" },
     { id = 14, itemName = "weapon_knife", label = "KNIFE", price = 95, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_knife.png" },
     { id = 15, itemName = "weapon_knuckle", label = "KNUCKLE", price = 65, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_knuckle.png" },
-    { id = 16, itemName = "weapon_grenade", label = "GRENADE", price = 45, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_grenade.png" },
 
     { id = 17, itemName = "advancedkit", label = "ADVANCED KIT", price = 50, count = 1, itemType = "item", category = "items", image = "./images/advancedkit.png" },
     { id = 18, itemName = "advancedlockpick", label = "ADVANCED LOCKPICK", price = 45, count = 1, itemType = "item", category = "items", image = "./images/advancedlockpick.png" },
