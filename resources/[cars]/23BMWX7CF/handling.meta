@@ -30,13 +30,13 @@
       <fTractionBiasFront value="0.485000" />
       <fTractionLossMult value="0.600000" />
       <fSuspensionForce value="2.650000" />
-      <fSuspensionCompDamp value="1.500000" />
+      <fSuspensionCompDamp value="2.200000" />
       <fSuspensionReboundDamp value="2.200000" />
       <fSuspensionUpperLimit value="0.050000" />
       <fSuspensionLowerLimit value="-0.110000" />
       <fSuspensionRaise value="0.000000" />
       <fSuspensionBiasFront value="0.520000" />
-      <fAntiRollBarForce value="0.800000" />
+      <fAntiRollBarForce value="1.000000" />
       <fAntiRollBarBiasFront value="0.600000" />
       <fRollCentreHeightFront value="0.740000" />
       <fRollCentreHeightRear value="0.740000" />
