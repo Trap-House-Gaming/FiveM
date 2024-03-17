@@ -41,7 +41,7 @@
 # NOTE MY PACKS SUPPORTS ALL INVENTORIES BUT ITS A SIMPLE COPY AND PASTE FOR OX & QB & QS & AK47 / IF YOU SAY THEY DON'T WORK UR THE DUMBASS FOR DOING IT WRONG 🫢
 
 ## [OX]   INVENTORY - https://github.com/overextended/ox_inventory          ## [`LOCATED-IN-FILES`] 
-## [QB]   INVENTORY - https://github.com/qbcore-framework/qb-inventory      ## [`LOCATED-IN-FILES`] ⚠️ 2 VERSIONS ONE IS FOR BEFORE QB CORE REWORK OF WEAPONS AND ONE IS AFTER ⚠️
+## [QB]   INVENTORY - https://github.com/qbcore-framework/ps-inventory      ## [`LOCATED-IN-FILES`] ⚠️ 2 VERSIONS ONE IS FOR BEFORE QB CORE REWORK OF WEAPONS AND ONE IS AFTER ⚠️
 ## [QS]   INVENTORY - https://buy.quasar-store.com/category/1930600         ## [`LOCATED-IN-FILES`] 
 ## [AK47] INVENTORY - https://switch to fucking ox instead of this.com      ## [`LOCATED-IN-FILES`]
 

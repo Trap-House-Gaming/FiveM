@@ -66,7 +66,7 @@ Config.Locations = {
 }
 
 Config.SecurityCameras = {
-    hideradar = false,
+    hideradar = true,
     cameras = {
         [1] = { label = 'Pacific Bank CAM#1', coords = vector3(257.45, 210.07, 109.08), r = { x = -25.0, y = 0.0, z = 28.05 }, canRotate = false, isOnline = true },
         [2] = { label = 'Pacific Bank CAM#2', coords = vector3(232.86, 221.46, 107.83), r = { x = -25.0, y = 0.0, z = -140.91 }, canRotate = false, isOnline = true },

@@ -16,10 +16,10 @@ AddEventHandler("core_crafting:itemCrafted", function(item, count)
     if Config.Recipes[item].SuccessRate >= math.random(0, 100) then
         if Config.Recipes[item].isGun then
             Player.Functions.AddItem(item, Config.Recipes[item].Amount)
-            TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add")
+            TriggerClientEvent('ps-inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add")
         else
             Player.Functions.AddItem(item, Config.Recipes[item].Amount)
-            TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add")
+            TriggerClientEvent('ps-inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add")
         end
         TriggerClientEvent('QBCore:Notify', src, 'Successful assembly', 'success')
         Player.Functions.SetMetaData("craftingrep", Player.PlayerData.metadata["craftingrep"]+(Config.ExperiancePerCraft))
@@ -55,7 +55,7 @@ function craft(src, item)
             if not Config.PermanentItems[k] then
             
                 xPlayer.Functions.RemoveItem(k, v)
-                TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[k], "remove")
+                TriggerClientEvent('ps-inventory:client:ItemBox', src, QBCore.Shared.Items[k], "remove")
             end
         end
         TriggerClientEvent("core_crafting:craftStart", src, item, reward)

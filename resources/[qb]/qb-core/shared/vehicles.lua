@@ -758,8 +758,8 @@ local Vehicles = {
     { model = 'ReepEms',        name = 'Track EMS',                    brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'RodgeEms',       name = 'Charger EMS',                  brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'DBdicytiffanyurus', name = 'Carbon Urus',               brand = 'Lamborghini',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'DBlcr34pd',      name = 'PD R34',                       brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'DBGCMobTahoeV2', name = 'Wide Body Tahoe',              brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 

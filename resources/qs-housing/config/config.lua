@@ -130,7 +130,7 @@ Config.Language = 'en'
     Inventory:
         'esx_inventory'
         'qs-inventory'
-        'qb-inventory'
+        'ps-inventory'
         'ox_inventory'
         'mf-inventory'
         'cheeza_inventory'
@@ -182,7 +182,7 @@ Config.Framework = qb and 'esx' or qbHas and 'qb' or 'none' -- You can change to
 
 
 Config.MenuType = 'ox_lib'
-Config.Inventory = 'qb-inventory'
+Config.Inventory = 'ps-inventory'
 Config.Wardrobe = 'qb-clothing'
 Config.Garage = 'qb-garages' -- or some option above
 Config.Logout = 'drop'
