@@ -6,11 +6,11 @@
     Enable Config.Debug to be able to see the log inside DebugPrint.
 ]]
 
-if Config.Society ~= 'qb-management' then
+if Config.Society ~= 'qb-banking' then
     return
 end
 
 function buyHouseSocietyMoney(src, societyName, societyPaid)
     DebugPrint('Society system, id: ' .. src .. ', society name: ' .. societyName .. ', Paid: ' .. societyPaid)
-    exports['qb-management']:AddMoney(societyName, societyPaid)
+    exports['qb-banking']:AddMoney(societyName, societyPaid)
 end

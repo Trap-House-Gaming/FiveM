@@ -304,7 +304,7 @@ Config.Realestatejob = {
         'none' -- Don't give money to anyone
 ]]
 
-Config.Society = 'qb-management' -- or "Society" options.
+Config.Society = 'xn-banking' -- or "Society" options.
 Config.SocietyPorcentage = 50
 Config.PercentageForSell = 50
 Config.Taxes = { AgencyFee = 7, BankFee = 10, TaxesFee = 20 }
