@@ -433,18 +433,14 @@ end)
 RegisterNetEvent('qb-garages:client:addHouseGarage', function(house, garageInfo) -- event from housing on garage creation
     local formattedHouseName = string.gsub(string.lower(house), ' ', '')
     Config.Garages[formattedHouseName] = {
-        houseName = house,
         takeVehicle = vector3(garageInfo.takeVehicle.x, garageInfo.takeVehicle.y, garageInfo.takeVehicle.z),
         spawnPoint = {
-            vector4(garageInfo.takeVehicle.x, garageInfo.takeVehicle.y, garageInfo.takeVehicle.z, garageInfo.takeVehicle.w)
+            vector4(garageInfo.takeVehicle.x, garageInfo.takeVehicle.y, garageInfo.takeVehicle.z, 0)
         },
         label = garageInfo.label,
         type = 'house',
-        category = Config.VehicleClass['all']
     }
-    TriggerServerEvent('qb-garages:server:syncGarage', Config.Garages)
 end)
-
 -- Handlers
 
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
