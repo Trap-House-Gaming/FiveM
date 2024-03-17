@@ -760,7 +760,7 @@ local Vehicles = {
     { model = 'DBdicytiffanyurus', name = 'Carbon Urus',               brand = 'Lamborghini',    price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'DBlcr34pd',      name = 'PD R34',                       brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'DBGCMobTahoeV2', name = 'Wide Body Tahoe',              brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'sou_c63swb',     name = 'C63 AMG',                      brand = 'Mercedes',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = '',      name = '',                     brand = '',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
 
 
