@@ -222,7 +222,7 @@ Config.BlipsOptions = {
     ShowAllHouses = true,      -- Shows all houses equally with owner and without owner alike
     ShowAvailableForJob = true, -- Shows houses available to sell only for Job -> Config.Realestatejob
     OwnedHouses = false,        -- Shows the houses that the player bought
-    AvalibleHouses = true,     -- Shows the houses that are not bought
+    AvalibleHouses = false,     -- Shows the houses that are not bought
     BoughtHouses = false,       -- Shows houses bought by other players
 }
 
