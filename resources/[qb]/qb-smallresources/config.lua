@@ -72,9 +72,9 @@ Config.Discord = {
 
 Config.Density = {
     parked = 0.5,
-    vehicle = 0.5,
+    vehicle = 0.3,
     multiplier = 0.5,
-    peds = 0.4,
+    peds = 0.3,
     scenario = 0.5
 }
 

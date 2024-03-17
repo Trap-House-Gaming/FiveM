@@ -12,7 +12,7 @@ Config.PainkillerInterval = 60                               -- Set the length o
 Config.HealthDamage = 5                                      -- Minumum damage done to health before checking for injuries
 Config.ArmorDamage = 5                                       -- Minumum damage done to armor before checking for injuries
 Config.ForceInjury = 35                                      -- Maximum amount of damage a player can take before limb damage & effects are forced to occur
-Config.AlwaysBleedChance = 70                                -- Set the chance out of 100 that if a player is hit with a weapon, that also has a random chance, it will cause bleeding
+Config.AlwaysBleedChance = 50                                -- Set the chance out of 100 that if a player is hit with a weapon, that also has a random chance, it will cause bleeding
 Config.MessageTimer = 12                                     -- How long it will take to display limb/bleed message
 Config.AIHealTimer = 20                                      -- How long it will take to be healed after checking in, in seconds
 Config.BleedTickRate = 30                                    -- How much time, in seconds, between bleed ticks
@@ -88,7 +88,7 @@ Config.Locations = {                -- Edit the various interaction points for p
 Config.AuthorizedVehicles = { -- Grade is key, don't add same vehicle in multiple grades. Higher rank can see lower
     [0] = {
         ['ReepEms'] = 'Jeep EMS',
-        ['rodgeEms'] = 'Charger EMS'
+        ['RodgeEms'] = 'Charger EMS'
     },
     [3] = {
         ['RaviertEms'] = 'Range Rover EMS'
