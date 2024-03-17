@@ -1,5 +1,5 @@
 Config = {}
-Config.Debug = true -- Set to true to enable debug mode
+Config.Debug = false -- Set to true to enable debug mode
 
 Config.DatabaseChecker = {}
 Config.DatabaseChecker.Enabled = true -- if true, the phone will check the database for any issues and fix them if possible

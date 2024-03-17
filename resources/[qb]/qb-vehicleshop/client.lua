@@ -732,6 +732,7 @@ RegisterNetEvent('qb-vehicleshop:client:buyShowroomVehicle', function(vehicle, p
         SetEntityHeading(veh, Config.Shops[tempShop]['VehicleSpawn'].w)
         TriggerEvent('vehiclekeys:client:SetOwner', QBCore.Functions.GetPlate(veh))
         TriggerServerEvent('qb-mechanicjob:server:SaveVehicleProps', QBCore.Functions.GetVehicleProperties(veh))
+        TriggerEvent('cd_garage:UpdateGarageType')
     end, vehicle, Config.Shops[tempShop]['VehicleSpawn'], true)
 end)
 

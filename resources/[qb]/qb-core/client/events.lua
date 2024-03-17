@@ -163,8 +163,8 @@ RegisterNetEvent('QBCore:Client:VehicleInfo', function(info)
     local plate = QBCore.Functions.GetPlate(info.vehicle)
     local hasKeys = true
 
-    if GetResourceState('qb-vehiclekeys') == 'started' then
-        hasKeys = exports['qb-vehiclekeys']:HasKeys()
+    if GetResourceState('cd_garage') == 'started' and plate then
+        hasKeys = exports['cd_garage']:DoesPlayerHaveKeys(plate)
     end
 
     local data = {
