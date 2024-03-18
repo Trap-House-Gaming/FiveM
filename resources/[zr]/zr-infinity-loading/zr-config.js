@@ -7,7 +7,7 @@ const backgroundRandomStart = true
 const backgroundInterval = 5  // in seconds
 
 const logo = {
-    title: 'Trap House Gaming | Role Play'',
+    title: 'Trap House Gaming | Role Play',
     subtitle: 'Welcome To'
 }
 
