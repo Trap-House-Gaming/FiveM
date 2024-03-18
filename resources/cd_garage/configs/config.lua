@@ -15,7 +15,7 @@ function L(cd) if Locales[Config.Language][cd] then return Locales[Config.Langua
 --The 'auto_detect' feature automatically identifies your framework and SQL database resource, and applies the appropriate default settings.
 
 Config.Framework = 'auto_detect' --[ 'auto_detect' / 'other' ]   If you select 'auto_detect', only ESX and QBCore frameworks will be detected. Use 'other' for custom frameworks.
-Config.Database = 'auto_detect' --[ 'auto_detect' ]   If you select 'auto_detect', only MySQL, GHMattimysql, and Oxmysql SQL database resources will be detected.
+Config.Database = 'oxmysql' --[ 'auto_detect' ]   If you select 'auto_detect', only MySQL, GHMattimysql, and Oxmysql SQL database resources will be detected.
 Config.AutoInsertSQL = false --Would you like the script to insert the necessary SQL tables into your database automatically? If you have already done this, please set it to false.
 Config.Notification = 'auto_detect' --[ 'auto_detect' / 'other' ]   If you select 'auto_detect', only ESX, QBCore, okokNotify, ps-ui and ox_lib notifications will be detected. Use 'other' for custom notification resources.
 Config.Language = 'EN' --[ 'EN' / 'CZ' / 'DE' / 'DK' / 'ES' / 'FI' / 'FR' / 'NO' / 'NL' / 'PT' / 'SE' / 'SK' ]   You can add your own locales to locales.lua, but be sure to update the Config.Language to match it.
@@ -69,9 +69,9 @@ Config.Keys = {
 }
 
 Config.UniqueGarages = false --Do you want to only be able to get your car from the garage you last put it in?
-Config.SaveAdvancedVehicleDamage = true --Do you want to save poped tyres, broken doors and broken windows and re-apply them all when spawning a vehicle?
+Config.SaveAdvancedVehicleDamage = false --Do you want to save poped tyres, broken doors and broken windows and re-apply them all when spawning a vehicle?
 Config.UseExploitProtection = true --Do you want to enable the cheat engine protection to check the vehicle hashes when a vehicle is stored?
-Config.ResetGarageState = true --Do you want the in_garage state of all vehicles to be reset when the script starts/restarts?
+Config.ResetGarageState = false --Do you want the in_garage state of all vehicles to be reset when the script starts/restarts?
 
 
 --██╗   ██╗███████╗██╗  ██╗██╗ ██████╗██╗     ███████╗███████╗    ██████╗  █████╗ ████████╗ █████╗ 
