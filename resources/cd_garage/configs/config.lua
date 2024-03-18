@@ -263,11 +263,11 @@ Config.VehicleKeys = {
         ENABLE = true, --Do you want to use the vehicle locking system?
         lock_from_inside = true, --Do you want to also lock the vehicle from the inside when the vehicle is locked? (meaning when the vehicle is locked players can not exit).
         command = 'vehlock', --Customise the chat command.
-        key = 'm' --Customise the key.
+        key = 'L' --Customise the key.
     },
 
     Lockpick = {
-        ENABLE = true, --Do you want to use the vehicle lockpick system?
+        ENABLE = false, --Do you want to use the vehicle lockpick system?
         command = { --Do you want players to use a chat command to start lockpicking a vehicle?
             ENABLE = true,
             chat_command = 'lockpick' --Customise the chat command.

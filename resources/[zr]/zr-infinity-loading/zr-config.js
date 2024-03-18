@@ -7,7 +7,7 @@ const backgroundRandomStart = true
 const backgroundInterval = 5  // in seconds
 
 const logo = {
-    title: 'OBug Roleplay',
+    title: 'Trap House Gaming | Role Play'',
     subtitle: 'Welcome To'
 }
 
@@ -383,23 +383,23 @@ const commands = {
 const links = {
     discord: {
         icon: '/zr-assets/links/zr-icon-discord.svg',
-        link: 'https://discord.com/invite/YPA3UcTUAy'
+        link: 'https://discord.gg/UE7nGjrKan''
     },
     link: {
         icon: '/zr-assets/links/zr-icon-link.svg',
-        link: 'https://0bugscripts.tebex.io/'
+        link: 'https://traphouse.tebex.io''
     },
     youtube: {
         icon: '/zr-assets/links/zr-icon-youtube.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: ''
     },
     instagram: {
         icon: '/zr-assets/links/zr-icon-instagram.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: ''
     },
     x: {
         icon: '/zr-assets/links/zr-icon-x.svg',
-        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
+        link: ''
     }
 }
 
@@ -524,28 +524,28 @@ const patchNotes = {
 
 const team = [
     {
-        image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBugScripts',
-        role: 'Developer'
+        image: '/zr-assets/team/serious.webp',
+        name: 'SERIOUS',
+        role: 'Owner & Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'Inki Lino',
-        role: 'Developer'
+        name: 'KIVG.LUIS',
+        role: 'Co-Owner'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'Maadlou',
-        role: 'Designer'
+        name: 'ViVi',
+        role: 'Staff Manager'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBug Staff',
+        name: 'Trill',
         role: 'Admin'
     },
-    {
+	{
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'OBug Staff',
+        name: 'Kidd',
         role: 'Admin'
     },
 ]
@@ -568,25 +568,13 @@ function onYouTubeIframeAPIReady() {
 }
 
 let autoplay = true;
-let volume = 100; //Values between 0 and 100
+let volume = 50; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {
-      name: "Night Owl",
-      artist: "Broke For Free",
-      image: "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
-    },
-    {
-      name: "Enthusiast",
-      artist: "Tours",
-      image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
-    },
-    {
-      name: "Shipping Lanes",
-      artist: "Chad Crouch",
-      image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
-      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
-    },
+      name: "Run This Town",
+      artist: "Jay-Z Ft. Rhianna, kanye west",
+      image: "",
+      path: "/zr-assets/video/runtown"
+    }
 ];
