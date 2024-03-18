@@ -2,10 +2,12 @@ const backgrounds = [
     'zr-assets/img/background.webp', //the default one should be named as background
     'zr-assets/img/background2.webp', //the rest don't matter
 ]
+
+const backgroundRandomStart = true
 const backgroundInterval = 5  // in seconds
 
 const logo = {
-    title: 'Trap House Gaming | Role Play',
+    title: 'OBug Roleplay',
     subtitle: 'Welcome To'
 }
 
@@ -381,23 +383,23 @@ const commands = {
 const links = {
     discord: {
         icon: '/zr-assets/links/zr-icon-discord.svg',
-        link: 'https://discord.gg/UE7nGjrKan'
+        link: 'https://discord.com/invite/YPA3UcTUAy'
     },
     link: {
         icon: '/zr-assets/links/zr-icon-link.svg',
-        link: 'https://traphousegaming.org/'
+        link: 'https://0bugscripts.tebex.io/'
     },
     youtube: {
         icon: '/zr-assets/links/zr-icon-youtube.svg',
-        link: 'http://www.youtube.com'
+        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
     },
     instagram: {
         icon: '/zr-assets/links/zr-icon-instagram.svg',
-        link: 'http://www.instagram.com'
+        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
     },
     x: {
         icon: '/zr-assets/links/zr-icon-x.svg',
-        link: 'http://www.twitter.com'
+        link: 'https://www.youtube.com/channel/UCW6MWCjkXBNZeNjeYCNEpbA'
     }
 }
 
@@ -522,25 +524,35 @@ const patchNotes = {
 
 const team = [
     {
-        image: '/zr-assets/team/serious.webp',
-        name: 'SERIOUS',
-        role: 'Owner & Developer'
+        image: '/zr-assets/team/zr-developer.webp',
+        name: 'OBugScripts',
+        role: 'Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'KIVG.LUIS',
-        role: 'Co-Owner & Developer'
+        name: 'Inki Lino',
+        role: 'Developer'
     },
     {
         image: '/zr-assets/team/zr-developer.webp',
-        name: 'MilkdYoCat',
+        name: 'Maadlou',
+        role: 'Designer'
+    },
+    {
+        image: '/zr-assets/team/zr-developer.webp',
+        name: 'OBug Staff',
+        role: 'Admin'
+    },
+    {
+        image: '/zr-assets/team/zr-developer.webp',
+        name: 'OBug Staff',
         role: 'Admin'
     },
 ]
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('zr-youtube-player', {
-        videoId: 'AYO-17BDVCw', // Replace with the actual YouTube video ID
+        videoId: 'h2vv-snKA18', // Replace with the actual YouTube video ID
         playerVars: {
         'autoplay': 0, // When set to 1, the video will automatically start playing as soon as the player loads. If set to 0, the video requires the user to click the play button.
         'controls': 1, //When set to 1, it shows the player controls (play/pause, volume, etc.). If set to 0, the controls are hidden.
@@ -555,14 +567,26 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-let autoplay = false;
-let volume = 50; //Values between 0 and 100
+let autoplay = true;
+let volume = 100; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {
-      name: "Run This Town",
-      artist: "Jay-Z Ft. Rhianna, kanye west",
-      image: "",
-      path: "/zr-assets/music/runtown"
-    }
+      name: "Night Owl",
+      artist: "Broke For Free",
+      image: "https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+    },
+    {
+      name: "Enthusiast",
+      artist: "Tours",
+      image: "https://images.pexels.com/photos/3100835/pexels-photo-3100835.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
+    },
+    {
+      name: "Shipping Lanes",
+      artist: "Chad Crouch",
+      image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
+      path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+    },
 ];
