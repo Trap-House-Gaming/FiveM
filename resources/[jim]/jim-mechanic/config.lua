@@ -1,5 +1,4 @@
 Config = {
-
 	Lan = "en", -- Pick your language file here
 	System = {
 		Debug = false, -- Set to true to show green debug boxes to help track any issues
@@ -14,7 +13,7 @@ Config = {
 	},
 
 	General = {
-		JimShops = true,			-- Enable to open shops in jim-shops menu's
+		JimShops = false,			-- Enable to open shops in jim-shops menu's
 		showClockInTill = true,		-- Enable to show toggle duty options at payment tills
 		showBossMenuTill = true,	-- Enable to show bossmenu options at payment tills
 	},
@@ -99,7 +98,7 @@ Config = {
 		increaseEngDamage = true,		-- enabling this adds extra damage based on what the body damage has just taken
 
 		damageLimits = {
-			petrolTank = 750.0,			-- Prevents tankHealth ever going below ( if this goes too low fuel leaks and instantly destorys the engine)
+			petrolTank = 1000.0,			-- Prevents tankHealth ever going below ( if this goes too low fuel leaks and instantly destorys the engine)
 			engine = 50.0,				-- Prevents engine Damage ever going below 50.0
 			engineUndriveable = true,	-- If engine is at the above level, make it undriveable
 			body = 50.0,				-- Prevent body damage going below 50.0
@@ -433,7 +432,7 @@ Config = {
 	},
 
 	NOS = { -- NOS STUF
-		JobOnly = true,			-- Only allow job roles to change NOS
+		JobOnly = false,			-- Only allow job roles to change NOS
 		NosRefillCharge = 1000, 	-- amount in dollars required to refill a nos can
 
 		NosBoostPower = { 			-- NOS boost acceleration power
@@ -447,8 +446,8 @@ Config = {
 		NitrousCoolDown = 7, 		-- 7 Seconds for nitrous cooldown, set to 0 to disable
 		CooldownConfirm = true, 	-- Will play a confirmation beep when cooldown is done
 
-		nosDamage = false, 			-- This enables NOS causing damage to engine while boosting
-		boostExplode = false, 		-- If boosting too long at level 3 boost, tank will explode.
+		nosDamage = true, 			-- This enables NOS causing damage to engine while boosting
+		boostExplode = true, 		-- If boosting too long at level 3 boost, tank will explode.
 
 		-- Effects
 		PurgeDis = 60.0,			-- How far from the vehicle players can see Purge Smoke

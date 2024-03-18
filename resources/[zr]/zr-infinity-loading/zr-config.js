@@ -383,11 +383,11 @@ const commands = {
 const links = {
     discord: {
         icon: '/zr-assets/links/zr-icon-discord.svg',
-        link: 'https://discord.gg/UE7nGjrKan''
+        link: 'https://discord.gg/UE7nGjrKan'
     },
     link: {
         icon: '/zr-assets/links/zr-icon-link.svg',
-        link: 'https://traphouse.tebex.io''
+        link: 'https://traphouse.tebex.io'
     },
     youtube: {
         icon: '/zr-assets/links/zr-icon-youtube.svg',
