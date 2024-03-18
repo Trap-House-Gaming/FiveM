@@ -1,5 +1,5 @@
 Config = {
-	Config.Harness.HarnessControl == true
+
 	Lan = "en", -- Pick your language file here
 	System = {
 		Debug = false, -- Set to true to show green debug boxes to help track any issues
