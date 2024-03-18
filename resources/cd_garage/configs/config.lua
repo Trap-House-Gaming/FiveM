@@ -403,7 +403,7 @@ Config.StaffPerms = {
 
 
 Config.InsideGarage = {
-    ENABLE = false, --Do you want to allow players to use the inside garage?
+    ENABLE = true, --Do you want to allow players to use the inside garage?
     only_showcars_inthisgarage = false, --Do you want the inside garage to only show the vehicles which are currently stored at that garage (eg., garage A).  (this works for inside garage only, even with this enabled all the cars will show in the outside UI).
     shell_z_axis = 30, --This is how low under the ground the garage shell will spawn, you could use math.random(10,50) to make it random each time so players dont see each other in their garage.
     shell_time_script = 'easytime', --Choose which time script you are using so we can set the time when you enter the shell. [ 'easytime' / 'vsync' / 'qbcore' / 'other' ].
@@ -635,7 +635,7 @@ end
 
 Config.Locations = {
     {
-        Garage_ID = 'A', --The very first car garage's `garage_id` must be the same as the default value of the `garage_id` in the database as when a vehicle is purchased it gets sent to this garage. You can change the garage id's to what ever you like but make sure to also change the default garage_id in the database.
+        Garage_ID = 'pillboxgarage', --The very first car garage's `garage_id` must be the same as the default value of the `garage_id` in the database as when a vehicle is purchased it gets sent to this garage. You can change the garage id's to what ever you like but make sure to also change the default garage_id in the database.
         Type = 'car', --The type of vehicles which use this garage. ('car'/'boat'/'air').
         Dist = 10, --The distance that you can use this garage.
         x_1 = 215.09, y_1 = -805.17, z_1 = 30.81, --This is the location of the garage, where you press e to open for example.
@@ -650,7 +650,7 @@ Config.Locations = {
 
     
     {
-        Garage_ID = 'B', --PINK MOTEL
+        Garage_ID = 'PinkMotel', --PINK MOTEL
         Type = 'car',
         Dist = 10,
         x_1 = 273.0, y_1 = -343.85, z_1 = 44.91,
