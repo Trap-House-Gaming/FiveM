@@ -83,7 +83,7 @@ Config.ResetGarageState = true --Do you want the in_garage state of all vehicles
 
 
 Config.VehiclesData = {
-    ENABLE = false, --Do you want to allow the script to grab vehicles data ( ESX: from the 'vehicles' table in the database / QBCORE: from the shared.lua ).
+    ENABLE = true, --Do you want to allow the script to grab vehicles data ( ESX: from the 'vehicles' table in the database / QBCORE: from the shared.lua ).
     -- Read our documentation website for more info - https://docs.codesign.pro/paid-scripts/garage#vehicles-data.
     --This will be force enabled (at the bottom of this file) if you use QBCore.
 
