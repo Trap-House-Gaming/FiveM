@@ -14,7 +14,7 @@ Config = {
 	},
 
 	General = {
-		JimShops = false,			-- Enable to open shops in jim-shops menu's
+		JimShops = true,			-- Enable to open shops in jim-shops menu's
 		showClockInTill = true,		-- Enable to show toggle duty options at payment tills
 		showBossMenuTill = true,	-- Enable to show bossmenu options at payment tills
 	},
@@ -433,7 +433,7 @@ Config = {
 	},
 
 	NOS = { -- NOS STUF
-		JobOnly = false,			-- Only allow job roles to change NOS
+		JobOnly = true,			-- Only allow job roles to change NOS
 		NosRefillCharge = 1000, 	-- amount in dollars required to refill a nos can
 
 		NosBoostPower = { 			-- NOS boost acceleration power
@@ -447,8 +447,8 @@ Config = {
 		NitrousCoolDown = 7, 		-- 7 Seconds for nitrous cooldown, set to 0 to disable
 		CooldownConfirm = true, 	-- Will play a confirmation beep when cooldown is done
 
-		nosDamage = true, 			-- This enables NOS causing damage to engine while boosting
-		boostExplode = true, 		-- If boosting too long at level 3 boost, tank will explode.
+		nosDamage = false, 			-- This enables NOS causing damage to engine while boosting
+		boostExplode = false, 		-- If boosting too long at level 3 boost, tank will explode.
 
 		-- Effects
 		PurgeDis = 60.0,			-- How far from the vehicle players can see Purge Smoke

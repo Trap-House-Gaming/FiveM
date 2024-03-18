@@ -12,3 +12,6 @@ files {
     'wrapper.lua',
     'crafting.lua',
 }
+shared_scripts {
+    '@ox_lib/init.lua',
+}

@@ -50,7 +50,7 @@ Config.PlateFormats = 'mixed' --[ 'trimmed' /  'with_spaces' / 'mixed' ] CHOOSE 
 Config.UsingOnesync = true --Do you use OneSync legacy/infinity?
 Config.IdentifierType = 'license' --[ 'steamid' / 'license' ] Choose the identifier type that your server uses.
 Config.UseFrameworkDutySystem = false --Do you want to use your frameworks (esx/qbcore) built-in duty system?
-Config.Debug = true --To enable debug prints.
+Config.Debug = false --To enable debug prints.
 
 
 --███╗   ███╗ █████╗ ██╗███╗   ██╗
@@ -71,7 +71,7 @@ Config.Keys = {
 Config.UniqueGarages = false --Do you want to only be able to get your car from the garage you last put it in?
 Config.SaveAdvancedVehicleDamage = false --Do you want to save poped tyres, broken doors and broken windows and re-apply them all when spawning a vehicle?
 Config.UseExploitProtection = true --Do you want to enable the cheat engine protection to check the vehicle hashes when a vehicle is stored?
-Config.ResetGarageState = false --Do you want the in_garage state of all vehicles to be reset when the script starts/restarts?
+Config.ResetGarageState = true --Do you want the in_garage state of all vehicles to be reset when the script starts/restarts?
 
 
 --██╗   ██╗███████╗██╗  ██╗██╗ ██████╗██╗     ███████╗███████╗    ██████╗  █████╗ ████████╗ █████╗ 
@@ -123,7 +123,7 @@ Config.Impound = {
 
     Authorized_Jobs = { --Only jobs inside this table can impound vehicles or unimpound vehicles.
         ['police'] = true,
-        ['mechanic'] = true,
+        ['mechanic'] = false,
         --['add_more_here'] = true,
     },
 
@@ -491,7 +491,7 @@ Config.InsideGarage = {
 Config.JobVehicles = {
     ENABLE = true, --Do you want players with defined jobs (below) to be able to use the garage ui to spawn job vehicles? (if disabled none of the options below will be used).
     choose_liverys = false, --Do you want players to be able to change liverys when they spawn a vehicle at a job garage?
-    share_job_keys = false, --Do you want job vehicle keys to be automatically shared with other players with the same job? (requires you to be using the built in cd_garage keys feature).
+    share_job_keys = true, --Do you want job vehicle keys to be automatically shared with other players with the same job? (requires you to be using the built in cd_garage keys feature).
 
     Locations = {
         --coords: Where the job garage can be accessed from.
