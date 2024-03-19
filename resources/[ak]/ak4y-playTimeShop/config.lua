@@ -47,14 +47,14 @@ AK4Y.Categories = {
 
 -- itemType : vehicle, weapon, item, money
 AK4Y.Items = {
-    { id = 1, itemName = "weapon_heavypistol", label = "HEAVY PISTOL", price = 1250, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_heavypistol.png" },
+    { id = 1, itemName = "weapon_heavypistol", label = "HEAVY PISTOL", price = 125, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_heavypistol.png" },
     { id = 2, itemName = "weapon_combatpistol", label = "COMBAT PISTOL", price = 100, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_combatpistol.png" },
     { id = 3, itemName = "weapon_appistol", label = "AP PISTOL", price = 300, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_appistol.png" },
-    { id = 4, itemName = "weapon_advancedrifle", label = "ADVANCED RIFLE", price = 450, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_advancedrifle.png" },
-    { id = 5, itemName = "weapon_smg", label = "SMG", price = 200, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_smg.png" },
-    { id = 6, itemName = "weapon_specialcarbine", label = "SPECIAL CARBINE", price = 45000, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_specialcarbine.png" },
+    { id = 4, itemName = "weapon_advancedrifle", label = "ADVANCED RIFLE", price = 750, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_advancedrifle.png" },
+    { id = 5, itemName = "weapon_smg", label = "SMG", price = 300, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_smg.png" },
+    { id = 6, itemName = "weapon_specialcarbine", label = "SPECIAL CARBINE", price = 550, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_specialcarbine.png" },
     { id = 7, itemName = "weapon_specialcarbine_mk2", label = "SPECIAL CARBINE MK2", price = 650, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_specialcarbine_mk2.png" },
-    { id = 9, itemName = "weapon_combatpdw", label = "COMBAT PDW", price = 85, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_combatpdw.png" },
+    { id = 9, itemName = "weapon_combatpdw", label = "COMBAT PDW", price = 350, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_combatpdw.png" },
     { id = 10, itemName = "weapon_assaultrifle", label = "ASSAULT RIFLE", price = 650, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_assaultrifle.png" },
     { id = 11, itemName = "weapon_carbinerifle", label = "CARBINE RIFLE", price = 700, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_carbinerifle.png" },
     { id = 12, itemName = "weapon_bullpuprifle", label = "BULLPUP RIFLE", price = 850, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_bullpuprifle.png" },

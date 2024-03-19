@@ -13,5 +13,5 @@ files {
     'crafting.lua',
 }
 shared_scripts {
-    '@ox_lib/init.lua',
+    --'@ox_lib/init.lua',
 }
