@@ -551,15 +551,15 @@ let volume = 75; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {
+        name: "Costa Rica",
+        artist: "Dreamville",
+        image: "",
+        path: "/zr-assets/video/dreamville.mp3"  
+    },
+    {
       name: "Run This Town",
       artist: "Jay-Z Ft. Rhianna, kanye west",
       image: "",
       path: "/zr-assets/video/runtown.mp3"
-    },
-    {
-        name: "Costa Rica",
-        artist: "Dreamville",
-        image: "",
-        path: "/zr-assets/video/dreamville.mp3"
-      },
+    }
 ];
