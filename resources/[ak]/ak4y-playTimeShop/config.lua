@@ -49,7 +49,7 @@ AK4Y.Categories = {
 AK4Y.Items = {
     { id = 1, itemName = "weapon_heavypistol", label = "HEAVY PISTOL", price = 125, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_heavypistol.png" },
     { id = 2, itemName = "weapon_combatpistol", label = "COMBAT PISTOL", price = 100, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_combatpistol.png" },
-    { id = 3, itemName = "weapon_appistol", label = "AP PISTOL", price = 300, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_appistol.png" },
+    { id = 3, itemName = "weapon_appistol", label = "AP PISTOL", price = 225, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_appistol.png" },
     { id = 4, itemName = "weapon_advancedrifle", label = "ADVANCED RIFLE", price = 750, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_advancedrifle.png" },
     { id = 5, itemName = "weapon_smg", label = "SMG", price = 300, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_smg.png" },
     { id = 6, itemName = "weapon_specialcarbine", label = "SPECIAL CARBINE", price = 550, count = 1, itemType = "weapon", category = "weapons", image = "./images/weapon_specialcarbine.png" },
@@ -64,7 +64,7 @@ AK4Y.Items = {
 
     { id = 17, itemName = "advancedkit", label = "ADVANCED KIT", price = 50, count = 1, itemType = "item", category = "items", image = "./images/advancedkit.png" },
     { id = 18, itemName = "advancedlockpick", label = "ADVANCED LOCKPICK", price = 45, count = 1, itemType = "item", category = "items", image = "./images/advancedlockpick.png" },
-    { id = 19, itemName = "armor", label = "ARMOR", price = 35, count = 1, itemType = "item", category = "items", image = "./images/armor.png" },
+    { id = 19, itemName = "armor", label = "ARMOR", price = 75, count = 1, itemType = "item", category = "items", image = "./images/armor.png" },
     { id = 20, itemName = "joint", label = "JOINT", price = 55, count = 1, itemType = "item", category = "items", image = "./images/joint.png" },
     { id = 21, itemName = "visacard", label = "VISA CARD", price = 95, count = 1, itemType = "item", category = "items", image = "./images/visacard.png" },
     { id = 22, itemName = "mastercard", label = "MASTER CARD", price = 75, count = 1, itemType = "item", category = "items", image = "./images/mastercard.png" },
@@ -79,10 +79,10 @@ AK4Y.Items = {
 }
 
 AK4Y.CoinList = {
-    { coinCount = 300, realPrice = 30, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 500, realPrice = 50, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 700, realPrice = 70, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 900, realPrice = 90, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 1200, realPrice = 120, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
-    { coinCount = 1500, realPrice = 150, link = "https://www.yourTebexLink.com/crediAmountPage.html", image = "./images/coin.png" },
+    { coinCount = 300, realPrice = 30, link = "https://traphouse.tebex.io/package/6182806", image = "./images/coin.png" },
+    { coinCount = 500, realPrice = 50, link = "https://traphouse.tebex.io/package/6182833", image = "./images/coin.png" },
+    { coinCount = 700, realPrice = 70, link = "https://traphouse.tebex.io/package/6182834", image = "./images/coin.png" },
+    { coinCount = 900, realPrice = 90, link = "https://traphouse.tebex.io/package/6182835", image = "./images/coin.png" },
+    { coinCount = 1200, realPrice = 120, link = "https://traphouse.tebex.io/package/6182837", image = "./images/coin.png" },
+    { coinCount = 1500, realPrice = 150, link = "https://traphouse.tebex.io/package/6182838", image = "./images/coin.png" },
 }

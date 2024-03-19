@@ -68,13 +68,13 @@ Config.Products = {
         {name = 'diving_fill', price = 500,  amount = 10, info = {}, type = 'item'},
     },
     ['weapons'] = {
-        {name = 'weapon_knife',         price = 250,  amount = 250, info = {}, type = 'weapon'},
-        {name = 'weapon_bat',           price = 250,  amount = 250, info = {}, type = 'weapon'},
-        {name = 'weapon_hatchet',       price = 250,  amount = 250, info = {}, type = 'weapon'},
+        {name = 'weapon_knife',         price = 1000,  amount = 250, info = {}, type = 'weapon'},
+        {name = 'weapon_bat',           price = 500,  amount = 250, info = {}, type = 'weapon'},
+        {name = 'weapon_hatchet',       price = 1500,  amount = 250, info = {}, type = 'weapon'},
         {name = 'pistol_ammo',          price = 250,  amount = 250, info = {}, type = 'item',   requiredLicense = { 'weapon' }},
-        {name = 'weapon_pistol',        price = 2500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_snspistol',     price = 1500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_vintagepistol', price = 4000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
+        {name = 'weapon_pistol',        price = 7500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
+        {name = 'weapon_snspistol',     price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
+        {name = 'weapon_vintagepistol', price = 20000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
     },
     ['casino'] = {
         {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
@@ -82,7 +82,11 @@ Config.Products = {
 }
 
 Config.Locations = {
+-- Electronic Store
+
+
     -- 24/7 Locations
+	
     ['247supermarket'] = {
         ['label'] = '24/7 Supermarket',
         ['coords'] = vector4(24.47, -1346.62, 29.5, 271.66),
@@ -442,7 +446,7 @@ Config.Locations = {
     ['ammunation'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(-661.96, -933.53, 21.83, 177.05),
+        ['coords'] = vector4(-6659.12, -939.55, 21.83, 245.05),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
@@ -506,7 +510,7 @@ Config.Locations = {
     ['ammunation5'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(253.63, -51.02, 69.94, 72.91),
+        ['coords'] = vector4(247.27, -51.45, 69.94, 338.24),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
@@ -522,7 +526,7 @@ Config.Locations = {
     ['ammunation6'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(23.0, -1105.67, 29.8, 162.91),
+        ['coords'] = vector4(18.01, -1107.88, 29.8, 151.92),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
