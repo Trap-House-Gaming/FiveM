@@ -247,17 +247,59 @@ AK4Y.Vehicles = {
     },
     {
         id = 8,
-        spawnName = "zentorno", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "AUDI",
-        model = "RS Q8",
+        spawnName = "300sdemon", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "Dodge",
+        model = "300 Demon",
         year = "2022 MODEL",
-        costCredit = 2850, -- The price to be paid for the product
-        topSpeed = 250, -- Top speed of the product
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/audi.png",
+        carImage = "./images/300sdemon.png",
+    },
+    {
+        id = 9,
+        spawnName = "BMWM5", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "BMW",
+        model = "M5",
+        year = "2016 MODEL",
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
+        topSpeedGraph = 90, -- Percentage of product top speed
+        brakingPower = 50, -- Percentage of braking power of the product
+        robustness = 90, -- Percentage of product robustness
+        vehType = "car", -- do not change
+        carImage = "./images/bmwm5.png",
+    },
+    {
+        id = 10,
+        spawnName = "jcm1000rr", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "BMW",
+        model = "S1000 RR",
+        year = "2024 MODEL",
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
+        topSpeedGraph = 90, -- Percentage of product top speed
+        brakingPower = 50, -- Percentage of braking power of the product
+        robustness = 90, -- Percentage of product robustness
+        vehType = "car", -- do not change
+        carImage = "./images/bmws100rr.png",
+    },
+    {
+        id = 11,
+        spawnName = "sou_c63swb", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "Mercedes",
+        model = "c63 AMG",
+        year = "2022 MODEL",
+        costCredit = 500, -- The price to be paid for the product
+        topSpeed = 170, -- Top speed of the product
+        topSpeedGraph = 90, -- Percentage of product top speed
+        brakingPower = 50, -- Percentage of braking power of the product
+        robustness = 90, -- Percentage of product robustness
+        vehType = "car", -- do not change
+        carImage = "./images/c63AMG.png",
     },
 }
 
