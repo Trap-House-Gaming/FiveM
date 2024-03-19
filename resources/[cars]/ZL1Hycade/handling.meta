@@ -5,7 +5,7 @@
     <Item type="CHandlingData">
       <handlingName>ZL1Hycade</handlingName>
       <fMass value="1800" />
-      <fDownforceModifier value="30.0" />
+      <fDownforceModifier value="0.15" />
       <fInitialDragCoeff value="3.0" />
       <fPercentSubmerged value="85" />
       <vecCentreOfMassOffset x="0" y="0" z="0" />

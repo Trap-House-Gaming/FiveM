@@ -5,7 +5,7 @@
     <Item type="CHandlingData">
       <handlingName>abfr34</handlingName>
       <fMass value="1800" />
-      <fDownforceModifier value="50.0" />
+      <fDownforceModifier value="0.10" />
       <fInitialDragCoeff value="2.0" />
       <fPercentSubmerged value="85" />
       <vecCentreOfMassOffset x="0" y="0" z="0" />
@@ -25,7 +25,7 @@
       <fTractionCurveMin value="6.6" />
       <fTractionCurveLateral value="22.0" />
       <fTractionSpringDeltaMax value="0.1" />
-      <fLowSpeedTractionLossMult value="0" />
+      <fLowSpeedTractionLossMult value="0.40" />
       <fCamberStiffnesss value="0" />
       <fTractionBiasFront value="0.48" />
       <fTractionLossMult value="0" />
