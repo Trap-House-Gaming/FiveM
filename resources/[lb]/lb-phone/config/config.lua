@@ -471,7 +471,7 @@ Config.KeyBinds = {
     -- Find keybinds here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     Open = { -- toggle the phone
         Command = "phone",
-        Bind = "F1",
+        Bind = "M",
         Description = "Open your phone"
     },
     Focus = { -- keybind to toggle the mouse cursor.
