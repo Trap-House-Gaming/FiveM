@@ -306,7 +306,7 @@ Config.Mileage = {
 
 
 Config.GarageSpace = {
-    ENABLE = false, --Do you want to limit the amount of cars each player can hold?
+    ENABLE = true, --Do you want to limit the amount of cars each player can hold?
     chat_command_main = 'garagespace', --Customise the chat command to purchase extra garage space.
     chat_command_check = 'checkgaragespace', --Customise the chat command to check how many garage slots you have.
 
@@ -650,7 +650,7 @@ Config.Locations = {
 
     
     {
-        Garage_ID = 'PinkMotel', --PINK MOTEL
+        Garage_ID = 'B', --PINK MOTEL
         Type = 'car',
         Dist = 10,
         x_1 = 273.0, y_1 = -343.85, z_1 = 44.91,
