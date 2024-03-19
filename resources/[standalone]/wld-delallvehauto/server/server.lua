@@ -5,6 +5,8 @@
 
 RegisterCommand(Config.commandName, function(source, args, rawCommand, user)
 TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 30 SECONDS ^1)")
+Wait(30000)
+TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 30 SECONDS ^1)")
 Wait(15000)
 TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 15 SECONDS ^1)")
 Wait(15000) 
