@@ -15,7 +15,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>MONSTER</audioNameHash>
+      <audioNameHash>chevroletlt4</audioNameHash>
       <layout>LAYOUT_STD_HIGHWINDOW</layout>
       <coverBoundOffsets>MOONBEAM_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -87,7 +87,7 @@
       <frequency value="50" />
       <swankness>SWANKNESS_2</swankness>
       <maxNum value="5" />
-      <flags>FLAG_EXTRAS_STRONG FLAG_PARKING_SENSORS FLAG_IS_OFFROAD_VEHICLE FLAG_IS_BULKY FLAG_USE_RESTRICTED_DRIVEBY_HEIGHT FLAG_DISABLE_DEFORMATION </flags>
+      <flags>FLAG_EXTRAS_STRONG FLAG_PARKING_SENSORS FLAG_IS_OFFROAD_VEHICLE FLAG_IS_BULKY FLAG_USE_RESTRICTED_DRIVEBY_HEIGHT FLAG_DISABLE_DEFORMATION FLAG_HAS_ROCKET_BOOST </flags>
       <type>VEHICLE_TYPE_CAR</type>
       <plateType>VPT_FRONT_AND_BACK_PLATES</plateType>
 	  <dashboardType>VDT_BANSHEE</dashboardType>

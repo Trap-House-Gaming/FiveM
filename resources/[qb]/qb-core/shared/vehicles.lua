@@ -761,7 +761,8 @@ local Vehicles = {
     { model = 'DBlcr34pd',      name = 'PD R34',                       brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'DBGCMobTahoeV2', name = 'Wide Body Tahoe',              brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'sou_c63swb',     name = 'C63 AMG',                      brand = 'Mercedes',       price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'ripjuice',       name = 'RIP Sirius',                   brand = 'porshe',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' }
+    { model = 'ripjuice',       name = 'RIP Sirius',                   brand = 'porshe',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'audirs6emsfire',       name = 'Audi RS6',               brand = 'audi',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' }
 
 
     
