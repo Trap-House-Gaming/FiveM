@@ -187,7 +187,7 @@ AK4Y.Vehicles = {
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/audi.png",
+        carImage = "./images/300sdemon.png",
     },
     {
         id = 4,
@@ -247,17 +247,17 @@ AK4Y.Vehicles = {
     },
     {
         id = 8,
-        spawnName = "300sdemon", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "Dodge",
-        model = "300 Demon",
-        year = "2022 MODEL",
+        spawnName = "23BMWX7CF", -- Spawn code of the vehicle that will be given when the product is received
+        brand = "BMW",
+        model = "X7",
+        year = "2024 MODEL",
         costCredit = 500, -- The price to be paid for the product
-        topSpeed = 170, -- Top speed of the product
+        topSpeed = 160, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/300sdemon.png",
+        carImage = "./images/bmwx7.png",
     },
     {
         id = 9,
@@ -285,7 +285,7 @@ AK4Y.Vehicles = {
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/bmws100rr.png",
+        carImage = "./images/bmws100.png",
     },
     {
         id = 11,
