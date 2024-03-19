@@ -555,5 +555,11 @@ let track_list = [
       artist: "Jay-Z Ft. Rhianna, kanye west",
       image: "",
       path: "/zr-assets/video/runtown.mp3"
-    }
+    },
+    {
+        name: "Costa Rica",
+        artist: "Dreamville",
+        image: "",
+        path: "/zr-assets/video/dreamville.mp3"
+      },
 ];
