@@ -3,7 +3,7 @@ const backgrounds = [
     'zr-assets/img/background2.webp', //the rest don't matter
 ]
 
-const backgroundRandomStart = true
+const backgroundRandomStart = false
 const backgroundInterval = 5  // in seconds
 
 const logo = {
@@ -57,31 +57,10 @@ const trans = {
 
 const newsArticles = [
     { 
-        title: "Wedding Bash", 
-        description: "Join the Wedding Bash on April 12th at 6:00 PM! Dress up and be part of this joyous celebration of love and laughter.",
-        rewardTitle: 'April 12th',
-        rewardValue: '6:00 PM',
-        image: "/zr-assets/news/slide1.webp"
-    },
-    { 
-        title: "LS Customs - Opening", 
-        description: "Join us on March 25th for the grand opening of our Mechanic Workshop, where skilled mechanics will showcase custom car expertise. Experience innovation, explore trends, and imagine the possibilities for your own ride.",
-        rewardTitle: 'March 25th',
-        rewardValue: '9:00 PM',
-        image: "/zr-assets/news/slide2.webp"
-    },
-    { 
-        title: "LSPD Recruitment Day", 
-        description: "Join the LSPD Recruitment Day on April 4th to explore opportunities to serve and protect Los Santos, whether you're a seasoned officer or a newcomer..",
-        rewardTitle: 'April 4th',
-        rewardValue: '8:00 AM',
-        image: "/zr-assets/news/slide3.webp"
-    },
-    { 
-        title: "Los Santos Race", 
-        description: "Join the Racing Extravaganza on March 18th at 8:00 PM GMT for a chance to win $350,000 Dollars and showcase your driving skills.Join the Join the Racing Extravaganza on March 18th at 8:00 PM GMT for a chance to win $350,000 Dollars and showcase your driving skills.",
-        rewardTitle: 'Cash Prize:',
-        rewardValue: '$350.000',
+        title: "Grand Opening", 
+        description: "Join the Grand Opening on TBD! Show up and show out at the grand opening for the city!",
+        rewardTitle: 'TBD',
+        rewardValue: 'TBD',
         image: "/zr-assets/news/slide4.webp"
     }
 ]
@@ -568,7 +547,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 let autoplay = true;
-let volume = 50; //Values between 0 and 100
+let volume = 75; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {
