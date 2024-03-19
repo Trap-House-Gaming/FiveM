@@ -8,14 +8,14 @@
       <txdName>sou_c63swb</txdName>
       <handlingId>sou_c63swb</handlingId>
       <gameName>sou_c63swb</gameName>
-      <vehicleMakeName>dodge</vehicleMakeName>
+      <vehicleMakeName>Mercedes</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
       <animConvRoofDictName>null</animConvRoofDictName>
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>superchargerdemonv8</audioNameHash>
+      <audioNameHash>sl65amgv12</audioNameHash>
       <layout>LAYOUT_STANDARD</layout>
       <coverBoundOffsets>ZION_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
