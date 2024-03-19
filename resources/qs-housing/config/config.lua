@@ -608,7 +608,7 @@ Config.CreateHouseIPL = {
     but it's only for development.
 ]]
 
-Config.Debug = false
+Config.Debug = true
 Config.ZoneDebug = false
 Config.CreditDebugTime = 1000 -- This value needs to be bigger than 0 and in ms (ADVANCED USERS ONLY AND DO NOT USE THIS ON A LIVE SERVER)
 
