@@ -3,8 +3,8 @@ const backgrounds = [
     'zr-assets/img/background2.webp', //the rest don't matter
 ]
 
-const backgroundRandomStart = false
-const backgroundInterval = 5  // in seconds
+const backgroundRandomStart = true
+const backgroundInterval = 2  // in seconds
 
 const logo = {
     title: 'Trap House Gaming | Role Play',

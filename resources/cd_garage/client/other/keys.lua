@@ -204,23 +204,21 @@ if Config.VehicleKeys.ENABLE then
                     if data then
                         wait = 5
                         if not data.has_key and GetVehicleClass(vehicle) ~= 13 and IsControlJustReleased(0, Config.Keys.StartHotwire_Key) then
-                            TriggerEvent('cd_garage:ToggleNUIFocus')
                             StartCarAlarm(vehicle)
-                            for c, d in ipairs(Config.VehicleKeys.Hotwire.ActionBar) do
-                                result = ActionBar(d.seconds, d.size, d.chances)
-                                if not result then
-                                    break
+                            exports['ps-dispatch']:VehicleTheft(vehicle)
+                            TaskPlayAnim(ped, "veh@break_in@0h@p_m_one@", "low_force_entry_ds", 3.0, 3.0, -1, 16, 0, 0, 0, 0)
+
+                            exports['ps-ui']:Circle(function(success)
+                                if success then
+                                    ClearPedTasks(ped)
+                                    AddKey(plate)
                                 else
-                                    Wait(3000)
+                                    TriggerServerEvent('hud:server:GainStress', math.random(1, 4))
+                                    TriggerEvent("QBCore:Notify", "You failed to lockpick.", "error")
                                 end
-                            end
+                            end, 4, 12)
                         end
 
-                        NUI_status = false
-                        if result then
-                            AddKey(plate)
-                            result = nil
-                        end
                     end
                 end
                 Wait(wait)
@@ -400,14 +398,26 @@ if Config.VehicleKeys.ENABLE then
                         end
                         LockpickAnimation(vehicle)
                         StartCarAlarm(vehicle)
-                        local hacking = exports['cd_keymaster']:StartKeyMaster()
+                        exports['ps-dispatch']:CarJacking(vehicle)
+                        TaskPlayAnim(ped, "veh@break_in@0h@p_m_one@", "low_force_entry_ds", 3.0, 3.0, -1, 16, 0, 0, 0, 0)
+                        exports['ps-ui']:Circle(function(hacking)
                         if hacking then
+                            ClearPedTasks(ped)
                             UnLockVehicle(vehicle, false)
                         else
+                            TriggerServerEvent('hud:server:GainStress', math.random(1, 4))
                             Notif(3, 'lockpicking_failed')
                         end
+                    end, 2, 12)
                         ClearPedTasks(PlayerPedId())
                         doing_animation = false
+                        -- if hacking then
+                        --     UnLockVehicle(vehicle, false)
+                        -- else
+                        --     Notif(3, 'lockpicking_failed')
+                        -- end
+                        -- ClearPedTasks(PlayerPedId())
+                        -- doing_animation = false
                     else
                         Notif(3, 'vehicle_not_locked')
                     end

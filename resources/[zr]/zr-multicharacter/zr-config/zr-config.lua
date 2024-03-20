@@ -27,7 +27,7 @@ zr_config.DefaultModels = {"mp_m_freemode_01","mp_f_freemode_01"}
 zr_config.zr_notify = false
 
 zr_config.clothing = 'qb-clothing' -- 'illenium-appearance' or 'qb-clothing'
-zr_config.spawn = 'zr-locations' --  'ps-housing' or 'qb-spawn'
+zr_config.spawn = 'qb-spawn' --  'ps-housing' or 'qb-spawn'
 
 zr_config.Animslist = {              -- Add here as many animations as you want. 
     "WORLD_HUMAN_HANG_OUT_STREET",
@@ -47,7 +47,7 @@ zr_config.discord_roles = {
     ["1000377003704336476"] = 2, -- Add extra 2 slots if player has this role.
     ["1004486369919373392"] = 1, -- Add extra 1 slot if player has this role.
 }
-zr_config.discord = 'https://discord.gg/FwedjEV6kY'
+zr_config.discord = 'https://discord.gg/4DGj7m4jrK'
 
 zr_config.EnableDelete = true
 zr_config.EnableDeleteByDiscord = false
