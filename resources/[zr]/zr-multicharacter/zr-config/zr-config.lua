@@ -27,7 +27,7 @@ zr_config.DefaultModels = {"mp_m_freemode_01","mp_f_freemode_01"}
 zr_config.zr_notify = false
 
 zr_config.clothing = 'qb-clothing' -- 'illenium-appearance' or 'qb-clothing'
-zr_config.spawn = 'qb-spawn' --  'ps-housing' or 'qb-spawn'
+zr_config.spawn = 'zr-locations' --  'ps-housing' or 'qb-spawn'
 
 zr_config.Animslist = {              -- Add here as many animations as you want. 
     "WORLD_HUMAN_HANG_OUT_STREET",
