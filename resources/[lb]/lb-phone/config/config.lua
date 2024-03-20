@@ -152,7 +152,7 @@ Config.Valet.Price = 500 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
-Config.Valet.FixTakeOut = false -- repair the vehicle after taking it out?
+Config.Valet.FixTakeOut = true -- repair the vehicle after taking it out?
 
 Config.HouseScript = "qs-housing" --[[
     The housing script you use on your server
