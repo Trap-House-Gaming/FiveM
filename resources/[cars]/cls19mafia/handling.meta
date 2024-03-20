@@ -5,7 +5,7 @@
     <Item type="CHandlingData">
       <handlingName>cls19mafia</handlingName>
     <fMass value="1905.000000"/>
-    <fInitialDragCoeff value="3.220000"/>
+    <fInitialDragCoeff value="5.220000"/>
     <fPercentSubmerged value="85.000000"/>
     <vecCentreOfMassOffset x="0.000000" y="-0.322000" z="-0.115000"/>
     <vecInertiaMultiplier x="1.300000" y="1.500000" z="1.500000"/>
@@ -15,7 +15,7 @@
     <fDriveInertia value="1.000000"/>
     <fClutchChangeRateScaleUpShift value="2.500000"/>
     <fClutchChangeRateScaleDownShift value="2.500000"/>
-    <fInitialDriveMaxFlatVel value="307.504089"/>
+    <fInitialDriveMaxFlatVel value="210.504089"/>
     <fBrakeForce value="1.000000"/>
     <fBrakeBiasFront value="0.425000"/>
     <fHandBrakeForce value="0.450000"/>
@@ -24,10 +24,10 @@
     <fTractionCurveMin value="2.560000"/>
     <fTractionCurveLateral value="22.500000"/>
     <fTractionSpringDeltaMax value="0.150000"/>
-    <fLowSpeedTractionLossMult value="0.800000"/>
+    <fLowSpeedTractionLossMult value="0.600000"/>
     <fCamberStiffnesss value="0.000000"/>
     <fTractionBiasFront value="0.493000"/>
-    <fTractionLossMult value="1.000000"/>
+    <fTractionLossMult value="0.800000"/>
     <fSuspensionForce value="2.650000"/>
     <fSuspensionCompDamp value="1.500000"/>
     <fSuspensionReboundDamp value="2.200000"/>
