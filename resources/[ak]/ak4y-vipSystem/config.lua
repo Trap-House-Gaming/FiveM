@@ -17,7 +17,7 @@ AK4Y.MinCharForPhoneNumber = 1 -- Minimum number of characters required for a sp
 AK4Y.MinCharForPlate = 1 -- Minimum number of characters required for a custom plate
 AK4Y.MaxCharForPhoneNumber = 7 -- Minimum number of characters required for a special number
 AK4Y.MaxCharForPlate = 8 -- Minimum number of characters required for a custom plate
-AK4Y.DefaultGarage = 'pillboxgarage' -- Garage name where the vehicle will be sent after purchase
+AK4Y.DefaultGarage = 'Alta Garage' -- Garage name where the vehicle will be sent after purchase
 AK4Y.WeaponType = "item" -- item or weapon
 AK4Y.UseTebex = true -- Do you use tebex to sell code?
 
