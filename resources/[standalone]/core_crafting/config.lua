@@ -195,7 +195,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 		['rubber'] = 125
 	}
 },
-['clip_attachment '] = {
+['clip_attachment'] = {
 	Level = 5, -- From what level this item will be craftable
 	Category = 'pattach', -- The category item will be put in
 	isGun = false, -- Specify if this is a gun so it will be added to the loadout
@@ -336,7 +336,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 
 Workbenches = { -- Every workbench location, leave {} for jobs if you want everybody to access
 
-		{coords = vector3(31.07,-639,15.95), jobs = {}, gangs = {}, blip = false, recipes = {'pistols', 'pattach'}, radius = 3.0 }
+		{coords = vector3(22.85,-634.94,7.51), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_pistol', 'weapon_pistol_mk2', 'weapon_combatpistol', 'weapon_snspistol_mk2','weapon_pistolxm3','weapon_heavypistol','weapon_appistol','pistol_ammo','clip_attachment'}, radius = 3.0 }
 
 },
  

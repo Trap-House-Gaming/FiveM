@@ -407,11 +407,11 @@ Config = {
 	},
 
 	ManualRepairs = { -- Player vehicle repair config
-		ManualRepairCost = 1500, 	-- Set this to a high amount to get people to talk to mechanics rather than use automated systems
+		ManualRepairCost = 2500, 	-- Set this to a high amount to get people to talk to mechanics rather than use automated systems
 		ManualRepairCostBased = false, 	-- Set this to true if you want the cost to ALWAYS be the amount set at "ManualRepairCost"
 									-- Set this to false if you want it to "ManualRepairCost" to be the max and cost is calculated by damage
 
-		ManualRepairBased = true, 	-- Set this to true if you want to set the repair cost to be based on Core.Shared.Vehicle costs(overrides the cost setting above)
+		ManualRepairBased = false, 	-- Set this to true if you want to set the repair cost to be based on Core.Shared.Vehicle costs(overrides the cost setting above)
 		ManualRepairPercent = 5,	-- Set this to the percent of the vehicle price (Only works if ManualRepairBased is true)
 									-- Default is 5% because $200,000 would be $10,000 max to repair by this system
 									-- 5% of a $10,000 car would be $500
