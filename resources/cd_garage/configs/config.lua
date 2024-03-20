@@ -650,10 +650,10 @@ Config.Locations = {
 
     
     {
-        Garage_ID = 'B', --PINK MOTEL
+        Garage_ID = 'Alta Garage', --PINK MOTEL
         Type = 'car',
         Dist = 10,
-        x_1 = 273.0, y_1 = -343.85, z_1 = 44.91,
+        x_1 = -304.97, y_1 = -985.45, z_1 = 31.08,
         EventName1 = 'cd_garage:QuickChoose',
         EventName2 = 'cd_garage:EnterGarage',
         Name = UIText,

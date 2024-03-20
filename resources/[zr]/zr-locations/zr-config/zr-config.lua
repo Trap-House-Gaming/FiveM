@@ -25,19 +25,19 @@ zr_config.zr_locations = {
         spawn = vector4(-536.2222, -226.3347, 37.666244, 212.51023),
         image = "./zr-assets/cityhall.webp"
     },
-    {
-        name = "unicorn", 
-        label = "Vanilla Unicorn", 
-        description = "Premier strip club with music, exotic performances, and a lively atmosphere.",
-        spawn = vector4(155.4, -1303.31, 29.2, 105.84),
-        image = "./zr-assets/unicorn.webp"
-    },
     { 
         name = "Alta", 
         label = "Alta Apartments", 
         description = "Your new home in the city, this is the spot!",
         spawn = vector4(-268.13, -956.71, 31.22, 223.69),
         image = "./zr-assets/alta.webp"
+    },
+    {
+        name = "unicorn", 
+        label = "Vanilla Unicorn", 
+        description = "Premier strip club with music, exotic performances, and a lively atmosphere.",
+        spawn = vector4(155.4, -1303.31, 29.2, 105.84),
+        image = "./zr-assets/unicorn.webp"
     },
     { 
         name = "pinkcage", 
