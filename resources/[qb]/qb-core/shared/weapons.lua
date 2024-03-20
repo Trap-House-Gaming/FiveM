@@ -182,5 +182,21 @@ QBShared.Weapons = {
 	[`weapon_m500`]                  = { name = 'weapon_m500',        label = 'MOSSBERG 500',      weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
 	[`weapon_r590`]                  = { name = 'weapon_r590',        label = 'REMINGTON 590',     weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
 
+	--Kyros Weapon Pack Police
+	[`weapon_pdg19`]                 = { name = 'weapon_pdg19',       label = 'PD GLOCK 19',       weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_pdg22`]                 = { name = 'weapon_pdg22',       label = 'PD GLOCK 22',       weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_pdp88`]                 = { name = 'weapon_pdp88',       label = 'PD WALTHER P88',    weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_pdhk45`]                = { name = 'weapon_pdhk45',      label = 'PD HK45',           weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_pdhkusp`]               = { name = 'weapon_pdhkusp',     label = 'PD HK USP',         weapontype = 'Pistol', ammotype = 'AMMO_PISTOL', damagereason = 'Pistoled / Blasted / Plugged / Bust a cap in' },
+	[`weapon_hk417`]                 = { name = 'weapon_hk417',       label = 'PD HK417',          weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_pdcm607`]               = { name = 'weapon_pdcm607',     label = 'PD COLT M607',      weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_pdc7`]                  = { name = 'weapon_pdc7',        label = 'PD COLT C7',        weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_pdhk33`]                = { name = 'weapon_pdhk33',      label = 'PD HK433',          weapontype = 'Assault Rifle', ammotype = 'AMMO_RIFLE', damagereason = 'Ended / Rifled / Shot down / Floored' },
+	[`weapon_pdbaton`]               = { name = 'weapon_pdbaton',     label = 'PD BATON',          weapontype = 'Melee',  ammotype = nil, damagereason = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered' },
+	[`weapon_btaser`]                = { name = 'weapon_btaser',      label = 'PD BLACK TASER',    weapontype = 'Pistol', ammotype = 'AMMO_STUNGUN', damagereason = 'Died' },
+	[`weapon_ytaser`]                = { name = 'weapon_ytaser',      label = 'PD YELLOW TASER',   weapontype = 'Pistol', ammotype = 'AMMO_STUNGUN', damagereason = 'Died' },
+	[`weapon_pd870`]                 = { name = 'weapon_pd870',       label = 'PD REMINGTON 870',  weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
+	[`weapon_pdbm3`]                 = { name = 'weapon_pdbm3',       label = 'PD BENELLI M3',     weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
+	[`weapon_pdm700`]                = { name = 'weapon_pdm700',      label = 'PD REMINGTON M700', weapontype = 'Sniper Rifle', ammotype = 'AMMO_SNIPER', damagereason = 'Sniped / Picked off / Scoped' },
 
 }

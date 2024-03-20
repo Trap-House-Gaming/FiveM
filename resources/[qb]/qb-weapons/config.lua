@@ -184,6 +184,21 @@ Config.DurabilityMultiplier = {
         weapon_tglock19 	 	     = 0.15,
         weapon_tec9s 	 	         = 0.15,
         weapon_woarp   	             = 0.15,
+		weapon_pdbaton 	             = 0.10,
+		weapon_btaser 	             = 0.10,
+		weapon_ytaser 		         = 0.10,
+		weapon_pdg19 	             = 0.15,
+		weapon_pd870 	             = 0.15,
+		weapon_pdm700 	             = 0.15,
+		weapon_hk417 		         = 0.15,
+		weapon_pdcm607 	             = 0.15,
+		weapon_pdc7 	             = 0.15,
+		weapon_pdg22 	             = 0.15,
+		weapon_pdbm3                 = 0.15,
+		weapon_pdp88 	             = 0.15,
+		weapon_pdhk45                = 0.15,
+		weapon_pdhk33                = 0.15,
+		weapon_pdhkusp 	             = 0.15,
 }
 
 Config.WeaponRepairPoints = {
@@ -285,6 +300,8 @@ WeaponAttachments = {
         weapon_tglock = `COMPONENT_TGLOCK19_CLIP_02`, -- v5
         weapon_tec9s = `COMPONENT_TEC9S_CLIP_02`, -- v5
         weapon_woarp = `COMPONENT_WOARP_CLIP_02`, -- v5
+		weapon_hk417 = `COMPONENT_PDHK417_CLIP_02`, -- pd
+        weapon_pdg19 = `COMPONENT_PDG19G4_CLIP_02`, -- pd
     },
     drum_attachment = {
         weapon_smg = `COMPONENT_SMG_CLIP_03`,
@@ -347,6 +364,7 @@ WeaponAttachments = {
         weapon_bar15 = `COMPONENT_AT_AR_BAR15_FLSH`, -- v5
         weapon_dmk18 = `COMPONENT_AT_AR_DMK18_FLSH`, -- v5
         weapon_glockbeams = `COMPONENT_AT_PI_GLOCKBEAMS_FLSH`, -- v5
+		weapon_pdg19 = `COMPONENT_AT_PI_PDG19G4_FLSH`, -- pd
     },
     suppressor_attachment = {
         weapon_pistol = `COMPONENT_AT_PI_SUPP`,
@@ -393,6 +411,7 @@ WeaponAttachments = {
         weapon_ziptie = `COMPONENT_AT_AR_ZIPTIE_SUPP`, -- v4
         weapon_dmk18 = `COMPONENT_AT_AR_DMK18_SUPP`, -- v5
         weapon_redm4a1 = `COMPONENT_AT_AR_REDM4A1_SUPP`, -- v5
+		weapon_pdg19 = `COMPONENT_AT_PI_PDG19G4_SUPP`, -- pd
     },
     smallscope_attachment = {
         weapon_pistol_mk2 = `COMPONENT_AT_PI_RAIL`,

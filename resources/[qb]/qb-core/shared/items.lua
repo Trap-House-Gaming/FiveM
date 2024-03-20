@@ -1216,5 +1216,21 @@ QBShared.Items = {
  manual                      = { name = 'manual', label = 'Manual Transmission', weight = 0, type = 'item', image = 'manual.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Manual Transmission change for vehicles' },
  underglow                   = { name = 'underglow', label = 'Underglow LEDS', weight = 0, type = 'item', image = 'underglow.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'Underglow addition for vehicles' },
 
+	--Kyros Weapon Pack Police
+    weapon_pdg19                 = { name = 'weapon_pdg19',       label = 'PD GLOCK 19',       weight = 2000, type = 'weapon', ammotype = 'AMMO_PISTOL', image = 'WEAPON_PDG19.png', unique = true, useable = false, description = 'PD GLOCK 19' },
+    weapon_pdg22                 = { name = 'weapon_pdg22',       label = 'PD GLOCK 22',       weight = 2000, type = 'weapon', ammotype = 'AMMO_PISTOL', image = 'WEAPON_PDG22.png', unique = true, useable = false, description = 'PD GLOCK 22' },
+    weapon_pdp88                 = { name = 'weapon_pdp88',       label = 'PD WALTHER P88',    weight = 2000, type = 'weapon', ammotype = 'AMMO_PISTOL', image = 'WEAPON_PDP88.png', unique = true, useable = false, description = 'PD WALTHER P88' },
+    weapon_pdhk45                = { name = 'weapon_pdhk45',      label = 'PD HK45',           weight = 2000, type = 'weapon', ammotype = 'AMMO_PISTOL', image = 'WEAPON_PDHK45.png', unique = true, useable = false, description = 'PD HK45' },
+    weapon_pdhkusp               = { name = 'weapon_pdhkusp',     label = 'PD HK USP',         weight = 2000, type = 'weapon', ammotype = 'AMMO_PISTOL', image = 'WEAPON_PDHKUSP.png', unique = true, useable = false, description = 'PD HK USP' },
+    weapon_hk417                 = { name = 'weapon_hk417',       label = 'PD HK417',          weight = 4000, type = 'weapon', ammotype = 'AMMO_RIFLE', image = 'WEAPON_HK417.png', unique = true, useable = false, description = 'PD HK417' },
+    weapon_pdcm607               = { name = 'weapon_pdcm607',     label = 'PD COLT M607',      weight = 4000, type = 'weapon', ammotype = 'AMMO_RIFLE', image = 'WEAPON_PDCM607.png', unique = true, useable = false, description = 'PD COLT M607' },
+    weapon_pdc7                  = { name = 'weapon_pdc7',        label = 'PD COLT C7',        weight = 4500, type = 'weapon', ammotype = 'AMMO_RIFLE', image = 'WEAPON_PDC7.png', unique = true, useable = false, description = 'PD COLT C7' },
+    weapon_pdhk33                = { name = 'weapon_pdhk33',      label = 'PD HK433',          weight = 4500, type = 'weapon', ammotype = 'AMMO_RIFLE', image = 'WEAPON_PDHK33.png', unique = true, useable = false, description = 'PD HK433' },
+    weapon_pdbaton               = { name = 'weapon_pdbaton',     label = 'PD BATON',          weight = 1000,  type = 'weapon', ammotype = nil, image = 'WEAPON_PDBATON.png', unique = true, useable = false, description = 'PD BATON' },
+    weapon_btaser                = { name = 'weapon_btaser',      label = 'PD BLACK TASER',    weight = 1000, type = 'weapon', ammotype = nil, image = 'WEAPON_BTASER.png', unique = true, useable = false, description = 'PD BLACK TASER' },
+    weapon_ytaser                = { name = 'weapon_ytaser',      label = 'PD YELLOW TASER',   weight = 1000, type = 'weapon', ammotype = nil, image = 'WEAPON_YTASER.png', unique = true, useable = false, description = 'PD YELLOW TASER' },
+    weapon_pdbm3                 = { name = 'weapon_pdbm3',       label = 'PD BENELLI M3',     weight = 4800, type = 'weapon', ammotype = 'AMMO_SHOTGUN', image = 'WEAPON_PDBM3.png', unique = true, useable = false, description = 'PD BENELLI M3' },
+    weapon_pd870                 = { name = 'weapon_pd870',       label = 'PD REMINGTON 870',  weight = 6000, type = 'weapon', ammotype = 'AMMO_SHOTGUN', image = 'WEAPON_PD870.png', unique = true, useable = false, description = 'PD REMINGTON 870' },
+    weapon_pdm700                = { name = 'weapon_pdm700',      label = 'PD REMINGTON M700', weight = 8000, type = 'weapon', ammotype = 'AMMO_SNIPER', image = 'WEAPON_PDM700.png', unique = true, useable = false, description = 'PD REMINGTON M700' },
 
 }
