@@ -56,10 +56,10 @@ QBConfig.Notify.VariantDefinitions = {
         classes = 'error',
         icon = 'warning'
     },
-    police = {
+--[[     police = {
         classes = 'police',
         icon = 'local_police'
-    },
+    }, ]]
     ambulance = {
         classes = 'ambulance',
         icon = 'fas fa-ambulance'
