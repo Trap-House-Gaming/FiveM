@@ -551,6 +551,18 @@ let volume = 75; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {
+        name: "Don't Play That",
+        artist: "King Von & 21 Savage",
+        image: "",
+        path: "/zr-assets/video/dontplaythat.mp3"  
+    },
+    {
+        name: "Nuketown ft. Juice WRLD",
+        artist: "Ski Mask the Slump God",
+        image: "",
+        path: "/zr-assets/video/Nuketown.mp3"  
+    },
+    {
         name: "Costa Rica",
         artist: "Dreamville",
         image: "",
