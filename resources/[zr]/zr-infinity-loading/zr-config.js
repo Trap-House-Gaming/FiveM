@@ -11,7 +11,7 @@ const logo = {
     subtitle: 'Welcome To'
 }
 
-let backgroundPlayer = false; // if you want to use a video in the background
+let backgroundPlayer = true; // if you want to use a video in the background
 
 const notifications = [
     {
