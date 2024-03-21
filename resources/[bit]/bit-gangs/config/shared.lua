@@ -183,12 +183,12 @@ end
 --  $$$$$$  |$$ |      $$$$$$$$\ $$ | \$$ |         $$ |   $$ |  $$ |$$ |  $$ |\$$$$$$  |$$$$$$$$\    $$ |         $$$$$$\ $$ | \$$ |   \$  /   $$$$$$$$\ $$ | \$$ |   $$ |    $$$$$$  |$$ |  $$ |   $$ |    
 --  \______/ \__|      \________|\__|  \__|         \__|   \__|  \__|\__|  \__| \______/ \________|   \__|         \______|\__|  \__|    \_/    \________|\__|  \__|   \__|    \______/ \__|  \__|   \__|
 
-function openTargetInventory(playerID, targetID)
+--[[ function openTargetInventory(playerID, targetID)
     TriggerServerEvent("inventory:server:OpenInventory", "otherplayer", targetID)
     loadAnimation("missheistfbisetup1")
     TaskPlayAnim(PlayerPedId(), "missheistfbisetup1", "hassle_intro_loop_f", 8.0, 8.0, -1, 1, 0, 0, 0, 0)
     TriggerServerEvent("bit-gangs:notification", targetID, Noti.check, Lang.robbed, 5000)
-end
+end ]]
 
 -- $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$$$$$$\  $$$$$$\ $$$$$$$$\  $$$$$$\  $$$$$$$\ $$\     $$\        $$$$$$\   $$$$$$\  $$$$$$$\ $$$$$$$$\ $$\   $$\ $$$$$$$\  $$$$$$$$\ 
 -- \__$$  __|$$  _____|$$  __$$\ $$  __$$\ \_$$  _|\__$$  __|$$  __$$\ $$  __$$\\$$\   $$  |      $$  __$$\ $$  __$$\ $$  __$$\\__$$  __|$$ |  $$ |$$  __$$\ $$  _____|

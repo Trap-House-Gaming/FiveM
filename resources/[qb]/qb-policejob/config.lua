@@ -127,39 +127,24 @@ Config.CarItems = {
 
 Config.AuthorizedVehicles = {
     -- Grade 0 and higher
-    [0] = {
-        ['nkballer7um'] = 'Baller UM',
-        ['nkcaracara2um'] = 'Cara UM',
-        ['nkcoquetteum'] = 'Corquette UM',
-        ['nkcruiserum'] = 'Cruiser UM',
-        ['nkcypherum'] = 'Cypher UM',
-        ['nkdominator3um'] = 'Dominator UM',
-        ['nkgauntlet4um'] = 'Gauntlet UM',
-        ['nkgranger2um'] = 'Granger UM',
-        ['nkjugularum'] = 'Jugular UM',
-        ['nkstxum'] = 'Stx UM',
-        ['nkvigero2um'] = 'Vigero UM',
-        ['nkvstrum'] = 'STR UM',
-        ['nkballer7'] = 'Ballar',
-        ['nkcaracara2'] = 'Cara',
-        ['nkcoquette'] = 'Corquette',
-        ['nkcruiser'] = 'Cruiser',
-        ['nkcypher'] = 'Cypher',
-        ['nkdominator3'] = 'Dominator',
-        ['nkgauntlet4'] = 'Gauntlet',
-        ['nkgranger2'] = 'Granger',
-        ['nkjugular'] = 'Juglar',
-        ['nkstx'] = 'STX',
-        ['nkvigero2'] = 'Vigero',
-        ['nkvstr'] = 'STR',
+    [2] = {
+        ['lspd20exp'] = 'Ford Explorer',
+        ['LSPD18CHAR'] = 'Dodge Charger',
+        ['lspd18tahoe'] = 'Cheverolet Tahoe',
+        ['lspddur'] = 'Dodge Durango UM',
+        ['lspd21f150'] = 'Cypher UM',
+        ['LSPDRAM'] = 'Dominator UM'
+    },
+    [4] = {
+        ['lspdvet'] = 'Cheverolet Corvette'
     },
 }
 
 Config.Items = {
     -- Grade 0 and higher
-    [0] = {
+    [2] = {
         {
-            name = 'weapon_mgglock',
+            name = 'WEAPON_PDG19',
             price = 0,
             amount = 50,
             info = {
