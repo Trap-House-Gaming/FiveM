@@ -48,7 +48,7 @@ Config.Products = {
         {name = 'firework4',         price = 50,  amount = 50,  info = {}, type = 'item'},
         {name = 'fitbit',            price = 400, amount = 150, info = {}, type = 'item'},
         {name = 'cleaningkit',       price = 150, amount = 150, info = {}, type = 'item'},
-        {name = 'advancedrepairkit', price = 500, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
+        {name = 'advancedrepairkit', price = 1000, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
     },
     ['weedshop'] = {
         {name = 'joint',          price = 10,  amount = 50,   info = {}, type = 'item'},
@@ -77,6 +77,9 @@ Config.Products = {
         {name = 'weapon_vintagepistol', price = 20000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
     },
     ['casino'] = {
+        {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
+    },
+    ['electronics'] = {
         {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
     },
 }

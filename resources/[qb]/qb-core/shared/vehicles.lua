@@ -770,8 +770,6 @@ local Vehicles = {
     { model = 'GODzR35BOSS',    name = 'R35',                          brand = 'Nissan',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'rmodm3joker',    name = 'M3',                           brand = 'BMW',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'vc_pol765lt',    name = '765lt',                        brand = 'McLaren',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' }
-
-    
 }
 
 for i = 1, #Vehicles do

@@ -252,9 +252,9 @@ Config.VehicleKeys = {
         --size: (10-100) How wide the target bar is. (100 is widest and easiest to hit).
         --chances: How many chances you have on each action bar. (1 means if you fail the first time it cancels, 2 means if you fail the first and second time it cancels).
         ActionBar = {
-            [1] = {seconds = 6, size = 30, chances = 3}, --Choose how many seperate action bars you will need to complete to hotwire a vehicle you do not have keys for.
-            [2] = {seconds = 3, size = 20, chances = 2},
-            [3] = {seconds = 2, size = 10, chances = 1}, --This is the 3rd action bar.
+            [1] = {seconds = 6, size = 40, chances = 4}, --Choose how many seperate action bars you will need to complete to hotwire a vehicle you do not have keys for.
+            [2] = {seconds = 4, size = 30, chances = 3},
+            [3] = {seconds = 3, size = 20, chances = 2}, --This is the 3rd action bar.
             --[4] = {seconds = 1, size = 10, chances = 1},
         }
     },

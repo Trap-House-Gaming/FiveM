@@ -471,7 +471,7 @@ Config = {
 	Discord = { -- Discord preview receipts
 		-- You will need to set custom info in each job location in locations.lua
 		-- But for the ones you don't add info to, it will default to these numbers
-		DiscordPreview = true, 	-- Set to true if you want to use discord receipts
+		DiscordPreview = false, 	-- Set to true if you want to use discord receipts
 		DiscordDefault = "", 		-- Set this to the default channel API link if one isn't set for a location
 		DiscordColour = 16753920, 	-- This is the default "decimal" number colour
 	},
