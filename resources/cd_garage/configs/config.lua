@@ -642,7 +642,7 @@ Config.Locations = {
         EventName1 = 'cd_garage:QuickChoose',
         EventName2 = 'cd_garage:EnterGarage',
         Name = UIText,
-        x_2 = 212.42, y_2 = -798.77, z_2 = 30.88, h_2 = 336.61,
+        x_2 = -292.79, y_2 = -983.26, z_2 = 24.14, h_2 = 159.0,
         EnableBlip = true,
         JobRestricted = nil,
         ShellType = '10cargarage_shell',

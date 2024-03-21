@@ -5,7 +5,7 @@ Config.UseTarget = false
 Config.DebugPoly = false
 
 Config.CharacterCreationMenu = {
-    {menu = "character", label = "Character", selected = false},
+    {menu = "character", label = "Character", selected = true},
     {menu = "clothing", label = "Clothing", selected = false},
     {menu = "accessoires", label = "Accessories", selected = false},
     {menu = "tattoos", label = "Tattoos", selected = false},
