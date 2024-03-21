@@ -449,7 +449,7 @@ Config.Locations = {
     ['ammunation'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(-6659.12, -939.55, 21.83, 245.05),
+        ['coords'] = vector4(-663.62, -933.34, 21.83, 170.47),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
@@ -513,7 +513,7 @@ Config.Locations = {
     ['ammunation5'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(247.27, -51.45, 69.94, 338.24),
+        ['coords'] = vector4(253.4, -48.87, 69.94, 78.85),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
@@ -561,7 +561,7 @@ Config.Locations = {
     ['ammunation8'] = {
         ['label'] = 'Ammunation',
         ['type'] = 'weapon',
-        ['coords'] = vector4(-1118.59, 2700.05, 18.55, 221.89),
+        ['coords'] = vector4(-1120.11, 2698.87, 18.55, 224.04),
         ['ped'] = 's_m_y_ammucity_01',
         ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
         ['radius'] = 1.5,
@@ -706,4 +706,20 @@ Config.Locations = {
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
+        -- Electronics Shop Locations
+        ['electronics'] = {
+            ['label'] = 'Electronic Store',
+            ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+            ['ped'] = 'a_m_y_beach_01',
+            ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
+            ['radius'] = 1.5,
+            ['targetIcon'] = 'fas fa-leaf',
+            ['targetLabel'] = 'Open Electronic Store',
+            ['products'] = Config.Products['electronics'],
+            ['showblip'] = true,
+            ['blipsprite'] = 52,
+            ['blipscale'] = 0.8,
+            ['blipcolor'] = 0,
+           -- ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+        },
 }
