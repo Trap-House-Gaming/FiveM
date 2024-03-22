@@ -161,7 +161,7 @@ function openLocker(gangname, location)
     end
 
     local stashCombo = ComboZone:Create(stashZones, { name = 'stashCombo', debugPoly = false })
-    stashCombo:onPlayerInOut(function(isPointInside, _, _)
+    stashCombo:onPlayerInOut(function(isPointInside, _, _))
         if isPointInside then
             inStash = true
             if PlayerJob.type == 'leo' and PlayerJob.onduty then

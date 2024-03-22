@@ -269,7 +269,7 @@ QBCore.Commands.Add('setgang', Lang:t('command.setgang.help'), { { name = Lang:t
 end, 'admin')
 
 -- Out of Character Chat
-QBCore.Commands.Add('ooc', Lang:t('command.ooc.help'), {}, false, function(source, args)
+--[[ QBCore.Commands.Add('ooc', Lang:t('command.ooc.help'), {}, false, function(source, args)
     local message = table.concat(args, ' ')
     local Players = QBCore.Functions.GetPlayers()
     local Player = QBCore.Functions.GetPlayer(source)
@@ -298,7 +298,7 @@ QBCore.Commands.Add('ooc', Lang:t('command.ooc.help'), {}, false, function(sourc
             end
         end
     end
-end, 'user')
+end, 'user') ]]
 
 -- Me command
 
@@ -320,3 +320,12 @@ QBCore.Commands.Add('me', Lang:t('command.me.help'), { { name = Lang:t('command.
         end
     end
 end, 'user')
+
+-- Check CID Command
+QBCore.Commands.Add('csn', 'Check Your Citizen ID #', {}, false, function(source)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    if not Player then return end
+    local citizenId = Player.PlayerData.citizenid
+    TriggerClientEvent('QBCore:Notify', source, 'Your Citizen ID is: ' .. citizenId, 'primary', 10000)
+  end)
