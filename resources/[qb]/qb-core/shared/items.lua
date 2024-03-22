@@ -501,7 +501,7 @@ QBShared.Items = {
 	['opium']               = {['name'] = 'opium', ['label'] = 'Opium', ['weight'] = 50, ['type'] = 'item', ['image'] = 'your_image.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['cocaine']             = {['name'] = 'cocaine', ['label'] = 'Cocaine', ['weight'] = 100, ['type'] = 'item', ['image'] = 'your_image.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['Bluntwrap']           = {['name'] = 'Bluntwrap', ['label'] = 'Blunt Wrap', ['weight'] = 100, ['type'] = 'item', ['image'] = 'BluntWrap.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
-	['MylarBag']            = {['name'] = 'MylarBag', ['label'] = 'Mylar Bag', ['weight'] = 100, ['type'] = 'item', ['image'] = 'MylarBag.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+	['MylarBag']            = {['name'] = 'MylarBag', ['label'] = 'Mylar Bag', ['weight'] = 50, ['type'] = 'item', ['image'] = 'MylarBag.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 
 --pengu
 	cash_bag                        = { name = 'cash_bag', label = 'Gruppe 6 Cash Bag', weight = 1000, type = 'item', image = 'cash_bag.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Bag full of un-inked cash' },
