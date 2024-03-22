@@ -168,7 +168,6 @@ function openLocker(gangname, location)
                 exports['qb-core']:DrawText(Lang:t('info.stash_enter'), 'left')
                 stash()
             end
-    )
         else
             inStash = false
             exports['qb-core']:HideText()

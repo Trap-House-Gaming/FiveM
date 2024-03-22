@@ -285,7 +285,7 @@ AK4Y.Vehicles = {
         brakingPower = 50, -- Percentage of braking power of the product
         robustness = 90, -- Percentage of product robustness
         vehType = "car", -- do not change
-        carImage = "./images/bmws100.png",
+        carImage = "./images/bmws1000.png",
     },
     {
         id = 11,
