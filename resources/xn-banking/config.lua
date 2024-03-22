@@ -7,7 +7,7 @@ Config.cardTypes = {"visa", "mastercard"}
 
 -- Enable Fixed Societies for Jobs and Gangs
 -- This will also enable exports AddMoney, AddGangMoney, GetAccountBalance (only for fixed societies)
-Config.EnableFixedSocieties = false
+Config.EnableFixedSocieties = true
 
 --Limits
 Config.Limits = {
