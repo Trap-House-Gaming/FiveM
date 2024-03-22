@@ -216,7 +216,7 @@
         },
         "enableExplosionOnError": true,
         "boatSellingAccount": "black_money",
-        "npcSellingMinimumPolice": 0,
+        "npcSellingMinimumPolice": 2,
         "accountFromNPCSell": "black_money",
         "narcosSellingMinimumPolice": 0,
         "areDiscordLogsActive": false,
