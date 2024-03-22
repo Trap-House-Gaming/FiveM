@@ -11,7 +11,8 @@ Config.MaxCallList = 25 -- maximum dispatch calls in dispatch list
 Config.OnDutyOnly = true -- Set true if only on duty players can see the alert
 Config.Jobs = { -- Job Types that can access the dispatch menu
     "leo",
-    "ems"
+    "ems",
+    "police"
 }
 
 Config.DefaultAlertsDelay = 5 -- Delay between each default alert, prevent spamming

@@ -205,7 +205,7 @@ local Previewing, xenonColour, VehicleNitrous, nosColour, dutyList = {}, {}, {},
 		if Config.System.RenewedBanking then
 			exports['Renewed-Banking']:addAccountMoney(society, math.ceil(cost - (cost / 4)))
 		else
-			exports['xn-banking']:AddMoney(society, math.ceil(cost - (cost / 4)))
+			exports['xn-banking']:addAccountMoney(society, math.ceil(cost - (cost / 4)))
 		end
 	end)
 

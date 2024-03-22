@@ -442,7 +442,7 @@ local function getSocietyMoney(job)
         return res
     end
 
-    return exports["qb-banking"]:GetAccountBalance(job)
+    return exports["xn-banking"]:GetAccountBalance(job)
 end
 
 lib.RegisterCallback("phone:services:getAccount", function(source, cb)
@@ -462,7 +462,7 @@ lib.RegisterCallback("phone:services:addMoney", function(source, cb, amount)
         return exports["qb-management"]:AddMoney(job, amount)
     end)
 
-    if success or exports["qb-banking"]:AddMoney(job, amount) then
+    if success or exports["xn-banking"]:AddMoney(job, amount) then
         RemoveMoney(source, amount)
     end
 
@@ -481,7 +481,7 @@ lib.RegisterCallback("phone:services:removeMoney", function(source, cb, amount)
     end)
 
     if not success then
-        res = exports["qb-banking"]:RemoveMoney(job, amount)
+        res = exports["xn-banking"]:RemoveMoney(job, amount)
     end
 
     if res then
