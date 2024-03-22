@@ -511,6 +511,8 @@ QBShared.Items = {
     ['thg_exotic']          = {['name'] = 'thg_exotic', ['label'] = 'THG EXOTIC', ['weight'] = 200, ['type'] = 'item', ['image'] = 'thg_exotic.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['duct_tape']          = {['name'] = 'duct_tape', ['label'] = 'Duct Tape', ['weight'] = 50, ['type'] = 'item', ['image'] = 'duct_tape.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['exotic_cannabis']          = {['name'] = 'exotic_cannabis', ['label'] = 'Cannabis', ['weight'] = 100, ['type'] = 'item', ['image'] = 'exotic_cannabis.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+    ['plastic_wrap']          = {['name'] = 'plastic_wrap', ['label'] = 'Plastic Wrap', ['weight'] = 100, ['type'] = 'item', ['image'] = 'plastic_wrap.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+
 
 --pengu
 	cash_bag                        = { name = 'cash_bag', label = 'Gruppe 6 Cash Bag', weight = 1000, type = 'item', image = 'cash_bag.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Bag full of un-inked cash' },
