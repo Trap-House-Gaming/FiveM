@@ -482,7 +482,7 @@ QBShared.Items = {
 	['codeine']             = {['name'] = 'codeine', ['label'] = 'Codeine', ['weight'] = 50, ['type'] = 'item', ['image'] = 'codeine.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['drink_sprite']        = {['name'] = 'drink_sprite', ['label'] = 'Sprite', ['weight'] = 100, ['type'] = 'item', ['image'] = 'drink_sprite.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['drug_ecstasy']        = {['name'] = 'drug_ecstasy', ['label'] = 'Ecstasy', ['weight'] = 100, ['type'] = 'item', ['image'] = 'drug_ecstasy.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
-	['drug_lean']           = {['name'] = 'drug_lean', ['label'] = 'Lean', ['weight'] = 100, ['type'] = 'item', ['image'] = 'drug_lean.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+	['drug_lean_bottle']           = {['name'] = 'drug_lean_bottle', ['label'] = 'Bottle Of Wockesha', ['weight'] = 100, ['type'] = 'item', ['image'] = 'drug_lean_bottle.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['drug_lsd']            = {['name'] = 'drug_lsd', ['label'] = 'LSD', ['weight'] = 50, ['type'] = 'item', ['image'] = 'lsd.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['drug_meth']           = {['name'] = 'drug_meth', ['label'] = 'Meth', ['weight'] = 50, ['type'] = 'item', ['image'] = 'drug_meth.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
 	['hydrogen']            = {['name'] = 'hydrogen', ['label'] = 'Hydrogen', ['weight'] = 50, ['type'] = 'item', ['image'] = 'hydrogen.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
@@ -504,13 +504,15 @@ QBShared.Items = {
 	['mylar_bag']            = {['name'] = 'mylar_bag', ['label'] = 'Mylar Bag', ['weight'] = 0.50, ['type'] = 'item', ['image'] = 'mylar_bag.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['adderal']             = {['name'] = 'adderal', ['label'] = 'Adderal', ['weight'] = 50, ['type'] = 'item', ['image'] = 'adderal.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['hulk_xanax']          = {['name'] = 'hulk_xanax', ['label'] = 'Hulk Xanax', ['weight'] = 50, ['type'] = 'item', ['image'] = 'hulk_xanax.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
-    ['drug_lean']           = {['name'] = 'drug_lean', ['label'] = 'Cup Of Lean', ['weight'] = 50, ['type'] = 'item', ['image'] = 'drug_lean.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+    ['drug_lean_cup']           = {['name'] = 'drug_lean_cup', ['label'] = 'Cup Of Wockesha', ['weight'] = 50, ['type'] = 'item', ['image'] = 'drug_lean.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['perc_30']             = {['name'] = 'perc_30', ['label'] = 'Perc 30', ['weight'] = 50, ['type'] = 'item', ['image'] = 'perc_30.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['mushroom']            = {['name'] = 'mushroom', ['label'] = 'Field Mushroom', ['weight'] = 50, ['type'] = 'item', ['image'] = 'mushroom.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['trippy_shrooms']      = {['name'] = 'trippy_shrooms', ['label'] = 'Trippy Shrooms', ['weight'] = 50, ['type'] = 'item', ['image'] = 'trippy_shrooms.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['thg_exotic']          = {['name'] = 'thg_exotic', ['label'] = 'THG EXOTIC', ['weight'] = 200, ['type'] = 'item', ['image'] = 'thg_exotic.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['duct_tape']          = {['name'] = 'duct_tape', ['label'] = 'Duct Tape', ['weight'] = 50, ['type'] = 'item', ['image'] = 'duct_tape.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
     ['exotic_cannabis']          = {['name'] = 'exotic_cannabis', ['label'] = 'Cannabis', ['weight'] = 100, ['type'] = 'item', ['image'] = 'exotic_cannabis.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+    ['plastic_wrap']          = {['name'] = 'plastic_wrap', ['label'] = 'Plastic Wrap', ['weight'] = 100, ['type'] = 'item', ['image'] = 'plastic_wrap.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = false, ['combinable'] = nil},
+
 
 --pengu
 	cash_bag                        = { name = 'cash_bag', label = 'Gruppe 6 Cash Bag', weight = 1000, type = 'item', image = 'cash_bag.png', unique = false, useable = false, shouldClose = false, combinable = nil, description = 'Bag full of un-inked cash' },
