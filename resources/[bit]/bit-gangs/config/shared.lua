@@ -127,6 +127,7 @@ Blips.sscale = 0.7
 Blips.stext = "Gang Stash"
 
 function openStash(gangname, location)
+    TriggerServerEvent('inventory:server:OpenInventory', 'stash', 'gangname' .. QBCore.Functions.GetPlayerData().citizenid)
     -- TriggerServerEvent("inventory:server:OpenInventory", "stash", gangname)
     -- TriggerEvent("inventory:client:SetCurrentStash", gangname)
 end
