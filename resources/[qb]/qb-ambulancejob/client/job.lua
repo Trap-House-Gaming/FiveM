@@ -184,7 +184,7 @@ function Status()
     end
 end
 
-RegisterNetEvent('hospital:client:CheckStatus', function()
+--[[ RegisterNetEvent('hospital:client:CheckStatus', function()
     local player, distance = GetClosestPlayer()
     if player ~= -1 and distance < 5.0 then
         local playerId = GetPlayerServerId(player)
@@ -203,14 +203,14 @@ RegisterNetEvent('hospital:client:CheckStatus', function()
                                 multiline = false,
                                 args = { Lang:t('info.status'), QBCore.Shared.Weapons[v2].damagereason }
                             })
---[[                         end
+                         end
                     elseif result['BLEED'] > 0 then
                         TriggerEvent('chat:addMessage', {
                             color = { 255, 0, 0 },
                             multiline = false,
                             args = { Lang:t('info.status'),
                                 Lang:t('info.is_status', { status = Config.BleedingStates[v].label }) }
-                        }) ]]
+                        }) 
                     else
                         QBCore.Functions.Notify(Lang:t('success.healthy_player'), 'success')
                     end
@@ -222,7 +222,7 @@ RegisterNetEvent('hospital:client:CheckStatus', function()
     else
         QBCore.Functions.Notify(Lang:t('error.no_player'), 'error')
     end
-end)
+end) ]]
 
 RegisterNetEvent('hospital:client:RevivePlayer', function()
     local hasItem = QBCore.Functions.HasItem('firstaid')
