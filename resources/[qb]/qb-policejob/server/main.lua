@@ -663,10 +663,10 @@ RegisterNetEvent('police:server:TakeOutImpound', function(plate, garage)
     TriggerClientEvent('QBCore:Notify', src, Lang:t('success.impound_vehicle_removed'), 'success')
 end)
 
-RegisterNetEvent('police:client:GetCuffed', function(playerId, isSoftcuff)
+RegisterNetEvent('police:client:GetCuff', function(playerId, isSoftcuff)
     local ped = PlayerPedId()   
     if not isHandcuffed then
-        GetCuffAnimation(playerId)
+        GetCuffedAnimation(playerId)
             exports['ps-ui']:Circle(function(success) 
                 if success then 
                     ClearPedTasks(PlayerPedId())
