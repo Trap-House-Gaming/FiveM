@@ -4,7 +4,7 @@ game 'gta5'
 
 lua54 'yes'
 
-version '3.0.0'
+version '3.0.2'
 
 ui_page 'html/index.html'
 

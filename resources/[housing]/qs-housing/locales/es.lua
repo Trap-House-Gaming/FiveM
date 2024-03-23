@@ -32,6 +32,7 @@ Locales['es'] = {
     ['HOUSING_DRAWTEXT_SHELL_POINT'] = 'Establecer punto de concha',
     ['HOUSING_DRAWTEXT_EXIT_POINT'] = 'Establecer punto de salida',
     ['HOUSING_DRAWTEXT_HOUSE_POINT'] = 'Establecer punto de casa personalizado',
+    ['HOUSING_DRAWTEXT_VISITING_POINT'] = 'Punto de visita',
 
     -- Target
     ['HOUSING_TARGET_TOGGLE_DOOR'] = 'Alternar puerta',
@@ -323,5 +324,8 @@ Locales['es'] = {
     ['HOUSING_NOTIFICATION_BLACK_MONEY_SUCCESS_WITHDRAW'] = 'Retiro de dinero negro exitoso',
     ['HOUSING_NOTIFICATION_SUCCESS_LOCKPICK'] = 'Has forzado con exito la puerta',
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Has roto la puerta de la casa',
-    ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'La puerta esta tan dura, que no se ha roto'
+    ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'La puerta esta tan dura, que no se ha roto',
+    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'No puedes colocar el punto fuera de la casa',
+    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'No puedes colocar el punto fuera de la zona roja',
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'No se encontro la casa...'
 }

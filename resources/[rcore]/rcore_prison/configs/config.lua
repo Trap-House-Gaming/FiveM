@@ -70,7 +70,7 @@ Prison = {
         QS_INVENTORY = 'qs-inventory',
         CHEEZA_INVENTORY = 'inventory',
         ESX_INVENTORY = 'es_extended',
-        CORE_INVENTORY = 'core_inventory',
+        CORE_INVENTORY = 'codem-inventory',
     },
 
 

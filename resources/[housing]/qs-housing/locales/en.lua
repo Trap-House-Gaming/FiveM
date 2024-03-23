@@ -32,6 +32,7 @@ Locales['en'] = {
     ['HOUSING_DRAWTEXT_SHELL_POINT'] = 'Set shell point',
     ['HOUSING_DRAWTEXT_EXIT_POINT'] = 'Set exit point',
     ['HOUSING_DRAWTEXT_HOUSE_POINT'] = 'Set custom house point',
+    ['HOUSING_DRAWTEXT_VISITING_POINT'] = 'Visiting point',
 
     -- Target
     ['HOUSING_TARGET_TOGGLE_DOOR'] = 'Toggle Door',
@@ -323,5 +324,8 @@ Locales['en'] = {
     ['HOUSING_NOTIFICATION_BLACK_MONEY_SUCCESS_WITHDRAW'] = 'Successful black money withdrawal',
     ['HOUSING_NOTIFICATION_SUCCESS_LOCKPICK'] = 'You have successfully forced the door',
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'You broke the door of the house',
-    ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'The door is so hard, it hasn\'t broken'
+    ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'The door is so hard, it hasn\'t broken',
+    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'You cannot place the point outside the house',
+    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'You cannot place the point outside the red zone',
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'House not found...'
 }

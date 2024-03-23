@@ -95,6 +95,8 @@ Bridge.AddItem = function(playerId, itemName, itemCount, metadata, slot)
             end    
 
             return Player.addInventoryItem(itemName, itemCount)
+        elseif HasResource(Prison.InventoryScripts.CODEM_INVENTORY) then
+            exports['codem-inventory']:AddItem(source, itemName, itemCount)
         end
     else
         dbg.debugInventory('Failed to find any supported inventory, not adding item [%s] to player [%s] with amount [%s] | USER: %s', itemName, playerId, itemCount, GetPlayerName(playerId))
@@ -198,20 +200,6 @@ Bridge.RemoveItem = function(playerId, itemName, itemCount, metadata, slot)
             end    
             
             exports[Prison.InventoryScripts.MF_INVENTORY]:removeInventoryItem(Player.getIdentifier(), itemName, itemCount)
-        elseif HasResource(Prison.InventoryScripts.CORE_INVENTORY) and Prison.Framework == FRAMEWORK_MAP.QBCORE then
-            if Player then
-                local charId = Player.PlayerData.citizenid
-                local inventoryPrefix = ('%s-%s'):format('content', charId)
-
-                exports[Prison.InventoryScripts.CORE_INVENTORY]:removeItem(inventoryPrefix, itemName, tonumber(itemCount))
-            end
-        elseif HasResource(Prison.InventoryScripts.CORE_INVENTORY) and Prison.Framework == FRAMEWORK_MAP.ESX then
-            if Player then
-                local charId = Player.getIdentifier()
-                local inventoryPrefix = ('%s-%s'):format('content', charId)
-
-                exports[Prison.InventoryScripts.CORE_INVENTORY]:removeItem(inventoryPrefix, itemName, tonumber(itemCount))
-            end
         elseif HasResource(Prison.InventoryScripts.QB_INVENTORY) or HasResource(Prison.InventoryScripts.AJ_INVENTORY) or HasResource(Prison.InventoryScripts.LJ_INVENTORY) then
             if Player then
                 if itemName == 'money' then
@@ -248,6 +236,8 @@ Bridge.RemoveItem = function(playerId, itemName, itemCount, metadata, slot)
                     Player.removeInventoryItem(itemName, itemCount)
                 end
             end
+        elseif HasResource(Prison.InventoryScripts.CODEM_INVENTORY) then
+            exports['codem-inventory']:RemoveItem(source, itemName, itemCount)
         end
     else
         dbg.debugInventory('Failed to find any supported inventory, not removing item [%s] from player [%s] with amount [%s] | USER: %s', itemName, playerId, itemCount, GetPlayerName(playerId))
@@ -366,6 +356,14 @@ function ClearInventory(serverId)
         end
 
         clearState = true
+    elseif HasResource(Prison.InventoryScripts.CODEM_INVENTORY) then
+        local success, error_message = pcall(function()
+            exports['codem-inventory']:ClearInventory(serverId)
+        end)
+
+        if success then
+            clearState = true
+        end
     end
 
     if not clearState then
@@ -466,6 +464,11 @@ function gatherInventoryData(playerId)
     local inventory, statusCode = {}, INVENTORY_STATUS_CODES.EMPTY_INVENTORY
     local p = promise.new()
     local iterCount = 0
+
+    if inventoryData and type(inventoryData?.value) == 'boolean' then
+        dbg.debugInventory('Failed to gather player inventory data, expected table, received boolean for user : %s', GetPlayerName(playerId))
+        return inventory, statusCode
+    end
 
     if inventoryData and next(inventoryData) and inventoryData.value and next(inventoryData.value) then
         for k, item in pairs(inventoryData.value) do
