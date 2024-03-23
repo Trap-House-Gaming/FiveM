@@ -638,7 +638,7 @@ Config.Locations = {
         Garage_ID = 'Alta Garage', --PINK MOTEL
         Type = 'car',
         Dist = 10,
-        x_1 = 215.09, y_1 = -805.17, z_1 = 30.81,
+        x_1 = -304.97, y_1 = -985.45, z_1 = 31.08,
         EventName1 = 'cd_garage:QuickChoose',
         EventName2 = 'cd_garage:EnterGarage',
         Name = UIText,
@@ -651,7 +651,7 @@ Config.Locations = {
         Garage_ID = 'pillbox', --The very first car garage's `garage_id` must be the same as the default value of the `garage_id` in the database as when a vehicle is purchased it gets sent to this garage. You can change the garage id's to what ever you like but make sure to also change the default garage_id in the database.
         Type = 'car', --The type of vehicles which use this garage. ('car'/'boat'/'air').
         Dist = 10, --The distance that you can use this garage.
-        x_1 = -304.97, y_1 = -985.45, z_1 = 31.08, --This is the location of the garage, where you press e to open for example.
+        x_1 = 215.09, y_1 = -805.17, z_1 = 30.81, --This is the location of the garage, where you press e to open for example.
         EventName1 = 'cd_garage:QuickChoose', --DONT CHANGE THIS.
         EventName2 = 'cd_garage:EnterGarage', --DONT CHANGE THIS.
         Name = UIText, --You dont need to change this.
