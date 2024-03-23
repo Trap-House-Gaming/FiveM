@@ -42,7 +42,7 @@ local function HandCuffAnimation()
     TaskPlayAnim(ped, 'mp_arrest_paired', 'exit', 3.0, 3.0, -1, 48, 0, 0, 0, 0)
 end
 
-function GetCuffedAnimation(playerId)
+function GetCuffAnimation(playerId)
     local ped = PlayerPedId()
     local cuffer = GetPlayerPed(GetPlayerFromServerId(playerId))
     local heading = GetEntityHeading(cuffer)
