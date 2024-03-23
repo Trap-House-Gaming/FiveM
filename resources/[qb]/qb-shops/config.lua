@@ -3,11 +3,7 @@ Config.UseTruckerJob = false -- true = The shops stock is based on when truckers
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 Config.ShopsInvJsonFile = './json/shops-inventory.json' -- json file location
 
-Config.SellCasinoChips = {
-    coords = vector4(950.37, 34.72, 71.87, 33.82),
-    radius = 1.5,
-    ped = 's_m_y_casino_01'
-}
+
 
 -- optional requiredJob = {'police', 'ambulance'}
 -- optional requiredGang = {'ballas', 'vagps'}
@@ -75,9 +71,6 @@ Config.Products = {
         {name = 'weapon_pistol',        price = 7500, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_snspistol',     price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_vintagepistol', price = 20000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-    },
-    ['casino'] = {
-        {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
     },
     ['electronics'] = {
         {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
@@ -623,38 +616,7 @@ Config.Locations = {
         ['delivery'] = vector4(-3183.6, 1084.35, 20.84, 68.13)
     },
 
-    -- Casino Locations
-    ['casino'] = {
-        ['label'] = 'Diamond Casino',
-        ['coords'] = vector4(978.46, 39.07, 74.88, 64.0),
-        ['ped'] = 'csb_tomcasino',
-        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-coins',
-        ['targetLabel'] = 'Buy Chips',
-        ['products'] = Config.Products['casino'],
-        ['showblip'] = true,
-        ['blipsprite'] = 617,
-        ['blipscale'] = 0.8,
-        ['blipcolor'] = 0,
-        ['delivery'] = vector4(972.6, 9.22, 81.04, 233.38)
-    },
 
-    ['casinobar'] = {
-        ['label'] = 'Casino Bar',
-        ['coords'] = vector4(968.13, 29.85, 74.88, 208.86),
-        ['ped'] = 'a_m_y_smartcaspat_01',
-        ['scenario'] = 'WORLD_HUMAN_VALET',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-wine-bottle',
-        ['targetLabel'] = 'Open Casino Bar',
-        ['products'] = Config.Products['liquor'],
-        ['showblip'] = false,
-        ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
-        ['blipcolor'] = 0,
-        ['delivery'] = vector4(937.16, 1.0, 78.76, 152.4)
-    },
 
     -- Weedshop Locations
     ['weedshop'] = {

@@ -82,7 +82,6 @@ client_scripts {
     , "dlc_bikers/weed.lua"
     , "dlc_bikers/clubhouse1.lua"
     , "dlc_bikers/clubhouse2.lua"
-    , "dlc_bikers/gang.lua"
 
     -- DLC Import/Export
     , "dlc_import/garage1.lua"
