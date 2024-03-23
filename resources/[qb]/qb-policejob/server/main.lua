@@ -666,7 +666,7 @@ end)
 RegisterNetEvent('police:client:GetCuff', function(playerId, isSoftcuff)
     local ped = PlayerPedId()   
     if not isHandcuffed then
-        GetCuffedAnimation(playerId)
+        GetCuffAnimation(playerId)
             exports['ps-ui']:Circle(function(success) 
                 if success then 
                     ClearPedTasks(PlayerPedId())
