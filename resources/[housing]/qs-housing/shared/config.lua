@@ -153,15 +153,21 @@ Config.Wardrobe = getWardrobe()
 ]]
 
 local function getGarages()
-	local qbgHas = GetResourceState('qb-garages') == 'started'
-	local qsHas = GetResourceState('qs-advancedgarages') == 'started'
-	if qbgHas then
-		return 'qb-garages'
-	elseif qsHas then
-		return 'qs-advancedgarages'
-	else
-		return 'standalone'
-	end
+    local qbgHas = GetResourceState('qb-garages') == 'started'
+    local qsHas = GetResourceState('qs-advancedgarages') == 'started'
+    local jgHas = GetResourceState('jg-advancedgarages') == 'started'
+    local cdHas = GetResourceState('cd_garage') == 'started'
+    if qbgHas then
+        return 'qb-garages'
+    elseif qsHas then
+        return 'qs-advancedgarages'
+    elseif jgHas then
+        return 'jg-advancedgarages'
+    elseif cdHas then
+        return 'cd-garage'
+    else
+        return 'standalone'
+    end
 end
 
 Config.Garage = getGarages()

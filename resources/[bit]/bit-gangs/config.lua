@@ -1,135 +1,108 @@
-Config, Lang, Noti, WH, Points, Actions, AO, Blips = {}, {}, {}, {}, {}, {}, {}, {}
+Config, Lang, Noti, WH, Points, Actions, AO = {}, {}, {}, {}, {}, {}, {}
 
 -- $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\ $$$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\ 
--- $$  __$$\ $$  __$$\ $$$\  $$ |$$  _____|\_$$  _|$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |
--- $$ /  \__|$$ /  $$ |$$$$\ $$ |$$ |        $$ |  $$ /  \__|$$ |  $$ |$$ |  $$ |$$ /  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |
--- $$ |      $$ |  $$ |$$ $$\$$ |$$$$$\      $$ |  $$ |$$$$\ $$ |  $$ |$$$$$$$  |$$$$$$$$ |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |
--- $$ |      $$ |  $$ |$$ \$$$$ |$$  __|     $$ |  $$ |\_$$ |$$ |  $$ |$$  __$$< $$  __$$ |  $$ |     $$ |  $$ |  $$ |$$ \$$$$ |
--- $$ |  $$\ $$ |  $$ |$$ |\$$$ |$$ |        $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |     $$ |  $$ |  $$ |$$ |\$$$ |
--- \$$$$$$  | $$$$$$  |$$ | \$$ |$$ |      $$$$$$\ \$$$$$$  |\$$$$$$  |$$ |  $$ |$$ |  $$ |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |
--- \______/  \______/ \__|  \__|\__|      \______| \______/  \______/ \__|  \__|\__|  \__|  \__|   \______| \______/ \__|  \__|
+--$$  __$$\ $$  __$$\ $$$\  $$ |$$  _____|\_$$  _|$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |
+--$$ /  \__|$$ /  $$ |$$$$\ $$ |$$ |        $$ |  $$ /  \__|$$ |  $$ |$$ |  $$ |$$ /  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |
+--$$ |      $$ |  $$ |$$ $$\$$ |$$$$$\      $$ |  $$ |$$$$\ $$ |  $$ |$$$$$$$  |$$$$$$$$ |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |
+--$$ |      $$ |  $$ |$$ \$$$$ |$$  __|     $$ |  $$ |\_$$ |$$ |  $$ |$$  __$$< $$  __$$ |  $$ |     $$ |  $$ |  $$ |$$ \$$$$ |
+--$$ |  $$\ $$ |  $$ |$$ |\$$$ |$$ |        $$ |  $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |     $$ |  $$ |  $$ |$$ |\$$$ |
+--\$$$$$$  | $$$$$$  |$$ | \$$ |$$ |      $$$$$$\ \$$$$$$  |\$$$$$$  |$$ |  $$ |$$ |  $$ |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |
+ --\______/  \______/ \__|  \__|\__|      \______| \______/  \______/ \__|  \__|\__|  \__|  \__|   \______| \______/ \__|  \__|
 
--- Use "esx" or "qb"
+--Use "esx" or "qb"
 Config.Framework = "qb"
--- If you are using one of the most recent versions of ESX, set the script name. Default = "es_extended"
-Config.ESXExport = "es_extended"
--- Default ESX: "esx:getSharedObject" | Default QB: "qb-core"
+--If you are using one of the most recent versions of ESX, set the script name. Default = "es_extended"
+Config.ESXExport = ""
+--Default ESX: "esx:getSharedObject" | Default QB: "qb-core"
 Config.Core = "qb-core"
 -- oxmysql, mysql-async or ghmattisql
-Config.Mysql = "oxmysql"
--- Waiting time to update the gang map
+Config.Mysql = "oxmysql" 
+--Waiting time to update the gang map
 Config.updateMapTimer = 10000
--- Points needed by the gang to pass each level
+--Points needed by the gang to pass each level
 Config.PointsToNextLevel = 1500
--- Only the leader can deposit or withdraw
+--Only the leader can deposit or withdraw
 Config.OnlyLeaderDW = true
--- Font type for floating alerts. Set to 0 for Chinese language
+--Font type for floating alerts. Set to 0 for Chinese language
 Config.alertTextFont = 4
--- Amount to be added hourly to the cash balance of the stores to be extorted
+--Amount to be added hourly to the cash balance of the stores to be extorted
 Config.CollectMoneyAmountPerHour = 60
--- Multiplier of the amount to be generated each hour by the stores
+--Multiplier of the amount to be generated each hour by the stores
 Config.CollectMoneyMultiplier = 2
--- Enable / Disable the use of garages for gangs
+--Enable / Disable the use of garages for gangs
 Config.useGarages = true
--- Enable / Disable the use of stash
+--Enable / Disable the use of stash
 Config.useStash = true
--- Enable / Disable the use of lockers
+--Enable / Disable the use of lockers
 Config.useLockers = true
--- Maximum number of members allowed in a gang
-Config.maxMembers = 15
--- Active if you want to use cron to trigger the actions of contract killing, smuggling and transporting illegal persons
+--Maximum number of members allowed in a gang
+Config.maxMembers = 10
+--Active if you want to use cron to trigger the actions of contract killing, smuggling and transporting illegal persons
 Config.useCron = true
--- If the previous option is activated. Hours at which actions will start for the gangs
+--If the previous option is activated. Hours at which actions will start for the gangs
 Config.cronHours = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24}
--- If you want to show blips to gangs members
-Config.showGangBlips = true
--- Set to true if you want to manage the time in which graffiti may be made
-Config.adminSprayTime = false
--- Command to manage the time during which graffiti may be made
-Config.adminSprayCommand = "spraytime"
 
 -- $$$$$$\   $$$$$$\  $$$$$$$\   $$$$$$\   $$$$$$\  $$$$$$$$\ 
--- $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  _____|
--- $$ /  \__|$$ /  $$ |$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |      
--- $$ |$$$$\ $$$$$$$$ |$$$$$$$  |$$$$$$$$ |$$ |$$$$\ $$$$$\    
--- $$ |\_$$ |$$  __$$ |$$  __$$< $$  __$$ |$$ |\_$$ |$$  __|   
--- $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      
--- \$$$$$$  |$$ |  $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$$$$$$$\ 
--- \______/ \__|  \__|\__|  \__|\__|  \__| \______/ \________|
+--$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ $$  _____|
+--$$ /  \__|$$ /  $$ |$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |      
+--$$ |$$$$\ $$$$$$$$ |$$$$$$$  |$$$$$$$$ |$$ |$$$$\ $$$$$\    
+--$$ |\_$$ |$$  __$$ |$$  __$$< $$  __$$ |$$ |\_$$ |$$  __|   
+--$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      
+--\$$$$$$  |$$ |  $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$$$$$$$\ 
+ --\______/ \__|  \__|\__|  \__|\__|  \__| \______/ \________|
 
--- Configure the trigger for your garage script
-
-Blips.garage = true
-Blips.gblip = 326
-Blips.gcolor = 11
-Blips.gscale = 0.7
-Blips.gtext = "Gang Garage"
+--Configure the trigger for your garage script
 
 function openGarage(gangname, location)
-    local data = {
-        type = "house",
-        garage = gangname,
-        index = gangname
-    }
-    TriggerEvent("qb-garages:client:VehicleList", data)
-    -- Example with bit-garage
-    -- TriggerEvent("bit-garage:open", gangname)
+    
+    --Example with bit-garage
+    --TriggerEvent("bit-garage:open", gangname)
 end
 
 -- $$$$$$\ $$$$$$$$\  $$$$$$\   $$$$$$\  $$\   $$\ 
--- $$  __$$\\__$$  __|$$  __$$\ $$  __$$\ $$ |  $$ |
--- $$ /  \__|  $$ |   $$ /  $$ |$$ /  \__|$$ |  $$ |
--- \$$$$$$\    $$ |   $$$$$$$$ |\$$$$$$\  $$$$$$$$ |
+--$$  __$$\\__$$  __|$$  __$$\ $$  __$$\ $$ |  $$ |
+--$$ /  \__|  $$ |   $$ /  $$ |$$ /  \__|$$ |  $$ |
+--\$$$$$$\    $$ |   $$$$$$$$ |\$$$$$$\  $$$$$$$$ |
 -- \____$$\   $$ |   $$  __$$ | \____$$\ $$  __$$ |
--- $$\   $$ |  $$ |   $$ |  $$ |$$\   $$ |$$ |  $$ |
--- \$$$$$$  |  $$ |   $$ |  $$ |\$$$$$$  |$$ |  $$ |
+--$$\   $$ |  $$ |   $$ |  $$ |$$\   $$ |$$ |  $$ |
+--\$$$$$$  |  $$ |   $$ |  $$ |\$$$$$$  |$$ |  $$ |
 -- \______/   \__|   \__|  \__| \______/ \__|  \__|
 
--- Configure your inventory script trigger to create a stash
-
-Blips.stash = true
-Blips.sblip = 765
-Blips.scolor = 11
-Blips.sscale = 0.7
-Blips.stext = "Gang Stash"
+--Configure your inventory script trigger to create a stash
 
 function openStash(gangname, location)
-        TriggerServerEvent('inventory:server:OpenInventory', 'stash', gangname, .. QBCore.Functions.GetPlayerData().citizenid)
-        TriggerEvent('inventory:client:SetCurrentStash', gangname, .. QBCore.Functions.GetPlayerData().citizenid)
 
+    --TriggerServerEvent("inventory:server:OpenInventory", "stash", gangname)
+    --TriggerEvent("inventory:client:SetCurrentStash", gangname)
 end
 
--- $$\       $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
--- $$ |     $$  __$$\ $$  __$$\ $$ | $$  |$$  _____|$$  __$$\ 
--- $$ |     $$ /  $$ |$$ /  \__|$$ |$$  / $$ |      $$ |  $$ |
--- $$ |     $$ |  $$ |$$ |      $$$$$  /  $$$$$\    $$$$$$$  |
--- $$ |     $$ |  $$ |$$ |      $$  $$<   $$  __|   $$  __$$< 
--- $$ |     $$ |  $$ |$$ |  $$\ $$ |\$$\  $$ |      $$ |  $$ |
--- $$$$$$$$\ $$$$$$  |\$$$$$$  |$$ | \$$\ $$$$$$$$\ $$ |  $$ |
--- \________|\______/  \______/ \__|  \__|\________|\__|  \__|
 
--- Configure your inventory script trigger to create a locker (optional)
+--$$\       $$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
+--$$ |     $$  __$$\ $$  __$$\ $$ | $$  |$$  _____|$$  __$$\ 
+--$$ |     $$ /  $$ |$$ /  \__|$$ |$$  / $$ |      $$ |  $$ |
+--$$ |     $$ |  $$ |$$ |      $$$$$  /  $$$$$\    $$$$$$$  |
+--$$ |     $$ |  $$ |$$ |      $$  $$<   $$  __|   $$  __$$< 
+--$$ |     $$ |  $$ |$$ |  $$\ $$ |\$$\  $$ |      $$ |  $$ |
+--$$$$$$$$\ $$$$$$  |\$$$$$$  |$$ | \$$\ $$$$$$$$\ $$ |  $$ |
+--\________|\______/  \______/ \__|  \__|\________|\__|  \__|
 
-Blips.locker = true
-Blips.lblip = 730
-Blips.lcolor = 11
-Blips.lscale = 0.7
-Blips.ltext = "Gang Stash"
+--Configure your inventory script trigger to create a locker (optional)
 
 function openLocker(gangname, location)
 
 end
 
--- $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
--- $$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
--- $$ /  $$ |$$ /  \__|  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
--- $$$$$$$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
--- $$  __$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
--- $$ |  $$ |$$ |  $$\   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
--- $$ |  $$ |\$$$$$$  |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
--- \__|  \__| \______/   \__|   \______| \______/ \__|  \__| \______/
 
--- Activates or deactivates the actions allowed for the bands.
+-- $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
+--$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
+--$$ /  $$ |$$ /  \__|  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
+--$$$$$$$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
+--$$  __$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
+--$$ |  $$ |$$ |  $$\   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
+--$$ |  $$ |\$$$$$$  |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
+--\__|  \__| \______/   \__|   \______| \______/ \__|  \__| \______/
+
+--Activates or deactivates the actions allowed for the bands.
 
 Actions.Graffiti = true
 Actions.CollectMoney = true
@@ -141,17 +114,17 @@ Actions.SmugglingCommand = "gangsmuggling"
 Actions.IllegalPeople = true
 Actions.IllegalPeopleCommand = "gangpeople"
 
--- $$$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  
--- $$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|$$  __$$\ 
--- $$ |  $$ |$$ /  $$ |  $$ |  $$$$\ $$ |   $$ |   $$ /  \__|
--- $$$$$$$  |$$ |  $$ |  $$ |  $$ $$\$$ |   $$ |   \$$$$$$\  
--- $$  ____/ $$ |  $$ |  $$ |  $$ \$$$$ |   $$ |    \____$$\ 
--- $$ |      $$ |  $$ |  $$ |  $$ |\$$$ |   $$ |   $$\   $$ |
--- $$ |       $$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   \$$$$$$  |
--- \__|       \______/ \______|\__|  \__|   \__|    \______/
+--$$$$$$$\   $$$$$$\  $$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  
+--$$  __$$\ $$  __$$\ \_$$  _|$$$\  $$ |\__$$  __|$$  __$$\ 
+--$$ |  $$ |$$ /  $$ |  $$ |  $$$$\ $$ |   $$ |   $$ /  \__|
+--$$$$$$$  |$$ |  $$ |  $$ |  $$ $$\$$ |   $$ |   \$$$$$$\  
+--$$  ____/ $$ |  $$ |  $$ |  $$ \$$$$ |   $$ |    \____$$\ 
+--$$ |      $$ |  $$ |  $$ |  $$ |\$$$ |   $$ |   $$\   $$ |
+--$$ |       $$$$$$  |$$$$$$\ $$ | \$$ |   $$ |   \$$$$$$  |
+--\__|       \______/ \______|\__|  \__|   \__|    \______/
 
--- You can edit the amount of points to be awarded to the gang for each action. 
--- The text is used to identify the actions in the discord webhook.
+--You can edit the amount of points to be awarded to the gang for each action. 
+--The text is used to identify the actions in the discord webhook.
 
 Points.graffiti = 20
 Points.graffitiText = "Graffiti creation"
@@ -166,50 +139,56 @@ Points.smugglingText = "Smuggling of goods"
 Points.illegalPeople = 75
 Points.illegalPeopleText = "Transportation of illegal people"
 
--- $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\         $$$$$$\  $$$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
--- $$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\       $$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
--- $$ /  $$ |$$ /  \__|  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|      $$ /  $$ |$$ |  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
--- $$$$$$$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\        $$ |  $$ |$$$$$$$  |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
--- $$  __$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\       $$ |  $$ |$$  ____/   $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
--- $$ |  $$ |$$ |  $$\   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |      $$ |  $$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
--- $$ |  $$ |\$$$$$$  |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |       $$$$$$  |$$ |        $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
--- \__|  \__| \______/   \__|   \______| \______/ \__|  \__| \______/        \______/ \__|        \__|   \______| \______/ \__|  \__| \______/
 
--- Money to be given to the user when selling drugs, by default a value between 50 and 200$. Set to nil if you don't want to receive money
-AO.drugDealingAmount = math.random(50, 350)
--- Percentage of possibility to notify the police
+-- $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\         $$$$$$\  $$$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
+--$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\       $$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
+--$$ /  $$ |$$ /  \__|  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|      $$ /  $$ |$$ |  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
+--$$$$$$$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\        $$ |  $$ |$$$$$$$  |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
+--$$  __$$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\       $$ |  $$ |$$  ____/   $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
+--$$ |  $$ |$$ |  $$\   $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |      $$ |  $$ |$$ |        $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
+--$$ |  $$ |\$$$$$$  |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |       $$$$$$  |$$ |        $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
+--\__|  \__| \______/   \__|   \______| \______/ \__|  \__| \______/        \______/ \__|        \__|   \______| \______/ \__|  \__| \______/
+
+
+--Money to be given to the user when selling drugs, by default a value between 50 and 200$. Set to nil if you don't want to receive money
+AO.drugDealingAmount = math.random (50, 200)
+--Percentage of possibility to notify the police
 AO.drugDealingPolice = 100
--- Allowed drugs to sell (enter the name of the item)
+--Allowed drugs to sell (enter the name of the item)
 AO.allowedDrugs = {'weed_white-widow', 'cocaine', 'lsd'}
--- Money to be given to the user at the end of the murder contract, by default a value between $50 and $200. Set to nil if you don't want to receive money
-AO.contractKillingAmount = math.random(50, 200)
--- Activate if you want the police to be notified when the target is killed.
+--Money to be given to the user at the end of the murder contract, by default a value between $50 and $200. Set to nil if you don't want to receive money
+AO.contractKillingAmount = math.random (50, 200)
+--Activate if you want the police to be notified when the target is killed.
 AO.contractKillingPolice = true
--- Money to be given to the user at the end of the smuggling, by default a value between $50 and $200. Set to nil if you don't want to receive money
-AO.smugglingAmount = math.random(50, 200)
--- Prop of the contraband item
-AO.smugglingProp = "ex_office_swag_drugbag2"
--- Activate if you want the police to be notified when the shipment is picked up.
+--Money to be given to the user at the end of the smuggling, by default a value between $50 and $200. Set to nil if you don't want to receive money
+AO.smugglingAmount = math.random (50, 200)
+--Prop of the contraband item
+AO.smugglingProp =  "ex_office_swag_drugbag2"
+--Activate if you want the police to be notified when the shipment is picked up.
 AO.smugglingPolice = true
--- Money to be given to the user at the end of the transport of illegal persons, by default a value between $50 and $200. Set to null if you do not wish to receive money.
-AO.illegalPeopleAmount = math.random(50, 200)
--- Final point of delivery of illegal persons
+--Money to be given to the user at the end of the transport of illegal persons, by default a value between $50 and $200. Set to null if you do not wish to receive money.
+AO.illegalPeopleAmount = math.random (50, 200)
+--Final point of delivery of illegal persons
 AO.illegalPeopleFinalLocation = vector3(555.93, -1797.35, 29.2)
--- Activate if you want the police to be alerted when the player reaches the illegal persons
+--Activate if you want the police to be alerted when the player reaches the illegal persons
 AO.illegalPeoplePolice = true
 
--- $$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$\   $$$$$$\ $$$$$$$$\  $$$$$$\  $$\   $$\ 
--- $$  __$$\ \_$$  _|$$  __$$\ $$  __$$\ $$  __$$\\__$$  __|$$  __$$\ $$ |  $$ |
--- $$ |  $$ |  $$ |  $$ /  \__|$$ |  $$ |$$ /  $$ |  $$ |   $$ /  \__|$$ |  $$ |
--- $$ |  $$ |  $$ |  \$$$$$$\  $$$$$$$  |$$$$$$$$ |  $$ |   $$ |      $$$$$$$$ |
--- $$ |  $$ |  $$ |   \____$$\ $$  ____/ $$  __$$ |  $$ |   $$ |      $$  __$$ |
--- $$ |  $$ |  $$ |  $$\   $$ |$$ |      $$ |  $$ |  $$ |   $$ |  $$\ $$ |  $$ |
--- $$$$$$$  |$$$$$$\ \$$$$$$  |$$ |      $$ |  $$ |  $$ |   \$$$$$$  |$$ |  $$ |
--- \_______/ \______| \______/ \__|      \__|  \__|  \__|    \______/ \__|  \__|
+
+
+--$$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$\   $$$$$$\ $$$$$$$$\  $$$$$$\  $$\   $$\ 
+--$$  __$$\ \_$$  _|$$  __$$\ $$  __$$\ $$  __$$\\__$$  __|$$  __$$\ $$ |  $$ |
+--$$ |  $$ |  $$ |  $$ /  \__|$$ |  $$ |$$ /  $$ |  $$ |   $$ /  \__|$$ |  $$ |
+--$$ |  $$ |  $$ |  \$$$$$$\  $$$$$$$  |$$$$$$$$ |  $$ |   $$ |      $$$$$$$$ |
+--$$ |  $$ |  $$ |   \____$$\ $$  ____/ $$  __$$ |  $$ |   $$ |      $$  __$$ |
+--$$ |  $$ |  $$ |  $$\   $$ |$$ |      $$ |  $$ |  $$ |   $$ |  $$\ $$ |  $$ |
+--$$$$$$$  |$$$$$$\ \$$$$$$  |$$ |      $$ |  $$ |  $$ |   \$$$$$$  |$$ |  $$ |
+--\_______/ \______| \______/ \__|      \__|  \__|  \__|    \______/ \__|  \__|
 
 function alertDispatch(location, action, message)
-    local data = exports['ps-dispatch']:GetPlayerInfo()
-    TriggerServerEvent('ps-dispatch:AddNotification', {
+    --Example with cd_dispatch:
+
+    --[[local data = exports['cd_dispatch']:GetPlayerInfo()
+    TriggerServerEvent('cd_dispatch:AddNotification', {
         job_table = {'police', }, 
         coords = data.coords,
         title = action,
@@ -226,33 +205,33 @@ function alertDispatch(location, action, message)
             time = 5,
             radius = 0,
         }
-    })
+    })]]
 end
 
--- $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
--- $$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  _____|$$  __$$\ 
--- $$$$\  $$$$ |$$ /  $$ |$$ |  $$ |$$ |$$  / $$ |      $$ |  $$ |
--- $$\$$\$$ $$ |$$$$$$$$ |$$$$$$$  |$$$$$  /  $$$$$\    $$$$$$$  |
--- $$ \$$$  $$ |$$  __$$ |$$  __$$< $$  $$<   $$  __|   $$  __$$< 
--- $$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |\$$\  $$ |      $$ |  $$ |
--- $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |$$ | \$$\ $$$$$$$$\ $$ |  $$ |
--- \__|     \__|\__|  \__|\__|  \__|\__|  \__|\________|\__|  \__|
+--$$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
+--$$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  _____|$$  __$$\ 
+--$$$$\  $$$$ |$$ /  $$ |$$ |  $$ |$$ |$$  / $$ |      $$ |  $$ |
+--$$\$$\$$ $$ |$$$$$$$$ |$$$$$$$  |$$$$$  /  $$$$$\    $$$$$$$  |
+--$$ \$$$  $$ |$$  __$$ |$$  __$$< $$  $$<   $$  __|   $$  __$$< 
+--$$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |\$$\  $$ |      $$ |  $$ |
+--$$ | \_/ $$ |$$ |  $$ |$$ |  $$ |$$ | \$$\ $$$$$$$$\ $$ |  $$ |
+--\__|     \__|\__|  \__|\__|  \__|\__|  \__|\________|\__|  \__|
 
 Marker = {
     mtype = 23,
-    -- RGB COLOR:
+    --RGB COLOR:
     r = 11,
     g = 236,
     b = 188
 }
 
 -- $$$$$$\  $$$$$$$\  $$$$$$$\   $$$$$$\ $$\     $$\ 
--- $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\\$$\   $$  |
--- $$ /  \__|$$ |  $$ |$$ |  $$ |$$ /  $$ |\$$\ $$  / 
--- \$$$$$$\  $$$$$$$  |$$$$$$$  |$$$$$$$$ | \$$$$  /  
+--$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\\$$\   $$  |
+--$$ /  \__|$$ |  $$ |$$ |  $$ |$$ /  $$ |\$$\ $$  / 
+--\$$$$$$\  $$$$$$$  |$$$$$$$  |$$$$$$$$ | \$$$$  /  
 -- \____$$\ $$  ____/ $$  __$$< $$  __$$ |  \$$  /   
--- $$\   $$ |$$ |      $$ |  $$ |$$ |  $$ |   $$ |    
--- \$$$$$$  |$$ |      $$ |  $$ |$$ |  $$ |   $$ |    
+--$$\   $$ |$$ |      $$ |  $$ |$$ |  $$ |   $$ |    
+--\$$$$$$  |$$ |      $$ |  $$ |$$ |  $$ |   $$ |    
 -- \______/ \__|      \__|  \__|\__|  \__|   \__|
 
 Config.sprayPersist = 2
@@ -260,36 +239,36 @@ Config.progressBarDuration = 20000
 Config.sprayRemoveDuration = 20000
 Config.blacklist = {'nigger', 'nazi', 'moron', 'retard', 'faggot'}
 
--- $$\   $$\  $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
--- $$$\  $$ |$$  __$$\\__$$  __|\_$$  _|$$  _____|\_$$  _|$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
--- $$$$\ $$ |$$ /  $$ |  $$ |     $$ |  $$ |        $$ |  $$ /  \__|$$ /  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
--- $$ $$\$$ |$$ |  $$ |  $$ |     $$ |  $$$$$\      $$ |  $$ |      $$$$$$$$ |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
--- $$ \$$$$ |$$ |  $$ |  $$ |     $$ |  $$  __|     $$ |  $$ |      $$  __$$ |  $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
--- $$ |\$$$ |$$ |  $$ |  $$ |     $$ |  $$ |        $$ |  $$ |  $$\ $$ |  $$ |  $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
--- $$ | \$$ | $$$$$$  |  $$ |   $$$$$$\ $$ |      $$$$$$\ \$$$$$$  |$$ |  $$ |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
--- \__|  \__| \______/   \__|   \______|\__|      \______| \______/ \__|  \__|  \__|   \______| \______/ \__|  \__| \______/
+--$$\   $$\  $$$$$$\ $$$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\   $$$$$$\ $$$$$$$$\ $$$$$$\  $$$$$$\  $$\   $$\  $$$$$$\  
+--$$$\  $$ |$$  __$$\\__$$  __|\_$$  _|$$  _____|\_$$  _|$$  __$$\ $$  __$$\\__$$  __|\_$$  _|$$  __$$\ $$$\  $$ |$$  __$$\ 
+--$$$$\ $$ |$$ /  $$ |  $$ |     $$ |  $$ |        $$ |  $$ /  \__|$$ /  $$ |  $$ |     $$ |  $$ /  $$ |$$$$\ $$ |$$ /  \__|
+--$$ $$\$$ |$$ |  $$ |  $$ |     $$ |  $$$$$\      $$ |  $$ |      $$$$$$$$ |  $$ |     $$ |  $$ |  $$ |$$ $$\$$ |\$$$$$$\  
+--$$ \$$$$ |$$ |  $$ |  $$ |     $$ |  $$  __|     $$ |  $$ |      $$  __$$ |  $$ |     $$ |  $$ |  $$ |$$ \$$$$ | \____$$\ 
+--$$ |\$$$ |$$ |  $$ |  $$ |     $$ |  $$ |        $$ |  $$ |  $$\ $$ |  $$ |  $$ |     $$ |  $$ |  $$ |$$ |\$$$ |$$\   $$ |
+--$$ | \$$ | $$$$$$  |  $$ |   $$$$$$\ $$ |      $$$$$$\ \$$$$$$  |$$ |  $$ |  $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  |
+--\__|  \__| \______/   \__|   \______|\__|      \______| \______/ \__|  \__|  \__|   \______| \______/ \__|  \__| \______/
 
 function notifications(notitype, message, time)
-    -- Change this trigger for your notification system keeping the variables
-    TriggerEvent('ox-notify', message, time, notitype)
+    --Change this trigger for your notification system keeping the variables
+    TriggerEvent('codem-notification', message, time, notitype)
 end
 
--- Notifications types:
+--Notifications types:
 Noti.info = 'info'
 Noti.check = 'check'
 Noti.error = 'error'
 
--- Notification time:
+--Notification time:
 Noti.time = 5000
 
--- $$\        $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\  $$$$$$\   $$$$$$\  $$$$$$$$\ 
--- $$ |      $$  __$$\ $$$\  $$ |$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$  _____|
--- $$ |      $$ /  $$ |$$$$\ $$ |$$ /  \__|$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |      
--- $$ |      $$$$$$$$ |$$ $$\$$ |$$ |$$$$\ $$ |  $$ |$$$$$$$$ |$$ |$$$$\ $$$$$\    
--- $$ |      $$  __$$ |$$ \$$$$ |$$ |\_$$ |$$ |  $$ |$$  __$$ |$$ |\_$$ |$$  __|   
--- $$ |      $$ |  $$ |$$ |\$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      
--- $$$$$$$$\ $$ |  $$ |$$ | \$$ |\$$$$$$  |\$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$$$\ 
--- \________|\__|  \__|\__|  \__| \______/  \______/ \__|  \__| \______/ \________|
+--$$\        $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\  $$$$$$\   $$$$$$\  $$$$$$$$\ 
+--$$ |      $$  __$$\ $$$\  $$ |$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$  _____|
+--$$ |      $$ /  $$ |$$$$\ $$ |$$ /  \__|$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |      
+--$$ |      $$$$$$$$ |$$ $$\$$ |$$ |$$$$\ $$ |  $$ |$$$$$$$$ |$$ |$$$$\ $$$$$\    
+--$$ |      $$  __$$ |$$ \$$$$ |$$ |\_$$ |$$ |  $$ |$$  __$$ |$$ |\_$$ |$$  __|   
+--$$ |      $$ |  $$ |$$ |\$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      
+--$$$$$$$$\ $$ |  $$ |$$ | \$$ |\$$$$$$  |\$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$$$\ 
+--\________|\__|  \__|\__|  \__| \______/  \______/ \__|  \__| \______/ \________|
 
 Lang.OpenUI = "gang"
 Lang.OpenUIInfo = "Open gang menu"
@@ -314,7 +293,7 @@ Lang.CreateGangDesc = "Create a new gang indicating all the properties it should
 Lang.ManageGang = "MANAGE GANG"
 Lang.ManageGangDesc = "Manage an already created gang, modify its properties. Manage members and ranks."
 Lang.ManageStores = "MANAGE STORES"
-Lang.ManageStoresDesc = "Creates or eliminates stores where the gangs must collect the money."
+Lang.ManageStoresDesc =  "Creates or eliminates stores where the gangs must collect the money."
 Lang.Events = "EVENTS"
 Lang.EventsDesc = "Create a new event for the gangs. All gangs will be able to participate."
 Lang.GangNameError = "There is already a gang with this name"
@@ -372,19 +351,17 @@ Lang.noVehicle = "You must be in a vehicle to transport these people"
 Lang.doNoFitVehicle = "People do not fit in this vehicle"
 Lang.destination = "Destination"
 Lang.illegalPersonsPoliceAlert = "Someone is helping to bring illegal aliens into the country. Heed the warning"
-Lang.noUser = "No user found with that ID"
-Lang.alreadyGang = "This user is already a member of a gang"
-Lang.graffitideactivated = "Graffiti is deactivated"
-Lang.graffitiactivated = "Graffiti is activated"
 
--- $$\       $$$$$$$$\ $$\    $$\ $$$$$$$$\ $$\       $$$$$$\  
--- $$ |      $$  _____|$$ |   $$ |$$  _____|$$ |     $$  __$$\ 
--- $$ |      $$ |      $$ |   $$ |$$ |      $$ |     $$ /  \__|
--- $$ |      $$$$$\    \$$\  $$  |$$$$$\    $$ |     \$$$$$$\  
--- $$ |      $$  __|    \$$\$$  / $$  __|   $$ |      \____$$\ 
--- $$ |      $$ |        \$$$  /  $$ |      $$ |     $$\   $$ |
--- $$$$$$$$\ $$$$$$$$\    \$  /   $$$$$$$$\ $$$$$$$$\\$$$$$$  |
--- \________|\________|    \_/    \________|\________|\______/
+
+
+--$$\       $$$$$$$$\ $$\    $$\ $$$$$$$$\ $$\       $$$$$$\  
+--$$ |      $$  _____|$$ |   $$ |$$  _____|$$ |     $$  __$$\ 
+--$$ |      $$ |      $$ |   $$ |$$ |      $$ |     $$ /  \__|
+--$$ |      $$$$$\    \$$\  $$  |$$$$$\    $$ |     \$$$$$$\  
+--$$ |      $$  __|    \$$\$$  / $$  __|   $$ |      \____$$\ 
+--$$ |      $$ |        \$$$  /  $$ |      $$ |     $$\   $$ |
+--$$$$$$$$\ $$$$$$$$\    \$  /   $$$$$$$$\ $$$$$$$$\\$$$$$$  |
+--\________|\________|    \_/    \________|\________|\______/
 
 Levels = {
     [0] = "We are like a seed that will soon sprout and grow into a powerful criminal force. The beginning of our legend!",
@@ -440,15 +417,15 @@ Levels = {
     [50] = "The pinnacle of power is our home. We control the criminal underworld in its entirety!"
 }
 
--- $$\      $$\ $$$$$$$$\ $$$$$$$\  $$\   $$\  $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  
--- $$ | $\  $$ |$$  _____|$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ 
--- $$ |$$$\ $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ /  $$ |$$ /  $$ |$$ |$$  / $$ /  \__|
--- $$ $$ $$\$$ |$$$$$\    $$$$$$$\ |$$$$$$$$ |$$ |  $$ |$$ |  $$ |$$$$$  /  \$$$$$$\  
--- $$$$  _$$$$ |$$  __|   $$  __$$\ $$  __$$ |$$ |  $$ |$$ |  $$ |$$  $$<    \____$$\ 
--- $$$  / \$$$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$\  $$\   $$ |
--- $$  /   \$$ |$$$$$$$$\ $$$$$$$  |$$ |  $$ | $$$$$$  | $$$$$$  |$$ | \$$\ \$$$$$$  |
--- \__/     \__|\________|\_______/ \__|  \__| \______/  \______/ \__|  \__| \______/
+--$$\      $$\ $$$$$$$$\ $$$$$$$\  $$\   $$\  $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  
+--$$ | $\  $$ |$$  _____|$$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ 
+--$$ |$$$\ $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ /  $$ |$$ /  $$ |$$ |$$  / $$ /  \__|
+--$$ $$ $$\$$ |$$$$$\    $$$$$$$\ |$$$$$$$$ |$$ |  $$ |$$ |  $$ |$$$$$  /  \$$$$$$\  
+--$$$$  _$$$$ |$$  __|   $$  __$$\ $$  __$$ |$$ |  $$ |$$ |  $$ |$$  $$<    \____$$\ 
+--$$$  / \$$$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$\  $$\   $$ |
+--$$  /   \$$ |$$$$$$$$\ $$$$$$$  |$$ |  $$ | $$$$$$  | $$$$$$  |$$ | \$$\ \$$$$$$  |
+--\__/     \__|\________|\_______/ \__|  \__| \______/  \______/ \__|  \__| \______/
 
 WH.Action = ""
 WH.Operations = ""
-WH.SellDrug = ""
+WH.SellDrug  = ""
