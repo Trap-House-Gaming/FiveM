@@ -1,17 +1,38 @@
-resource_manifest_version '77731fab-63ca-442c-a67b-abc70f28dfa5'
- 
+resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+
 files {
-    'vehicles.meta',
-    'carvariations.meta',
-    'carcols.meta',
-    'handling.meta',    
-	'dlctext.meta',	
-	
-}
+
+	'data/**/carcols.meta',
+	'data/**/carvariations.meta',
+	'data/**/handling.meta',
+	'data/**/vehiclelayouts.meta',
+	'data/**/vehicles.meta',
+
  
-data_file 'HANDLING_FILE' 'handling.meta'
-data_file 'VEHICLE_METADATA_FILE' 'vehicles.meta'
-data_file 'CARCOLS_FILE' 'carcols.meta'
-data_file 'VEHICLE_VARIATION_FILE' 'carvariations.meta'
-data_file 'DLC_TEXT_FILE' 'dlctext.meta'
-client_script 'vehicle_names.lua'
+
+	
+	'audioconfig/dlcfcyote_game.dat151.rel',
+	'audioconfig/dlcfcyote_sounds.dat54.rel',
+	
+	'sfx/dlc_fcyote/fordcoyote.awc',
+	'sfx/dlc_fcyote/fordcoyote.awc',
+	
+
+
+}
+
+	data_file 'VEHICLE_LAYOUTS_FILE'	'data/**/vehiclelayouts.meta'
+	data_file 'HANDLING_FILE'			'data/**/handling.meta'
+	data_file 'VEHICLE_METADATA_FILE'	'data/**/vehicles.meta'
+	data_file 'CARCOLS_FILE'			'data/**/carcols.meta'
+	data_file 'VEHICLE_VARIATION_FILE'	'data/**/carvariations.meta'
+
+
+	
+	data_file 'AUDIO_GAMEDATA' 'audioconfig/dlcfcyote_game.dat151'
+	data_file 'AUDIO_SOUNDDATA' 'audioconfig/dlcfcyote_sounds.dat54'
+	data_file 'AUDIO_WAVEPACK' 'sfx/dlc_fcyote'
+	
+
+
+	client_script 'veh_label.lua'

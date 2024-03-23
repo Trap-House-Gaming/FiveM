@@ -48,7 +48,7 @@ Prison = {
         playerUnloadedClient = '', -- ['esx', 'qbcore'] Set playerUnloadedClient (client-side) event, automatic detection will be performed
         playerLoadedClient = '', -- ['esx', 'qbcore'] Set playerLoadedClient (client-side) event, automatic detection will be performed
         resourceName = '', -- ['esx', 'qbcore'] Set the resource name, if left blank, automatic detection will be performed
-        resourceNameClothing = 'skinchanger', -- [ ESX = 'skinchanger' / QBCore = 'qb-clothing', 'fivem-appearance', 'illenium-appearance' ] Set the clothing resource name, if left blank, automatic detection will be performed
+        resourceNameClothing = 'qb-clothing', -- [ ESX = 'skinchanger' / QBCore = 'qb-clothing', 'fivem-appearance', 'illenium-appearance' ] Set the clothing resource name, if left blank, automatic detection will be performed
         resourceNamePhone = '', -- '[ 'qb-phone', 'npwd', 'gksphone', 'qs-smartphone'] Set the phone resource name for booth usage, if left blank, automatic detection will be performed
     },
 
@@ -118,7 +118,7 @@ Prison = {
     BoothTakeCreditsPeriod = 60 * 1000, -- Each minute reduce prisoner credits (BoothPricePerMinute)
     BoothPricePerMinute = 2, -- 2 Credits per BoothTakeCreditsPeriod
 
-    OutfitSkipSelection = false, -- Would you like to get Prisoner instantly in Prison and define own actions?
+    OutfitSkipSelection = true, -- Would you like to get Prisoner instantly in Prison and define own actions?
     OutfitSelectionTimeout = 10 * 1000,  -- How much time prisoner have time for outfit selection.
     PackageCooldown = 30 * 1000, -- For Ciggarets packaging minigame, delay between each package session
 
