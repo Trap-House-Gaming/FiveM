@@ -13,6 +13,15 @@ if Config.NoGtaPeds then
         },
     }
 else
+    Config.MaxFaces = {
+        male = 45,
+        female = 45,
+    }
+    
+    Config.MaxSkinColors = {
+        male = 15,
+        female = 15,
+    }
     Config.Models = {
         [0] = {
             'mp_m_freemode_01',
