@@ -149,7 +149,6 @@ Config.Items = {
             amount = 50,
             info = {
                 attachments = {
-                    { component = 'COMPONENT_AT_PI_FLSH', label = 'Flashlight' },
                 }
             }
         },
