@@ -95,15 +95,36 @@ Config.Consumables = {
         ['tosti'] = math.random(40, 50),
         ['twerks_candy'] = math.random(35, 54),
         ['snikkel_candy'] = math.random(40, 50),
+        ['melon'] = math.random(70, 70),
         -- Casino Bar Snacks
         ["casino_burger"] = math.random(25, 40),
         ["casino_psqs"] = math.random(25, 40),
         ["casino_ego_chaser"] = math.random(25, 40),
         ["casino_sandwitch"] = math.random(25, 40),
         ["casino_donut"] = math.random(25, 40)
+        -- Custom Added Food
+        ["spicy_crispy_chicken_sandwich"] = math.random(45, 45),
+        ["cajun_fries"] = math.random(45, 45),
+        ["crispy_chicken_staco"] = math.random(45, 45),
+        ["garlic_parm_wings"] = math.random(45, 45),
+        ["lemon_pepper_wings"] = math.random(45, 45)
+        ["original_hot_wings"] = math.random(45, 45),
+        ["crispy_tenders"] = math.random(45, 45),
+        ["buffalo_chicken_strips"] = math.random(45, 45),
+        ["bbq_wings"] = math.random(45, 45),
+        ["chicken_and_waffles"] = math.random(45, 45)
+        ["mozzarella_sticks"] = math.random(45, 45)
+        --Burgershot
+        ["burger-bleeder"] = math.random(45, 45),
+        ["burger-moneyshot"] = math.random(45, 45),
+        ["burger-torpedo"] = math.random(45, 45),
+        ["burger-heartstopper"] = math.random(45, 45),
+        ["burger-meatfree"] = math.random(45, 45)
+        ["burger-fries"] = math.random(45, 45),
+	
     },
     drink = { -- default drink items
-        ['water_bottle'] = math.random(35, 54),
+        ['water_bottle'] = math.random(10, 60),
         ['kurkakola'] = math.random(35, 54),
         ['coffee'] = math.random(40, 50),
         -- Casino Bar Drinks
@@ -112,6 +133,16 @@ Config.Consumables = {
         ["casino_sprite"] = math.random(25, 40),
         ["casino_luckypotion"] = math.random(25, 40),
         ["casino_coffee"] = math.random(25, 40)
+        -- Custom
+        ["pink_lemonade"] = math.random(10, 60),
+        ["sweet_tea"] = math.random(10, 60),
+        ["medium_hawaiian_punch"] = math.random(10, 60),
+        ["casino_luckypotion"] = math.random(25, 40),
+        ["casino_coffee"] = math.random(25, 40)
+        --Burgershot
+        ['burger-softdrink'] = math.random(10, 60),
+        ['burger-mshake'] = math.random(35, 54),
+
     },
     alcohol = { -- default alcohol items
         ['whiskey'] = math.random(20, 30),
