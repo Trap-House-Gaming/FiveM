@@ -48,7 +48,7 @@ Prison = {
         playerUnloadedClient = '', -- ['esx', 'qbcore'] Set playerUnloadedClient (client-side) event, automatic detection will be performed
         playerLoadedClient = '', -- ['esx', 'qbcore'] Set playerLoadedClient (client-side) event, automatic detection will be performed
         resourceName = '', -- ['esx', 'qbcore'] Set the resource name, if left blank, automatic detection will be performed
-        resourceNameClothing = 'qb-clothing', -- [ ESX = 'skinchanger' / QBCore = 'qb-clothing', 'fivem-appearance', 'illenium-appearance' ] Set the clothing resource name, if left blank, automatic detection will be performed
+        resourceNameClothing = '', -- [ ESX = 'skinchanger' / QBCore = 'qb-clothing', 'fivem-appearance', 'illenium-appearance' ] Set the clothing resource name, if left blank, automatic detection will be performed
         resourceNamePhone = '', -- '[ 'qb-phone', 'npwd', 'gksphone', 'qs-smartphone'] Set the phone resource name for booth usage, if left blank, automatic detection will be performed
     },
 

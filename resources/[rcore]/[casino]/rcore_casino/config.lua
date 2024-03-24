@@ -33,7 +33,7 @@ Config = {
 
     -- Target
     UseTarget = true, -- whether to use target zones or not
-    TargetZoneType = 3, -- 1: q_target, 2: bt_target, 3: qb-target, 4: ox_target
+    TargetZoneType = 4, -- 1: q_target, 2: bt_target, 3: qb-target, 4: ox_target
 
     -- Money Or Casino Chips? 
     MoneyInventoryItemName = nil, -- name of the money inventory item, set to nil, if you don't want to use inventory item as the money
