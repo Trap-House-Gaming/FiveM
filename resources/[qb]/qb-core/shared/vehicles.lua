@@ -753,7 +753,7 @@ local Vehicles = {
     { model = 'BMWM5',          name = 'M5',                           brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'ZL1Hycade',      name = 'ZL1 Hycade',                   brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'ChevyCorvetteC6T', name = 'Turbo Corvette',             brand = 'Cheverolet',     price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'jcm1000rr',      name = 'S100RR',                       brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'jcm1000rr',      name = 'S1000RR',                       brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'RaviertEms',     name = 'Range Rover',                  brand = 'Randge Rover',   price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'ReepEms',        name = 'Track EMS',                    brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'RodgeEms',       name = 'Charger EMS',                  brand = 'Dodge',          price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },

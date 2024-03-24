@@ -274,20 +274,6 @@ AK4Y.Vehicles = {
         carImage = "./images/bmwm5.png",
     },
     {
-        id = 10,
-        spawnName = "jcm1000rr", -- Spawn code of the vehicle that will be given when the product is received
-        brand = "BMW",
-        model = "S1000 RR",
-        year = "2024 MODEL",
-        costCredit = 500, -- The price to be paid for the product
-        topSpeed = 170, -- Top speed of the product
-        topSpeedGraph = 90, -- Percentage of product top speed
-        brakingPower = 50, -- Percentage of braking power of the product
-        robustness = 90, -- Percentage of product robustness
-        vehType = "car", -- do not change
-        carImage = "./images/bmws1000.png",
-    },
-    {
         id = 11,
         spawnName = "sou_c63swb", -- Spawn code of the vehicle that will be given when the product is received
         brand = "Mercedes",
