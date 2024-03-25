@@ -231,11 +231,22 @@ QBShared.Items = {
     twerks_candy                 = { name = 'twerks_candy', label = 'Twerks', weight = 100, type = 'item', image = 'twerks_candy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Some delicious candy :O' },
     snikkel_candy                = { name = 'snikkel_candy', label = 'Snikkel', weight = 100, type = 'item', image = 'snikkel_candy.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Some delicious candy :O' },
     sandwich                     = { name = 'sandwich', label = 'Sandwich', weight = 200, type = 'item', image = 'sandwich.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Nice bread for your stomach' },
+    tbirria_taco                 = { name = 'tbirria_taco', label = 'Birria Tacos', weight = 200, type = 'item', image = 'tbirria_taco.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'These so bomb' },
+    thothoney_tenders            = { name = 'thothoney_tenders', label = 'Hot Honey Tenders', weight = 200, type = 'item', image = 'thothoney_tenders.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'some bussin tenders' },
+    tpizzaa_slice                = { name = 'tpizzaa_slice', label = 'Pizza Slice', weight = 100, type = 'item', image = 'tpizzaa_slice.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Fresh hot pizza' },
+    street_taco                  = { name = 'street_taco', label = 'Street Tacos', weight = 200, type = 'item', image = 'street_taco.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'some bussin street tacos' },
+    ttakis                       = { name = 'ttakis', label = 'Bag Of Takis', weight = 100, type = 'item', image = 'ttakis.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'New bag of takis' },
+    twings                       = { name = 'twings', label = 'Wings', weight = 100, type = 'item', image = 'twings.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'spicy chicken wings' },
+    tmelon                       = { name = 'tmelon', label = 'Juicy Melon Slice', weight = 100, type = 'item', image = 'tmelon.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Juicy melon slice' },
 
-    -- Drink ITEMS
-    water_bottle                 = { name = 'water_bottle', label = 'Bottle of Water', weight = 500, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty out there' },
+    -- Drink ITEM
+    water_bottle                 = { name = 'water_bottle', label = 'Bottle of Water', weight = 200, type = 'item', image = 'water_bottle.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty mfs out here' },
     coffee                       = { name = 'coffee', label = 'Coffee', weight = 200, type = 'item', image = 'coffee.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Pump 4 Caffeine' },
-    kurkakola                    = { name = 'kurkakola', label = 'Cola', weight = 500, type = 'item', image = 'cola.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty out there' },
+    kurkakola                    = { name = 'kurkakola', label = 'Cola', weight = 200, type = 'item', image = 'tfruit_punch.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty mfs out here' },
+    tfruit_punch                 = { name = 'tfruit_punch', label = 'Fruit Punch Soda', weight = 200, type = 'item', image = 'tfruit_punch.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty out there' },
+    tmexican_coke                = { name = 'tmexican_coke', label = 'Mexican Cola', weight = 200, type = 'item', image = 'tmexican_coke.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty mfs out here' },
+    tpina_fanta                  = { name = 'tpina_fanta', label = 'Pina Colada Juice', weight = 500, type = 'item', image = 'tpina_fanta.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty mfs out here' },
+    tpink_lemon                  = { name = 'tpink_lemon', label = 'Pink Lemonade', weight = 200, type = 'item', image = 'tpink_lemon.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'For all the thirsty out there' },
 
     -- Alcohol
     beer                         = { name = 'beer', label = 'Beer', weight = 500, type = 'item', image = 'beer.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Nothing like a good cold beer!' },
