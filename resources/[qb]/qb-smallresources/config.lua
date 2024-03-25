@@ -113,7 +113,7 @@ Config.Consumables = {
         ["casino_psqs"] = math.random(25, 40),
         ["casino_ego_chaser"] = math.random(25, 40),
         ["casino_sandwitch"] = math.random(25, 40),
-        ["casino_donut"] = math.random(25, 40)
+        ["casino_donut"] = math.random(25, 40),
     },
     drink = { -- default drink items
         ['water_bottle'] = math.random(1, 3),
@@ -130,7 +130,7 @@ Config.Consumables = {
         ["casino_coke"] = math.random(25, 40),
         ["casino_sprite"] = math.random(25, 40),
         ["casino_luckypotion"] = math.random(25, 40),
-        ["casino_coffee"] = math.random(25, 40)
+        ["casino_coffee"] = math.random(25, 40),
     },
     alcohol = { -- default alcohol items
         ['whiskey'] = math.random(20, 30),
