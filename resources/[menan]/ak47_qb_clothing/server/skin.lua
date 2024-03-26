@@ -71,8 +71,6 @@ AddEventHandler('qb-clothes:loadPlayerSkin', function()
         local result = MySQL.Sync.fetchAll('SELECT * FROM playerskins WHERE citizenid = ?', { Player.PlayerData.citizenid})
         if result[1] ~= nil then
             TriggerClientEvent("ak47_qb_clothing:loadSkin", src, json.decode(result[1].skin))
-        else
-           TriggerClientEvent("qb-clothes:client:CreateFirstCharacter", src)
         end
     end
 end)
