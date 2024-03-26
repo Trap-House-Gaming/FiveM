@@ -102,12 +102,6 @@ Config.Consumables = {
         ['ttakis'] = math.random(2, 5),
         ['twings'] = math.random(2, 3),
         ['tmelon'] = math.random(2, 2),
-        ['burger-bleeder'] = math.random(2, 3),
-        ['burger-moneyshot'] = math.random(2, 3),
-        ['burger-torpedo'] = math.random(2, 3),
-        ['burger-heartstopper'] = math.random(2, 3),
-        ['burger-meatfree'] = math.random(4, 4),
-        ['burger-fries'] = math.random(2, 4),
         -- Casino Bar Snacks
         ["casino_burger"] = math.random(25, 40),
         ["casino_psqs"] = math.random(25, 40),
@@ -123,8 +117,6 @@ Config.Consumables = {
         ['tpina_fanta'] = math.random(1, 3),
         ['tpink_lemon'] = math.random(1, 3),
         ['tfruit_punch'] = math.random(1, 3),
-        ['burger-softdrink'] = math.random(1, 3),
-        ['burger-mshake'] = math.random(1, 3),
         -- Casino Bar Drinks
         ["casino_beer"] = math.random(25, 40),
         ["casino_coke"] = math.random(25, 40),
