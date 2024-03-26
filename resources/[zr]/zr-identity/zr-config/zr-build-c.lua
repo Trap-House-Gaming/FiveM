@@ -20,7 +20,7 @@ RegisterNetEvent('zr-identity:hide', function()
         TriggerServerEvent('qb-apartments:server:SetInsideMeta', 0, 0, false)
         Wait(250)
         SetEntityVisible(PlayerPedId(), true)
-        Wait(250)
+        Wait(1500)
         DoScreenFadeIn(250)
         TriggerEvent('qb-weathersync:client:EnableSync')
         if not zr_config.StartingAppartment then
