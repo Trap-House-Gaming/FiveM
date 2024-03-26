@@ -26,7 +26,7 @@ Config.Fuel = "LegacyFuel"
 
 -- Google Docs Link
 Config.sopLink = {
-    ['police'] = '',
+    ['police'] = 'https://docs.google.com/document/d/1Kln4de4bI1pJPUR49DbP34bcJtp4jgI2TJRgT5SmNfM/edit',
     ['ambulance'] = '',
     ['bcso'] = '',
     ['doj'] = '',
@@ -39,8 +39,8 @@ Config.sopLink = {
 
 -- Google Docs Link
 Config.RosterLink = {
-    ['police'] = '',
-    ['ambulance'] = '',
+    ['police'] = 'https://docs.google.com/spreadsheets/d/1w-JJH_uxMIN-1i2ExoONOp0MstakZ8bpyYtZNLmjWuI/edit#gid=1304676578',
+    ['ambulance'] = 'https://docs.google.com/spreadsheets/d/1w-JJH_uxMIN-1i2ExoONOp0MstakZ8bpyYtZNLmjWuI/edit#gid=1304676578',
     ['bcso'] = '',
     ['doj'] = '',
     ['sast'] = '',

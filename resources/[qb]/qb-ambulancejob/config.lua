@@ -23,12 +23,12 @@ Config.FadeOutTimer = 5                                      -- How many bleed t
 Config.BlackoutTimer = 60                                    -- How many bleed ticks occur before blacking out
 Config.AdvanceBleedTimer = 60                                -- How many bleed ticks occur before bleed level increases
 Config.HeadInjuryTimer = 30                                  -- How much time, in seconds, do head injury effects chance occur
-Config.ArmInjuryTimer = 30                                   -- How much time, in seconds, do arm injury effects chance occur
-Config.LegInjuryTimer = 15                                   -- How much time, in seconds, do leg injury effects chance occur
+Config.ArmInjuryTimer = 45                                   -- How much time, in seconds, do arm injury effects chance occur
+Config.LegInjuryTimer = 30                                   -- How much time, in seconds, do leg injury effects chance occur
 Config.HeadInjuryChance = 25                                 -- The chance, in percent, that head injury side-effects get applied
 Config.LegInjuryChance = {                                   -- The chance, in percent, that leg injury side-effects get applied
-    Running = 50,
-    Walking = 15
+    Running = 25,
+    Walking = 5
 }
 Config.MajorArmoredBleedChance = 15 -- The chance, in percent, that a player will get a bleed effect when taking heavy damage while wearing armor
 Config.MaxInjuryChanceMulti = 3     -- How many times the HealthDamage value above can divide into damage taken before damage is forced to be applied
