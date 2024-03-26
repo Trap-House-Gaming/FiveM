@@ -14,7 +14,7 @@ end)
 
 RegisterNetEvent('qb-clothes:client:CreateFirstCharacter')
 AddEventHandler('qb-clothes:client:CreateFirstCharacter', function()
-    firstRegister = true
+    firstRegister = false
     QBCore.Functions.GetPlayerData(function(pData)
         if pData.charinfo.gender == 1 then
             TriggerEvent('skinchanger:loadSkin', {sex = 1}, OpenSaveableMenu)
