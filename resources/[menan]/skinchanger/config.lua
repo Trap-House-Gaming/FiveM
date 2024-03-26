@@ -1,7 +1,7 @@
 Config = {}
 Config.Locale = 'en'
 
-Config.NoGtaPeds = false
+Config.NoGtaPeds = true
 
 if Config.NoGtaPeds then
     Config.Models = {
@@ -24,7 +24,7 @@ else
     }
     Config.Models = {
         [0] = {
-            'mp_m_freemode_01',
+           -- 'mp_m_freemode_01',
             'ig_trafficwarden',
             'ig_bankman',
             'ig_barry',
@@ -383,7 +383,7 @@ else
             'a_m_o_acult_01'
         },
         [1] = {
-            'mp_f_freemode_01',
+            --'mp_f_freemode_01',
             'a_f_m_beach_01',
             'a_f_m_bevhills_01',
             'a_f_m_bevhills_02',

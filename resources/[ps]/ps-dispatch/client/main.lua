@@ -190,18 +190,6 @@ function createZones()
                 AddTextComponentString(hunting.label)
                 EndTextCommandSetBlipName(blip)
             end
-            -- Creates the Sphere --
-            huntingzone = lib.zones.sphere({
-                coords = hunting.coords,
-                radius = hunting.radius,
-                debug = Config.Debug,
-                onEnter = function()
-                    inHuntingZone = true
-                end,
-                onExit = function()
-                    inHuntingZone = false
-                end
-            })
     	end
     end
     -- No Dispatch Zone --
