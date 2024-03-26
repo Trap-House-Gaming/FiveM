@@ -151,7 +151,7 @@ Blips.ltext = "Gang Stash"
 local stashZones = {}
 function openLocker(gangname, location)
     
-    for _, v in pairs(Config.Locations['stash']) do
+--[[     for _, v in pairs(Config.Locations['stash']) do
         stashZones[#stashZones + 1] = BoxZone:Create(
             vector3(vector3(v.x, v.y, v.z)), 1.5, 1.5, {
                 name = 'box_zone',
@@ -172,7 +172,7 @@ function openLocker(gangname, location)
         else
             inStash = false
             exports['qb-core']:HideText()
-        end
+        end ]]
 end
 
 --  $$$$$$\  $$$$$$$\  $$$$$$$$\ $$\   $$\       $$$$$$$$\  $$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$$\ $$$$$$$$\       $$$$$$\ $$\   $$\ $$\    $$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\  $$$$$$\  $$$$$$$\ $$\     $$\ 
