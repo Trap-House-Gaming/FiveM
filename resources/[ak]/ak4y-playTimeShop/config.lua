@@ -8,20 +8,20 @@ AK4Y = {}
 
 AK4Y.Framework = "qb" -- qb / oldqb | qb = export system | oldqb = triggerevent system
 AK4Y.Mysql = "oxmysql" -- Check fxmanifest.lua when you change it! | ghmattimysql / oxmysql / mysql-async
-AK4Y.OpenCommand = "playtimeShop"
+AK4Y.OpenCommand = "playtime"
 AK4Y.DefaultGarage = "pillboxgarage" -- purchased vehicles will be sent to this garage
 AK4Y.RewardCoin = 5
 AK4Y.NeededPlayTime = 30 -- Minutes
 
 AK4Y.Language = {
-    title1 = "AK4Y",
+    title1 = "THG",
     title2 = "Playtime",
-    coin = "COIN",
-    nextReward = "FOR THE NEXT COIN REWARD",
+    coin = "COINS",
+    nextReward = "Next Reward In:",
     exit = "EXIT",
     reward = "REWARD :",
-    title3 = "TOP",
-    title4 = "PLAYERS",
+    title3 = "CITY",
+    title4 = "MVPS",
     title5 = "PLAYTIME",
     title6 = "SHOP",
     cancel = "CANCEL",
@@ -29,13 +29,13 @@ AK4Y.Language = {
     accept = "ACCEPT",
     realCurrency = "$",
     nextPage = "NEXT PAGE",
-    previousPage = "PRIVIOUS PAGE",
-    succesfully = "SUCCESSFULLY",
-    purchased = "PURCHASED",
+    previousPage = "PREVIOUS PAGE",
+    succesfully = "Successful",
+    purchased = "Purchase",
     invalidCode = "INVALID CODE!",
-    thxForPurch = "Thanks for purchasing!",
+    thxForPurch = "Thank you, come again!",
     top = "TOP",
-    youDntHvEngMoney = "YOU DONT HAVE ENOUGH MONEY!",
+    youDntHvEngMoney = "YOU GOT MORE WORK TO PUT IN!",
     text6 = "6",
 }
 
