@@ -59,7 +59,7 @@ RegisterNetEvent('hospital:server:RespawnAtHospital', function(hospitalIndex)
 		exports['qb-banking']:addMoney('ambulance', Config.BillCost, 'Player treatment')
 		TriggerClientEvent('hospital:client:SendBillEmail', src, Config.BillCost)
     else
-		for k, v in pairs(Config.Locations['hospital'][hospitalIndex]['beds']) do
+		for k, v in pairs(Config.Locations['beds']) do
 			if not v.taken then
 				TriggerClientEvent('hospital:client:SendToBed', src, k, v, true)
 				TriggerClientEvent('hospital:client:SetBed', -1, k, true, hospitalIndex)
