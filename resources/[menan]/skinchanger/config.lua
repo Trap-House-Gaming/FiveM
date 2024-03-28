@@ -1,7 +1,7 @@
 Config = {}
 Config.Locale = 'en'
 
-Config.NoGtaPeds = true
+Config.NoGtaPeds = false
 
 if Config.NoGtaPeds then
     Config.Models = {
