@@ -47,10 +47,14 @@ Config.Products = {
         {name = 'advancedrepairkit', price = 1000, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
     },
     ['weedshop'] = {
-        {name = 'joint',          price = 10,  amount = 50,   info = {}, type = 'item'},
-        {name = 'weed_nutrition', price = 20,  amount = 50,   info = {}, type = 'item'},
-        {name = 'empty_weed_bag', price = 2,   amount = 1000, info = {}, type = 'item'},
-        {name = 'rolling_paper',  price = 2,   amount = 1000, info = {}, type = 'item'},
+        {name = 'joint',          price = 5,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'weed_nutritin', price = 20,  amount = 1000,   info = {}, type = 'item'},
+        {name = 'empty_weed_bag', price = 10,   amount = 10000, info = {}, type = 'item'},
+        {name = 'rolling_paper',  price = 10,   amount = 500, info = {}, type = 'item'},
+        {name = 'blunt_wrap',          price = 5,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'mylar_bag', price = 15,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'plastic_wrap', price = 10,   amount = 10000, info = {}, type = 'item'},
+        {name = 'empty_baggy',  price = 10,   amount = 10000, info = {}, type = 'item'},
     },
     ['gearshop'] = {
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
