@@ -47,10 +47,14 @@ Config.Products = {
         {name = 'advancedrepairkit', price = 1000, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
     },
     ['weedshop'] = {
-        {name = 'joint',          price = 10,  amount = 50,   info = {}, type = 'item'},
-        {name = 'weed_nutrition', price = 20,  amount = 50,   info = {}, type = 'item'},
-        {name = 'empty_weed_bag', price = 2,   amount = 1000, info = {}, type = 'item'},
-        {name = 'rolling_paper',  price = 2,   amount = 1000, info = {}, type = 'item'},
+        {name = 'joint',          price = 5,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'weed_nutritin', price = 20,  amount = 1000,   info = {}, type = 'item'},
+        {name = 'empty_weed_bag', price = 10,   amount = 10000, info = {}, type = 'item'},
+        {name = 'rolling_paper',  price = 10,   amount = 500, info = {}, type = 'item'},
+        {name = 'blunt_wrap',          price = 5,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'mylar_bag', price = 15,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'plastic_wrap', price = 10,   amount = 10000, info = {}, type = 'item'},
+        {name = 'empty_baggy',  price = 10,   amount = 10000, info = {}, type = 'item'},
     },
     ['gearshop'] = {
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
@@ -667,20 +671,21 @@ Config.Locations = {
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
-        -- Electronics Shop Locations
-        ['electronics'] = {
-            ['label'] = 'Electronic Store',
-            ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
-            ['ped'] = 'a_m_y_beach_01',
-            ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
-            ['radius'] = 1.5,
-            ['targetIcon'] = 'fas fa-leaf',
-            ['targetLabel'] = 'Open Electronic Store',
-            ['products'] = Config.Products['electronics'],
-            ['showblip'] = true,
-            ['blipsprite'] = 52,
-            ['blipscale'] = 0.8,
-            ['blipcolor'] = 0,
-            ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-        },
+        
+    -- Electronics Shop Locations
+    ['electronics'] = {
+        ['label'] = 'Electronic Store',
+        ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+        ['ped'] = 'a_m_y_beach_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-leaf',
+        ['targetLabel'] = 'Open Electronic Store',
+        ['products'] = Config.Products['electronics'],
+        ['showblip'] = true,
+        ['blipsprite'] = 52,
+        ['blipscale'] = 0.8,
+        ['blipcolor'] = 0,
+        ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+    },
 }
