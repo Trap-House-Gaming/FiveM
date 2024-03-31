@@ -157,6 +157,7 @@ Locales['pt'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Quantidade',
     ['HOUSING_MENU_STASH_STORE'] = 'Guardar',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Levantar',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Alguma descrição de número',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Impostos</b>',
@@ -326,6 +327,6 @@ Locales['pt'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Partiste a porta de casa',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'A porta é tão resistente que não partiu',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Você não pode colocar o ponto fora de casa',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'Você não pode colocar o ponto fora da zona vermelha',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Casa não encontrada...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Casa não encontrada...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Deve haver pelo menos 4 cantos em sua área e você deve colocar tudo dentro deles...'
 }

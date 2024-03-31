@@ -157,6 +157,7 @@ Locales['de'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Betrag',
     ['HOUSING_MENU_STASH_STORE'] = 'Speichern',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Abheben',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Einige Nummernbeschreibungen',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Steuern</b>',
@@ -326,6 +327,6 @@ Locales['de'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Sie haben die Tür des Hauses aufgebrochen',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'Die Tür ist so hart, sie ist nicht aufgebrochen',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Sie können den Punkt nicht außerhalb des Hauses platzieren',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'Sie können den Punkt nicht außerhalb der roten Zone platzieren',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Haus nicht gefunden...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Haus nicht gefunden...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'In Ihrem Bereich müssen mindestens 4 Ecken vorhanden sein und Sie müssen alles darin platzieren ...'
 }

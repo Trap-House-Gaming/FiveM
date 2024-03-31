@@ -50,6 +50,7 @@ function AddMoneyToAccount(account, amount, isNotRent)
 end
 
 function GetJobName(source)
+    if not source then return end
     local player = GetPlayerFromId(source)
     return player.PlayerData.job.name
 end

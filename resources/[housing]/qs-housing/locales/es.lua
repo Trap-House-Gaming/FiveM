@@ -157,6 +157,7 @@ Locales['es'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Cantidad',
     ['HOUSING_MENU_STASH_STORE'] = 'Guardar',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Retirar',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Alguna descripción numérica',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Impuestos</b>',
@@ -326,6 +327,6 @@ Locales['es'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Has roto la puerta de la casa',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'La puerta esta tan dura, que no se ha roto',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'No puedes colocar el punto fuera de la casa',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'No puedes colocar el punto fuera de la zona roja',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'No se encontro la casa...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'No se encontro la casa...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Debe haber al menos 4 esquinas en tu zona y debes colocar todo en su interior...'
 }

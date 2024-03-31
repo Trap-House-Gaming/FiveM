@@ -386,7 +386,9 @@ RegisterNetEvent('qb-houses:leaseHouse', function()
         return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error')
     end
 
-    local input = lib.inputDialog(Lang('HOUSING_MENU_PRICE'), { Lang('HOUSING_MENU_PRICE') })
+    local input = lib.inputDialog(Lang('HOUSING_MENU_SELECT_PRICE'), {
+        { type = 'number', label = Lang('HOUSING_MENU_PRICE'), description = Lang('HOUSING_MENU_PRICE_NUMBERS') },
+    })
     if not input then
         return
     end
@@ -412,7 +414,9 @@ RegisterNetEvent('qb-houses:sellHouseToPlayer', function()
         return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error')
     end
 
-    local input = lib.inputDialog(Lang('HOUSING_MENU_PRICE'), { Lang('HOUSING_MENU_PRICE') })
+    local input = lib.inputDialog(Lang('HOUSING_MENU_SELECT_PRICE'), {
+        { type = 'number', label = Lang('HOUSING_MENU_PRICE'), description = Lang('HOUSING_MENU_PRICE_NUMBERS') },
+    })
     if not input then
         return
     end
@@ -604,7 +608,9 @@ RegisterNetEvent('qb-houses:createHouseMenu', function()
 end)
 
 RegisterNetEvent('qb-houses:createHouse', function(type)
-    local input = lib.inputDialog(Lang('HOUSING_MENU_SELECT_PRICE'), { Lang('HOUSING_MENU_PRICE') })
+    local input = lib.inputDialog(Lang('HOUSING_MENU_SELECT_PRICE'), {
+        { type = 'number', label = Lang('HOUSING_MENU_PRICE'), description = Lang('HOUSING_MENU_PRICE_NUMBERS') },
+    })
 
     if not input then return end
     local price = tonumber(input[1])

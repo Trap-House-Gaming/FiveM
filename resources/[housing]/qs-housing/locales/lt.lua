@@ -157,6 +157,7 @@ Locales['lt'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Kiekis',
     ['HOUSING_MENU_STASH_STORE'] = 'Išsaugoti',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Atsiimti',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Qualche descrizione del numero',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Mokestis</b>',
@@ -326,6 +327,6 @@ Locales['lt'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Jūs sprogote namo duris',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'Durys tokios kietos, kad jos nepažeistas',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Negalite dėti taško už namo ribų',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'Negalite įdėti taško už raudonosios zonos ribų',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Namas nerastas...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Namas nerastas...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Ci devono essere almeno 4 angoli nella tua area e devi posizionare tutto al loro interno...'
 }

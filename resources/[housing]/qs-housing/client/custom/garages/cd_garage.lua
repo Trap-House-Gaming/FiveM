@@ -4,7 +4,7 @@
     in any of these files, or use these files to create your own, that would help our community!
 ]]
 
-if Config.Garage ~= 'cd-garage' then
+if Config.Garage ~= 'cd_garage' then
     return
 end
 

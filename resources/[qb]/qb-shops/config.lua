@@ -74,10 +74,10 @@ Config.Products = {
         {name = 'weapon_pistol',        price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_snspistol',     price = 25000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-    },
-    ['electronics'] = {
-        {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
-    },
+    }
+    -- ['electronics'] = {
+    --     {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
+    -- },
 }
 
 Config.Locations = {
@@ -670,7 +670,7 @@ Config.Locations = {
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-    },
+    }
         
     -- Electronics Shop Locations
     -- ['electronics'] = {

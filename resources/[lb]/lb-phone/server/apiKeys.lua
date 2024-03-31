@@ -27,7 +27,7 @@ LOGS = {
 -- You can get your API keys from https://fivemanage.com/
 -- A video tutorial for how to set up Fivemanage can be found here: https://www.youtube.com/watch?v=y3bCaHS6Moc
 API_KEYS = {
-    Video = "g20zbQry1qAlMNUM6KEVVukO7p6BAup8",
-    Image = "g20zbQry1qAlMNUM6KEVVukO7p6BAup8",
-    Audio = "g20zbQry1qAlMNUM6KEVVukO7p6BAup8",
+    Video = "YOUR_TOKEN_HERE",
+    Image = "YOUR_TOKEN_HERE",
+    Audio = "YOUR_TOKEN_HERE",
 }

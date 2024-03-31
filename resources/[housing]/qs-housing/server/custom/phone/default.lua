@@ -10,16 +10,13 @@ function GetPlayerPhone(source)
     end
 
     local identifier = player.identifier
-    local phoneNumber = nil
+    local result = MySQL.Sync.fetchAll('SELECT phone_number FROM users WHERE identifier = ?', {
+        identifier
+    })
 
-    MySQL.Async.fetchAll('SELECT phone_number FROM users WHERE identifier = @identifier', {
-        ['@identifier'] = identifier
-    }, function(result)
-        if result[1] then
-            phoneNumber = result[1].phone_number
-        end
-    end)
-
-    repeat Wait(0) until phoneNumber ~= nil
-    return phoneNumber
+    if not result[1] then
+        print('Your phone is nil')
+        return ''
+    end
+    return result[1].phone_number
 end

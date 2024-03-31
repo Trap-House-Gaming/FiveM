@@ -70,6 +70,7 @@ function RemoveMoneyFromAccount(account, amount, dontCheck)
 end
 
 function GetJobName(source)
+    if not source then return end
     local player = GetPlayerFromId(source)
     return player.getJob().name
 end

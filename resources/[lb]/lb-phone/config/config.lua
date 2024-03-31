@@ -13,10 +13,12 @@ Config.Framework = "auto"
         * esx: es_extended, https://github.com/esx-framework/esx-legacy
         * qb: qb-core, https://github.com/qbcore-framework/qb-core
         * ox: ox_core, https://github.com/overextended/ox_core
+        * vrp2: vrp 2.0 (ONLY THE OFFICIAL vRP 2.0, NOT CUSTOM VERSIONS)
         * standalone: no framework, note that framework specific apps will not work unless you implement the functions
 ]]
 Config.CustomFramework = false -- if set to true and you use standalone, you will be able to use framework specific apps
 Config.QBMailEvent = true -- if you want this script to listen for qb email events, enable this.
+Config.QBOldJobMethod = false -- use the old method to check job in qb-core? this is slower, and only needed if you use an outdated version of qb-core.
 
 Config.Item = {}
 Config.Item.Require = true -- require a phone item to use the phone
@@ -28,7 +30,7 @@ Config.Item.Inventory = "auto" --[[
     Supported:
         * auto: auto-detect inventory (ONLY WORKS WITH THE ONE LISTED BELOW)
         * ox_inventory - https://github.com/overextended/ox_inventory
-        * ps-inventory - https://github.com/qbcore-framework/ps-inventory
+        * qb-inventory - https://github.com/qbcore-framework/qb-inventory
         * lj-inventory - https://github.com/loljoshie/lj-inventory
         * core_inventory - https://www.c8re.store/package/5121548
         * mf-inventory - https://modit.store/products/mf-inventory?variant=39985142268087
@@ -36,7 +38,7 @@ Config.Item.Inventory = "auto" --[[
         * codem-inventory - https://codem.tebex.io/package/5900973
 ]]
 
-Config.ServerSideSpawn = true -- should entities be spawned on the server? (phone prop, vehicles)
+Config.ServerSideSpawn = false -- should entities be spawned on the server? (phone prop, vehicles)
 
 Config.PhoneModel = `lb_phone_prop` -- the prop of the phone, if you want to use a custom phone model, you can change this here
 Config.PhoneRotation = vector3(0.0, 0.0, 180.0) -- the rotation of the phone when attached to a player
@@ -46,6 +48,7 @@ Config.DynamicIsland = true -- if enabled, the phone will have a Iphone 14 Pro i
 Config.SetupScreen = true -- if enabled, the phone will have a setup screen when the player first uses the phone.
 
 Config.AutoDeleteNotifications = false -- notifications that are more than X hours old, will be deleted. set to false to disable. if set to true, it will delete 1 week old notifications.
+Config.MaxNotifications = 100 -- the maximum amount of notifications a player can have. if they have more than this, the oldest notifications will be deleted. set to false to disable
 
 Config.WhitelistApps = {
     -- ["test-app"] = {"police", "ambulance"}
@@ -148,13 +151,13 @@ Config.CustomApps = {} -- https://docs.lbphone.com/phone/custom-apps
 
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
-Config.Valet.Price = 500 -- price to get your vehicle
+Config.Valet.Price = 100 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
-Config.Valet.FixTakeOut = true -- repair the vehicle after taking it out?
+Config.Valet.FixTakeOut = false -- repair the vehicle after taking it out?
 
-Config.HouseScript = "qs-housing" --[[
+Config.HouseScript = "auto" --[[
     The housing script you use on your server
     Supported:
         * loaf_housing - https://store.loaf-scripts.com/package/4310850
@@ -313,7 +316,7 @@ Config.RealTime = true -- if true, the time will use real life time depending on
 Config.CustomTime = false -- NOTE: disable Config.RealTime if using this. you can set this to a function that returns custom time, as a table: { hour = 0-24, minute = 0-60 }
 
 Config.EmailDomain = "lbphone.com"
-Config.AutoCreateEmail = true -- should the phone automatically create an email for the player when they set up the phone?
+Config.AutoCreateEmail = false -- should the phone automatically create an email for the player when they set up the phone?
 
 Config.DeleteMessages = true -- allow players to delete messages in the messages app?
 
@@ -321,6 +324,7 @@ Config.SyncFlash = true -- should flashlights be synced across all players? May 
 Config.EndLiveClose = false -- should InstaPic live end when you close the phone?
 
 Config.AllowExternal = { -- allow people to upload external images? (note: this means they can upload nsfw / gore etc)
+    Gallery = false, -- allow importing external links to the gallery?
     Twitter = false, -- set to true to enable external images on that specific app, set to false to disable it.
     Instagram = false,
     Tinder = false,
@@ -330,6 +334,12 @@ Config.AllowExternal = { -- allow people to upload external images? (note: this 
     Mail = false,
     Messages = false,
     Other = false, -- other apps that don't have a specific setting (ex: setting a profile picture for a contact, backgrounds for the phone etc)
+}
+
+Config.ExternalBlacklistedDomains = {
+    "imgur.com",
+    "discord.com",
+    "discordapp.com",
 }
 
 Config.WordBlacklist = {}
@@ -345,35 +355,25 @@ Config.WordBlacklist.Apps = { -- apps that should use the word blacklist (if Con
     DarkChat = true,
     Mail = true,
 }
+
 Config.WordBlacklist.Words = {
     -- array of blacklisted words, e.g. "badword", "anotherbadword"
-    "nigger",
-    "faggot",
 }
 
 Config.AutoFollow = {}
-Config.AutoFollow.Enabled = true
+Config.AutoFollow.Enabled = false
 
-Config.AutoFollow.Birdy = {
-    "KING",
-	}
-
+Config.AutoFollow.Birdy = {}
 Config.AutoFollow.Birdy.Enabled = true
-Config.AutoFollow.Birdy.Accounts = {
-    "KING",
-} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.Birdy.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.InstaPic = {}
 Config.AutoFollow.InstaPic.Enabled = true
-Config.AutoFollow.InstaPic.Accounts = {
-    "KING",
-} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.InstaPic.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.TikTok = {}
 Config.AutoFollow.TikTok.Enabled = true
-Config.AutoFollow.TikTok.Accounts = {
-    "KING",
-} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.TikTok.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoBackup = true -- should the phone automatically create a backup when you get a new phone?
 
@@ -383,11 +383,11 @@ Config.Post.InstaPic = true -- Anmnounce new posts on InstaPic?
 Config.Post.Accounts = {
     Birdy = {
         Username = "Birdy",
-        Avatar = "https://cdn.discordapp.com/attachments/1032954560844660756/1112361465438031882/Birdy.png"
+        Avatar = "https://loaf-scripts.com/fivem/lb-phone/icons/Birdy.png"
     },
     InstaPic = {
         Username = "InstaPic",
-        Avatar = "https://cdn.discordapp.com/attachments/1032954560844660756/1112361465219911730/InstaPic.png"
+        Avatar = "https://loaf-scripts.com/fivem/lb-phone/icons/InstaPic.png"
     }
 }
 
@@ -458,7 +458,13 @@ Config.TikTok.TTS = {
     {"Singing - Dramatic", "en_female_ht_f08_wonderful_world"}
 }
 
-Config.ICEServers = false -- ICE Servers for WebRTC (ig live, facetim). If you don't know what you're doing, leave this as false.
+-- ICE Servers for WebRTC (ig live, live video). If you don't know what you're doing, leave this as it is.
+-- see https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/RTCPeerConnection
+-- Config.RTCConfig = {
+--     iceServers = {
+--         { urls = "stun:stun.l.google.com:19302" },
+--     }
+-- }
 
 Config.Crypto = {}
 Config.Crypto.Enabled = true
@@ -471,7 +477,7 @@ Config.KeyBinds = {
     -- Find keybinds here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     Open = { -- toggle the phone
         Command = "phone",
-        Bind = "M",
+        Bind = "F1",
         Description = "Open your phone"
     },
     Focus = { -- keybind to toggle the mouse cursor.
@@ -537,9 +543,9 @@ Config.UploadMethod = {}
 -- A video tutorial for how to set up Fivemanage can be found here: https://www.youtube.com/watch?v=y3bCaHS6Moc
 -- If you want to host uploads yourself, you can use LBUpload: https://github.com/lbphone/lb-upload
 -- We STRONGLY discourage using Discord as an upload method, as uploaded files may become inaccessible after a while.
-Config.UploadMethod.Video = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom"
-Config.UploadMethod.Image = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Imgur" or "Custom
-Config.UploadMethod.Audio = "Fivemanage" -- "Fivemanage" or "Discord" or "LBUpload" or "Custom"
+Config.UploadMethod.Video = "Fivemanage" -- "Fivemanage" or "LBUpload" or "Custom"
+Config.UploadMethod.Image = "Fivemanage" -- "Fivemanage" or "LBUpload" or "Custom
+Config.UploadMethod.Audio = "Fivemanage" -- "Fivemanage" or "LBUpload" or "Custom"
 
 Config.Video = {}
 Config.Video.Bitrate = 400 -- video bitrate (kbps), increase to improve quality, at the cost of file size
@@ -548,9 +554,5 @@ Config.Video.MaxSize = 25 -- max video size (MB)
 Config.Video.MaxDuration = 60 -- max video duration (seconds)
 
 Config.Image = {}
-Config.Image.Mime = "image/webp"
+Config.Image.Mime = "image/webp" -- image mime type, "image/webp" or "image/png" or "image/jpg"
 Config.Image.Quality = 0.95
-if Config.UploadMethod.Image == "Imgur" then
-    Config.Image.Mime = "image/png"
-    Config.Image.Quality = 1.0
-end

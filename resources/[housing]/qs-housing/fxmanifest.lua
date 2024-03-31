@@ -4,7 +4,7 @@ game 'gta5'
 
 lua54 'yes'
 
-version '3.0.2'
+version '3.0.5'
 
 ui_page 'html/index.html'
 
@@ -34,8 +34,7 @@ server_export {
 
 dependencies {
 	'ox_lib',
-	'bob74_ipl',
-	'meta_libs'
+	'bob74_ipl'
 }
 
 escrow_ignore {

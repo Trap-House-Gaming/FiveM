@@ -316,6 +316,34 @@ local jobCounts = {}
 local jobDutyCounts = {}
 
 function RefreshCompanies()
+    if Config.QBOldJobMethod then
+        debugprint("using old method to refresh companies")
+
+        local openJobs = {}
+        local players = QB.Functions.GetQBPlayers()
+
+        for _, v in pairs(players) do
+            if not v?.PlayerData.job.onduty then
+                goto continue
+            end
+
+            local job = v.PlayerData.job.name
+            if not openJobs[job] then
+                openJobs[job] = true
+            end
+
+            ::continue::
+        end
+
+        for i = 1, #Config.Companies.Services do
+            local jobData = Config.Companies.Services[i]
+
+            jobData.open = openJobs[jobData.job] or false
+        end
+
+        return
+    end
+
     for i = 1, #Config.Companies.Services do
         local jobData = Config.Companies.Services[i]
 
@@ -340,6 +368,27 @@ CreateThread(function()
     end
 
     debugprint("qb jobs: initial data", playerJobs, jobCounts, jobDutyCounts)
+end)
+
+AddEventHandler('QBCore:Server:PlayerLoaded', function(Player)
+    local job = Player.PlayerData.job
+    local src = Player.PlayerData.source
+    local jobName = job?.name
+    local onDuty = job?.onduty
+
+    if not jobName then
+        return
+    end
+
+    playerJobs[src] = {
+        name = jobName,
+        onduty = onDuty
+    }
+
+    jobCounts[jobName] = (jobCounts[jobName] or 0) + 1
+    jobDutyCounts[jobName] = (jobDutyCounts[jobName] or 0) + (onDuty and 1 or 0)
+
+    debugprint("qb jobs: player loaded update (src, job, duty)", src, job.name, job.onduty)
 end)
 
 AddEventHandler("QBCore:Server:OnJobUpdate", function(src, job)
@@ -442,7 +491,7 @@ local function getSocietyMoney(job)
         return res
     end
 
-    return exports["xn-banking"]:GetAccountBalance(job)
+    return exports["qb-banking"]:GetAccountBalance(job)
 end
 
 lib.RegisterCallback("phone:services:getAccount", function(source, cb)
@@ -462,7 +511,7 @@ lib.RegisterCallback("phone:services:addMoney", function(source, cb, amount)
         return exports["qb-management"]:AddMoney(job, amount)
     end)
 
-    if success or exports["xn-banking"]:AddMoney(job, amount) then
+    if success or exports["qb-banking"]:AddMoney(job, amount) then
         RemoveMoney(source, amount)
     end
 
@@ -481,7 +530,7 @@ lib.RegisterCallback("phone:services:removeMoney", function(source, cb, amount)
     end)
 
     if not success then
-        res = exports["xn-banking"]:RemoveMoney(job, amount)
+        res = exports["qb-banking"]:RemoveMoney(job, amount)
     end
 
     if res then

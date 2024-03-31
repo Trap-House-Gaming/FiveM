@@ -17,5 +17,5 @@ function openStash(customData, uniq)
         end
     end
     uniq = uniq or house
-    TriggerServerEvent('core_inventory:server:openInventory', tostring(uniq):gsub(':', ''):gsub('#', ''):gsub(' ', ''), 'stash', nil, nil)
+    TriggerServerEvent('core_inventory:server:openInventory', tostring(uniq):gsub(':', ''):gsub('#', ''):gsub(' ', '') ,'stash', nil, nil)
 end

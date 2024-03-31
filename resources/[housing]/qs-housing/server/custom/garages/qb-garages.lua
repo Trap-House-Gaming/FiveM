@@ -3,6 +3,7 @@ if Config.Garage ~= 'qb-garages' then
 end
 
 function TriggerAddHouseGarage(house, garageInfo)
+    garageInfo.takeVehicle.w = garageInfo.takeVehicle.h
     TriggerClientEvent('qb-garages:client:addHouseGarage', -1, house, garageInfo)
 end
 

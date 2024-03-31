@@ -23,6 +23,16 @@ Locales = {}
     The first thing will be to choose our main language, here you can choose
     between the default languages that you will find within locales/*,
     if yours is not there, feel free to create it!
+
+	Languages available by default:
+    	'de'
+    	'en'
+    	'es'
+    	'fr'
+    	'lt'
+    	'pt'
+		'ru'
+		'zh-CN'
 ]]
 
 Config.Language = 'en'
@@ -85,7 +95,7 @@ Config.Inventory = getInventory()
 	server/custom/phone/*.lua, if you have questions, contact the seller of your asset.
 ]]
 
-Config.UseTarget = true -- Set true/false (only qb-target or ox_target)
+Config.UseTarget = false -- Set true/false (only qb-target or ox_target)
 Config.TargetLength = 5.0
 Config.TargetWidth = 5.0
 
@@ -153,21 +163,36 @@ Config.Wardrobe = getWardrobe()
 ]]
 
 local function getGarages()
-    local qbgHas = GetResourceState('qb-garages') == 'started'
-    local qsHas = GetResourceState('qs-advancedgarages') == 'started'
-    local jgHas = GetResourceState('jg-advancedgarages') == 'started'
-    local cdHas = GetResourceState('cd_garage') == 'started'
-    if qbgHas then
-        return 'qb-garages'
-    elseif qsHas then
-        return 'qs-advancedgarages'
-    elseif jgHas then
-        return 'jg-advancedgarages'
-    elseif cdHas then
-        return 'cd-garage'
-    else
-        return 'standalone'
-    end
+	local qbgHas = GetResourceState('qb-garages') == 'started'
+	local qsHas = GetResourceState('qs-advancedgarages') == 'started'
+	local jgHas = GetResourceState('jg-advancedgarages') == 'started'
+	local cdHas = GetResourceState('cd_garage') == 'started'
+	local okokHas = GetResourceState('okokGarage') == 'started'
+	local loafHas = GetResourceState('loaf_garage') == 'started'
+	local rcoreHas = GetResourceState('rcore_garage') == 'started'
+	local zerioHas = GetResourceState('zerio-garage') == 'started'
+	local codemHas = GetResourceState('codem_garage') == 'started'
+	if qbgHas then
+		return 'qb-garages'
+	elseif qsHas then
+		return 'qs-advancedgarages'
+	elseif jgHas then
+		return 'jg-advancedgarages'
+	elseif cdHas then
+		return 'cd_garage'
+	elseif okokHas then
+		return 'okokGarage'
+	elseif loafHas then
+		return 'loaf_garage'
+	elseif rcoreHas then
+		return 'rcore_garage'
+	elseif zerioHas then
+		return 'zerio-garage'
+	elseif codemHas then
+		return 'codem_garage'
+	else
+		return 'standalone'
+	end
 end
 
 Config.Garage = getGarages()
@@ -183,12 +208,16 @@ Config.CreatorJobs = { -- Choose the jobs suitable for creating houses
 	'realestatejob'
 }
 
-Config.TestRemTime = 1      -- Visiting time inside the house (1 = 1 minute)
-Config.MinZOffset = 30      -- Minimum shell spawn offset
-Config.CreatorAlpha = 200   -- Ignore this if you don't want to edit the Alpha
+Config.TestRemTime = 1        -- Visiting time inside the house (1 = 1 minute)
+Config.MinZOffset = 30        -- Minimum shell spawn offset
+Config.CreatorAlpha = 200     -- Ignore this if you don't want to edit the Alpha
+Config.SignTextScale = 0.6    -- Sale poster text size
+Config.TimeInterior = 23      -- This is the time it will be when entering the shells (to avoid alternating shadows)
+Config.HideOwnedHouses = true -- Hide owned houses from the map
+Config.GroupBlips = true      -- Hide address on the blips (Short blips)
 
-Config.OpenHouseMenu = 'F3' -- Key to open the internal menu of the home
-Config.OpenJobMenu = 'F7'   -- Key to open the house creation menu
+Config.OpenHouseMenu = 'F3'   -- Key to open the internal menu of the home
+Config.OpenJobMenu = 'F7'     -- Key to open the house creation menu
 
 --[[
 	Illegal system configuration of the asset, make sure you have this controlled so as not to break the economy or the system of each player.
@@ -201,6 +230,9 @@ Config.PoliceJobs = {  -- Jobs that will be considered police
 	'police',
 	'realestatejob'
 }
+
+Config.RobberyItem = 'lockpick'        -- Item to start the robbery of houses
+Config.StomRamItem = 'police_stormram' -- Item to begin the search of a house
 
 --[[
 	Here we will configure the entire rental system for homes and
@@ -236,7 +268,7 @@ Config.MusicVolume = 0.01 -- Choose a volume for the songs
 ]]
 
 Config.Shells = {
-	[1] = { -- Tier 1
+	[1] = {
 		model = 'standardmotel_shell',
 		stash = {
 			maxweight = 1000000,
@@ -244,31 +276,17 @@ Config.Shells = {
 		},
 		imgs = {
 			{
-				url = 'https://cdn.discordapp.com/attachments/1101313033684394084/1101712181017460736/motel.webp',
-				label = 'Motel',
+				url = 'https://ibb.co/TWHP5jt',
+				label = 'Room',
+			},
+			{
+				url = 'https://ibb.co/HKs88cb',
+				label = 'Bathroom',
 			},
 		}
 
 	},
-	[2] = { -- Tier 2
-		model = 'modernhotel_shell',
-		stash = {
-			maxweight = 1000000,
-			slots = 5,
-		},
-		imgs = {
-			{
-				url = 'https://cdn.discordapp.com/attachments/1101313033684394084/1101712459691208704/angle_1.webp',
-				label = 'Angle 1',
-			},
-			{
-				url = 'https://cdn.discordapp.com/attachments/1101313033684394084/1101712460110643210/angle_2.webp',
-				label = 'Angle 2',
-			},
-		}
-
-	},
-	[3] = { -- Tier 3
+	[2] = {
 		model = 'modernhotel_shell',
 		stash = {
 			maxweight = 1000000,
@@ -302,7 +320,7 @@ Config.Shells = {
 		},
 
 	},
-	[4] = { -- Tier 4
+	[3] = {
 		model = 'furnitured_midapart',
 		stash = {
 			maxweight = 1000000,
@@ -332,7 +350,7 @@ Config.Shells = {
 		},
 
 	},
-	[5] = { -- Tier 5
+	[4] = {
 		model = 'shell_garagem',
 		stash = {
 			maxweight = 1000000,
@@ -354,7 +372,7 @@ Config.Shells = {
 		},
 
 	},
-	[6] = { -- Tier 6
+	[5] = {
 		model = 'shell_office1',
 		stash = {
 			maxweight = 1000000,
@@ -376,7 +394,7 @@ Config.Shells = {
 		},
 
 	},
-	[7] = { -- Tier 7
+	[6] = {
 		model = 'shell_store1',
 		stash = {
 			maxweight = 1000000,
@@ -398,7 +416,7 @@ Config.Shells = {
 		},
 
 	},
-	[8] = { -- Tier 8
+	[7] = {
 		model = 'shell_warehouse1',
 		stash = {
 			maxweight = 1000000,
@@ -415,7 +433,7 @@ Config.Shells = {
 			},
 		},
 	},
-	[9] = { -- Tier 9
+	[8] = {
 		model = 'container_shell',
 		stash = {
 			maxweight = 1000000,
@@ -429,7 +447,7 @@ Config.Shells = {
 		},
 
 	},
-	[10] = { -- Tier 10
+	[9] = {
 		model = 'shell_michael',
 		stash = {
 			maxweight = 1000000,
@@ -475,7 +493,7 @@ Config.Shells = {
 		},
 
 	},
-	[11] = { -- Tier 11
+	[10] = {
 		model = 'shell_frankaunt',
 		stash = {
 			maxweight = 1000000,
@@ -521,7 +539,7 @@ Config.Shells = {
 		},
 
 	},
-	[12] = { -- Tier 12
+	[11] = {
 		model = 'shell_ranch',
 		stash = {
 			maxweight = 1000000,
@@ -567,7 +585,7 @@ Config.Shells = {
 		},
 
 	},
-	[13] = { -- Tier 13
+	[12] = {
 		model = 'shell_trailer',
 		stash = {
 			maxweight = 1000000,
@@ -613,7 +631,7 @@ Config.Shells = {
 		},
 
 	},
-	[14] = { -- Tier 14
+	[13] = {
 		model = 'shell_lester',
 		stash = {
 			maxweight = 1000000,
@@ -659,7 +677,7 @@ Config.Shells = {
 		},
 
 	},
-	[15] = { -- Tier 15
+	[14] = {
 		model = 'shell_v16mid',
 		stash = {
 			maxweight = 1000000,
@@ -705,7 +723,7 @@ Config.Shells = {
 		},
 
 	},
-	[16] = { -- Tier 16
+	[15] = {
 		model = 'shell_trevor',
 		stash = {
 			maxweight = 1000000,
@@ -751,7 +769,7 @@ Config.Shells = {
 		},
 
 	},
-	[17] = { -- Tier 17
+	[16] = {
 		model = 'shell_v16low',
 		stash = {
 			maxweight = 1000000,
@@ -880,73 +898,30 @@ Config.Islands = {
 
 Config.IplData = {
 	{
+		-- Apartment
 		export = function()
 			return exports['bob74_ipl']:GetExecApartment1Object()
 		end,
+		defaultTheme = 'seductive',
+		themes = {
+			{ label = 'Modern',     value = 'modern',     price = 500 },
+			{ label = 'Moody',      value = 'moody',      price = 500 },
+			{ label = 'Vibrant',    value = 'vibrant',    price = 500 },
+			{ label = 'Sharp',      value = 'sharp',      price = 500 },
+			{ label = 'Monochrome', value = 'monochrome', price = 500 },
+			{ label = 'Seductive',  value = 'seductive',  price = 500 },
+			{ label = 'Regal',      value = 'regal',      price = 500 },
+			{ label = 'Aqua',       value = 'aqua',       price = 500 }
+		},
 		exitCoords = vec3(-787.44, 315.81, 217.64),
 		iplCoords = vec3(-787.78050000, 334.92320000, 215.83840000),
-		defaultTheme = 'sharp',
-		themes = {
-			{ label = 'Modern',     value = 'modern',     price = 500 },
-			{ label = 'Moody',      value = 'moody',      price = 500 },
-			{ label = 'Vibrant',    value = 'vibrant',    price = 500 },
-			{ label = 'Sharp',      value = 'sharp',      price = 500 },
-			{ label = 'Monochrome', value = 'monochrome', price = 500 },
-			{ label = 'Seductive',  value = 'seductive',  price = 500 },
-			{ label = 'Regal',      value = 'regal',      price = 500 },
-			{ label = 'Aqua',       value = 'aqua',       price = 500 }
-		},
-		-- if will you change stash data, you need to wipe all stashes in database
 		stash = {
 			maxweight = 1000000,
-			slots = 5,
+			slots = 10,
 		},
 	},
 	{
-		export = function()
-			return exports['bob74_ipl']:GetExecApartment2Object()
-		end,
-		exitCoords = vec3(-773.62, 342.06, 196.69),
-		iplCoords = vec3(-773.22580000, 322.82520000, 194.88620000),
-		defaultTheme = 'modern',
-		themes = {
-			{ label = 'Modern',     value = 'modern',     price = 500 },
-			{ label = 'Moody',      value = 'moody',      price = 500 },
-			{ label = 'Vibrant',    value = 'vibrant',    price = 500 },
-			{ label = 'Sharp',      value = 'sharp',      price = 500 },
-			{ label = 'Monochrome', value = 'monochrome', price = 500 },
-			{ label = 'Seductive',  value = 'seductive',  price = 500 },
-			{ label = 'Regal',      value = 'regal',      price = 500 },
-			{ label = 'Aqua',       value = 'aqua',       price = 500 }
-		},
-		stash = {
-			maxweight = 1000000,
-			slots = 70,
-		},
-	},
-	{
-		export = function()
-			return exports['bob74_ipl']:GetExecApartment3Object()
-		end,
-		exitCoords = vec3(-787.38, 315.76, 187.91),
-		iplCoords = vec3(-787.78050000, 334.92320000, 186.11340000),
-		defaultTheme = 'aqua',
-		themes = {
-			{ label = 'Modern',     value = 'modern',     price = 500 },
-			{ label = 'Moody',      value = 'moody',      price = 500 },
-			{ label = 'Vibrant',    value = 'vibrant',    price = 500 },
-			{ label = 'Sharp',      value = 'sharp',      price = 500 },
-			{ label = 'Monochrome', value = 'monochrome', price = 500 },
-			{ label = 'Seductive',  value = 'seductive',  price = 500 },
-			{ label = 'Regal',      value = 'regal',      price = 500 },
-			{ label = 'Aqua',       value = 'aqua',       price = 500 }
-		},
-		stash = {
-			maxweight = 1000000,
-			slots = 100,
-		},
-	},
-	{
+		-- Office
 		export = function()
 			return exports['bob74_ipl']:GetFinanceOffice1Object()
 		end,
@@ -962,13 +937,256 @@ Config.IplData = {
 			{ label = 'Conservative', value = 'conservative', price = 500 },
 			{ label = 'Polished',     value = 'polished',     price = 500 }
 		},
-		exitCoords = vec3(-141.99, -617.78, 168.82),
-		iplCoords = vec3(-141.1987, -620.913, 168.8205),
+		exitCoords = vec3(-1579.756, -565.0661, 108.523),
+		iplCoords = vec3(-1576.127441, -575.050537, 108.507690),
 		stash = {
 			maxweight = 1000000,
-			slots = 5,
+			slots = 10,
 		},
 	},
+	{
+		-- Night Club
+		exitCoords = vec3(-1569.402222, -3017.604492, -74.413940),
+		iplCoords = vec3(-1604.664, -3012.583, -78.000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Clubhouse 1
+		exitCoords = vec3(1121.037354, -3152.782471, -37.074707),
+		iplCoords = vec3(1107.04, -3157.399, -37.51859),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Clubhouse 2
+		exitCoords = vec3(997.028564, -3158.136230, -38.911377),
+		iplCoords = vec3(998.4809, -3164.711, -38.90733),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Cocaine Lab
+		exitCoords = vec3(1088.703247, -3187.463623, -38.995605),
+		iplCoords = vec3(1093.6, -3196.6, -38.99841),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Meth Lab
+		exitCoords = vec3(996.896729, -3200.914307, -36.400757),
+		iplCoords = vec3(1009.5, -3196.6, -38.99682),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Weed Lab
+		exitCoords = vec3(1066.298950, -3183.586914, -39.164062),
+		iplCoords = vec3(1056.975830, -3194.571533, -39.164062),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Counterfeit Cash Factory
+		exitCoords = vec3(1138.101074, -3199.107666, -39.669556),
+		iplCoords = vec3(1121.897, -3195.338, -40.4025),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Document Forgery
+		exitCoords = vec3(1173.7, -3196.73, -39.01),
+		iplCoords = vec3(1165, -3196.6, -39.01306),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Penthouse Casino
+		exitCoords = vec3(980.83, 56.51, 116.16),
+		iplCoords = vec3(976.636, 70.295, 115.164),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- NightClub Warehouse
+		exitCoords = vec3(-1520.88, -2978.54, -80.45),
+		iplCoords = vec3(-1505.783, -3012.587, -80.000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 2 Car
+		exitCoords = vec3(179.15, -1000.15, -99.0),
+		iplCoords = vec3(173.2903, -1003.6, -99.65707),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 6 Car
+		exitCoords = vec3(212.4, -998.97, -99.0),
+		iplCoords = vec3(197.8153, -1002.293, -99.65749),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 10 Car
+		exitCoords = vec3(240.67, -1004.69, -99.0),
+		iplCoords = vec3(229.9559, -981.7928, -99.66071),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Casino NightClub
+		exitCoords = vec3(1545.57, 254.22, -46.01),
+		iplCoords = vec3(1550.0, 250.0, -48.0),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Warehouse Small
+		exitCoords = vec3(1087.43, -3099.48, -39.0),
+		iplCoords = vec3(1094.988, -3101.776, -39.00363),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Warehouse Medium
+		exitCoords = vec3(1048.12, -3097.28, -39.0),
+		iplCoords = vec3(1056.486, -3105.724, -39.00439),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Warehouse Large
+		exitCoords = vec3(992.38, -3098.08, -39.0),
+		iplCoords = vec3(1006.967, -3102.079, -39.0035),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Vehicle Warehouse
+		exitCoords = vec3(956.12, -2987.24, -39.65),
+		iplCoords = vec3(994.5925, -3002.594, -39.64699),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Old Bunker Interior
+		exitCoords = vec3(899.5518, -3246.038, -98.04907),
+		iplCoords = vec3(899.5518, -3246.038, -98.04907),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Arcadius Garage 1
+		exitCoords = vec3(-198.666, -580.515, 136.00),
+		iplCoords = vec3(-191.0133, -579.1428, 135.0000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Arcadius Garage 2
+		exitCoords = vec3(-124.532, -571.478, 136.00),
+		iplCoords = vec3(-117.4989, -568.1132, 135.0000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Arcadius Garage 3
+		exitCoords = vec3(-135.412, -622.440, 136.00),
+		iplCoords = vec3(-136.0780, -630.1852, 135.0000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- Arcadius Mod Shop
+		exitCoords = vec3(-139.388, -587.917, 167.00),
+		iplCoords = vec3(-146.6166, -596.6301, 166.0000),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 2133 Mad Wayne Thunder
+		exitCoords = vec3(-1289.89, 449.83, 97.9),
+		iplCoords = vec3(-1288, 440.748, 97.69459),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 2868 Hillcrest Avenue
+		exitCoords = vec3(-753.04, 618.82, 144.14),
+		iplCoords = vec3(-763.107, 615.906, 144.1401),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- EclipseTowers, Apt 3	
+		exitCoords = vec3(-785.12, 323.75, 212.0),
+		iplCoords = vec3(-773.407, 341.766, 211.397),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	},
+	{
+		-- 	Dell Perro Heights, Apt 7
+		exitCoords = vec3(-1453.86, -517.64, 56.93),
+		iplCoords = vec3(-1477.14, -538.7499, 55.5264),
+		stash = {
+			maxweight = 1000000,
+			slots = 10,
+		},
+	}
 }
 
 --[[

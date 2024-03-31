@@ -98,8 +98,8 @@ function Target:initObjectInteractions()
                     local objectData = table.find(Config.DynamicFurnitures, function(furniData, key)
                         return GetHashKey(key) == GetEntityModel(entity)
                     end)
-                    if not objectData then return end
-                    if not decorationData then return end
+                    if not objectData then return print('No objectData') end
+                    if not decorationData then return print('No decorationData') end
                     if objectData.type == 'stash' then
                         local uniq = decorationData.uniq
                         openStash(objectData.stash, uniq)
@@ -134,6 +134,7 @@ function Target:initOutside(key)
     local houseData = self.houses[key]
     local enterCoords = vec3(houseData.coords.enter.x, houseData.coords.enter.y, houseData.coords.enter.z)
     exports['qb-target']:AddBoxZone('house_outside', enterCoords, Config.TargetLength, Config.TargetWidth, {
+        name = 'house_outside',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
         minZ = enterCoords.z - 15.0,
@@ -194,6 +195,7 @@ function Target:initOutside(key)
                     TriggerEvent('qb-houses:client:EnterHouse', houseData.ipl)
                 end,
                 canInteract = function(entity, distance, data)
+                    if not closesthouse then return false end
                     if Config.Houses[closesthouse].mlo then return false end
                     if not checkHouseHasOwner() then return false end
                     if not hasKey and not Config.Houses[closesthouse].IsRammed then return false end
@@ -207,6 +209,7 @@ function Target:initOutside(key)
                     TriggerEvent('qb-houses:client:RequestRing')
                 end,
                 canInteract = function(entity, distance, data)
+                    if not closesthouse then return false end
                     if Config.Houses[closesthouse].mlo then return false end
                     if not checkHouseHasOwner() then return false end
                     if hasKey or Config.Houses[closesthouse].IsRammed then return false end
@@ -229,6 +232,7 @@ function Target:initExit(key)
         exitCoords = vec3(houseData.coords.exit.x, houseData.coords.exit.y, houseData.coords.exit.z)
     end
     exports['qb-target']:AddBoxZone('house_exit', exitCoords, Config.TargetLength, Config.TargetWidth, {
+        name = 'house_exit',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
         minZ = exitCoords.z - 15.0,
@@ -283,6 +287,7 @@ end
 function Target:initWardrobe()
     if not outfitLocation then return print('No outfitLocation') end
     exports['qb-target']:AddBoxZone('house_wardrobe', outfitLocation, Config.TargetLength, Config.TargetWidth, {
+        name = 'house_wardrobe',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
         minZ = outfitLocation.z - 15.0,
@@ -307,6 +312,7 @@ end
 function Target:initStash()
     if not stashLocation then return print('no stashLocation') end
     exports['qb-target']:AddBoxZone('house_stash', stashLocation, Config.TargetLength, Config.TargetWidth, {
+        name = 'house_stash',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
         minZ = stashLocation.z - 15.0,
@@ -331,6 +337,7 @@ end
 function Target:initLogout()
     if not logoutLocation then return print('no logoutLocation') end
     exports['qb-target']:AddBoxZone('house_logout', logoutLocation, Config.TargetLength, Config.TargetWidth, {
+        name = 'house_logout',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
         minZ = logoutLocation.z - 15.0,
@@ -349,8 +356,9 @@ function Target:initLogout()
                         TriggerEvent('cd_easytime:PauseSync', false)
                         TriggerEvent('vSync:toggle', false)
 
-                        SetEntityCoords(PlayerPed, Config.Houses[CurrentHouse].coords.enter.x, Config.Houses[CurrentHouse].coords.enter.y, Config.Houses[CurrentHouse].coords.enter.z + 0.5)
-                        SetEntityHeading(PlayerPed, Config.Houses[CurrentHouse].coords.enter.h)
+                        local house = CurrentHouse or closesthouse
+                        SetEntityCoords(PlayerPed, Config.Houses[house].coords.enter.x, Config.Houses[house].coords.enter.y, Config.Houses[house].coords.enter.z + 0.5)
+                        SetEntityHeading(PlayerPed, Config.Houses[house].coords.enter.h)
                         inOwned = false
                         inside = false
                         TriggerServerEvent('qb-houses:server:LogoutLocation')

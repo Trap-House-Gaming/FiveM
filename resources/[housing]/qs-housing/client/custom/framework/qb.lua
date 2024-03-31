@@ -54,6 +54,10 @@ function GetPlayers()
     return QBCore.Functions.GetPlayers()
 end
 
+function GetVehicleProperties(vehicle)
+    return QBCore.Functions.GetVehicleProperties(vehicle)
+end
+
 function ShowHelpNotification(msg)
     BeginTextCommandDisplayHelp('STRING')
     AddTextComponentSubstringPlayerName(msg)

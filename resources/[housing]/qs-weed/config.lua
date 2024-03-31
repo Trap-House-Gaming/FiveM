@@ -23,6 +23,16 @@ Locales = {}
     The first thing will be to choose our main language, here you can choose
     between the default languages that you will find within locales/*,
     if yours is not there, feel free to create it!
+
+	Languages available by default:
+    	'de'
+    	'en'
+    	'es'
+    	'fr'
+    	'lt'
+    	'pt'
+		'ru'
+		'zh-CN'
 ]]
 
 Config.Language = 'en'

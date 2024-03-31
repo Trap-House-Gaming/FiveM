@@ -157,6 +157,7 @@ Locales['fr'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Montant',
     ['HOUSING_MENU_STASH_STORE'] = 'Sauvegarder',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Retirer',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Une description du numéro',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Impôts</b>',
@@ -326,6 +327,6 @@ Locales['fr'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'Vous avez cassé la porte de la maison',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'La porte est si solide qu\'elle n\'a pas cédé',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Vous ne pouvez pas placer le point à l\'extérieur de la maison',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'Vous ne pouvez pas placer le point en dehors de la zone rouge',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Maison introuvable...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Maison introuvable...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Il doit y avoir au moins 4 coins dans votre région et vous devez tout placer à l\'intérieur...'
 }

@@ -54,6 +54,10 @@ function GetPlayers()
     return ESX.Game.GetPlayers()
 end
 
+function GetVehicleProperties(vehicle)
+    return ESX.Game.GetVehicleProperties(vehicle)
+end
+
 function ShowHelpNotification(msg)
     BeginTextCommandDisplayHelp('STRING')
     AddTextComponentSubstringPlayerName(msg)

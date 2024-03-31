@@ -1,4 +1,4 @@
-if Config.Garage ~= 'cd-garage' then
+if Config.Garage ~= 'cd_garage' then
     return
 end
 

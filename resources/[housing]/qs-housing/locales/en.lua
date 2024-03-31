@@ -157,6 +157,7 @@ Locales['en'] = {
     ['HOUSING_MENU_BLACK_MONEY_AMOUNT'] = 'Amount',
     ['HOUSING_MENU_STASH_STORE'] = 'Save',
     ['HOUSING_MENU_STASH_WITHDRAW'] = 'Withdraw',
+    ['HOUSING_MENU_PRICE_NUMBERS'] = 'Some number description',
 
     -- Nui
     ['HOUSING_NUI_TAXES_VALUE'] = '<b>Taxes</b>',
@@ -326,6 +327,6 @@ Locales['en'] = {
     ['HOUSING_NOTIFICATION_SUCCESS_RAM'] = 'You broke the door of the house',
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'The door is so hard, it hasn\'t broken',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'You cannot place the point outside the house',
-    ['HOUSING_NOTIFICATION_COORDS_NOT_IN_POLY'] = 'You cannot place the point outside the red zone',
-    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'House not found...'
+    ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'House not found...',
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'There must be at least 4 corners in your area and you must place everything inside them...'
 }
