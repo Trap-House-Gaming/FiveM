@@ -671,20 +671,21 @@ Config.Locations = {
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
-        -- Electronics Shop Locations
-        ['electronics'] = {
-            ['label'] = 'Electronic Store',
-            ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
-            ['ped'] = 'a_m_y_beach_01',
-            ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
-            ['radius'] = 1.5,
-            ['targetIcon'] = 'fas fa-leaf',
-            ['targetLabel'] = 'Open Electronic Store',
-            ['products'] = Config.Products['electronics'],
-            ['showblip'] = true,
-            ['blipsprite'] = 52,
-            ['blipscale'] = 0.8,
-            ['blipcolor'] = 0,
-            ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-        },
+        
+    -- Electronics Shop Locations
+    ['electronics'] = {
+        ['label'] = 'Electronic Store',
+        ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+        ['ped'] = 'a_m_y_beach_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-leaf',
+        ['targetLabel'] = 'Open Electronic Store',
+        ['products'] = Config.Products['electronics'],
+        ['showblip'] = true,
+        ['blipsprite'] = 52,
+        ['blipscale'] = 0.8,
+        ['blipcolor'] = 0,
+        ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+    },
 }
