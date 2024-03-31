@@ -1,10 +1,10 @@
 Config = {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
-Config.MinimalDoctors = 5                                    -- How many players with the ambulance job to prevent the hospital check-in system from being used
+Config.MinimalDoctors = 2                                    -- How many players with the ambulance job to prevent the hospital check-in system from being used
 Config.DocCooldown = 1                                       -- Cooldown between doctor calls allowed, in minutes
-Config.WipeInventoryOnRespawn = false                         -- Enable or disable removing all the players items when they respawn at the hospital
+Config.WipeInventoryOnRespawn = true                         -- Enable or disable removing all the players items when they respawn at the hospital
 Config.Helicopter = 'polmav'                                 -- Helicopter model that players with the ambulance job can use
-Config.BillCost = 500                                       -- Price that players are charged for using the hospital check-in system
+Config.BillCost = 2000                                       -- Price that players are charged for using the hospital check-in system
 Config.DeathTime = 300                                       -- How long the timer is for players to bleed out completely and respawn at the hospital
 Config.ReviveInterval = 360                                  -- How long the timer is for players to revive a player in laststand
 Config.MinimumRevive = 300                                   -- How long the timer is for players to revive a player in laststand
@@ -12,73 +12,103 @@ Config.PainkillerInterval = 60                               -- Set the length o
 Config.HealthDamage = 5                                      -- Minumum damage done to health before checking for injuries
 Config.ArmorDamage = 5                                       -- Minumum damage done to armor before checking for injuries
 Config.ForceInjury = 35                                      -- Maximum amount of damage a player can take before limb damage & effects are forced to occur
-Config.AlwaysBleedChance = 25                                -- Set the chance out of 100 that if a player is hit with a weapon, that also has a random chance, it will cause bleeding
+Config.AlwaysBleedChance = 70                                -- Set the chance out of 100 that if a player is hit with a weapon, that also has a random chance, it will cause bleeding
 Config.MessageTimer = 12                                     -- How long it will take to display limb/bleed message
 Config.AIHealTimer = 20                                      -- How long it will take to be healed after checking in, in seconds
-Config.BleedTickRate = 60                                    -- How much time, in seconds, between bleed ticks
+Config.BleedTickRate = 30                                    -- How much time, in seconds, between bleed ticks
 Config.BleedMovementTick = 10                                -- How many seconds is taken away from the bleed tick rate if the player is walking, jogging, or sprinting
 Config.BleedMovementAdvance = 3                              -- How much time moving while bleeding adds
-Config.BleedTickDamage = 1                                   -- The base damage that is multiplied by bleed level everytime a bleed tick occurs
-Config.FadeOutTimer = 5                                      -- How many bleed ticks occur before fadeout happens
-Config.BlackoutTimer = 60                                    -- How many bleed ticks occur before blacking out
-Config.AdvanceBleedTimer = 60                                -- How many bleed ticks occur before bleed level increases
+Config.BleedTickDamage = 8                                   -- The base damage that is multiplied by bleed level everytime a bleed tick occurs
+Config.FadeOutTimer = 2                                      -- How many bleed ticks occur before fadeout happens
+Config.BlackoutTimer = 10                                    -- How many bleed ticks occur before blacking out
+Config.AdvanceBleedTimer = 10                                -- How many bleed ticks occur before bleed level increases
 Config.HeadInjuryTimer = 30                                  -- How much time, in seconds, do head injury effects chance occur
-Config.ArmInjuryTimer = 45                                   -- How much time, in seconds, do arm injury effects chance occur
-Config.LegInjuryTimer = 30                                   -- How much time, in seconds, do leg injury effects chance occur
+Config.ArmInjuryTimer = 30                                   -- How much time, in seconds, do arm injury effects chance occur
+Config.LegInjuryTimer = 15                                   -- How much time, in seconds, do leg injury effects chance occur
 Config.HeadInjuryChance = 25                                 -- The chance, in percent, that head injury side-effects get applied
 Config.LegInjuryChance = {                                   -- The chance, in percent, that leg injury side-effects get applied
-    Running = 25,
-    Walking = 5
+    Running = 50,
+    Walking = 15
 }
-Config.MajorArmoredBleedChance = 15 -- The chance, in percent, that a player will get a bleed effect when taking heavy damage while wearing armor
+Config.MajorArmoredBleedChance = 45 -- The chance, in percent, that a player will get a bleed effect when taking heavy damage while wearing armor
 Config.MaxInjuryChanceMulti = 3     -- How many times the HealthDamage value above can divide into damage taken before damage is forced to be applied
 Config.DamageMinorToMajor = 35      -- How much damage would have to be applied for a minor weapon to be considered a major damage event. Put this at 100 if you want to disable it
 Config.AlertShowInfo = 2            -- How many injuries a player must have before being alerted about them
 
 Config.Locations = {                -- Edit the various interaction points for players or create new ones
     ['checking'] = {
-        [1] = vector3(312.24, -592.92, 43.25),
+        [1] = vector3(308.19, -595.35, 43.29),
         [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
     },
     ['duty'] = {
-        [1] = vector3(305.92, -597.38, 43.25),
+        [1] = vector3(311.18, -599.25, 43.29),
         [2] = vector3(-254.88, 6324.5, 32.58),
     },
     ['vehicle'] = {
-        [1] = vector4(337.18, -579.95, 28.8, 336.69),
+        [1] = vector4(294.578, -574.761, 43.179, 35.79),
+        [2] = vector4(-234.28, 6329.16, 32.15, 222.5),
     },
     ['helicopter'] = {
         [1] = vector4(351.58, -587.45, 74.16, 160.5),
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     ['armory'] = {
-        [1] = vector3(307.1, -601.98, 43.29),
+        [1] = vector3(309.93, -602.94, 43.29),
+        [2] = vector3(-245.13, 6315.71, 32.82),
     },
     ['roof'] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
     },
     ['main'] = {
-        [1] = vector3(331.27, -596.67, 43.28),
+        [1] = vector3(298.74, -599.33, 43.29),
     },
     ['stash'] = {
-        [1] = vector3(298.74, -599.33, 43.28),
+        [1] = vector3(309.78, -596.6, 43.29),
     },
     ['beds'] = {
-        [1] = {coords = vector4(324.26, -582.77, 44.2, 158.15), taken = false, model = 1631638868},
-        [2] = {coords = vector4(322.59, -587.32, 44.2, 336.72), taken = false, model = 1631638868},
-        [3] = {coords = vector4(319.33, -581.15, 44.2, 158.61), taken = false, model = 1631638868},
-        [4] = {coords = vector4(317.67, -585.24, 44.2, 338.29), taken = false, model = 1631638868},
-        [5] = {coords = vector4(314.47, -584.23, 44.2, 339.52), taken = false, model = 1631638868}, 
-        [6] = {coords = vector4(313.81, -579.04, 44.2, 156.64), taken = false, model = 1631638868}, 
-        [7] = {coords = vector4(311.12, -582.9, 44.2, 338.82), taken = false, model = 1631638868}, 
-        [8] = {coords = vector4(309.33, -577.3, 44.2, 158.98), taken = false, model = 1631638868},
-        [9] = {coords = vector4(307.63, -581.9, 44.2, 336.67), taken = false, model = 1631638868},
+        { coords = vector4(353.1, -584.6, 43.11, 152.08),    taken = false, model = 1631638868 },
+        { coords = vector4(356.79, -585.86, 43.11, 152.08),  taken = false, model = 1631638868 },
+        { coords = vector4(354.12, -593.12, 43.1, 336.32),   taken = false, model = 2117668672 },
+        { coords = vector4(350.79, -591.8, 43.1, 336.32),    taken = false, model = 2117668672 },
+        { coords = vector4(346.99, -590.48, 43.1, 336.32),   taken = false, model = 2117668672 },
+        { coords = vector4(360.32, -587.19, 43.02, 152.08),  taken = false, model = -1091386327 },
+        { coords = vector4(349.82, -583.33, 43.02, 152.08),  taken = false, model = -1091386327 },
+        { coords = vector4(326.98, -576.17, 43.02, 152.08),  taken = false, model = -1091386327 },
+        --- paleto
+        { coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672 },
+        { coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672 },
+        { coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672 },
     },
     ['jailbeds'] = {
         { coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672 },
         { coords = vector4(1761.96, 2591.51, 45.66, 269.8),  taken = false, model = 2117668672 },
         { coords = vector4(1771.8, 2598.02, 45.66, 89.05),   taken = false, model = 2117668672 },
         { coords = vector4(1771.85, 2591.85, 45.66, 91.51),  taken = false, model = 2117668672 },
+    },
+    ['hospital'] = { -- Define hospitals and beds here
+        [1]  = {
+            ['name'] = Lang:t('info.pb_hospital'),
+            ['location'] = vector3(308.36, -595.25, 43.28),
+            ['beds'] = {
+                [1] = {coords = vector4(353.1, -584.6, 43.11, 152.08), taken = false, model = 1631638868},
+                [2] = {coords = vector4(356.79, -585.86, 43.11, 152.08), taken = false, model = 1631638868},
+                [3] = {coords = vector4(354.12, -593.12, 43.1, 336.32), taken = false, model = 2117668672},
+                [4] = {coords = vector4(350.79, -591.8, 43.1, 336.32), taken = false, model = 2117668672},
+                [5] = {coords = vector4(346.99, -590.48, 43.1, 336.32), taken = false, model = 2117668672},
+                [6] = {coords = vector4(360.32, -587.19, 43.02, 152.08), taken = false, model = -1091386327},
+                [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
+                [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
+            },
+        },
+        [2]  = {
+            ['name'] = Lang:t('info.paleto_hospital'),
+            ['location'] = vector3(-254.54, 6331.78, 32.43),
+            ['beds'] = {
+                [1] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
+                [2] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
+                [3] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+            },
+        },
     },
     ['stations'] = {
         { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) }
@@ -87,11 +117,7 @@ Config.Locations = {                -- Edit the various interaction points for p
 
 Config.AuthorizedVehicles = { -- Grade is key, don't add same vehicle in multiple grades. Higher rank can see lower
     [0] = {
-        ['ReepEms'] = 'Jeep EMS',
-        ['RodgeEms'] = 'Charger EMS'
-    },
-    [4] = {
-        ['RaviertEms'] = 'Range Rover EMS'
+        ['ambulance'] = 'Ambulance'
     }
 }
 
@@ -158,12 +184,12 @@ Config.CriticalAreas = { -- Define body areas that will always cause bleeding if
 }
 
 Config.StaggerAreas = { -- Define body areas that will always cause staggering if wearing armor or not
---[[     ['SPINE'] = { armored = true, major = 60, minor = 30 },
+    ['SPINE'] = { armored = true, major = 60, minor = 30 },
     ['UPPER_BODY'] = { armored = false, major = 60, minor = 30 },
     ['LLEG'] = { armored = true, major = 100, minor = 85 },
     ['RLEG'] = { armored = true, major = 100, minor = 85 },
     ['LFOOT'] = { armored = true, major = 100, minor = 100 },
-    ['RFOOT'] = { armored = true, major = 100, minor = 100 }, ]]
+    ['RFOOT'] = { armored = true, major = 100, minor = 100 },
 }
 
 Config.WoundStates = { -- Translate wound alerts
