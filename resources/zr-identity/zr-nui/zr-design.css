@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Alex+Brush&display=swap');
 
 :root {
-    --zr-dark: rgb(81, 39, 85);
-    --zr-green: rgb(159, 51, 173);
+    --zr-dark: rgb(14, 42, 52);
+    --zr-green: rgb(0, 204, 184);
     --zr-red: rgb(237, 43, 42);
-    --zr-blue: rgb(70, 31, 60);
-    --zr-rich-black: #551e5c;
+    --zr-blue: rgba(114, 137, 217, 1);
+    --zr-rich-black: rgb(8, 22, 28);
 
 }
 
@@ -30,9 +30,9 @@ body {
 
 #zr-logo {
     position: fixed;
-    width: 25.75vw;
-    height: 20.074vh;
-    top: 6.926vh;
+    width: 13.75vw;
+    height: 9.074vh;
+    top: 5.926vh;
     left: 6.041vw;
     background-image: url('./zr-assets/zr-logo.png');
     background-size: contain;
@@ -103,15 +103,15 @@ body {
 }
 
 #zr-cancel:hover {
-    background: rgb(159, 51, 173);
+    background: #21252B;
 }
 
 #zr-create {
-    background-color: #393E46;
+    background-color: var(--zr-green);
 }
 
 #zr-create:hover {
-    background: rgb(159, 51, 173);
+    background: #086762;
 }
 
 #zr-discord {
@@ -286,8 +286,8 @@ body {
 }
 
 div.datedropper {
-    --dd-color1: rgb(159, 51, 173) !important;
-    --dd-color2: #551e5c !important;
+    --dd-color1: rgb(0, 204, 184) !important;
+    --dd-color2: rgb(8, 22, 28) !important;
     --dd-color3: white !important;
     --dd-color4: white !important;
     --dd-radius: 0.313vw;
@@ -430,7 +430,7 @@ div.datedropper {
 }
 
 #zr-rc-accept:hover {
-    background-color: rgb(159, 51, 173);
+    background-color: #086762;
 }
 
 #zr-rc-toggle {
@@ -489,7 +489,7 @@ div.datedropper {
 .select2-results__option:focus,
 .select2-results__option:active,
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    background-color: rgb(159, 51, 173) !important;
+    background-color: #086762 !important;
 }
 
 .select2-container--open .select2-dropdown--below {
@@ -592,4 +592,9 @@ input[type="number"] {
     .zr-rules-text {
         font-size: 0.46511627906976744vw;
     }
+}
+
+
+#zr-r-title svg path {
+    fill: #fff;
 }

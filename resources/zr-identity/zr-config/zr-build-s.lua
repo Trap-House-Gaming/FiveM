@@ -18,7 +18,7 @@ if (zr_config.framework=='QB') then
                 info.type = "Class C Driver License"
             end
             if (zr_config.quasarInventory==true) then
-                exports['ps-inventory']:AddItem(zr_source, v.item, v.amount, false, info)
+                exports['qs-inventory']:AddItem(zr_source, v.item, v.amount, false, info)
             else
                 zr_player.Functions.AddItem(v.item, v.amount, false, info)
             end
