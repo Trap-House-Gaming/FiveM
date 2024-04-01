@@ -567,11 +567,5 @@ let track_list = [
         artist: "Dreamville",
         image: "",
         path: "/zr-assets/video/dreamville.mp3"  
-    },
-    {
-      name: "Run This Town",
-      artist: "Jay-Z Ft. Rhianna, kanye west",
-      image: "",
-      path: "/zr-assets/video/runtown.mp3"
     }
 ];
