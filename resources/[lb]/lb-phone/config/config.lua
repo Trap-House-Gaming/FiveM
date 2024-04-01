@@ -151,7 +151,7 @@ Config.CustomApps = {} -- https://docs.lbphone.com/phone/custom-apps
 
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
-Config.Valet.Price = 100 -- price to get your vehicle
+Config.Valet.Price = 500 -- price to get your vehicle
 Config.Valet.Model = `S_M_Y_XMech_01`
 Config.Valet.Drive = true -- should a ped bring the car, or should it just spawn in front of the player?
 Config.Valet.DisableDamages = false -- disable vehicle damages (engine & body health) on esx
@@ -361,19 +361,25 @@ Config.WordBlacklist.Words = {
 }
 
 Config.AutoFollow = {}
-Config.AutoFollow.Enabled = false
+Config.AutoFollow.Enabled = true
 
 Config.AutoFollow.Birdy = {}
 Config.AutoFollow.Birdy.Enabled = true
-Config.AutoFollow.Birdy.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.Birdy.Accounts = {
+    "KING"
+} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.InstaPic = {}
 Config.AutoFollow.InstaPic.Enabled = true
-Config.AutoFollow.InstaPic.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.InstaPic.Accounts = {
+    "KING"
+} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoFollow.TikTok = {}
 Config.AutoFollow.TikTok.Enabled = true
-Config.AutoFollow.TikTok.Accounts = {} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
+Config.AutoFollow.TikTok.Accounts = {
+    "KING"
+} -- array of usernames to automatically follow when creating an account. e.g. "username", "anotherusername"
 
 Config.AutoBackup = true -- should the phone automatically create a backup when you get a new phone?
 
@@ -383,11 +389,11 @@ Config.Post.InstaPic = true -- Anmnounce new posts on InstaPic?
 Config.Post.Accounts = {
     Birdy = {
         Username = "Birdy",
-        Avatar = "https://loaf-scripts.com/fivem/lb-phone/icons/Birdy.png"
+        Avatar = "https://discord.com/api/webhooks/1224278793900789830/61fKRJzOZ4SQ1spkmpwwMkZJcX0hVTL2YqFXKNfYefNK-YLOBZadkftDvuWIYOkdLOxW"
     },
     InstaPic = {
         Username = "InstaPic",
-        Avatar = "https://loaf-scripts.com/fivem/lb-phone/icons/InstaPic.png"
+        Avatar = "https://discord.com/api/webhooks/1224278927120531467/T7EsC0_IyMkOz9AoyZjHlnV2US3PWxqkRgwR4UwTsJcsx_On4TJcxfBwtU32SfP7RR-y"
     }
 }
 
@@ -395,7 +401,7 @@ Config.BirdyTrending = {}
 Config.BirdyTrending.Enabled = true -- show trending hashtags?
 Config.BirdyTrending.Reset = 7 * 24 -- How often should trending hashtags be reset on birdy? (in hours)
 
-Config.BirdyNotifications = false -- should everyone get a notification when someone posts?
+Config.BirdyNotifications = true -- should everyone get a notification when someone posts?
 
 Config.PromoteBirdy = {}
 Config.PromoteBirdy.Enabled = true -- should you be able to promote post?
@@ -555,4 +561,4 @@ Config.Video.MaxDuration = 60 -- max video duration (seconds)
 
 Config.Image = {}
 Config.Image.Mime = "image/webp" -- image mime type, "image/webp" or "image/png" or "image/jpg"
-Config.Image.Quality = 0.95
+Config.Image.Quality = 1.25
