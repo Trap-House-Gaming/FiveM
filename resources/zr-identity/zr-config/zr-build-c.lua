@@ -23,9 +23,9 @@ RegisterNetEvent('zr-identity:hide', function()
         Wait(500)
         DoScreenFadeIn(250)
         TriggerEvent('qb-weathersync:client:EnableSync')
-        if not zr_config.StartingAppartment then
-            TriggerEvent('qb-clothes:client:CreateFirstCharacter')
-        end
+        -- if not zr_config.StartingAppartment then
+        --     TriggerEvent('qb-clothes:client:CreateFirstCharacter')
+        -- end
     end
 end)
 
