@@ -1,11 +1,11 @@
 Config = Config or {}
 
 Config.ShortCalls = false -- Dispatch notifications are sent containing only the alert name, omitting additional details. For more information, the dispatch menu can be accessed.  
-Config.Debug = true -- Enables debug and send alerts when leo break the law.
+Config.Debug = false -- Enables debug and send alerts when leo break the law.
 
 Config.RespondKeybind = 'E'
 Config.OpenDispatchMenu = 'O'
-Config.AlertTime = 5     -- Specify the duration for the alert to appear on the screen. The default time is 5 seconds for all alerts. To set a different duration for specific alerts, change the value in `alertTime = nil` found in the alerts.lua file.
+Config.AlertTime = 5     -- How many seconds you want the alert to stay on screen
 
 Config.MaxCallList = 25 -- maximum dispatch calls in dispatch list
 Config.OnDutyOnly = true -- Set true if only on duty players can see the alert
@@ -19,7 +19,7 @@ Config.DefaultAlerts = {
     Speeding = true,
     Shooting = true,
     Autotheft = true,
-    Melee = true,
+    Melee = false,
     PlayerDowned = true,
     Explosion = true
 }

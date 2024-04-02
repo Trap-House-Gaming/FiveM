@@ -64,16 +64,15 @@ function givePlayerMoney(playerId, amount)
     end
 end
 
-function giveItem(playerId, itemId, amount)    
-    if framework == 'ESX' then    
-    
-    elseif framework == 'QB' then    
-       local Player = QBCore.Functions.GetPlayer(playerId) 
-       Player.Functions.AddItem(itemId, amount, false)
+function giveItem(playerId, itemId, amount)
+    if framework == 'ESX' then
+
+    elseif framework == 'QB' then
+
     else
-       -- CUSTOM
+        -- CUSTOM
     end
- end   
+end
 
 -- Use this variable if you want to set the police count with an event from another resource. If it's not nil, it will be used.
 local policeCount
@@ -108,17 +107,7 @@ end
 -- The event which will be triggered when a player successfully completes his VIN scratch boosting contract.
 -- This event must be used to give a vehicle to the player.
 AddEventHandler('rahe-boosting:server:vinScratchSuccessful', function(playerId, vehicleModel, vehicleModelName, licensePlate, vehicleProperties, contractOwnerIdentifier)
-    local Player = QBCore.Functions.GetPlayer(playerId)
-    MySQL.insert('INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, garage, state) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', {
-        Player.PlayerData.license,
-        Player.PlayerData.citizenid,
-        vehicleModel,
-        GetHashKey(vehicleModel),
-        '{}',
-        licensePlate,
-        'pillboxgarage',
-        1
-    })
+
 end)
 
 -- Function that determines if player is a superuser (is allowed to use the admin panel).
@@ -135,15 +124,3 @@ function isPlayerSuperUser(playerIdentifier, playerId)
 
     return false
 end
-
-QBCore.Functions.CreateUseableItem("boostingtablet", function(source, item)
-    TriggerClientEvent("rahe-boosting:client:openTablet", source)
-end)
-
-QBCore.Functions.CreateUseableItem("hackingdevice", function(source, item)
-    TriggerClientEvent("rahe-boosting:client:hackingDeviceUsed", source)
-end)
-
-QBCore.Functions.CreateUseableItem("gpshackingdevice", function(source, item)
-    TriggerClientEvent("rahe-boosting:client:gpsHackingDeviceUsed", source)
-end)

@@ -16,7 +16,7 @@ svConfig = {
     initialContractAmount = 5,
 
     -- The amount of online police required for people to get important (A / S class) contracts. This will be applied to classes which have the 'isImportant' as true.
-    requiredPoliceAmount = 0,
+    requiredPoliceAmount = 4,
 
     --  Define the principal which will be given the ACE permission to use the in-game admin panel. If you don't wish to use this, set it to false.
     -- In order for this to work, make sure you allow ox_lib to grant permissions (https://overextended.dev/ox_lib) ('You'll also need to grant ace permissions to the resource.')
@@ -51,6 +51,20 @@ svConfig = {
     -- If all group members must enter the red pick up area at least once to get any kind of rewards (money, crypto, XP) in the end.
     -- This can be used to prevent abuse situations where people are group boosting and some of the members are just AFKing along to get XP.
     groupActivityCheck = true,
+
+    -- If this is defined, the user will be shown an 'Upload' button in the profile picture upload section.
+    -- When pressed, the user will be redirected to this website in their browser to upload their content.
+    recommendedUploadWebsite = 'https://upload.rahe.dev',
+
+    -- A list of image hosts will be allowed to use as a profile picture. The player won't be allowed to use a provider which isn't in this list.
+    -- If you have a 'recommendedUploadWebsite' defined in the previous option, then that will automatically be added into here.
+    --
+    -- We do NOT recommend using Imgur or Discord as allowed hosts!
+    -- They rate-limit and/or change URLs causing your images to stop working sooner or later, even if they may seem fine at first.
+    allowedImageHosts = {
+        'media.rahe.dev',
+        'r2.fivemanage.com'
+    },
 
     -- A list of conditions for different vehicle classes
     -- The list must be ordered by their 'xpRequired' value (high -> low)
@@ -157,8 +171,8 @@ svConfig = {
             maxContractsPerSession = 0,
             priceMin = 40,
             priceMax = 60,
-            minScratchPrice = 400,
-            maxScratchPrice = 600,
+            minScratchPrice = 600,
+            maxScratchPrice = 800,
             rewardCashMin = 2500,
             rewardCashMax = 3500,
             rewardCryptoMin = 60,
@@ -184,8 +198,8 @@ svConfig = {
             maxContractsPerSession = 0,
             priceMin = 3,
             priceMax = 6,
-            minScratchPrice = 30,
-            maxScratchPrice = 60,
+            minScratchPrice = 90,
+            maxScratchPrice = 180,
             rewardCashMin = 1300,
             rewardCashMax = 2300,
             rewardCryptoMin = 6,
@@ -211,8 +225,8 @@ svConfig = {
             maxContractsPerSession = 0,
             priceMin = 0,
             priceMax = 0,
-            minScratchPrice = 20,
-            maxScratchPrice = 40,
+            minScratchPrice = 60,
+            maxScratchPrice = 120,
             rewardCashMin = 700,
             rewardCashMax = 1500,
             rewardCryptoMin = 1,
