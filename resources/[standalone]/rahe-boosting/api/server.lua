@@ -107,7 +107,17 @@ end
 -- The event which will be triggered when a player successfully completes his VIN scratch boosting contract.
 -- This event must be used to give a vehicle to the player.
 AddEventHandler('rahe-boosting:server:vinScratchSuccessful', function(playerId, vehicleModel, vehicleModelName, licensePlate, vehicleProperties, contractOwnerIdentifier)
-
+    local Player = QBCore.Functions.GetPlayer(playerId)
+    MySQL.insert('INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, garage, state) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', {
+        Player.PlayerData.license,
+        Player.PlayerData.citizenid,
+        vehicleModel,
+        GetHashKey(vehicleModel),
+        '{}',
+        licensePlate,
+        'pillboxgarage',
+        1
+    })
 end)
 
 -- Function that determines if player is a superuser (is allowed to use the admin panel).
