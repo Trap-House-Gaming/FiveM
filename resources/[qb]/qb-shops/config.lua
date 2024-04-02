@@ -75,13 +75,13 @@ Config.Products = {
         {name = 'weapon_snspistol',     price = 25000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
     }
-    -- ['electronics'] = {
-    --     {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
-    -- },
+     ['electronics'] = {
+         {name = 'boostingtablet', price = 25000, amount = 50, info = {}, type = 'item'}
+     },
 }
 
 Config.Locations = {
--- Electronic Store
+    -- Electronic Store
 
 
     -- 24/7 Locations
@@ -670,22 +670,21 @@ Config.Locations = {
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-    }
-        
+    },
     -- Electronics Shop Locations
-    -- ['electronics'] = {
-    --     ['label'] = 'Electronic Store',
-    --     ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
-    --     ['ped'] = 'a_m_y_beach_01',
-    --     ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
-    --     ['radius'] = 1.5,
-    --     ['targetIcon'] = 'fas fa-leaf',
-    --     ['targetLabel'] = 'Open Electronic Store',
-    --     ['products'] = Config.Products['electronics'],
-    --     ['showblip'] = true,
-    --     ['blipsprite'] = 52,
-    --     ['blipscale'] = 0.8,
-    --     ['blipcolor'] = 0,
-    --     ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-    -- },
+     ['electronics'] = {
+         ['label'] = 'Electronic Store',
+         ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
+         ['ped'] = 'a_m_y_beach_01',
+         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
+         ['radius'] = 1.5,
+         ['targetIcon'] = 'fas fa-leaf',
+         ['targetLabel'] = 'Open Electronic Store',
+         ['products'] = Config.Products['electronics'],
+         ['showblip'] = true,
+         ['blipsprite'] = 52,
+         ['blipscale'] = 0.8,
+         ['blipcolor'] = 0,
+        ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
+     }
 }

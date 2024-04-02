@@ -127,7 +127,18 @@ end)
 -- The event which will be triggered when a player hacks the engine of an important boost. This marks the start of a high priority boost.
 -- This event can be used to send a notification to police dispatch to alert the police.
 AddEventHandler('rahe-boosting:client:importantBoostStarted', function(location, vehicleId, vehicleClass)
-
+    exports["ps-dispatch"]:CustomAlert({
+        coords = location,
+        message = "Vehicle boost in progress",
+        dispatchCode = "10-35A",
+        description = 'Vehicle boost',
+        radius = 0,
+        plate = ('%s (%s class)'):format(GetVehicleNumberPlateText(vehicleId), vehicleClass),
+        sprite = 523,
+        color = 5,
+        scale = 1.5,
+        length = 3,
+    })
 end)
 
 -- The event which will be triggered when the players fails a GPS hack.
