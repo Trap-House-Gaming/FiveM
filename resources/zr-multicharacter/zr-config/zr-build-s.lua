@@ -45,6 +45,6 @@ if (zr_config.framework=='ESX') then
     RegisterCommand('relog', function(source)
         TriggerClientEvent('zr-multicharacter:start', source)
         TriggerEvent('esx:playerLogout', source)
-        -- TriggerClientEvent('esx_skin:resetFirstSpawn', source)
+        TriggerClientEvent('esx_skin:resetFirstSpawn', source)
     end)
 end
