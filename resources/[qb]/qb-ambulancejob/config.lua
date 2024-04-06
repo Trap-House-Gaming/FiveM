@@ -73,11 +73,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         { coords = vector4(346.99, -590.48, 43.1, 336.32),   taken = false, model = 2117668672 },
         { coords = vector4(360.32, -587.19, 43.02, 152.08),  taken = false, model = -1091386327 },
         { coords = vector4(349.82, -583.33, 43.02, 152.08),  taken = false, model = -1091386327 },
-        { coords = vector4(326.98, -576.17, 43.02, 152.08),  taken = false, model = -1091386327 },
-        --- paleto
-        { coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672 },
-        { coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672 },
-        { coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672 },
+        { coords = vector4(326.98, -576.17, 43.02, 152.08),  taken = false, model = -1091386327 }
     },
     ['jailbeds'] = {
         { coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672 },
@@ -99,16 +95,7 @@ Config.Locations = {                -- Edit the various interaction points for p
                 [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
                 [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
             },
-        },
-        [2]  = {
-            ['name'] = Lang:t('info.paleto_hospital'),
-            ['location'] = vector3(-254.54, 6331.78, 32.43),
-            ['beds'] = {
-                [1] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-                [2] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
-                [3] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
-            },
-        },
+        }
     },
     ['stations'] = {
         { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) }

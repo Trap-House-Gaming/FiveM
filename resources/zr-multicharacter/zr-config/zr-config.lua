@@ -26,7 +26,7 @@ zr_config.DefaultModels = {"mp_m_freemode_01","mp_f_freemode_01"}
 
 zr_config.zr_notify = true
 
-zr_config.clothing = 'qb-clothing' -- 'illenium-appearance' or 'qb-clothing'
+zr_config.clothing = 'illenium-appearance' -- 'illenium-appearance' or 'qb-clothing'
 zr_config.spawn = 'zr-locations' --  'ps-housing' or 'qb-spawn'
 
 zr_config.Animslist = {              -- Add here as many animations as you want. 
