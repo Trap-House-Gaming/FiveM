@@ -560,5 +560,5 @@ Config.Video.MaxSize = 25 -- max video size (MB)
 Config.Video.MaxDuration = 60 -- max video duration (seconds)
 
 Config.Image = {}
-Config.Image.Mime = "image/webp" -- image mime type, "image/webp" or "image/png" or "image/jpg"
+Config.Image.Mime = "image/png" -- image mime type, "image/webp" or "image/png" or "image/jpg"
 Config.Image.Quality = 1.25
