@@ -64,15 +64,16 @@ function givePlayerMoney(playerId, amount)
     end
 end
 
-function giveItem(playerId, itemId, amount)
-    if framework == 'ESX' then
-
-    elseif framework == 'QB' then
-
+function giveItem(playerId, itemId, amount)    
+    if framework == 'ESX' then    
+    
+    elseif framework == 'QB' then    
+       local Player = QBCore.Functions.GetPlayer(playerId) 
+       Player.Functions.AddItem(itemId, amount, false)
     else
-        -- CUSTOM
+       -- CUSTOM
     end
-end
+ end   
 
 -- Use this variable if you want to set the police count with an event from another resource. If it's not nil, it will be used.
 local policeCount
@@ -134,3 +135,16 @@ function isPlayerSuperUser(playerIdentifier, playerId)
 
     return false
 end
+
+
+QBCore.Functions.CreateUseableItem("boostingtablet", function(source, item)
+    TriggerClientEvent("rahe-boosting:client:openTablet", source)
+end)
+
+QBCore.Functions.CreateUseableItem("hackingdevice", function(source, item)
+    TriggerClientEvent("rahe-boosting:client:hackingDeviceUsed", source)
+end)
+
+QBCore.Functions.CreateUseableItem("gpshackingdevice", function(source, item)
+    TriggerClientEvent("rahe-boosting:client:gpsHackingDeviceUsed", source)
+end)
