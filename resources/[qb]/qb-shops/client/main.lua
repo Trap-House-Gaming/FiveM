@@ -243,6 +243,10 @@ if not Config.UseTarget then
             end
         end)
 
+
+    end)
+end
+
 CreateThread(function()
     for k1, v in pairs(Config.Locations) do
         if v.requiredJob and next(v.requiredJob) then
