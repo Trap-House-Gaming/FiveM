@@ -71,12 +71,12 @@ Config.Products = {
         {name = 'weapon_pistol',        price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_snspistol',     price = 25000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }}
-    }
+    },
      ['electronics'] = {
         {name = 'boostingtablet', price = 25000, amount = 50, info = {}, type = 'item'},
         {name = 'phone',             price = 850, amount = 50,  info = {}, type = 'item'},
         {name = 'radio',             price = 250, amount = 50,  info = {}, type = 'item'},
-     },
+     }
 }
 
 Config.Locations = {
@@ -671,7 +671,7 @@ Config.Locations = {
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
     -- Electronics Shop Locations
-     ['electronics'] = {
+     ['electronicstore'] = {
          ['label'] = 'Electronic Store',
          ['coords'] = vector4(-1085.83, -248.17, 37.36, 190.09),
          ['ped'] = 'a_m_y_beach_01',
