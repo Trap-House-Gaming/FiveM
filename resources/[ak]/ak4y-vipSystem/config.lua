@@ -261,10 +261,10 @@ AK4Y.Vehicles = {
     },
     {
         id = 9,
-        spawnName = "BMWM5", -- Spawn code of the vehicle that will be given when the product is received
+        spawnName = "22m5", -- Spawn code of the vehicle that will be given when the product is received
         brand = "BMW",
         model = "M5",
-        year = "2016 MODEL",
+        year = "2022 MODEL",
         costCredit = 500, -- The price to be paid for the product
         topSpeed = 170, -- Top speed of the product
         topSpeedGraph = 90, -- Percentage of product top speed
