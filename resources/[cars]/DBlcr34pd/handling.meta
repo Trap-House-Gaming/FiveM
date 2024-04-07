@@ -5,16 +5,16 @@
   <HandlingData>
     <Item type="CHandlingData">
       <handlingName>DBlcr34pd</handlingName>
-      <fMass value="6000.000000" />
-      <fInitialDragCoeff value="3.4270" />
-      <fDownforceModifier value="10000" />
+      <fMass value="2300.000000" />
+      <fInitialDragCoeff value="4.4270" />
+      <fDownforceModifier value="0.10" />
       <fPercentSubmerged value="85.000000" />
       <vecCentreOfMassOffset x="0.000000" y="-0.125000" z="-0.2000000" />
       <vecInertiaMultiplier x="1.000000" y="1.600000" z="1.700000" />
       <fDriveBiasFront value="0.400000" />
       <nInitialDriveGears value="6" />
-      <fInitialDriveForce value="0.75000" />
-      <fDriveInertia value="100.0000" />
+      <fInitialDriveForce value="0.55000" />
+      <fDriveInertia value="1.0000" />
       <fClutchChangeRateScaleUpShift value="7.000000" />
       <fClutchChangeRateScaleDownShift value="6.000000" />
       <fInitialDriveMaxFlatVel value="200.500000" />
@@ -26,10 +26,10 @@
       <fTractionCurveMin value="5.20000" />
       <fTractionCurveLateral value="22.500000" />
       <fTractionSpringDeltaMax value="0.150000" />
-      <fLowSpeedTractionLossMult value="1.00000" />
+      <fLowSpeedTractionLossMult value="0.40000" />
       <fCamberStiffnesss value="0.000000" />
-      <fTractionBiasFront value="0.500000" />
-      <fTractionLossMult value="1.000000" />
+      <fTractionBiasFront value="0.400000" />
+      <fTractionLossMult value="0.500000" />
       <fSuspensionForce value="2.250000" />
       <fSuspensionCompDamp value="1.500000" />
       <fSuspensionReboundDamp value="2.2500000" />
