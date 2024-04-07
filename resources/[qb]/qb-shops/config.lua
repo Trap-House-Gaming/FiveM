@@ -61,7 +61,7 @@ Config.Products = {
         {name = 'parachute',   price = 2500, amount = 10, info = {}, type = 'item'},
         {name = 'binoculars',  price = 50,   amount = 50, info = {}, type = 'item'},
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
-        {name = 'diving_fill', price = 500,  amount = 10, info = {}, type = 'item'},
+        {name = 'diving_fill', price = 500,  amount = 10, info = {}, type = 'item'}
     },
     ['weapons'] = {
         {name = 'weapon_knife',         price = 1000,  amount = 250, info = {}, type = 'weapon'},
@@ -70,7 +70,7 @@ Config.Products = {
         {name = 'pistol_ammo',          price = 250,  amount = 250, info = {}, type = 'item',   requiredLicense = { 'weapon' }},
         {name = 'weapon_pistol',        price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_snspistol',     price = 25000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
+        {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }}
     }
      ['electronics'] = {
         {name = 'boostingtablet', price = 25000, amount = 50, info = {}, type = 'item'},
@@ -683,6 +683,7 @@ Config.Locations = {
          ['showblip'] = true,
          ['blipsprite'] = 52,
          ['blipscale'] = 0.8,
-         ['blipcolor'] = 0
+         ['blipcolor'] = 0,
+         ['delivery'] = vector4(-1083.83, -248.17, 37.36, 190.09)
      }
 }
