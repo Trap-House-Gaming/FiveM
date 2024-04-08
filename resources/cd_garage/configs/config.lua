@@ -269,7 +269,7 @@ Config.VehicleKeys = {
     Lockpick = {
         ENABLE = true, --Do you want to use the vehicle lockpick system?
         command = { --Do you want players to use a chat command to start lockpicking a vehicle?
-            ENABLE = true,
+            ENABLE = false,
             chat_command = 'lockpick' --Customise the chat command.
         },
         usable_item = { --Do you want players to use a usable item to lockpick a vehicle?
