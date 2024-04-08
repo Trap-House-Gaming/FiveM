@@ -37,7 +37,7 @@ Config.AlertShowInfo = 2            -- How many injuries a player must have befo
 
 Config.Locations = {                -- Edit the various interaction points for players or create new ones
     ['checking'] = {
-        [1] = vector3(311.94, -592.74, 43.28),
+        [1] = vector3(308.19, -595.35, 43.29),
         [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
     },
     ['duty'] = {
@@ -66,14 +66,14 @@ Config.Locations = {                -- Edit the various interaction points for p
         [1] = vector3(310.3, -603.2, 43.28),
     },
     ['beds'] = {
---[[         [1] = {coords = vector4(311.13, -582.89, 43.53, 335.65), taken = false, model = 2117668672},
+		[1] = {coords = vector4(311.13, -582.89, 43.53, 335.65), taken = false, model = 2117668672},
         [2] = {coords = vector4(313.96, -579.05, 43.53, 164.5), taken = false, model = 2117668672},
         [3] = {coords = vector4(314.58, -584.09, 43.53, 335.65), taken = false, model = 2117668672},
         [4] = {coords = vector4(317.74, -585.29, 43.53, 335.65), taken = false, model = 2117668672},
         [5] = {coords = vector4(319.47, -581.04, 43.53, 164.5), taken = false, model = 2117668672},
         [6] = {coords = vector4(366.43, -581.54, 43.28, 66.5), taken = false, model = 2117668672},
         [7] = {coords = vector4(364.93, -585.86, 43.28, 67.5), taken = false, model = 2117668672},
-        [8] = {coords = vector4(363.82, -589.09, 43.28, 68.5), taken = false, model = 2117668672}, ]]
+        [8] = {coords = vector4(363.82, -589.09, 43.28, 68.5), taken = false, model = 2117668672}, 
     },
     ['jailbeds'] = {
         { coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672 },
