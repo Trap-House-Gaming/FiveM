@@ -84,15 +84,12 @@ local function setWaypoint()
 
     if not data then return end
 
-    if data.alertTime == nil then data.alertTime = Config.AlertTime end
-    local timer = data.alertTime * 1000
-    
     if not waypointCooldown and lib.table.contains(data.jobs, PlayerData.job.type) then
         SetNewWaypoint(data.coords.x, data.coords.y)
         TriggerServerEvent('ps-dispatch:server:attach', data.id, PlayerData)
         lib.notify({ description = locale('waypoint_set'), position = 'top', type = 'success' })
         waypointCooldown = true
-        SetTimeout(timer, function()
+        SetTimeout(Config.AlertTime * 1000, function()
             waypointCooldown = false
         end)
     end
@@ -190,6 +187,18 @@ function createZones()
                 AddTextComponentString(hunting.label)
                 EndTextCommandSetBlipName(blip)
             end
+            -- Creates the Sphere --
+            huntingzone = lib.zones.sphere({
+                coords = hunting.coords,
+                radius = hunting.radius,
+                debug = Config.Debug,
+                onEnter = function()
+                    inHuntingZone = true
+                end,
+                onExit = function()
+                    inHuntingZone = false
+                end
+            })
     	end
     end
     -- No Dispatch Zone --
@@ -235,9 +244,7 @@ local OpenDispatchMenu = lib.addKeybind({
 
 -- Events
 RegisterNetEvent('ps-dispatch:client:notify', function(data, source)
-    if data.alertTime == nil then data.alertTime = Config.AlertTime end
-    local timer = data.alertTime * 1000
-    
+    local timer = Config.AlertTime * 1000
     if alertsDisabled then return end
     if not isJobValid(data.jobs) then return end
     if not IsOnDuty() then return end

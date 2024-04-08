@@ -136,6 +136,7 @@ function isPlayerSuperUser(playerIdentifier, playerId)
     return false
 end
 
+
 QBCore.Functions.CreateUseableItem("boostingtablet", function(source, item)
     TriggerClientEvent("rahe-boosting:client:openTablet", source)
 end)

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Alex+Brush&display=swap');
 
 :root {
-    --zr-dark: rgb(14, 42, 52);
-    --zr-green: rgb(0, 204, 184);
+    --zr-dark: rgb(81, 39, 85);
+    --zr-green: rgb(159, 51, 173);
     --zr-red: rgb(237, 43, 42);
-    --zr-blue: rgba(114, 137, 217, 1);
-    --zr-rich-black: rgb(8, 22, 28);
+    --zr-blue: rgb(70, 31, 60);
+    --zr-rich-black: #551e5c;
 
 }
 

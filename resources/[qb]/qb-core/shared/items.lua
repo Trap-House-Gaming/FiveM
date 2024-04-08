@@ -1045,9 +1045,9 @@ QBShared.Items = {
     at_clip_clear                = { name = 'at_clip_clear',       label = 'Clear Round Mag', weight = 1000, type = 'item', image = 'at_clip_clear.png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Clear Weapon Mag' },
 
     --Boosting
-    ['boostingtablet'] = { ['name'] = 'boostingtablet', ['label'] = 'Boosting tablet', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'boostingtablet.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = "Seems like something's installed on this."},
-    ['hackingdevice'] = { ['name'] = 'hackingdevice', ['label'] = 'Hacking device', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hackingdevice.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Will allow you to bypass vehicle security systems.' },
-    ['gpshackingdevice'] = { ['name'] = 'gpshackingdevice', ['label'] = 'GPS hacking device', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'gpshackingdevice.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'If you wish to disable vehicle GPS systems.' },
+    ['boostingtablet'] = { ['name'] = 'boostingtablet', ['label'] = 'Boosting tablet', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'tablet3.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = "Seems like something's installed on this."},
+    ['hackingdevice'] = { ['name'] = 'hackingdevice', ['label'] = 'Hacking device', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'hacking_device.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Will allow you to bypass vehicle security systems.' },
+    ['gpshackingdevice'] = { ['name'] = 'gpshackingdevice', ['label'] = 'GPS hacking device', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'gps_hacking_device.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'If you wish to disable vehicle GPS systems.' },
 
  -- Jim Scripts
  ["payticket"] 					 = {["name"] = "payticket", 				["label"] = "Receipt", 	     			["weight"] = 150, 		["type"] = "item", 		["image"] = "ticket.png", 				["unique"] = false,   	["useable"] = false,    ["shouldClose"] = false,    ["combinable"] = nil,   ["description"] = "Cash these in at the bank!"},

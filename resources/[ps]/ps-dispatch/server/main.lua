@@ -1,7 +1,6 @@
 local calls = {}
 local callCount = 0
 
-
 -- Functions
 exports('GetDispatchCalls', function()
     return calls
@@ -21,7 +20,7 @@ RegisterServerEvent('ps-dispatch:server:notify', function(data)
 
     calls[#calls + 1] = data
 
-
+    TriggerClientEvent('ps-dispatch:client:notify', -1, data)
 end)
 
 RegisterServerEvent('ps-dispatch:server:attach', function(id, player)

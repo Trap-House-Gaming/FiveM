@@ -35,14 +35,11 @@ Config.Products = {
         {name = 'weapon_hammer',     price = 250, amount = 250, info = {}, type = 'item'},
         {name = 'repairkit',         price = 250, amount = 50,  info = {}, type = 'item', requiredJob  = { 'mechanic', 'police' }},
         {name = 'screwdriverset',    price = 350, amount = 50,  info = {}, type = 'item'},
-        {name = 'phone',             price = 850, amount = 50,  info = {}, type = 'item'},
-        {name = 'radio',             price = 250, amount = 50,  info = {}, type = 'item'},
         {name = 'binoculars',        price = 50,  amount = 50,  info = {}, type = 'item'},
         {name = 'firework1',         price = 50,  amount = 50,  info = {}, type = 'item'},
         {name = 'firework2',         price = 50,  amount = 50,  info = {}, type = 'item'},
         {name = 'firework3',         price = 50,  amount = 50,  info = {}, type = 'item'},
         {name = 'firework4',         price = 50,  amount = 50,  info = {}, type = 'item'},
-        {name = 'fitbit',            price = 400, amount = 150, info = {}, type = 'item'},
         {name = 'cleaningkit',       price = 150, amount = 150, info = {}, type = 'item'},
         {name = 'advancedrepairkit', price = 1000, amount = 50,  info = {}, type = 'item', requiredJob = { 'mechanic' }},
     },
@@ -62,7 +59,7 @@ Config.Products = {
         {name = 'parachute',   price = 2500, amount = 10, info = {}, type = 'item'},
         {name = 'binoculars',  price = 50,   amount = 50, info = {}, type = 'item'},
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
-        {name = 'diving_fill', price = 500,  amount = 10, info = {}, type = 'item'},
+        {name = 'diving_fill', price = 500,  amount = 10, info = {}, type = 'item'}
     },
     ['weapons'] = {
         {name = 'weapon_knife',         price = 1000,  amount = 250, info = {}, type = 'weapon'},
@@ -71,15 +68,17 @@ Config.Products = {
         {name = 'pistol_ammo',          price = 250,  amount = 250, info = {}, type = 'item',   requiredLicense = { 'weapon' }},
         {name = 'weapon_pistol',        price = 15000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
         {name = 'weapon_snspistol',     price = 25000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-        {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }},
-    }
-    -- ['electronics'] = {
-    --     {name = 'casinochips', price = 1, amount = 999999, info = {}, type = 'item'}
-    -- },
+        {name = 'weapon_vintagepistol', price = 30000, amount = 5,   info = {}, type = 'weapon', requiredLicense = { 'weapon' }}
+    },
+     ['electronics'] = {
+        {name = 'boostingtablet', price = 25000, amount = 50, info = {}, type = 'item'},
+        {name = 'phone',             price = 850, amount = 50,  info = {}, type = 'item'},
+        {name = 'radio',             price = 250, amount = 50,  info = {}, type = 'item'},
+     }
 }
 
 Config.Locations = {
--- Electronic Store
+    -- Electronic Store
 
 
     -- 24/7 Locations
@@ -668,22 +667,21 @@ Config.Locations = {
         ['blipscale'] = 0.8,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-    }
-        
+    },
     -- Electronics Shop Locations
-    -- ['electronics'] = {
-    --     ['label'] = 'Electronic Store',
-    --     ['coords'] = vector4(-1505.91, 1511.95, 115.29, 257.13),
-    --     ['ped'] = 'a_m_y_beach_01',
-    --     ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
-    --     ['radius'] = 1.5,
-    --     ['targetIcon'] = 'fas fa-leaf',
-    --     ['targetLabel'] = 'Open Electronic Store',
-    --     ['products'] = Config.Products['electronics'],
-    --     ['showblip'] = true,
-    --     ['blipsprite'] = 52,
-    --     ['blipscale'] = 0.8,
-    --     ['blipcolor'] = 0,
-    --     ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
-    -- },
+     ['electronicstore'] = {
+         ['label'] = 'Electronic Store',
+         ['coords'] = vector4(-1085.83, -248.17, 37.76, 190.09),
+         ['ped'] = 'a_m_y_bevhills_01',
+         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE',
+         ['radius'] = 1.5,
+         ['targetIcon'] = 'fas fa-leaf',
+         ['targetLabel'] = 'Open Electronic Store',
+         ['products'] = Config.Products['electronics'],
+         ['showblip'] = true,
+         ['blipsprite'] = 521,
+         ['blipscale'] = 0.8,
+         ['blipcolor'] = 0,
+         ['delivery'] = vector4(-1083.83, -248.17, 37.36, 190.09)
+     }
 }

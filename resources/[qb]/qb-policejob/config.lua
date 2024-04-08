@@ -144,7 +144,7 @@ Config.Items = {
     -- Grade 0 and higher
     [2] = {
         {
-            name = 'WEAPON_PDG19',
+            name = 'weapon_pdg19',
             price = 0,
             amount = 50,
             info = {

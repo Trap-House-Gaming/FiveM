@@ -767,12 +767,11 @@ local Vehicles = {
     { model = 'audirs6emsfire', name = 'Audi RS6',                     brand = 'audi',           price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'tahoe21tf',      name = 'Tahoe',                        brand = 'Chevrolet',      price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'oycfury',        name = '720s',                         brand = 'McLaren',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'GODzR35BOSS',    name = 'R35',                          brand = 'Nissan',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'rmodm3joker',    name = 'M3',                           brand = 'BMW',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'GODzR35BOSS',    name = 'R35',                          brand = 'Nissan',         price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'rmodm3joker',    name = 'M3',                           brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
     { model = 'vc_pol765lt',    name = '765lt',                        brand = 'McLaren',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
-    { model = 'm135iwb',        name = 'M135 I',                       brand = 'BMW',        price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' }
-
-
+    { model = 'm135iwb',        name = 'M135 I',                       brand = 'BMW',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' },
+    { model = 'DBgmchycade',    name = 'Hycade 1500',                  brand = 'GMC',            price = 500000,  category = 'Import',      type = 'automobile', shop = 'none' }
 }
 
 for i = 1, #Vehicles do

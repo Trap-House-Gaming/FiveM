@@ -1031,6 +1031,7 @@ RegisterNetEvent('police:server:UpdateCurrentCops', function()
     end
     TriggerClientEvent('police:SetCopCount', -1, amount)
     updatingCops = false
+    TriggerEvent('police:SetCopCount', amount)
 end)
 
 RegisterNetEvent('evidence:server:ClearCasings', function(casingList)

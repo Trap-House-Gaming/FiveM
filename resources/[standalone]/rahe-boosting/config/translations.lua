@@ -68,7 +68,7 @@ translations = {
 
     NOTIFICATION_TABLET_ERROR_NAME_LENGTH = 'The name length must be between 3 - 15 characters.',
     NOTIFICATION_TABLET_INFO_NAME_CHANGED = 'Name successfully changed.',
-    NOTIFICATION_TABLET_ERROR_PICTURE_FORMAT = "The profile picture URL must match the format 'https://i.imgur.com.........jpg/png'",
+    NOTIFICATION_TABLET_ERROR_PICTURE_FORMAT = "Invalid URL format. Click on 'Upload' to head to our recommended upload website.",
     NOTIFICATION_TABLET_INFO_PICTURE_CHANGED = 'Profile picture successfully changed.',
 
     NOTIFICATION_TABLET_INFO_ADMIN_GENERATED = 'Boosting contracts generated for the players in queue (%d %s)..',
