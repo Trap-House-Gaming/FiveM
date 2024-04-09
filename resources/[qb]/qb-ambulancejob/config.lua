@@ -98,8 +98,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         }
     },
     ['stations'] = {
-        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) },
-        { label = Lang:t('info.pb_hospital'), coords = vector3(312.14, -592.73, 43.28) }
+        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) }
     }
 }
 
