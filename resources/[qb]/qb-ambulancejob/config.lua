@@ -38,7 +38,7 @@ Config.AlertShowInfo = 2            -- How many injuries a player must have befo
 Config.Locations = {                -- Edit the various interaction points for players or create new ones
     ['checking'] = {
         [1] = vector3(308.19, -595.35, 43.29),
-        [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+        [2] = vector3(312.14, -592.73, 43.28), 
     },
     ['duty'] = {
         [1] = vector3(306.08, -597.34, 43.28),
@@ -98,7 +98,8 @@ Config.Locations = {                -- Edit the various interaction points for p
         }
     },
     ['stations'] = {
-        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) }
+        { label = Lang:t('info.pb_hospital'), coords = vector3(304.27, -600.33, 43.28) },
+        { label = Lang:t('info.pb_hospital'), coords = vector3(312.14, -592.73, 43.28) }
     }
 }
 
