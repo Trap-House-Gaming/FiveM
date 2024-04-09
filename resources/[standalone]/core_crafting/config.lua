@@ -179,7 +179,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 },
 
 -- Pistol Attachments
-['pistol_ammo '] = {
+['pistol_ammo'] = {
 	Level = 0, -- From what level this item will be craftable
 	Category = 'pattach', -- The category item will be put in
 	isGun = false, -- Specify if this is a gun so it will be added to the loadout
@@ -336,7 +336,8 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 
 Workbenches = { -- Every workbench location, leave {} for jobs if you want everybody to access
 
-		{coords = vector3(22.85,-634.94,7.51), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_pistol', 'weapon_pistol_mk2', 'weapon_combatpistol', 'weapon_snspistol_mk2','weapon_pistolxm3','weapon_heavypistol','weapon_appistol','pistol_ammo','clip_attachment'}, radius = 3.0 }
+		{coords = vector3(22.85,-634.94,7.51), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_pistol', 'weapon_pistol_mk2', 'weapon_combatpistol', 'weapon_snspistol_mk2','weapon_pistolxm3','weapon_heavypistol','weapon_appistol','pistol_ammo','clip_attachment'}, radius = 3.0 },
+		{coords = vector3(590.12,-3281.39,6.07), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_microsmg','weapon_machinepistol','weapon_minismg','weapon_smg','weapon_smg','weapon_smg_mk2','weapon_smg_mk2','weapon_assaultsmg','weapon_combatpdw'}, radius = 3.0 }
 
 },
  

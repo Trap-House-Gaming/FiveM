@@ -65,13 +65,13 @@ AK4Y.Categories = {
 
 -- type: "ITEM", "WEAPON", "MONEY", "VEHICLE"
 AK4Y.CategoryItems = {
-    { id = 1, category = "weapon", itemName = "weapon_heavypistol", type = "WEAPON", label = "HEAVY PISTOL", price = 45000, count = 1, level = 1, image = "./images/weapon_heavypistol.png" },
-    { id = 2, category = "weapon", itemName = "weapon_appistol", type = "WEAPON", label = "AP PISTOL", price = 75000, count = 1, level = 1, image = "./images/weapon_appistol.png" },
-    { id = 3, category = "weapon", itemName = "weapon_combatpistol", type = "WEAPON", label = "COMBAT PISTOL", price = 35000, count = 1, level = 2, image = "./images/weapon_combatpistol.png" },
-    { id = 4, category = "weapon", itemName = "weapon_combatpdw", type = "WEAPON", label = "COMBAT PDW", price = 125000, count = 1, level = 4, image = "./images/weapon_combatpdw.png" },
-    { id = 5, category = "weapon", itemName = "weapon_smg", type = "WEAPON", label = "SMG", price = 150000, count = 1, level = 5, image = "./images/weapon_smg.png" },
+    { id = 1, category = "weapon", itemName = "weapon_heavypistol", type = "WEAPON", label = "HEAVY PISTOL", price = 65000, count = 1, level = 1, image = "./images/weapon_heavypistol.png" },
+    { id = 2, category = "weapon", itemName = "weapon_appistol", type = "WEAPON", label = "AP PISTOL", price = 95000, count = 1, level = 1, image = "./images/weapon_appistol.png" },
+    { id = 3, category = "weapon", itemName = "weapon_combatpistol", type = "WEAPON", label = "COMBAT PISTOL", price = 45000, count = 1, level = 2, image = "./images/weapon_combatpistol.png" },
+    { id = 4, category = "weapon", itemName = "weapon_combatpdw", type = "WEAPON", label = "COMBAT PDW", price = 145000, count = 1, level = 4, image = "./images/weapon_combatpdw.png" },
+    { id = 5, category = "weapon", itemName = "weapon_smg", type = "WEAPON", label = "SMG", price = 170000, count = 1, level = 5, image = "./images/weapon_smg.png" },
     { id = 6, category = "item", itemName = "pistol_ammo", type = "ITEM", label = "PISTOL AMMO", price = 500, count = 1, level = 3, image = "./images/pistol_ammo.png" },
-    { id = 7, category = "item", itemName = "security_card_02", type = "ITEM", label = "SECURITY CARD", price = 2500, count = 1, level = 5, image = "./images/security_card_02.png" },
+    { id = 7, category = "item", itemName = "security_card_02", type = "ITEM", label = "SECURITY CARD", price = 5500, count = 1, level = 5, image = "./images/security_card_02.png" },
     { id = 8, category = "item", itemName = "weed_baggy", type = "ITEM", label = "WEED BAGGY", price = 750, count = 1, level = 10, image = "./images/weed_baggy.png" },
 }
 

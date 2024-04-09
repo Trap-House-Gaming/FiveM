@@ -131,9 +131,9 @@ Config.AuthorizedVehicles = {
         ['lspd20exp'] = 'Ford Explorer',
         ['LSPD18CHAR'] = 'Dodge Charger',
         ['lspd18tahoe'] = 'Cheverolet Tahoe',
-        ['lspddur'] = 'Dodge Durango UM',
-        ['lspd21f150'] = 'Cypher UM',
-        ['LSPDRAM'] = 'Dominator UM'
+        ['lspddur'] = 'Dodge Durango',
+        ['lspd21f150'] = 'Ford F150',
+        ['LSPDRAM'] = 'Dodge RAM'
     },
     [4] = {
         ['lspdvet'] = 'Cheverolet Corvette'
