@@ -32,8 +32,17 @@ Categories = {
 	Label = 'MEDICAL',
 	Image = 'bandage',
 	Jobs = {}
+},
+['sattach'] = {
+	Label = 'Attachments',
+	Image = 'pistol_extendedclip',
+	Jobs = {}
+},
+['extra'] = {
+	Label = 'Extras',
+	Image = 'handcuffs',
+	Jobs = {}
 }
-
 
 },
 
@@ -74,7 +83,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 		['steel'] = 350,
 		['iron'] = 450,
 		['copper'] = 450,
-		['diamond_ring'] = 1,
+		['diamond_ring'] = 1
 		
 	}
 }, 
@@ -188,7 +197,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	Amount = 5, -- The amount that will be crafted
 	SuccessRate = 100, -- 90% That the craft will succeed! If it does not you will lose your ingredients
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
-	Time = 10, -- Time in seconds it takes to craft this item
+	Time = 15, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
 		['copper'] = 100, -- item name and count, adding items that dont exist in database will crash the script
 		['glass'] = 75,
@@ -213,7 +222,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 },
 --smgs
 ['weapon_microsmg'] = {
-	Level = 10, -- From what level this item will be craftable
+	Level = 13, -- From what level this item will be craftable
 	Category = 'smgs', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -223,10 +232,12 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 650, 
+		['steel'] = 450,
+		['iron'] = 550,
+		['copper'] = 550,
+		['diamond_ring'] = 1,
+		['goldbar'] = 2
 
 	}
 },
@@ -241,14 +252,16 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 600, 
+		['steel'] = 400,
+		['iron'] = 500,
+		['copper'] = 500,
+		['diamond_ring'] = 1,
+		['goldbar'] = 3
 	}
 },
 ['weapon_minismg'] = {
-	Level = 13, -- From what level this item will be craftable
+	Level = 15, -- From what level this item will be craftable
 	Category = 'smgs', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -258,14 +271,16 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 700, 
+		['steel'] = 500,
+		['iron'] = 600,
+		['copper'] = 600,
+		['diamond_ring'] = 1,
+		['goldbar'] = 4
 	}
 },
 ['weapon_smg'] = {
-	Level = 14, -- From what level this item will be craftable
+	Level = 16, -- From what level this item will be craftable
 	Category = 'smgs', -- The category item will be put in
 	isGun = true, -- Specify if this is a gun so it will be added to the loadout
 	Jobs = {}, -- What jobs can craft this item, leaving {} allows any job
@@ -275,10 +290,12 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 750, 
+		['steel'] = 550,
+		['iron'] = 650,
+		['copper'] = 650,
+		['diamond_ring'] = 2,
+		['goldbar'] = 5
 	}
 },
 ['weapon_smg_mk2'] = {
@@ -292,10 +309,12 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 700, 
+		['steel'] = 500,
+		['iron'] = 600,
+		['copper'] = 600,
+		['diamond_ring'] = 2,
+		['goldbar'] = 4
 	}
 },
 ['weapon_assaultsmg'] = {
@@ -309,10 +328,11 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 700, 
+		['steel'] = 500,
+		['iron'] = 600,
+		['copper'] = 600,
+		['diamond_ring'] = 1,
 	}
 },
 ['weapon_combatpdw'] = {
@@ -326,10 +346,92 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	requireBlueprint = false, -- Requires a blueprint whitch you need to add in the database yourself TEMPLATE: itemname_blueprint EXAMPLE: bandage_blueprint
 	Time = 20, -- Time in seconds it takes to craft this item
 	Ingredients = { -- Ingredients needed to craft this item
-		['iron'] = 200, -- item name and count, adding items that dont exist in database will crash the script
-		['steel'] = 350,
-		['iron'] = 450,
-		['copper'] = 450,
+		['metalscrap'] = 750, 
+		['steel'] = 550,
+		['iron'] = 650,
+		['copper'] = 650,
+		['diamond_ring'] = 2,
+		['goldbar'] = 6
+	}
+},
+
+--Smg Attachments
+['smg_ammo'] = {
+	Level = 5, -- 
+	Category = 'sattach', 
+	isGun = false, 
+	Jobs = {}, 
+	JobGrades = {}, 
+	Amount = 5, 
+	SuccessRate = 100, 
+	requireBlueprint = false, 
+	Time = 10, 
+	Ingredients = { 
+		['copper'] = 150, 
+		['glass'] = 125,
+		['rubber'] = 175
+	}
+},
+['drum_attachment'] = {
+	Level = 10, -- 
+	Category = 'sattach', 
+	isGun = false, 
+	Jobs = {}, 
+	JobGrades = {}, 
+	Amount = 5, 
+	SuccessRate = 100, 
+	requireBlueprint = false, 
+	Time = 15, 
+	Ingredients = { 
+		['plastic'] = 250,
+		['aluminum '] = 225,
+		['rubber'] = 200
+	}
+},
+-- Cuff Bench
+['armor'] = {
+	Level = 5, -- 
+	Category = 'extra', 
+	isGun = false, 
+	Jobs = {}, 
+	JobGrades = {}, 
+	Amount = 1, 
+	SuccessRate = 100, 
+	requireBlueprint = false, 
+	Time = 5, 
+	Ingredients = { 
+		['steel'] = 150,
+		['rubber'] = 175
+	}
+},
+['handcuffs'] = {
+	Level = 2, -- 
+	Category = 'extra', 
+	isGun = false, 
+	Jobs = {}, 
+	JobGrades = {}, 
+	Amount = 1, 
+	SuccessRate = 100, 
+	requireBlueprint = false, 
+	Time = 5, 
+	Ingredients = { 
+		['plastic'] = 125,
+		['aluminum '] = 150
+	}
+},
+['advancedlockpick'] = {
+	Level = 2, -- 
+	Category = 'extra', 
+	isGun = false, 
+	Jobs = {}, 
+	JobGrades = {}, 
+	Amount = 1, 
+	SuccessRate = 100, 
+	requireBlueprint = false, 
+	Time = 5, 
+	Ingredients = { 
+		['metalscrap'] = 75,
+		['iron '] = 75
 	}
 }
 },--
@@ -337,7 +439,8 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 Workbenches = { -- Every workbench location, leave {} for jobs if you want everybody to access
 
 		{coords = vector3(22.85,-634.94,7.51), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_pistol', 'weapon_pistol_mk2', 'weapon_combatpistol', 'weapon_snspistol_mk2','weapon_pistolxm3','weapon_heavypistol','weapon_appistol','pistol_ammo','clip_attachment'}, radius = 3.0 },
-		{coords = vector3(590.12,-3281.39,6.07), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_microsmg','weapon_machinepistol','weapon_minismg','weapon_smg','weapon_smg','weapon_smg_mk2','weapon_smg_mk2','weapon_assaultsmg','weapon_combatpdw'}, radius = 3.0 }
+		{coords = vector3(590.12,-3281.39,6.07), jobs = {}, gangs = {}, blip = false, recipes = {'weapon_microsmg','weapon_machinepistol','weapon_minismg','weapon_smg','weapon_smg','weapon_smg_mk2','weapon_smg_mk2','weapon_combatpdw','smg_ammo','drum_attachment'}, radius = 3.0 },
+		{coords = vector3(831.72,-2335.14,30.33), jobs = {}, gangs = {}, blip = false, recipes = {'armor','handcuffs','advancedlockpick'}, radius = 3.0 }
 
 },
  
