@@ -35,7 +35,7 @@ Categories = {
 },
 ['sattach'] = {
 	Label = 'Attachments',
-	Image = 'pistol_extendedclip',
+	Image = 'at_clip_drum_pistol',
 	Jobs = {}
 },
 ['extra'] = {
@@ -420,7 +420,7 @@ Recipes = { -- Enter Item name and then the speed value! The higher the value th
 	}
 },
 ['advancedlockpick'] = {
-	Level = 2, -- 
+	Level = 0, -- 
 	Category = 'extra', 
 	isGun = false, 
 	Jobs = {}, 
