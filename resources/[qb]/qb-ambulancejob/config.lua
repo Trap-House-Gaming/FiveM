@@ -93,8 +93,8 @@ Config.Locations = {                -- Edit the various interaction points for p
                 [5] = {coords = vector4(319.47, -581.04, 43.53, 164.5), taken = false, model = 2117668672},
                 [6] = {coords = vector4(366.43, -581.54, 43.28, 66.5), taken = false, model = 2117668672},
                 [7] = {coords = vector4(364.93, -585.86, 43.28, 67.5), taken = false, model = 2117668672},
-                [8] = {coords = vector4(363.82, -589.09, 43.28, 68.5), taken = false, model = 2117668672},
-            },
+                [8] = {coords = vector4(363.82, -589.09, 43.28, 68.5), taken = false, model = 2117668672}
+            }
         }
     },
     ['stations'] = {

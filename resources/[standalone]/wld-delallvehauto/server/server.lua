@@ -4,7 +4,7 @@
 --------------------------------------
 
 RegisterCommand(Config.commandName, function(source, args, rawCommand, user)
-TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 30 SECONDS ^1)")
+TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 60 SECONDS ^1)")
 Wait(30000)
 TriggerClientEvent('chatMessage', -1, "^*^1 Manual MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 30 SECONDS ^1)")
 Wait(15000)
@@ -19,6 +19,8 @@ local delay = 1000 * 60 * 45 -- just edit this to your needed delay (30 minutes 
 Citizen.CreateThread(function()
     for i = 1, 2 do 
         Citizen.Wait(delay)
+TriggerClientEvent('chatMessage', -1, "^*^1 MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 60 SECONDS ^1)")
+Wait(30000)
 TriggerClientEvent('chatMessage', -1, "^*^1 MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 30 SECONDS ^1)")
 Wait(15000)
 TriggerClientEvent('chatMessage', -1, "^*^1 MASS DV, PLEASE GET INTO YOUR VEHICLES! (^3 15 SECONDS ^1)")

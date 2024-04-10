@@ -255,7 +255,7 @@ Config.VehicleKeys = {
             [1] = {seconds = 6, size = 40, chances = 4}, --Choose how many seperate action bars you will need to complete to hotwire a vehicle you do not have keys for.
             [2] = {seconds = 4, size = 30, chances = 3},
             [3] = {seconds = 3, size = 20, chances = 2}, --This is the 3rd action bar.
-            --[4] = {seconds = 1, size = 10, chances = 1},
+            [4] = {seconds = 1, size = 10, chances = 1},
         }
     },
 
