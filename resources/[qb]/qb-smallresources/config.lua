@@ -61,11 +61,11 @@ Config.Discord = {
     buttons = {
         {
             text = 'Discord!',
-            url = 'https://discord.gg/HqNsQ8xmwb'
+            url = 'https://discord.gg/TrapHouze'
         },
         {
             text = 'Join Game!',
-            url = 'fivem://connect/localhost:30120'
+            url = 'cfx.re/join/mdr89d'
         }
     }
 }
