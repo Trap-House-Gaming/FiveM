@@ -183,8 +183,8 @@ Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'none' -- You can chang
 
 Config.MenuType = 'ox_lib'
 Config.Inventory = 'qb-inventory'
-Config.Wardrobe = 'qb-clothing'
-Config.Garage = nil -- or some option above
+Config.Wardrobe = 'illenium-appearance'
+Config.Garage = 'cd_garage' -- or some option above
 Config.Logout = 'drop'
 Config.Weather = 'qb-weathersync'
 Config.HelpNotification = 'DrawText3D'
@@ -219,10 +219,10 @@ Config.LimitOfHouses = 5       -- Limit of houses for each player.
 ]]
 
 Config.BlipsOptions = {
-    ShowAllHouses = true,      -- Shows all houses equally with owner and without owner alike
+    ShowAllHouses = false,      -- Shows all houses equally with owner and without owner alike
     ShowAvailableForJob = true, -- Shows houses available to sell only for Job -> Config.Realestatejob
     OwnedHouses = false,        -- Shows the houses that the player bought
-    AvalibleHouses = false,     -- Shows the houses that are not bought
+    AvalibleHouses = true,     -- Shows the houses that are not bought
     BoughtHouses = false,       -- Shows houses bought by other players
 }
 
