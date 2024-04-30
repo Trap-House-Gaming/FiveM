@@ -1,10 +1,10 @@
-function openGiveKeyMenu(players)
+function OpenGiveKeyMenu(players)
     local data = {}
     for k, v in pairs(players) do
         table.insert(data, {
             title = Lang('HOUSING_MENU_PLAYER') .. ' ' .. v.name.firstname .. ' ' .. v.name.lastname,
             onSelect = function()
-                TriggerServerEvent('qb-houses:server:giveHouseKey', v.id, closesthouse)
+                TriggerServerEvent('qb-houses:server:giveHouseKey', v.id, CurrentHouse)
             end
         })
     end
@@ -18,7 +18,7 @@ function openGiveKeyMenu(players)
     lib.showContext('give_key_menu')
 end
 
-function openTakeKeyMenu()
+function OpenTakeKeyMenu()
     local data = {}
 
     TriggerServerCallback('qb-houses:server:getHouseKeyHolders', function(holders)
@@ -30,7 +30,7 @@ function openTakeKeyMenu()
                 table.insert(data, {
                     title = Lang('HOUSING_MENU_PLAYER') .. ' ' .. v.firstname .. ' ' .. v.lastname,
                     onSelect = function()
-                        TriggerServerEvent('qb-houses:server:removeHouseKey', closesthouse, v)
+                        TriggerServerEvent('qb-houses:server:removeHouseKey', CurrentHouse, v)
                     end
                 })
             end
@@ -42,10 +42,10 @@ function openTakeKeyMenu()
             options = data
         })
         lib.showContext('take_key_menu')
-    end, closesthouse)
+    end, CurrentHouse)
 end
 
-function insideInteractionsMenu()
+function InsideInteractionsMenu()
     local data = {
         {
             title = Lang('HOUSING_MENU_DECORATE_TITLE'),
@@ -92,7 +92,7 @@ function insideInteractionsMenu()
             end
         })
     end
-    if Config.Houses[closesthouse].ipl then
+    if Config.Houses[CurrentHouse].ipl then
         table.insert(data, {
             title = Lang('HOUSING_MENU_TYPE_TITLE'),
             description = Lang('HOUSING_MENU_TYPE_OPTION'),
@@ -119,7 +119,7 @@ function insideInteractionsMenu()
     lib.showContext('inside_interactions')
 end
 
-function ownerInteractionsMenu()
+function OwnerInteractionsMenu()
     local data = {
         {
             title = Lang('HOUSING_MENU_RENTS_TITLE'),
@@ -194,7 +194,7 @@ function sellInteractionMenu()
         end
     })
 
-    if purchasable then
+    if CurrentHouseData.purchasable then
         table.insert(data, {
             title = Lang('HOUSING_MENU_CANCEL_TITLE'),
             description = Lang('HOUSING_MENU_CANCEL_OPTION'),
@@ -213,8 +213,8 @@ function sellInteractionMenu()
     lib.showContext('sell_house')
 end
 
-RegisterNetEvent('qb-houses:insideInteractionsMenu', insideInteractionsMenu)
-RegisterNetEvent('qb-houses:ownerInteractionsMenu', ownerInteractionsMenu)
+RegisterNetEvent('qb-houses:insideInteractionsMenu', InsideInteractionsMenu)
+RegisterNetEvent('qb-houses:ownerInteractionsMenu', OwnerInteractionsMenu)
 RegisterNetEvent('qb-houses:sellInteractionMenu', sellInteractionMenu)
 
 function openHouseMenu()
@@ -241,7 +241,7 @@ function openHouseMenu()
             end
         },
     }
-    if not isOfficialOwner then
+    if not CurrentHouseData.isOfficialOwner then
         table.insert(data, {
             title = Lang('HOUSING_MENU_LEAVE_RENT_TITLE'),
             description = Lang('HOUSING_MENU_LEAVE_RENT_OPTION'),
@@ -250,7 +250,7 @@ function openHouseMenu()
             end
         })
     end
-    if isOfficialOwner then
+    if CurrentHouseData.isOfficialOwner then
         table.insert(data, {
             title = Lang('HOUSING_MENU_ADVANCED_TITLE'),
             description = Lang('HOUSING_MENU_ADVANCED_OPTION'),
@@ -336,7 +336,7 @@ function doorsMenu()
 end
 
 RegisterNetEvent('qb-houses:client:showRents', function()
-    local house = closesthouse
+    local house = CurrentHouse
     if not house then
         return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error')
     end
@@ -381,7 +381,7 @@ end)
 
 
 RegisterNetEvent('qb-houses:leaseHouse', function()
-    local house = closesthouse
+    local house = CurrentHouse
     if not house then
         return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error')
     end
@@ -403,13 +403,13 @@ end)
 
 
 RegisterNetEvent('qb-houses:leftHouse', function()
-    local house = closesthouse
+    local house = CurrentHouse
     if not house then return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error') end
     TriggerServerEvent('qb-houses:leftHouse', house)
 end)
 
 RegisterNetEvent('qb-houses:sellHouseToPlayer', function()
-    local house = closesthouse
+    local house = CurrentHouse
     if not house then
         return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_HOUSE'), 'error')
     end
@@ -474,13 +474,20 @@ function openRealeStateMenu()
 end
 
 function editCreatedHouse()
-    local house = closesthouse or Lang('HOUSING_MENU_NONE')
+    local house = CurrentHouse or Lang('HOUSING_MENU_NONE')
     local data = {
         {
             title = Lang('HOUSING_MENU_EXTERIOR_TITLE'),
             description = Lang('HOUSING_MENU_EXTERIOR_OPTION'),
             onSelect = function(args)
                 TriggerEvent('qb-houses:client:setPolyZone')
+            end
+        },
+        {
+            title = Lang('HOUSING_MENU_EDIT_TITLE'),
+            description = Lang('HOUSING_MENU_EDIT_OPTION'),
+            onSelect = function(args)
+                TriggerEvent('housing:editMLO')
             end
         },
         {
@@ -497,6 +504,13 @@ function editCreatedHouse()
                 TriggerEvent('qb-houses:deleteClosestHouse')
             end
         },
+        {
+            title = Lang('HOUSING_MENU_DELETE_OBJECT_TITLE'),
+            description = Lang('HOUSING_MENU_DELETE_OBJECT_OPTION'),
+            onSelect = function(args)
+                TriggerEvent('qb-houses:deleteClosestHouseObject')
+            end
+        }
     }
 
     -- Back button
@@ -540,14 +554,7 @@ RegisterNetEvent('qb-houses:createObjects', function()
             onSelect = function(args)
                 TriggerEvent('qb-houses:createIslandObject')
             end
-        },
-        {
-            title = Lang('HOUSING_MENU_DELETE_OBJECT_TITLE'),
-            description = Lang('HOUSING_MENU_DELETE_OBJECT_OPTION'),
-            onSelect = function(args)
-                TriggerEvent('qb-houses:deleteClosestHouseObject')
-            end
-        },
+        }
     }
 
     -- Back button
@@ -618,25 +625,25 @@ RegisterNetEvent('qb-houses:createHouse', function(type)
 end)
 
 function changeHouseType()
-    if not CurrentHouse then return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_INSIDE'), 'error') end
-    local iplData = Config.Houses[CurrentHouse].ipl
-    local menuThemes = iplData.themes
+    if not EnteredHouse then return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_INSIDE'), 'error') end
+    local iplData = Config.Houses[EnteredHouse].ipl
     local interiorId = iplData.theme.interiorId
-    local interiorData = Config.IplData[iplData.houseName]?.export
+    local interiorData = Config.IplData[iplData.houseName]
     if not interiorData then return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_THEMES'), 'error') end
-    interiorData = interiorData()
+    local ipl = interiorData.export()
+    local menuThemes = table.deepclone(interiorData.themes)
     for k, v in pairs(menuThemes) do
         v.label = v.label .. ' $' .. v.price
-        local themeInteriorId = interiorData.Style.Theme[v.value].interiorId
+        local themeInteriorId = ipl.Style.Theme[v.value].interiorId
         if themeInteriorId == interiorId then
             v.label = v.label .. ' - ' .. Lang('HOUSING_MENU_CURRENTLY')
         end
         v.onSelect = function(args)
             TriggerServerCallback('qb-houses:getDecoratePrice', function(payed)
                 if not payed then return SendTextMessage(Lang('HOUSING_NOTIFICATION_NO_MONEY'), 'error') end
-                local theme = interiorData.Style.Theme[v.value]
-                TriggerServerEvent('qb-houses:UpdateIplTheme', theme, CurrentHouse)
-            end, 200)
+                local theme = ipl.Style.Theme[v.value]
+                TriggerServerEvent('qb-houses:UpdateIplTheme', theme, EnteredHouse)
+            end, v.price)
         end
         v.title = v.label
     end
@@ -645,7 +652,7 @@ function changeHouseType()
     table.insert(menuThemes, {
         title = Lang('HOUSING_MENU_BACK'),
         onSelect = function(args)
-            insideInteractionsMenu()
+            InsideInteractionsMenu()
         end
     })
 

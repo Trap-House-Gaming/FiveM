@@ -35,27 +35,27 @@ CreateThread(function()
         local ped = PlayerPedId()
         local pos = GetEntityCoords(ped)
 
-        if closesthouse ~= nil and hasKey and Config.Houses and Config.Houses[closesthouse] and Config.Houses[closesthouse].garage then
-            local dist = GetDistanceBetweenCoords(pos, Config.Houses[closesthouse].garage.x, Config.Houses[closesthouse].garage.y, Config.Houses[closesthouse].garage.z, true)
+        if CurrentHouse ~= nil and CurrentHouseData.haskey and Config.Houses and Config.Houses[CurrentHouse] and Config.Houses[CurrentHouse].garage then
+            local dist = GetDistanceBetweenCoords(pos, Config.Houses[CurrentHouse].garage.x, Config.Houses[CurrentHouse].garage.y, Config.Houses[CurrentHouse].garage.z, true)
 
             if dist < 5.0 then
-                DrawMarker(20, Config.Houses[closesthouse].garage.x, Config.Houses[closesthouse].garage.y, Config.Houses[closesthouse].garage.z + 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.3, 0.15, 120, 10, 20, 155, false, false, false, 1, false, false, false)
+                DrawMarker(20, Config.Houses[CurrentHouse].garage.x, Config.Houses[CurrentHouse].garage.y, Config.Houses[CurrentHouse].garage.z + 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.3, 0.15, 120, 10, 20, 155, false, false, false, 1, false, false, false)
 
                 if dist < 2.0 then
                     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
-                    if Config.Houses[closesthouse].garage and Config.Houses[closesthouse].garage.x and Config.Houses[closesthouse].garage.y and Config.Houses[closesthouse].garage.z then
+                    if Config.Houses[CurrentHouse].garage and Config.Houses[CurrentHouse].garage.x and Config.Houses[CurrentHouse].garage.y and Config.Houses[CurrentHouse].garage.z then
                         if vehicle and vehicle ~= 0 then
-                            DrawText3Ds(Config.Houses[closesthouse].garage.x, Config.Houses[closesthouse].garage.y, Config.Houses[closesthouse].garage.z + 0.3, 'Store')
+                            DrawText3Ds(Config.Houses[CurrentHouse].garage.x, Config.Houses[CurrentHouse].garage.y, Config.Houses[CurrentHouse].garage.z + 0.3, 'Store')
 
                             if IsControlJustPressed(0, Keys['E']) or IsDisabledControlJustPressed(0, Keys['E']) then
                                 if not StoreVehicle then return print('Your client/custom/garages/*.lua is not correctly configured') end
-                                StoreVehicle(closesthouse)
+                                StoreVehicle(CurrentHouse)
                             end
                         else
-                            DrawText3Ds(Config.Houses[closesthouse].garage.x, Config.Houses[closesthouse].garage.y, Config.Houses[closesthouse].garage.z + 0.3, 'Store')
+                            DrawText3Ds(Config.Houses[CurrentHouse].garage.x, Config.Houses[CurrentHouse].garage.y, Config.Houses[CurrentHouse].garage.z + 0.3, 'Store')
                             if IsControlJustPressed(0, Keys['E']) or IsDisabledControlJustPressed(0, Keys['E']) then
                                 if not OpenGarage then return print('Your client/custom/garages/*.lua is not correctly configured') end
-                                OpenGarage(closesthouse)
+                                OpenGarage(CurrentHouse)
                             end
                         end
                     end

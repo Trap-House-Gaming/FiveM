@@ -49,8 +49,9 @@ Config.Language = 'en'
 
 local esxHas = GetResourceState('es_extended') == 'started'
 local qbHas = GetResourceState('qb-core') == 'started'
+local qbxHas = GetResourceState('qbx_core') == 'started'
 
-Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'standalone'
+Config.Framework = esxHas and 'esx' or qbxHas and 'qbx' or qbHas and 'qb' or 'standalone'
 
 --[[
     General settings of the asset, you can edit the growth time, add random areas on the map
@@ -63,8 +64,9 @@ Config.PoliceJobs = { -- Choose the jobs suitable for creating houses
 }
 
 Config.HarvestTime = (60 * 1000) * 9.6
+Config.MaxPlants = 10 -- Number of plants per house
 
-Config.WeedArea = { -- You can create random areas
+Config.WeedArea = {   -- You can create random areas
     {
         id = 'weed-area-01',
         minZ = 1,

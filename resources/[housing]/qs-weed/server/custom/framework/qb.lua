@@ -16,6 +16,12 @@ function GetPlayerFromId(source)
     return QBCore.Functions.GetPlayer(source)
 end
 
+function GetItem(player, item)
+    local data = player.Functions.GetItemByName(item)
+    data.count = data.amount
+    return data
+end
+
 function AddItem(source, item, count)
     local player = GetPlayerFromId(source)
     player.Functions.AddItem(item, count)

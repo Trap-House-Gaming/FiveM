@@ -1,5 +1,6 @@
 Locales['zh-CN'] = {
     -- Blips
+    ['HOUSING_BLIP_HOUSE'] = '家',
     ['HOUSING_BLIP_MAIN_HOUSE'] = '你的房子',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTABLE'] = '你的房子（可出租）',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTAL'] = '你的房子（出租中）',
@@ -142,6 +143,8 @@ Locales['zh-CN'] = {
     ['HOUSING_MENU_EDIT_HOUSES_OPTION'] = '编辑已创建的房屋的选项',
     ['HOUSING_MENU_EXTERIOR_TITLE'] = '放置外部区域',
     ['HOUSING_MENU_EXTERIOR_OPTION'] = '如果没有外部区域，放置房屋外部区域',
+    ['HOUSING_MENU_EDIT_TITLE'] = '编辑 MLO',
+    ['HOUSING_MENU_EDIT_OPTION'] = '允许您编辑 MLO、添加或删除门等的选项',
     ['HOUSING_MENU_TEST_TITLE'] = '设置访问坐标',
     ['HOUSING_MENU_TEST_OPTION'] = '此选项允许您在mlo家中放置访问坐标',
     ['HOUSING_MENU_WARDROBE_DEFAULT_TITLE'] = '衣柜',
@@ -328,5 +331,8 @@ Locales['zh-CN'] = {
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = '门太坚固了，没被打破',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = '您不能将点放在房屋外面',
     ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = '找不到房屋...',
-    ['HOUSING_NOTIFICATION_MIN_POINTS'] = '您的區域內必須至少有 4 個角落，並且您必須將所有東西都放在其中...'
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = '您的區域內必須至少有 4 個角落，並且您必須將所有東西都放在其中...',
+    ['HOUSING_NOTIFICATION_MAX_HOUSES'] = '你不能购买更多的房子，你已经达到了法定限制',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR'] = '你不在门附近',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR_OTHER'] = '玩家不在门附近'
 }

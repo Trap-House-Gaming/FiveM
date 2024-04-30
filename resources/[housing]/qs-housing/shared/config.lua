@@ -49,8 +49,9 @@ Config.Language = 'en'
 
 local esxHas = GetResourceState('es_extended') == 'started'
 local qbHas = GetResourceState('qb-core') == 'started'
+local qbxHas = GetResourceState('qbx_core') == 'started'
 
-Config.Framework = esxHas and 'esx' or qbHas and 'qb' or 'standalone'
+Config.Framework = esxHas and 'esx' or qbxHas and 'qbx' or qbHas and 'qb' or 'standalone'
 
 --[[
 	The inventory system will help us add a personalized stash to each housing of this asset.
@@ -95,7 +96,7 @@ Config.Inventory = getInventory()
 	server/custom/phone/*.lua, if you have questions, contact the seller of your asset.
 ]]
 
-Config.UseTarget = true -- Set true/false (only qb-target or ox_target)
+Config.UseTarget = false -- Set true/false (only qb-target or ox_target)
 Config.TargetLength = 5.0
 Config.TargetWidth = 5.0
 
@@ -104,6 +105,7 @@ local function getPhone()
 	local qsHas = GetResourceState('qs-smartphone') == 'started'
 	local lbHas = GetResourceState('lb-phone') == 'started'
 	local gksHas = GetResourceState('gksphone') == 'started'
+	local okokHas = GetResourceState('okokPhone') == 'started'
 	if proHas then
 		return 'qs-smartphone-pro'
 	elseif qsHas then
@@ -112,6 +114,8 @@ local function getPhone()
 		return 'lb-phone'
 	elseif gksHas then
 		return 'gksphone'
+	elseif okokHas then
+		return 'okokPhone'
 	else
 		return 'default'
 	end
@@ -172,6 +176,7 @@ local function getGarages()
 	local rcoreHas = GetResourceState('rcore_garage') == 'started'
 	local zerioHas = GetResourceState('zerio-garage') == 'started'
 	local codemHas = GetResourceState('codem_garage') == 'started'
+	local ak47has = GetResourceState('ak47_garage') == 'started'
 	if qbgHas then
 		return 'qb-garages'
 	elseif qsHas then
@@ -190,6 +195,8 @@ local function getGarages()
 		return 'zerio-garage'
 	elseif codemHas then
 		return 'codem_garage'
+	elseif ak47has then
+		return 'ak47_garage'
 	else
 		return 'standalone'
 	end
@@ -202,22 +209,27 @@ Config.Garage = getGarages()
 	Here we can choose the basic and advanced configuration of the asset.
 ]]
 
-Config.CreatorJobs = { -- Choose the jobs suitable for creating houses
+Config.Society = 'none'       -- 'none', 'esx_society', 'ap-government', 'esx_society' or 'qb-management'
+Config.SocietyCommision = 0.3 -- Percentage of the commission for the company (%30 of house price)
+
+Config.CreatorJobs = {        -- Choose the jobs suitable for creating houses
 	'realestate',
 	'police',
 	'realestatejob'
 }
 
-Config.TestRemTime = 1        -- Visiting time inside the house (1 = 1 minute)
-Config.MinZOffset = 30        -- Minimum shell spawn offset
-Config.CreatorAlpha = 200     -- Ignore this if you don't want to edit the Alpha
-Config.SignTextScale = 0.6    -- Sale poster text size
-Config.TimeInterior = 23      -- This is the time it will be when entering the shells (to avoid alternating shadows)
-Config.HideOwnedHouses = true -- Hide owned houses from the map
-Config.GroupBlips = true      -- Hide address on the blips (Short blips)
+Config.TestRemTime = 1           -- Visiting time inside the house (1 = 1 minute)
+Config.MinZOffset = 30           -- Minimum shell spawn offset
+Config.CreatorAlpha = 200        -- Ignore this if you don't want to edit the Alpha
+Config.SignTextScale = 0.6       -- Sale poster text size
+Config.TimeInterior = 23         -- This is the time it will be when entering the shells (to avoid alternating shadows)
+Config.HideOwnedHouses = true    -- Hide owned houses from the map
+Config.GroupBlips = false        -- Hide address on the blips (Short blips)
+Config.MaxOwnedHouses = 5        -- Limit of houses per player (5 default)
+Config.SellObjectCommision = 0.3 -- Commission that will be charged when selling a piece of furniture
 
-Config.OpenHouseMenu = 'F3'   -- Key to open the internal menu of the home
-Config.OpenJobMenu = 'F7'     -- Key to open the house creation menu
+Config.OpenHouseMenu = 'F3'      -- Key to open the internal menu of the home
+Config.OpenJobMenu = 'F7'        -- Key to open the house creation menu
 
 --[[
 	Illegal system configuration of the asset, make sure you have this controlled so as not to break the economy or the system of each player.
@@ -231,6 +243,8 @@ Config.PoliceJobs = {  -- Jobs that will be considered police
 	'realestatejob'
 }
 
+Config.EnableRobbery = true            -- Enable or disable the usable item to initiate robberies
+Config.EnableRaid = true               -- Enable or disable the usable item to initiate raids
 Config.RobberyItem = 'lockpick'        -- Item to start the robbery of houses
 Config.StomRamItem = 'police_stormram' -- Item to begin the search of a house
 
@@ -248,6 +262,7 @@ Config.RentTime = 5   -- Time interval to collect rent (5 = 5 minutes)
 	if you can decorate anyone with keys or only the owner. Also the basic stash of each home.
 ]]
 
+Config.MaximumDistanceForDecorate = 350.0
 Config.DecorateOnlyAccessForOwner = true -- Can anyone with a key decorate or only the owner?
 Config.HideRadarInDecorate = true        -- Disable radar in decorations?
 
@@ -1313,27 +1328,66 @@ CameraOptions = {
 CreatingHouse = {}
 
 Config.Houses = {
-	-- 	['test-house'] = {
-	-- 		coords = {
-	-- 			cam = {
-	-- 				x = -236.2,
-	-- 				y = -989.01,
-	-- 				z = 29.16,
-	-- 				h = 161.51,
-	-- 				yaw = 1,
-	-- 			},
-	-- 			enter = {
-	-- 				x = -236.2,
-	-- 				y = -989.01,
-	-- 				z = 29.16,
-	-- 				h = 161.51,
-	-- 			}
-	-- 		},
+	-- 	['Test House'] = {
 	-- 		owned = 0,
 	-- 		price = 0,
 	-- 		locked = true,
-	-- 		address = 'Test House',
+	-- 		address = 'Nikola p1',
 	-- 		tier = 1,
+	-- 		coords = {
+	-- 			enter = {
+	-- 				['z'] = 71.46570587158203,
+	-- 				['h'] = 311.8609924316406,
+	-- 				['x'] = 1303.005859375,
+	-- 				['y'] = -527.4683837890625
+	-- 			},
+	-- 			PolyZone = {
+	-- 				thickness = 25.0,
+	-- 				usePolyZone = true,
+	-- 				points = { {
+	-- 					['x'] = 1303.5743408203125,
+	-- 					['y'] = -500.41802978515625,
+	-- 					['z'] = 71.0
+	-- 				}, {
+	-- 					['x'] = 1293.0418701171875,
+	-- 					['y'] = -537.6560668945312,
+	-- 					['z'] = 71.0
+	-- 				}, {
+	-- 					['x'] = 1311.5504150390625,
+	-- 					['y'] = -544.9464721679688,
+	-- 					['z'] = 71.0
+	-- 				}, {
+	-- 					['x'] = 1327.7315673828125,
+	-- 					['y'] = -498.835205078125,
+	-- 					['z'] = 71.0
+	-- 				} }
+	-- 			},
+	-- 			cam = {
+	-- 				['h'] = 311.8609924316406,
+	-- 				['y'] = -527.4683837890625,
+	-- 				['z'] = 71.46570587158203,
+	-- 				yaw = -10.0,
+	-- 				['x'] = 1303.005859375
+	-- 			},
+	-- 			exit = {
+	-- 				['z'] = 27.56341361999511,
+	-- 				['h'] = 246.86099243164062,
+	-- 				['x'] = 1264.6019287109375,
+	-- 				['y'] = -545.8494262695312
+	-- 			},
+	-- 			interiorCoords = {
+	-- 				['x'] = 1266.744384765625,
+	-- 				['y'] = -544.3600463867188,
+	-- 				['z'] = 26.55422592163086,
+	-- 				['w'] = 311.8609924316406
+	-- 			},
+	-- 			shellCoords = {
+	-- 				['z'] = 26.55422592163086,
+	-- 				['h'] = 311.8609924316406,
+	-- 				['x'] = 1266.744384765625,
+	-- 				['y'] = -544.3600463867188
+	-- 			}
+	-- 		},
 	-- 		garage = {
 	-- 			max = 4, -- Maximum spawn point [max slot]
 	-- 			access = {},
@@ -1363,5 +1417,7 @@ Config.Houses = {
     developer, but it will help to understand how the resource works.
 ]]
 
-Debug = true
+Config.Debug = false
 Config.ZoneDebug = false
+
+Keys = { ['ESC'] = 322, ['F1'] = 288, ['F2'] = 289, ['F3'] = 170, ['F5'] = 166, ['F6'] = 167, ['F7'] = 168, ['F8'] = 169, ['F9'] = 56, ['F10'] = 57, ['~'] = 243, ['1'] = 157, ['2'] = 158, ['3'] = 160, ['4'] = 164, ['5'] = 165, ['6'] = 159, ['7'] = 161, ['8'] = 162, ['9'] = 163, ['-'] = 84, ['='] = 83, ['BACKSPACE'] = 177, ['TAB'] = 37, ['Q'] = 44, ['W'] = 32, ['E'] = 38, ['R'] = 45, ['T'] = 245, ['Y'] = 246, ['U'] = 303, ['P'] = 199, ['['] = 39, [']'] = 40, ['ENTER'] = 18, ['CAPS'] = 137, ['A'] = 34, ['S'] = 8, ['D'] = 9, ['F'] = 23, ['G'] = 47, ['H'] = 74, ['K'] = 311, ['L'] = 182, ['LEFTSHIFT'] = 21, ['Z'] = 20, ['X'] = 73, ['C'] = 26, ['V'] = 0, ['B'] = 29, ['N'] = 249, ['M'] = 244, [','] = 82, ['.'] = 81, ['LEFTCTRL'] = 36, ['LEFTALT'] = 19, ['SPACE'] = 22, ['RIGHTCTRL'] = 70, ['HOME'] = 213, ['PAGEUP'] = 10, ['PAGEDOWN'] = 11, ['DELETE'] = 178, ['LEFT'] = 174, ['RIGHT'] = 175, ['TOP'] = 27, ['DOWN'] = 173, ['NENTER'] = 201, ['N4'] = 108, ['N5'] = 60, ['N6'] = 107, ['N+'] = 96, ['N-'] = 97, ['N7'] = 117, ['N8'] = 61, ['N9'] = 118 }

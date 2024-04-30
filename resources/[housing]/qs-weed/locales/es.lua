@@ -21,5 +21,6 @@ Locales['es'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = 'Has cosechado la planta correctamente',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = 'La planta ya no existe',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = 'No tienes bolsas suficientes para cosechar toda la planta',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = 'No es tu planta ni tampoco puedes cosechar la planta de otro jugador'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = 'No es tu planta ni tampoco puedes cosechar la planta de otro jugador',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = 'No puedes poner mas plantas en esta vivienda'
 }

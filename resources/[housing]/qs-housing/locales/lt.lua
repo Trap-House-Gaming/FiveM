@@ -1,5 +1,6 @@
 Locales['lt'] = {
     -- Blips
+    ['HOUSING_BLIP_HOUSE'] = 'Namas',
     ['HOUSING_BLIP_MAIN_HOUSE'] = 'Jūsų namas',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTABLE'] = 'Jūsų namas (Išsinuomuojamas)',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTAL'] = 'Jūsų namas (Nuoma)',
@@ -142,6 +143,8 @@ Locales['lt'] = {
     ['HOUSING_MENU_EDIT_HOUSES_OPTION'] = 'Parinktys redaguoti jau sukurtą namą',
     ['HOUSING_MENU_EXTERIOR_TITLE'] = 'Įdėti išorinę zoną',
     ['HOUSING_MENU_EXTERIOR_OPTION'] = 'Įdėkite lauko plotą namui, jei jo dar neturite',
+    ['HOUSING_MENU_EDIT_TITLE'] = 'Modifica MLO',
+    ['HOUSING_MENU_EDIT_OPTION'] = 'Opzione che ti consente di modificare l\'MLO, aggiungere o rimuovere porte e altro',
     ['HOUSING_MENU_TEST_TITLE'] = 'Nustatyti lankomų koordinačių',
     ['HOUSING_MENU_TEST_OPTION'] = 'Ši parinktis leidžia įdėti lankomų koordinačių mlo namuose',
     ['HOUSING_MENU_WARDROBE_DEFAULT_TITLE'] = 'Spinta',
@@ -328,5 +331,8 @@ Locales['lt'] = {
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'Durys tokios kietos, kad jos nepažeistas',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Negalite dėti taško už namo ribų',
     ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Namas nerastas...',
-    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Ci devono essere almeno 4 angoli nella tua area e devi posizionare tutto al loro interno...'
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Ci devono essere almeno 4 angoli nella tua area e devi posizionare tutto al loro interno...',
+    ['HOUSING_NOTIFICATION_MAX_HOUSES'] = 'Non puoi acquistare più case, hai raggiunto il limite legale',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR'] = 'Jūs nesate šalia durų',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR_OTHER'] = 'Žaidėjas nėra šalia durų'
 }

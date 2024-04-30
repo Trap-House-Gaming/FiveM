@@ -85,6 +85,11 @@ function GetIdentifier(source)
     return nil
 end
 
+function GetItem(player, item)
+    ImplementError('GetItem : You need to implement this function for your framework.')
+    return true
+end
+
 function AddItem(source, item, count)
     ImplementError('AddItem : You need to implement this function for your framework.')
 end

@@ -21,5 +21,6 @@ Locales['de'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = 'Du hast die Pflanze erfolgreich geerntet',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = 'Die Pflanze existiert nicht mehr',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = 'Du hast nicht genügend Taschen, um die gesamte Pflanze zu ernten',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Es ist nicht deine Pflanze und du kannst auch nicht die Pflanze eines anderen Spielers ernten'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Es ist nicht deine Pflanze und du kannst auch nicht die Pflanze eines anderen Spielers ernten',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = 'Sie können in diesem Haus keine weiteren Pflanzen platzieren'
 }

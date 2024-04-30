@@ -16,6 +16,10 @@ function GetPlayerFromId(source)
     return ESX.GetPlayerFromId(source)
 end
 
+function GetItem(player, item)
+    return player.getInventoryItem(item)
+end
+
 function AddItem(source, item, count)
     local player = GetPlayerFromId(source)
     player.addInventoryItem(item, count)

@@ -7,7 +7,7 @@ end
 Target = {}
 
 local function checkKey()
-    if closesthouse ~= nil and hasKey then
+    if CurrentHouse ~= nil and CurrentHouseData.haskey then
         return true
     end
     return false
@@ -50,10 +50,10 @@ function Target:initMLODoors(key)
                         Citizen.Wait(1)
                     end
                     TaskPlayAnim(PlayerPedId(), 'anim@heists@keycard@', 'exit', 8.0, 8.0, 1000, 1, 1, 0, 0, 0)
-                    TriggerServerEvent('qb-houses:SyncDoor', closesthouse, doorId, not doorData.locked)
+                    TriggerServerEvent('qb-houses:SyncDoor', CurrentHouse, doorId, not doorData.locked)
                 end,
                 canInteract = function(entity)
-                    if not closesthouse then
+                    if not CurrentHouse then
                         return false
                     end
                     if confirmed[entity] then
@@ -89,7 +89,7 @@ function Target:initObjectInteractions()
                 icon = 'fa-solid fa-magnifying-glass',
                 label = Lang('HOUSING_TARGET_FURNITURE_INTERACTION'),
                 action = function(entity) -- This is the action it has to perform, this REPLACES the event and this is OPTIONAL
-                    local house = CurrentHouse or closesthouse
+                    local house = CurrentHouse
                     local decorations = Config.Houses[house].decorations
                     if not decorations then return end
                     local decorationData = table.find(decorations, function(decoration)
@@ -108,12 +108,8 @@ function Target:initObjectInteractions()
                     end
                 end,
                 canInteract = function(entity, distance, data) -- This will check if you can interact with it, this won't show up if it returns false, this is OPTIONAL
-                    local house = CurrentHouse or closesthouse
-                    local inZone = inGreenArea[house]
-                    if not inside and not inZone then
-                        return false
-                    end
-                    if not CurrentHouse and not inZone then
+                    local house = CurrentHouse
+                    if not house then
                         return false
                     end
                     return true
@@ -126,7 +122,7 @@ function Target:initObjectInteractions()
 end
 
 local function checkHouseHasOwner()
-    if not isOwned or rentable or purchasable then return false end
+    if not CurrentHouseData.isOwned or CurrentHouseData.rentable or CurrentHouseData.purchasable then return false end
     return true
 end
 
@@ -145,22 +141,22 @@ function Target:initOutside(key)
                 icon = 'fa-solid fa-magnifying-glass',
                 label = Lang('HOUSING_TARGET_SHOW_HOUSE'),
                 action = function()
-                    if Config.Houses[closesthouse].coords.test then
+                    if Config.Houses[CurrentHouse].coords.test then
                         TestNotMLO = false
                         DoScreenFadeOut(500)
                         ShowRoomDefaultCoords = GetEntityCoords(PlayerPed)
                         Wait(1000)
-                        SetEntityCoords(PlayerPed, vec3(Config.Houses[closesthouse].coords.test.x, Config.Houses[closesthouse].coords.test.y, Config.Houses[closesthouse].coords.test.z))
+                        SetEntityCoords(PlayerPed, vec3(Config.Houses[CurrentHouse].coords.test.x, Config.Houses[CurrentHouse].coords.test.y, Config.Houses[CurrentHouse].coords.test.z))
                         ShowRoomLoop()
                         DoScreenFadeIn(500)
                     else
                         TestNotMLO = true
                         DoScreenFadeOut(500)
                         Wait(1000)
-                        if not Config.Houses[closesthouse].ipl then
-                            enterNonOwnedHouse(closesthouse)
+                        if not Config.Houses[CurrentHouse].ipl then
+                            EnterHouse(true)
                         else
-                            enterIplHouse(closesthouse, true)
+                            enterIplHouse(CurrentHouse, true)
                         end
                         ShowRoomLoop()
                         DoScreenFadeIn(500)
@@ -176,10 +172,10 @@ function Target:initOutside(key)
                 icon = 'fa-solid fa-file-contract',
                 label = Lang('HOUSING_TARGET_VIEW_HOUSE'),
                 action = function()
-                    if rentable then
-                        TriggerServerEvent('qb-houses:server:viewHouse', closesthouse, true)
+                    if CurrentHouseData.rentable then
+                        TriggerServerEvent('qb-houses:server:viewHouse', CurrentHouse, true)
                     else
-                        TriggerServerEvent('qb-houses:server:viewHouse', closesthouse)
+                        TriggerServerEvent('qb-houses:server:viewHouse', CurrentHouse)
                     end
                 end,
                 canInteract = function(entity, distance, data)
@@ -195,10 +191,10 @@ function Target:initOutside(key)
                     TriggerEvent('qb-houses:client:EnterHouse', houseData.ipl)
                 end,
                 canInteract = function(entity, distance, data)
-                    if not closesthouse then return false end
-                    if Config.Houses[closesthouse].mlo then return false end
+                    if not CurrentHouse then return false end
+                    if Config.Houses[CurrentHouse].mlo then return false end
                     if not checkHouseHasOwner() then return false end
-                    if not hasKey and not Config.Houses[closesthouse].IsRammed then return false end
+                    if not CurrentHouseData.haskey and not Config.Houses[CurrentHouse].IsRammed then return false end
                     return true
                 end,
             },
@@ -209,10 +205,10 @@ function Target:initOutside(key)
                     TriggerEvent('qb-houses:client:RequestRing')
                 end,
                 canInteract = function(entity, distance, data)
-                    if not closesthouse then return false end
-                    if Config.Houses[closesthouse].mlo then return false end
+                    if not CurrentHouse then return false end
+                    if Config.Houses[CurrentHouse].mlo then return false end
                     if not checkHouseHasOwner() then return false end
-                    if hasKey or Config.Houses[closesthouse].IsRammed then return false end
+                    if CurrentHouseData.haskey or Config.Houses[CurrentHouse].IsRammed then return false end
                     return true
                 end,
             },
@@ -244,13 +240,9 @@ function Target:initExit(key)
                 label = Lang('HOUSING_TARGET_EXIT_HOUSE'),
                 action = function()
                     if houseData.ipl then
-                        LeaveIplHouse(CurrentHouse, inOwned)
+                        LeaveIplHouse(EnteredHouse, inOwned)
                     else
-                        if inOwned then
-                            leaveNonOwnedHouse(CurrentHouse)
-                        else
-                            leaveOwnedHouse(CurrentHouse)
-                        end
+                        LeaveHouse()
                     end
                 end,
                 canInteract = function(entity, distance, data)
@@ -261,7 +253,7 @@ function Target:initExit(key)
                 icon = 'fa-solid fa-bell',
                 label = Lang('HOUSING_TARGET_RING_DOORBELL'),
                 action = function()
-                    TriggerServerEvent('qb-houses:server:OpenDoor', CurrentDoorBell, closesthouse)
+                    TriggerServerEvent('qb-houses:server:OpenDoor', CurrentDoorBell, CurrentHouse)
                     CurrentDoorBell = 0
                 end,
                 canInteract = function(entity, distance, data)
@@ -285,13 +277,14 @@ function Target:initExit(key)
 end
 
 function Target:initWardrobe()
-    if not outfitLocation then return print('No outfitLocation') end
-    exports['qb-target']:AddBoxZone('house_wardrobe', outfitLocation, Config.TargetLength, Config.TargetWidth, {
+    local wardrobe = CurrentHouseData.wardrobe
+    if not wardrobe then return Debug('Target:initWardrobe ::: No wardrobe coords') end
+    exports['qb-target']:AddBoxZone('house_wardrobe', wardrobe, Config.TargetLength, Config.TargetWidth, {
         name = 'house_wardrobe',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
-        minZ = outfitLocation.z - 15.0,
-        maxZ = outfitLocation.z + 5.0,
+        minZ = wardrobe.z - 15.0,
+        maxZ = wardrobe.z + 5.0,
     }, {
         options = {
             {
@@ -310,13 +303,14 @@ function Target:initWardrobe()
 end
 
 function Target:initStash()
-    if not stashLocation then return print('no stashLocation') end
-    exports['qb-target']:AddBoxZone('house_stash', stashLocation, Config.TargetLength, Config.TargetWidth, {
+    local stash = CurrentHouseData.stash
+    if not stash then return Debug('Target:initStash ::: No stash coords') end
+    exports['qb-target']:AddBoxZone('house_stash', stash, Config.TargetLength, Config.TargetWidth, {
         name = 'house_stash',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
-        minZ = stashLocation.z - 15.0,
-        maxZ = stashLocation.z + 5.0,
+        minZ = stash.z - 15.0,
+        maxZ = stash.z + 5.0,
     }, {
         options = {
             {
@@ -335,13 +329,14 @@ function Target:initStash()
 end
 
 function Target:initLogout()
-    if not logoutLocation then return print('no logoutLocation') end
-    exports['qb-target']:AddBoxZone('house_logout', logoutLocation, Config.TargetLength, Config.TargetWidth, {
+    local logout = CurrentHouseData.logout
+    if not logout then return Debug('Target:initLogout ::: No logout coords') end
+    exports['qb-target']:AddBoxZone('house_logout', logout, Config.TargetLength, Config.TargetWidth, {
         name = 'house_logout',
         heading = 90.0,
         debugPoly = Config.ZoneDebug,
-        minZ = logoutLocation.z - 15.0,
-        maxZ = logoutLocation.z + 5.0,
+        minZ = logout.z - 15.0,
+        maxZ = logout.z + 5.0,
     }, {
         options = {
             {
@@ -356,11 +351,10 @@ function Target:initLogout()
                         TriggerEvent('cd_easytime:PauseSync', false)
                         TriggerEvent('vSync:toggle', false)
 
-                        local house = CurrentHouse or closesthouse
+                        local house = CurrentHouse
                         SetEntityCoords(PlayerPed, Config.Houses[house].coords.enter.x, Config.Houses[house].coords.enter.y, Config.Houses[house].coords.enter.z + 0.5)
                         SetEntityHeading(PlayerPed, Config.Houses[house].coords.enter.h)
                         inOwned = false
-                        inside = false
                         TriggerServerEvent('qb-houses:server:LogoutLocation')
                     end)
                 end,
@@ -394,7 +388,7 @@ function Target:initInsideInteractions()
     Target:initLogout()
 end
 
-RegisterNetEvent('qb-houses:client:setHouseConfig', function(houseConfig)
+RegisterNetEvent('housing:initHouses', function(houseConfig)
     Target.houses = houseConfig
     Target:init()
     if Target.initObjectInteractions then

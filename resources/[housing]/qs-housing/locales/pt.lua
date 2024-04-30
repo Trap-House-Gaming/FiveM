@@ -1,5 +1,6 @@
 Locales['pt'] = {
     -- Blips
+    ['HOUSING_BLIP_HOUSE'] = 'Casa',
     ['HOUSING_BLIP_MAIN_HOUSE'] = 'Tua casa',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTABLE'] = 'Tua casa (Alugável)',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTAL'] = 'Tua casa (Aluguel)',
@@ -142,6 +143,8 @@ Locales['pt'] = {
     ['HOUSING_MENU_EDIT_HOUSES_OPTION'] = 'Opções para editar uma casa já criada',
     ['HOUSING_MENU_EXTERIOR_TITLE'] = 'Colocar uma zona exterior',
     ['HOUSING_MENU_EXTERIOR_OPTION'] = 'Colocar uma área externa em uma casa que não tenha uma',
+    ['HOUSING_MENU_EDIT_TITLE'] = 'Editar MLO',
+    ['HOUSING_MENU_EDIT_OPTION'] = 'Opção que permite editar o MLO, adicionar ou remover portas e muito mais',
     ['HOUSING_MENU_TEST_TITLE'] = 'Definir coordenadas de visita',
     ['HOUSING_MENU_TEST_OPTION'] = 'Esta opção permite que coloques coordenadas de visita em uma casa mlo',
     ['HOUSING_MENU_WARDROBE_DEFAULT_TITLE'] = 'Guarda-Roupa',
@@ -328,5 +331,8 @@ Locales['pt'] = {
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'A porta é tão resistente que não partiu',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Você não pode colocar o ponto fora de casa',
     ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Casa não encontrada...',
-    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Deve haver pelo menos 4 cantos em sua área e você deve colocar tudo dentro deles...'
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'Deve haver pelo menos 4 cantos em sua área e você deve colocar tudo dentro deles...',
+    ['HOUSING_NOTIFICATION_MAX_HOUSES'] = 'Você não pode comprar mais casas, você atingiu o limite legal',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR'] = 'Você não está perto da porta',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR_OTHER'] = 'O jogador não está perto da porta'
 }

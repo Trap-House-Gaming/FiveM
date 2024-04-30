@@ -1,5 +1,6 @@
 Locales['de'] = {
     -- Blips
+    ['HOUSING_BLIP_HOUSE'] = 'Haus',
     ['HOUSING_BLIP_MAIN_HOUSE'] = 'Dein Haus',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTABLE'] = 'Dein Haus (vermietbar)',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTAL'] = 'Dein Haus (Miete)',
@@ -142,6 +143,8 @@ Locales['de'] = {
     ['HOUSING_MENU_EDIT_HOUSES_OPTION'] = 'Optionen zum Bearbeiten eines bereits erstellten Hauses',
     ['HOUSING_MENU_EXTERIOR_TITLE'] = 'Außenbereich platzieren',
     ['HOUSING_MENU_EXTERIOR_OPTION'] = 'Platziere einen Bereich außerhalb eines Hauses, wenn keiner vorhanden ist',
+    ['HOUSING_MENU_EDIT_TITLE'] = 'MLO bearbeiten',
+    ['HOUSING_MENU_EDIT_OPTION'] = 'Option, mit der Sie das MLO bearbeiten, Türen hinzufügen oder entfernen und mehr',
     ['HOUSING_MENU_TEST_TITLE'] = 'Besuchs-Koordinaten festlegen',
     ['HOUSING_MENU_TEST_OPTION'] = 'Diese Option ermöglicht es, Besuchs-Koordinaten in einem MLO-Haus zu platzieren',
     ['HOUSING_MENU_WARDROBE_DEFAULT_TITLE'] = 'Kleiderschrank',
@@ -328,5 +331,8 @@ Locales['de'] = {
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'Die Tür ist so hart, sie ist nicht aufgebrochen',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Sie können den Punkt nicht außerhalb des Hauses platzieren',
     ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Haus nicht gefunden...',
-    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'In Ihrem Bereich müssen mindestens 4 Ecken vorhanden sein und Sie müssen alles darin platzieren ...'
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'In Ihrem Bereich müssen mindestens 4 Ecken vorhanden sein und Sie müssen alles darin platzieren ...',
+    ['HOUSING_NOTIFICATION_MAX_HOUSES'] = 'Sie können keine weiteren Häuser kaufen, Sie haben das gesetzliche Limit erreicht.',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR'] = 'Du bist nicht in der Nähe der Tür',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR_OTHER'] = 'Der Spieler ist nicht in der Nähe der Tür'
 }

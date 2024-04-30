@@ -21,5 +21,6 @@ Locales['zh-CN'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = '您已成功收获植物',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = '植物不存在',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = '您没有足够的袋子来收获整株植物',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = '这不是您的植物，也不能收获其他玩家的植物'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = '这不是您的植物，也不能收获其他玩家的植物',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = '你不能在这个家里放置更多植物'
 }

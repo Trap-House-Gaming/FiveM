@@ -3,13 +3,14 @@
     and adapt them to your company system, these are the ones we recommend
     that we bring by default, but you can integrate others.
 
-    Enable Config.Debug to be able to see the log inside DebugPrint.
+    Enable Config.Debug to be able to see the log inside Debug.
 ]]
 
 if Config.Society ~= 'none' then
     return
 end
 
-function buyHouseSocietyMoney(src, societyName, societyPaid)
+function AddMoneyToSociety(src, societyName, societyPaid)
+    Debug('add money society trigggered')
     return true
 end

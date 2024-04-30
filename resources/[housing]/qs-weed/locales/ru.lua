@@ -21,5 +21,6 @@ Locales['ru'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = 'Вы правильно собрали растение',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = 'Растение больше не существует',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = 'У вас недостаточно мешков для сбора всего растения',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Это не ваше растение, и вы не можете собирать чужие растения'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Это не ваше растение, и вы не можете собирать чужие растения',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = 'Вы не можете посадить больше растений в этом доме'
 }

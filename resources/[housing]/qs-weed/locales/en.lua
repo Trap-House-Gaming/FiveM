@@ -21,5 +21,6 @@ Locales['en'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = 'You have harvested the plant correctly',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = 'The plant no longer exists',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = 'You do not have enough bags to harvest the entire plant',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = 'It is not your plant nor can you harvest another player\'s plant'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = 'It is not your plant nor can you harvest another player\'s plant',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = 'You cannot put more plants in this home'
 }

@@ -242,7 +242,7 @@ end
 
 local function DefaultQbcoreStash(customData, uniq)
     local data = customData or Config.DefaultStashData
-    local house = CurrentHouse or closesthouse
+    local house = CurrentHouse
     local houseData = Config.Houses[house]
     if not customData then
         if houseData.ipl then

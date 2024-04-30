@@ -19,10 +19,11 @@ CREATE TABLE `houselocations` (
 	`for_sale` INT(11) NULL DEFAULT '1',
 	`extra_imgs` TEXT NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
 	`description` TEXT NOT NULL DEFAULT '' COLLATE 'latin1_swedish_ci',
+	`creatorJob` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_swedish_ci',
 	PRIMARY KEY (`name`) USING BTREE,
 	INDEX `name` (`name`) USING BTREE,
 	INDEX `id` (`id`) USING BTREE
-) COLLATE = 'latin1_swedish_ci' ENGINE = InnoDB AUTO_INCREMENT = 4278;
+) COLLATE = 'latin1_swedish_ci' ENGINE = InnoDB AUTO_INCREMENT = 4304;
 
 DROP TABLE IF EXISTS `player_houses`;
 
@@ -50,7 +51,7 @@ CREATE TABLE `player_houses` (
 	INDEX `house` (`house`) USING BTREE,
 	INDEX `owner` (`owner`) USING BTREE,
 	INDEX `citizenid` (`citizenid`) USING BTREE
-) COLLATE = 'utf8mb4_general_ci' ENGINE = InnoDB AUTO_INCREMENT = 10;
+) COLLATE = 'utf8mb4_general_ci' ENGINE = InnoDB AUTO_INCREMENT = 22;
 
 DROP TABLE IF EXISTS `house_rents`;
 
@@ -73,7 +74,9 @@ CREATE TABLE `house_objects` (
 	PRIMARY KEY (`id`) USING BTREE
 ) COLLATE = 'latin1_swedish_ci' ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `house_plants` (
+DROP TABLE IF EXISTS `house_plants`;
+
+CREATE TABLE `house_plants` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`building` varchar(50) DEFAULT NULL,
 	`stage` varchar(50) DEFAULT 'stage-a',

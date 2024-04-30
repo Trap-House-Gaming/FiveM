@@ -1,5 +1,6 @@
 Locales['ru'] = {
     -- Blips
+    ['HOUSING_BLIP_HOUSE'] = 'Дом',
     ['HOUSING_BLIP_MAIN_HOUSE'] = 'Ваш дом',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTABLE'] = 'Ваш дом (Сдается в аренду)',
     ['HOUSING_BLIP_MAIN_HOUSE_RENTAL'] = 'Ваш дом (Аренда)',
@@ -142,6 +143,8 @@ Locales['ru'] = {
     ['HOUSING_MENU_EDIT_HOUSES_OPTION'] = 'Опции для редактирования уже созданного дома',
     ['HOUSING_MENU_EXTERIOR_TITLE'] = 'Разместить внешнюю зону',
     ['HOUSING_MENU_EXTERIOR_OPTION'] = 'Разместить зону снаружи дома, если она отсутствует',
+    ['HOUSING_MENU_EDIT_TITLE'] = 'Редактировать MLO',
+    ['HOUSING_MENU_EDIT_OPTION'] = 'Опция, позволяющая редактировать MLO, добавлять или удалять двери и многое другое',
     ['HOUSING_MENU_TEST_TITLE'] = 'Установить координаты для посещения',
     ['HOUSING_MENU_TEST_OPTION'] = 'Эта опция позволяет вам разместить координаты для посещения в доме mlo',
     ['HOUSING_MENU_WARDROBE_DEFAULT_TITLE'] = 'Гардероб',
@@ -328,5 +331,8 @@ Locales['ru'] = {
     ['HOUSING_NOTIFICATION_FAIL_RAM'] = 'Дверь настолько крепкая, что не сломалась',
     ['HOUSING_NOTIFICATION_COORDS_NOT_IN_SHELL'] = 'Вы не можете разместить точку за пределами дома',
     ['HOUSING_NOTIFICATION_HOUSING_NOT_FOUND'] = 'Дом не найден...',
-    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'В вашем районе должно быть как минимум 4 угла, и вы должны разместить все внутри них...'
+    ['HOUSING_NOTIFICATION_MIN_POINTS'] = 'В вашем районе должно быть как минимум 4 угла, и вы должны разместить все внутри них...',
+    ['HOUSING_NOTIFICATION_MAX_HOUSES'] = 'Вы не можете купить больше домов, вы достигли установленного законом предела',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR'] = 'Вы не рядом с дверью',
+    ['HOUSING_NOTIFICATION_INVITE_PLAYER_FAR_OTHER'] = 'Игрок не находится рядом с дверью'
 }

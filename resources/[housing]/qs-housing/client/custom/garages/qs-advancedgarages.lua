@@ -3,5 +3,5 @@ if Config.Garage ~= 'qs-advancedgarages' then
 end
 
 function TriggerHouseUpdateGarage()
-    TriggerEvent('advancedgarages:SetShellGarageData', closesthouse, hasKey)
+    TriggerEvent('advancedgarages:SetShellGarageData', CurrentHouse, CurrentHouseData.haskey)
 end

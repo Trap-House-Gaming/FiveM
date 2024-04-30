@@ -21,5 +21,6 @@ Locales['lt'] = {
     ['WEED_NOTIFICATION_HARVESTED_PLANT'] = 'Jūs sėkmingai nuėmėte augalą',
     ['WEED_NOTIFICATION_PLANT_NOT_EXIST'] = 'Augalas jau neegzistuoja',
     ['WEED_NOTIFICATION_PLANT_NO_BAGS'] = 'Neturite pakankamai maišų, kad nuimtumėte visą augalą',
-    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Tai ne jūsų augalas ir negalite nuimti kito žaidėjo augalo'
+    ['WEED_NOTIFICATION_NOT_PLANT'] = 'Tai ne jūsų augalas ir negalite nuimti kito žaidėjo augalo',
+    ['WEED_NOTIFICATION_NO_PLANTS'] = 'Non puoi mettere più piante in questa casa'
 }
