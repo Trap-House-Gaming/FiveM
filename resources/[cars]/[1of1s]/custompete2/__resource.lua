@@ -31,7 +31,7 @@ files {
 	
 	data_file 'AUDIO_GAMEDATA' 'audioconfig/dlcfcyote_game.dat151'
 	data_file 'AUDIO_SOUNDDATA' 'audioconfig/dlcfcyote_sounds.dat54'
-	data_file 'AUDIO_WAVEPACK' 'sfx/rig_2'
+	data_file 'AUDIO_WAVEPACK' 'sfx/dlc_fcyote'
 	
 
 

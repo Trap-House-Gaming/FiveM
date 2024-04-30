@@ -520,8 +520,8 @@ Config.JobVehicles = {
         },
         ['ambulance'] = {
             --PILLBOX HOSPITAL
-            [1] = {coords = vector3(294.35, -607.89, 43.33), spawn_coords = vector4(294.35, -607.89, 43.33, 74.04), distance = 10, garage_type = 'car', method = 'regular'}, --Pillbox Hospital (cars)
-            [2] = {coords = vector3(352.22, -588.03, 74.17), spawn_coords = vector4(352.22, -588.03, 74.17, 74.5), distance = 10, garage_type = 'air', method = 'regular'}, --Pillbox Hospital (helipad)
+            [1] = {coords = vector3(294.35, -607.89, 43.33), spawn_coords = vector4(337.31, -579.91, 28.8, 334.08), distance = 10, garage_type = 'car', method = 'regular'}, --Pillbox Hospital (cars)
+            [2] = {coords = vector3(352.22, -588.03, 74.17), spawn_coords = vector4(351.58, -587.45, 74.16, 160.5), distance = 10, garage_type = 'air', method = 'regular'}, --Pillbox Hospital (helipad)
             --Sandy MEDICAL
             [3] = {coords = vector3(1808.53, 3677.7, 34.28), spawn_coords = vector4(1805.42, 3681.13, 34.22, 298.45), distance = 10, garage_type = 'car', method = 'regular'}, --Sandy Medical (cars)
             [4] = {coords = vector3(1830.74, 3634.77, 34.39), spawn_coords = vector4(1830.74, 3634.77, 34.39, 29.63), distance = 10, garage_type = 'air', method = 'regular'}, --Sandy Medical (helipad)
