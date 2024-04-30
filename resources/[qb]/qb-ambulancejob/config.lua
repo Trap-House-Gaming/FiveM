@@ -45,7 +45,7 @@ Config.Locations = {                -- Edit the various interaction points for p
         [2] = vector3(-254.88, 6324.5, 32.58),
     },
     ['vehicle'] = {
-        [1] = vector4(294.578, -574.761, 43.179, 35.79),
+        [1] = vector4(337.31, -579.91, 43.179, 28.8),
         [2] = vector4(-234.28, 6329.16, 32.15, 222.5),
     },
     ['helicopter'] = {
@@ -60,10 +60,10 @@ Config.Locations = {                -- Edit the various interaction points for p
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
     },
     ['main'] = {
-        [1] = vector3(298.74, -599.33, 43.29),
+        [1] = vector3(327.14, -603.78, 43.28),
     },
     ['stash'] = {
-        [1] = vector3(309.78, -596.6, 43.29),
+        [1] = vector3(306.82, -601.83, 43.28),
     },
     ["beds"] = {
         [1] = {coords = vector4(324.26, -582.77, 44.2, 158.15), taken = false, model = 1631638868},
@@ -182,12 +182,7 @@ Config.CriticalAreas = { -- Define body areas that will always cause bleeding if
 }
 
 Config.StaggerAreas = { -- Define body areas that will always cause staggering if wearing armor or not
-    ['SPINE'] = { armored = true, major = 60, minor = 30 },
-    ['UPPER_BODY'] = { armored = false, major = 60, minor = 30 },
-    ['LLEG'] = { armored = true, major = 100, minor = 85 },
-    ['RLEG'] = { armored = true, major = 100, minor = 85 },
-    ['LFOOT'] = { armored = true, major = 100, minor = 100 },
-    ['RFOOT'] = { armored = true, major = 100, minor = 100 },
+
 }
 
 Config.WoundStates = { -- Translate wound alerts
