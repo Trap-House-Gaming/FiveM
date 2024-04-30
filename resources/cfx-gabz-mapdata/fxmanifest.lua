@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 author 'Gabz'
 description 'Mapdata'
-version '1.0.2'
+version '1.0.4'
 lua54 'yes'
 this_is_a_map 'yes'
 replace_level_meta 'gta5'
@@ -17,7 +17,7 @@ files {
     'doortuning.ymt',
     'gabz_timecycle_mods1.xml',
     'gabz_mix.dat15.rel',
-    'gabz_game.dat151.rel'
+    'gabz_game.dat151.rel',
 }
 
 data_file 'TIMECYCLEMOD_FILE' 'gabz_timecycle_mods1.xml'
