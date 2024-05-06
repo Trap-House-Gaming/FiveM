@@ -6,7 +6,7 @@ lua54 'yes'
 
 shared_script {
     '@ox_lib/init.lua',
-    'config.lua',
+    'shared/*.lua',
     'locales/*.lua'
 }
 
@@ -24,7 +24,7 @@ dependencies {
 }
 
 escrow_ignore {
-    'config.lua',
+    'shared/config.lua',
     'locales/*.lua',
     'client/custom/**/**.lua',
     'server/custom/**/**.lua'
