@@ -270,7 +270,7 @@ Config = {
 		},
 
 		speedCustomisation = {
-			SpeedLocation = { top = '80%', left = '15%' },			-- Location of the whole speedometer on the screen
+			SpeedLocation = { top = '80%', left = '20%' },			-- Location of the whole speedometer on the screen
 			SpeedSize = '14vh',
 
 			-- Both the Speedometer and RPM settings
@@ -279,7 +279,7 @@ Config = {
 			BorderStyle = 'solid',									-- The semi-circle border tyle ('solid', 'dashed', 'dotted')
 			BorderTrans = 1.0,										-- The semi-circle border transparency
 
-			BackgroundCol = { 0, 0, 0 },							-- Background colour
+			BackgroundCol = { 128, 47, 125 },							-- Background colour
 			BackgroundTrans = 0.6,									-- Background Transparency
 			BackgroundShadow = '0 0 10px',							-- Background Shadow style
 			BackgroundShadowColor = { 0, 0, 0 },					-- Background Shadow colour
@@ -298,7 +298,7 @@ Config = {
 			HighSpeedHighlight = true,								-- Highlight high speeds on the speedometer
 
 			ShowDigitalSpeed = true,								-- Shows digital speed numbers on the speedometer
-			digitalSpeedLoc = { top = 30, left = 17 },				-- Location of the numbers (defaults to the center)
+			digitalSpeedLoc = { top = 50, left = 17 },				-- Location of the numbers (defaults to the center)
 			digitalSpeedSize = '3vh',								-- The font size
 
 			NeedleType = 2,											-- Change between 1, 2, 3
