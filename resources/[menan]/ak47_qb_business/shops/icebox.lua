@@ -1,5 +1,5 @@
 Config.Shop['icebox'] = { -- job name
-	blip = {enable = true, name = 'IceBox', sprite = 617, color = 3, size = 1.0, radius = 0.0, radius_color = 4},
+	blip = {enable = false, name = 'IceBox', sprite = 617, color = 3, size = 1.0, radius = 0.0, radius_color = 4},
 	boss_action = vector3(-1258.61, -805.02, 17.09),
 	management = vector3(-1256.39, -811.44, 17.84),
 	managementRankFor = {
@@ -7,7 +7,7 @@ Config.Shop['icebox'] = { -- job name
 		stock = 2,
 	},
 	autoStock = {         		 -- auto refill shop items
-	    enable = true,
+	    enable = false,
 	    slots = 500,             -- container size
 	    regeneration = 10,       -- regenerate item every 10 minutes
 	    add = 10,                -- add 1 item to the stock

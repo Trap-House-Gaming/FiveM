@@ -1,5 +1,5 @@
 Config.Shop['chickfila'] = { -- job name
-	blip = {enable = true, name = 'Chick-Fil-A', sprite = 537, color = 1, size = 1.2, radius = 0.0, radius_color = 4},
+	blip = {enable = false, name = 'Chick-Fil-A', sprite = 537, color = 1, size = 1.2, radius = 0.0, radius_color = 4},
 	boss_action = vector3(-1035.65, -1371.11, 5.52),
 	management = vector3(-1036.91, -1375.43, 5.52),
 	managementRankFor = {

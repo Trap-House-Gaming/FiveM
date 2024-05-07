@@ -40,23 +40,23 @@ if Config.DifferentStatsSystem == false then
 				end
 				if IsPedSprinting(playerhandler) then
 					if playerneeds["condition"] > 95.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.49)	
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.10)	
 					elseif playerneeds["condition"] > 90.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.45)	
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.09)	
 					elseif playerneeds["condition"] > 80.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.40)
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.08)
 					elseif playerneeds["condition"] > 70.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.35)		
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.07)		
 					elseif playerneeds["condition"] > 60.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.30)	
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.06)	
 					elseif playerneeds["condition"] > 50.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.25)	
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.05)	
 					elseif playerneeds["condition"] > 40.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.20)			
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.04)			
 					elseif playerneeds["condition"] > 30.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.15)
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.03)
 					elseif playerneeds["condition"] > 15.0 then
-						SetRunSprintMultiplierForPlayer(PlayerId(), 1.10)
+						SetRunSprintMultiplierForPlayer(PlayerId(), 1.02)
 					end
 				else
 					SetRunSprintMultiplierForPlayer(PlayerId(), 1.0)

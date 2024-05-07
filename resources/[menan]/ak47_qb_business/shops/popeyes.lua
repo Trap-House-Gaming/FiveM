@@ -1,5 +1,5 @@
 Config.Shop['popeyes'] = { -- job name
-	blip = {enable = true, name = 'Popeyes', sprite = 267, color = 47, size = 1.0, radius = 0.0, radius_color = 4},
+	blip = {enable = false, name = 'Popeyes', sprite = 267, color = 47, size = 1.0, radius = 0.0, radius_color = 4},
 	boss_action = vector3(179.1, -1456.12, 29.13),
 	management = vector3(178.95, -1450.43, 29.13),
 	managementRankFor = {

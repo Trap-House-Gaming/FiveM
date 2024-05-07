@@ -1,5 +1,5 @@
 Config.Shop['dunkin'] = { -- job name
-	blip = {enable = true, name = 'Dunkin Donuts', sprite = 538, color = 1, size = 1.2, radius = 0.0, radius_color = 4},
+	blip = {enable = false, name = 'Dunkin Donuts', sprite = 538, color = 1, size = 1.2, radius = 0.0, radius_color = 4},
 	boss_action = vector3(-584.77, -883.61, 25.95),
 	management = vector3(-580.51, -883.58, 25.95),
 	managementRankFor = {

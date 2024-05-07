@@ -1,5 +1,5 @@
 Config.Shop['wingstop'] = { -- job name
-	blip = {enable = true, name = 'Wingstop', sprite = 365, color = 25, size = 1.2, radius = 0.0, radius_color = 4},
+	blip = {enable = false, name = 'Wingstop', sprite = 365, color = 25, size = 1.2, radius = 0.0, radius_color = 4},
 	boss_action = vector3(1244.08, -352.53, 69.18),
 	management = vector3(1249.18, -358.74, 69.18),
 	managementRankFor = {
