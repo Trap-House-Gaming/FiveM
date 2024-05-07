@@ -19,7 +19,7 @@ Config = {
 	},
 
 	Main = { -- Main variables
-		isVehicleOwned = false, 	-- Keep this true if you only want changes to be made to owned vehicles
+		isVehicleOwned = true, 	-- Keep this true if you only want changes to be made to owned vehicles
 		ItemRequiresJob = true, 	-- Do the specfic items require the mechanic job?
 		JobLocationRequired = true, -- Are the mecahanics locked to specific locations?
 		LocationBlips = true, 		-- Enable to grab the blip locations from locations.lua
@@ -228,7 +228,7 @@ Config = {
 		odoCustomisation = {
 			showHealthValues = false,								-- Always show health numbers on icons (otherwise only shows in debug mode)
 
-			screenPosition = { top = 95, left = 25 },				-- where on the screen it will appear (percentages) default bottom right
+			screenPosition = { top = 95, left = 15 },				-- where on the screen it will appear (percentages) default bottom right
 			backgroundColor = { 0, 0, 0 },							-- the colour of the huds background
 			backgroundColorTransparency = 0.5,						-- the transparency of the huds background
 
@@ -294,10 +294,10 @@ Config = {
 			MarkerColourHigh = {255, 0, 0},				-- Colour of marker if classed as "High", if not use BorderCol
 			MarkerTrans = 1.0,
 
-			SpeedHighlight = false,									-- Hightlight the text on the speedometer the faster you go
+			SpeedHighlight = true,									-- Hightlight the text on the speedometer the faster you go
 			HighSpeedHighlight = true,								-- Highlight high speeds on the speedometer
 
-			ShowDigitalSpeed = false,								-- Shows digital speed numbers on the speedometer
+			ShowDigitalSpeed = true,								-- Shows digital speed numbers on the speedometer
 			digitalSpeedLoc = { top = 40, left = 17 },				-- Location of the numbers (defaults to the center)
 			digitalSpeedSize = '3vh',								-- The font size
 
