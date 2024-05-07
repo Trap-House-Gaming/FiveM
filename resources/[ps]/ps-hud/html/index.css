@@ -642,7 +642,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:7vh!important;
         bottom:6.7vh!important
     }
@@ -651,7 +651,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:11vh!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:8.5vh!important
     }
 }
@@ -666,7 +666,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:5.3vh!important;
         bottom:7.1vh!important
     }
@@ -675,7 +675,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:8.2vh!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:6.5vh!important
     }
 }
@@ -690,7 +690,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:6.4vh!important;
         bottom:6.85vh!important
     }
@@ -699,7 +699,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:11.2vh!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:8.8vh!important
     }
 }
@@ -714,7 +714,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:0vw!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:2vw!important;
         bottom:6vh!important
     }
@@ -723,12 +723,12 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:4vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.1vw!important;
         bottom:8.5vh!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:2.8vw!important;
         bottom:12vh!important
     }
@@ -744,7 +744,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:0vw!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:2vw!important;
         bottom:5.95vh!important
     }
@@ -753,12 +753,12 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:4vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.1vw!important;
         bottom:8.5vh!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:2.8vw!important;
         bottom:12vh!important
     }
@@ -774,7 +774,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.6vw!important;
         bottom:5.9vh!important
     }
@@ -783,11 +783,11 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:7.2vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:7.5vw!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:5.5vw!important;
         bottom:11vh!important
     }
@@ -803,7 +803,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:3.9vw!important;
         bottom:5.65vh!important
     }
@@ -812,11 +812,11 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:5.8vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:6.5vw!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.75vw!important;
         bottom:11vh!important
     }
@@ -832,7 +832,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:3.9vw!important;
         bottom:5.1vh!important
     }
@@ -841,11 +841,11 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:5.9vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:6.5vw!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.7vw!important;
         bottom:11vh!important
     }
@@ -861,7 +861,7 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:2.5vh!important
     }
     #fuelgauge.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:4.8vw!important;
         bottom:4.7vh!important
     }
@@ -870,11 +870,11 @@ input[type=radio].svelte-imelgj.svelte-imelgj{
         left:7.5vw!important
     }
     #seatbelt.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:7.7vw!important
     }
     #seatbeltAltitude.svelte-am3d8l{
-        position:relative;
+        display:none;
         left:5.9vw!important;
         bottom:13vh!important
     }

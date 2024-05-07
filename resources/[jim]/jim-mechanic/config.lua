@@ -270,7 +270,7 @@ Config = {
 		},
 
 		speedCustomisation = {
-			SpeedLocation = { top = '80%', left = '28%' },			-- Location of the whole speedometer on the screen
+			SpeedLocation = { top = '80%', left = '15%' },			-- Location of the whole speedometer on the screen
 			SpeedSize = '14vh',
 
 			-- Both the Speedometer and RPM settings
@@ -298,10 +298,10 @@ Config = {
 			HighSpeedHighlight = true,								-- Highlight high speeds on the speedometer
 
 			ShowDigitalSpeed = true,								-- Shows digital speed numbers on the speedometer
-			digitalSpeedLoc = { top = 40, left = 17 },				-- Location of the numbers (defaults to the center)
+			digitalSpeedLoc = { top = 30, left = 17 },				-- Location of the numbers (defaults to the center)
 			digitalSpeedSize = '3vh',								-- The font size
 
-			NeedleType = 1,											-- Change between 1, 2, 3
+			NeedleType = 2,											-- Change between 1, 2, 3
 
 			SpeedNeedleLength = '7.0vh',							-- Speedometer Needle Length
 			SpeedNeedleWidth = '0.6vh',								-- Speedometer Needle Width

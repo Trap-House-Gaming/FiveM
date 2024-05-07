@@ -520,7 +520,7 @@ Config.JobVehicles = {
         },
         ['ambulance'] = {
             --PILLBOX HOSPITAL
-            [1] = {coords = vector3(294.35, -607.89, 43.33), spawn_coords = vector4(337.31, -579.91, 28.8, 334.08), distance = 10, garage_type = 'car', method = 'regular'}, --Pillbox Hospital (cars)
+            [1] = {coords = vector3(337.13, -579.42, 28.8), spawn_coords = vector4(333.85, -573.63, 28.8, 340.13), distance = 10, garage_type = 'car', method = 'regular'}, --Pillbox Hospital (cars)
             [2] = {coords = vector3(352.22, -588.03, 74.17), spawn_coords = vector4(351.58, -587.45, 74.16, 160.5), distance = 10, garage_type = 'air', method = 'regular'}, --Pillbox Hospital (helipad)
             --Sandy MEDICAL
             [3] = {coords = vector3(1808.53, 3677.7, 34.28), spawn_coords = vector4(1805.42, 3681.13, 34.22, 298.45), distance = 10, garage_type = 'car', method = 'regular'}, --Sandy Medical (cars)
@@ -547,8 +547,10 @@ Config.JobVehicles = {
             [5] = {job = 'police', spawn_max = true, plate = 'PD', job_grade = 0, garage_type = 'boat', model = `predator`},
         },
         ['ambulance'] = {
-            [1] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 0, garage_type = 'car', model = `ambulance`},
-            [2] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 0, garage_type = 'air', model = `polmav`},
+            [1] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 0, garage_type = 'car', model = `ReepEms`},
+            [2] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 0, garage_type = 'car', model = `RodgeEms`},
+            [3] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 4, garage_type = 'car', model = `RaviertEms`},
+            [4] = {job = 'ambulance', spawn_max = true, plate = 'EMS', job_grade = 4, garage_type = 'air', model = `polmav`},
         },
     }
 }
