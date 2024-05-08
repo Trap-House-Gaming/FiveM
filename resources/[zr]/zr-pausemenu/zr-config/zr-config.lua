@@ -9,12 +9,12 @@ zr_config.ESX = 'es_extended'
 
 zr_config.zr_blur = 'MenuMGIn'
 zr_config.disconnect = 'You have been disconnected from Trap House'
-zr_config.discord = 'https://discord.gg/qFuug3VAA3'
+zr_config.discord = 'https://discord.gg/TrapHouze'
 zr_config.link = 'https://traphouse.tebex.io'
 zr_config.youtube = ''
 
 -- Buttons
-zr_config.MulticharacterLogout = true
+zr_config.MulticharacterLogout = false
 zr_trans.back = 'Resume'
 zr_trans.disconnect = 'Quit'
 zr_trans.modal_back = 'BACK'
