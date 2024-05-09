@@ -25,21 +25,7 @@ Config.MenuItems = {
                 type = 'client',
                 event = 'qb-trunk:client:GetIn',
                 shouldClose = true
-            }, {
-                id = 'cornerselling',
-                title = 'Corner Selling',
-                icon = 'cannabis',
-                type = 'client',
-                event = 'qb-drugs:client:cornerselling',
-                shouldClose = true
-            }, {
-                id = 'togglehotdogsell',
-                title = 'Hotdog Selling',
-                icon = 'hotdog',
-                type = 'client',
-                event = 'qb-hotdogjob:client:ToggleSell',
-                shouldClose = true
-            }, {
+            },{
                 id = 'interactions',
                 title = 'Interaction',
                 icon = 'triangle-exclamation',
@@ -297,32 +283,47 @@ Config.MenuItems = {
     },
 	    [3] = { -- index of the menu option, this must be in order numerically
         id = 'Perks', -- id of the menu option, this must be unique!
-        title = 'Donation', -- title shown on the menu option
+        title = 'Rewards', -- title shown on the menu option
         icon = 'bars', -- icon shown on the menu option
         items = { -- anything in the items table is considered a sub menu!
             {
                 id = 'Daily',
                 title = 'Daily Rewards',
                 icon = 'bars',
-                type = 'dailyRewards', -- event type to call, client/server
+                type = 'command', -- event type to call, client/server
                 event = 'dailyRewards', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
             },
-            { -- example of adding another sub menu item
-                id = 'VIP',
-                title = 'VIP ',
-                icon = 'bar',
-                items = { -- example of adding a sub menu inside a sub menu
-                    {
-                        id = 'nestedsubmenu',
-                        title = 'Nested Sub Menu Option',
-                        icon = 'bars',
-                        type = '', -- event type to call, client/server/command/qbcommand
-                        event = '', -- event name, command name
-                        shouldClose = true -- enable/disable menu closing on click
-                    }
-                }
+			            {
+                id = 'Donate',
+                title = 'Donation Info',
+                icon = 'bars',
+                type = 'command', -- event type to call, client/server
+                event = 'donate', -- event name to call
+                shouldClose = true -- enable/disable menu closing on click
+            },			            {
+                id = 'Playtime',
+                title = 'Playtime Rewards',
+                icon = 'bars',
+                type = 'command', -- event type to call, client/server
+                event = 'playtime', -- event name to call
+                shouldClose = true -- enable/disable menu closing on click
             },
+            -- { -- example of adding another sub menu item
+                -- id = 'VIP',
+                -- title = 'VIP ',
+                -- icon = 'bar',
+                -- items = { -- example of adding a sub menu inside a sub menu
+                    -- {
+                        -- id = 'Donation',
+                        -- title = 'Nested Sub Menu Option',
+                        -- icon = 'bars',
+                        -- type = 'command', -- event type to call, client/server/command/qbcommand
+                        -- event = 'donate', -- event name, command name
+                        -- shouldClose = true -- enable/disable menu closing on click
+                    -- }
+                -- }
+            -- },
         }
     },
 }

@@ -60,5 +60,5 @@ Config = {
     -- You can enable the animal emotes here.
     EnableAnimalEmotes = false,
     -- You can enable radial menu usage here.
-    EnableRadialMenu = true
+    EnableRadialMenu = false
 }
