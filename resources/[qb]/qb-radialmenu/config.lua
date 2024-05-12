@@ -281,14 +281,6 @@ Config.MenuItems = {
                     }
                 }
             },
-            {
-                id = 'Emote',
-                title = 'Emotes',
-                icon = 'fa-walking',
-                type = 'command', -- event type to call, client/server
-                event = 'emotemenu', -- event name to call
-                shouldClose = true -- enable/disable menu closing on click
-            }
         }
     },
 	    [3] = { -- index of the menu option, this must be in order numerically
