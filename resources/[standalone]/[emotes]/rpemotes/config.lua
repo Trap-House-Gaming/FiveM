@@ -10,8 +10,8 @@ Config = {
     EnableCancelKeybind = true,  -- Set this to false if you have something else on X, and then just use /e c to cancel emotes.
     CancelEmoteKey = 'x', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
     MenuKeybindEnabled = false, -- You can disable the menu keybind here
-    MenuKeybind = 'f4', -- The keybind you set here will be server-sided for new players. Existing players can set their own in the ESC menu keybind settings.
-    FavKeybindEnabled = true, -- You can disable the Favorite emote keybinding here.
+    MenuKeybind = '', -- The keybind you set here will be server-sided for new players. Existing players can set their own in the ESC menu keybind settings.
+    FavKeybindEnabled = false, -- You can disable the Favorite emote keybinding here.
     FavKeybind = 'capital', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
     SqlKeybinding = false, -- If you have the SQL imported enable this to turn on keybinding.
     NotificationsAsChatMessage = false, -- If you don't like native GTA 5 notifications, you can disable them here to have messages in the chat.
@@ -46,8 +46,8 @@ Config = {
 	
 	-- RAGDOLL OPTIONS
     RagdollEnabled = false,     -- You can enable or disable the Ragdoll keybinding here.
-    RagdollKeybind = 'u', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
-    RagdollAsToggle = true,  -- You can enable or disable Ragdoll as Toggle here. Only works if RagdollEnabled is set to true.
+    RagdollKeybind = '', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
+    RagdollAsToggle = false,  -- You can enable or disable Ragdoll as Toggle here. Only works if RagdollEnabled is set to true.
 
 
     -- EXPRESSIONS, WALKS, AND MORE MENU OPTIONS
@@ -70,7 +70,7 @@ Config = {
 
 	-- POINTING OPTIONS
     PointingEnabled = false, -- You can enable / disable the finger pointing here / change the keybind. It is currently set to B however disabled by default as to not conflict with qb-core servers.
-    PointingKeybindEnabled = true,
+    PointingKeybindEnabled = false,
     PointingKeybind = 'B', -- Get the button string here https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/.
     PointingKeybindInCarEnabled = false,
     PersistentEmoteAfterPointing = true, -- If true, you will play the emote you were playing previously after you stop pointing.
@@ -82,11 +82,11 @@ Config = {
     CrouchKeybind = 'lcontrol', -- The default crouch keybind, get the button string here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     CrouchOverride = false, -- If true, you won't enter stealth mode even if the crouch key and the "duck" key are the same.
     -- If crawling should be enabled.
-    CrawlEnabled = true,
+    CrawlEnabled = false,
 	
 	-- CRAWLING OPTIONS
-    CrawlEnabled = true, -- If crawling should be enabled.
-    CrawlKeybindEnabled = true, -- If true, crawling will use keybinds.
+    CrawlEnabled = false, -- If crawling should be enabled.
+    CrawlKeybindEnabled = false, -- If true, crawling will use keybinds.
     CrawlKeybind = 'rcontrol', -- The default crawl keybind, get the button string here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
 
 
