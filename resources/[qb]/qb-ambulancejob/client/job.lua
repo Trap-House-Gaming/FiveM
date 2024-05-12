@@ -184,32 +184,7 @@ function Status()
     end
 end
 
-RegisterNetEvent('hospital:client:CheckStatus', function()
-    local player, distance = GetClosestPlayer()
-    if player ~= -1 and distance < 5.0 then
-        local playerId = GetPlayerServerId(player)
-        QBCore.Functions.TriggerCallback('hospital:GetPlayerStatus', function(result)
-            if result then
-                for k, v in pairs(result) do
-                    if k ~= 'BLEED' and k ~= 'WEAPONWOUNDS' then
-                        statusChecks[#statusChecks + 1] = {
-                            bone = Config.BoneIndexes[k],
-                            label = v.label .. ' (' .. Config.WoundStates[v.severity] .. ')'
-                        }
-                    elseif result['WEAPONWOUNDS'] then
-                        for _, v2 in pairs(result['WEAPONWOUNDS']) do
-                    elseif result['BLEED'] > 0 then
-                        QBCore.Functions.Notify(Lang:t('success.healthy_player'), 'success')
-                    end
-                end
-                isStatusChecking = true
-                Status()
-            end
-        end, playerId)
-    else
-        QBCore.Functions.Notify(Lang:t('error.no_player'), 'error')
-    end
-end)
+
 
 RegisterNetEvent('hospital:client:RevivePlayer', function()
     local hasItem = QBCore.Functions.HasItem('firstaid')

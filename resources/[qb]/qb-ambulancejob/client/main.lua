@@ -306,21 +306,6 @@ local function IsInDamageList(damage)
     return retval
 end
 
-local function CheckWeaponDamage(ped)
-    local detected = false
-    for k, v in pairs(QBCore.Shared.Weapons) do
-        if HasPedBeenDamagedByWeapon(ped, k, 0) then
-            detected = true
-            if not IsInDamageList(k) then
-                CurrentDamageList[#CurrentDamageList + 1] = k
-            end
-        end
-    end
-    if detected then
-        TriggerServerEvent('hospital:server:SetWeaponDamage', CurrentDamageList)
-    end
-    ClearEntityLastDamageEntity(ped)
-end
 
 local function ApplyImmediateEffects(ped, bone, weapon, damageDone)
     local armor = GetPedArmour(ped)
