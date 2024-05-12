@@ -152,7 +152,16 @@ Config.MenuItems = {
                         }
                     }
                 }
-            }, {
+            }, 
+            {
+                id = 'Emote',
+                title = 'Emotes',
+                icon = 'fa-walking',
+                type = 'command', -- event type to call, client/server
+                event = 'emotemenu', -- event name to call
+                shouldClose = true -- enable/disable menu closing on click
+            },
+            {
                 id = 'clothesmenu',
                 title = 'Clothing',
                 icon = 'shirt',
@@ -284,12 +293,12 @@ Config.MenuItems = {
 	    [3] = { -- index of the menu option, this must be in order numerically
         id = 'Perks', -- id of the menu option, this must be unique!
         title = 'Rewards', -- title shown on the menu option
-        icon = 'bars', -- icon shown on the menu option
+        icon = 'fa-treasure-chest', -- icon shown on the menu option
         items = { -- anything in the items table is considered a sub menu!
             {
                 id = 'Daily',
                 title = 'Daily Rewards',
-                icon = 'bars',
+                icon = 'fa-calendar',
                 type = 'command', -- event type to call, client/server
                 event = 'dailyRewards', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
@@ -297,14 +306,14 @@ Config.MenuItems = {
 			            {
                 id = 'Donate',
                 title = 'Donation Info',
-                icon = 'bars',
+                icon = 'fa-money-bill',
                 type = 'command', -- event type to call, client/server
                 event = 'donate', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
             },			            {
                 id = 'Playtime',
                 title = 'Playtime Rewards',
-                icon = 'bars',
+                icon = 'fa-play',
                 type = 'command', -- event type to call, client/server
                 event = 'playtime', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
