@@ -547,7 +547,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 let autoplay = true;
-let volume = 75; //Values between 0 and 100
+let volume = 50; //Values between 0 and 100
 // Define the tracks that have to be played
 let track_list = [
     {

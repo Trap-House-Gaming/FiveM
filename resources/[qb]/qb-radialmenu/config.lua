@@ -152,15 +152,8 @@ Config.MenuItems = {
                         }
                     }
                 }
-            }, 
-            {
-                id = 'Emote',
-                title = 'Emotes',
-                icon = 'fa-walking',
-                type = 'command', -- event type to call, client/server
-                event = 'emotemenu', -- event name to call
-                shouldClose = true -- enable/disable menu closing on click
             },
+
             {
                 id = 'clothesmenu',
                 title = 'Clothing',
@@ -287,6 +280,14 @@ Config.MenuItems = {
                         }
                     }
                 }
+            },
+            {
+                id = 'Emote',
+                title = 'Emotes',
+                icon = 'fa-walking',
+                type = 'command', -- event type to call, client/server
+                event = 'emotemenu', -- event name to call
+                shouldClose = true -- enable/disable menu closing on click
             }
         }
     },
