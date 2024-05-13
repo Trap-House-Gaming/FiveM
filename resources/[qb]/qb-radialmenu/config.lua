@@ -280,7 +280,7 @@ Config.MenuItems = {
                         }
                     }
                 }
-            },
+            }
         }
     },
 	    [3] = { -- index of the menu option, this must be in order numerically

@@ -122,7 +122,7 @@ Config.Locations[#Config.Locations+1] = { --[[ LS CUSTOMS IN CITY ]]--
 }
 
 Config.Locations[#Config.Locations+1] = { --[[ HAYES AUTOS ]]--
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(490.57400512695, -1302.0946044922),
@@ -182,7 +182,7 @@ Config.Locations[#Config.Locations+1] = { --[[ HAYES AUTOS ]]--
 }
 
 Config.Locations[#Config.Locations+1] = { -- [[LS CUSTOMS ROUTE 68]] --
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(1190.58, 2645.39),
@@ -241,7 +241,7 @@ Config.Locations[#Config.Locations+1] = { -- [[LS CUSTOMS ROUTE 68]] --
 }
 
 Config.Locations[#Config.Locations+1] = { --[[ BEEKERS GARAGE PALETO ]]--
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(117.79, 6625.31),
@@ -364,7 +364,7 @@ Config.Locations[#Config.Locations+1] = { --[[ GABZ LS TUNER SHOP ]]--
 }
 
 Config.Locations[#Config.Locations+1] = { --[[ AIRPORT LS CUSTOMS ]]--
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(-1118.5782470703, -2017.4730224609),
@@ -485,7 +485,7 @@ Config.Locations[#Config.Locations+1] = { --[[ POPULAR STREET LS CUSTOMS ]]--
 }
 
 Config.Locations[#Config.Locations+1] = { --[[ OTTOS AUTOS ]]--
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(824.64721679688, -802.48284912109),
@@ -656,7 +656,7 @@ Config.Locations[#Config.Locations+1] = { --[[ BENNYS NEXT TO PDM ]]--
 }
 
 Config.Locations[#Config.Locations+1] = { --[[ LA MESA IMPORT SHOP ]]--
-	Enabled = true,
+	Enabled = false,
 	job = "mechanic",
 	zones = {
 		vec2(912.01, -987.16),
