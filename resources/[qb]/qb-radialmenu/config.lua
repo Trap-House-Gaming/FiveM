@@ -311,11 +311,11 @@ Config.MenuItems = {
                 event = 'playtime', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
             },
-            -- { -- example of adding another sub menu item
-                -- id = 'VIP',
-                -- title = 'VIP ',
-                -- icon = 'bar',
-                -- items = { -- example of adding a sub menu inside a sub menu
+--[[             {  example of adding another sub menu item
+                 id = 'VIP',
+                 title = 'VIP ',
+                 icon = 'bar',
+                 items = { -- example of adding a sub menu inside a sub menu
                     -- {
                         -- id = 'Donation',
                         -- title = 'Nested Sub Menu Option',
@@ -323,12 +323,12 @@ Config.MenuItems = {
                         -- type = 'command', -- event type to call, client/server/command/qbcommand
                         -- event = 'donate', -- event name, command name
                         -- shouldClose = true -- enable/disable menu closing on click
-                    -- }
-                -- }
-            -- },
+                     }
+                 } ]]
+             },
         }
-    },
-}
+    }
+
 
 Config.VehicleDoors = {
     id = 'vehicledoors',

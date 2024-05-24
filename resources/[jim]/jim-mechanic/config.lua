@@ -55,7 +55,7 @@ Config = {
 	Crafting = {
 		craftCam = true,
 		MultiCraft = true,
-		MultiCraftAmounts = { [1], [2], [3], [4], [5], [6], [7], [8], [9], [10] },
+		MultiCraftAmounts = { '[1]', '[2]', '[3]', '[4]', '[5]', '[6]', '[7]', '[8]', '[9]', '[10]' },
 		showItemBox = true,			-- toggle itemBox for adding/removing items, helpful if using custom item change events
 	},
 
