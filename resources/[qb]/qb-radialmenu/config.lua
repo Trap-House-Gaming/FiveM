@@ -286,12 +286,12 @@ Config.MenuItems = {
 	    [3] = { -- index of the menu option, this must be in order numerically
         id = 'Perks', -- id of the menu option, this must be unique!
         title = 'Rewards', -- title shown on the menu option
-        icon = 'fa-treasure-chest', -- icon shown on the menu option
+        icon = 'treasure-chest', -- icon shown on the menu option
         items = { -- anything in the items table is considered a sub menu!
             {
                 id = 'Daily',
                 title = 'Daily Rewards',
-                icon = 'fa-calendar',
+                icon = 'calendar',
                 type = 'command', -- event type to call, client/server
                 event = 'dailyRewards', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click
@@ -299,7 +299,7 @@ Config.MenuItems = {
 			            {
                 id = 'Donate',
                 title = 'Donation Info',
-                icon = 'fa-money-bill',
+                icon = 'money-bill',
                 type = 'command', -- event type to call, client/server
                 event = 'donate', -- event name to call
                 shouldClose = true -- enable/disable menu closing on click

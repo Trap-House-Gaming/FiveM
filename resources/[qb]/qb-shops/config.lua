@@ -45,11 +45,11 @@ Config.Products = {
     },
     ['weedshop'] = {
         {name = 'joint',          price = 5,  amount = 5000,   info = {}, type = 'item'},
-        {name = 'rolling_paper',  price = 5,   amount = 500, info = {}, type = 'item'},
-        {name = 'blunt_wrap',          price = 5,  amount = 5000,   info = {}, type = 'item'},
-        {name = 'mylar_bag', price = 15,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'rolling_paper',  price = 15,   amount = 500, info = {}, type = 'item'},
+        {name = 'blunt_wrap',          price = 15,  amount = 5000,   info = {}, type = 'item'},
+        {name = 'mylar_bag', price = 150,  amount = 5000,   info = {}, type = 'item'},
         {name = 'plastic_wrap', price = 10,   amount = 10000, info = {}, type = 'item'},
-        {name = 'empty_baggy',  price = 10,   amount = 10000, info = {}, type = 'item'},
+        {name = 'empty_baggy',  price = 100,   amount = 10000, info = {}, type = 'item'},
     },
     ['gearshop'] = {
         {name = 'diving_gear', price = 2500, amount = 10, info = {}, type = 'item'},
