@@ -31,3 +31,9 @@ While many of the core scripts were purchased or open-source, I handled:
 
 ## 📂 Folder Structure
 
+/resources
+/[qb-core]
+/[custom-scripts]
+/config
+/server.cfg
+/sql
